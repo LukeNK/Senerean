@@ -159,7 +159,7 @@ let REGISTRY = [
     },
     {
         "id": "H5JO3K",
-        "owner": "LukeNK",
+        "owner": "Senerean",
         "desc": "Storage house with ship dock",
         "chunks": [
             {
