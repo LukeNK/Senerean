@@ -1,0 +1,47 @@
+<body style="background-color: #222;">
+    <p style="color: white;">Please check the console.</p>
+</body>
+<script src="./template.js"></script>
+<script src="./registry.js"></script>
+<script>
+    let EXIT = false; // exit all loop
+    while (true) {
+        let cur = {...TEMPLATE};
+        cur.chunks = []; // change chunk to array instead of hint string
+        for (const l1 in TEMPLATE) {
+            if (l1 == 'chunks') {
+                // if it is prompt relating to chunks
+                let chunk = 'expected chunk';
+                while (true) {
+                    chunk = prompt(TEMPLATE[l1]);
+                    if (!chunk) break; // if no more, exit
+                    chunk = chunk.replace(' ', '').split(',');
+                    cur.chunks.push({
+                        x: parseInt(chunk[0]), 
+                        z: parseInt(chunk[1])
+                    }); // push chunk info
+                }
+            } else
+                cur[l1] = prompt(TEMPLATE[l1]); // prompt question
+
+            if (l1 == 'id') {
+                // check if input ID is empty to exit
+                if (!cur.id) EXIT = true;
+                // clean id to upper case
+                cur.id = cur.id.toUpperCase();
+                // check id conflict
+                for (const build of REGISTRY)
+                    if (cur.id == build.id) {
+                        EXIT = true; 
+                        alert('Conflict ID ' + cur.id);
+                    }
+            }
+            if (EXIT) break;
+        }
+        REGISTRY.push(cur);
+        let reg = 'let REGISTRY = ' + JSON.stringify(REGISTRY, null, '    ');
+        console.log(reg);
+        document.body.innerHTML = reg;
+        if (EXIT) break;
+    }
+</script>
