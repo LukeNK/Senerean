@@ -590,5 +590,61 @@ let REGISTRY = [
             "x": 88,
             "z": 12
         }
+    },
+    {
+        "id": "BEN005",
+        "owner": "BenPo",
+        "desc": "A wooden coffee shop",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 3,
+                "z": 0
+            },
+            {
+                "x": 4,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 13,
+            "z": 10
+        },
+        "nw": {
+            "x": 55,
+            "z": 4
+        },
+        "se": {
+            "x": 67,
+            "z": 13
+        }
+    },
+    {
+        "id": "BEN006",
+        "owner": "BenPo",
+        "desc": "Cliff side hanging house",
+        "address": "EMBASSY ave",
+        "chunks": [
+            {
+                "x": 3,
+                "z": 3
+            },
+            {
+                "x": 3,
+                "z": 4
+            }
+        ],
+        "dimensions": {
+            "x": 9,
+            "z": 15
+        },
+        "nw": {
+            "x": 55,
+            "z": 61
+        },
+        "se": {
+            "x": 63,
+            "z": 75
+        }
     }
 ]
