@@ -16,17 +16,27 @@
         cur.chunks = []; // change chunk to array instead of hint string
         for (const l1 in TEMPLATE) {
             if (l1 == 'chunks') {
-                // if it is prompt relating to chunks
-                let chunk = 'expected chunk';
-                while (true) {
-                    chunk = prompt(TEMPLATE[l1]);
-                    if (!chunk) break; // if no more, exit
-                    chunk = chunk.replace(' ', '').split(',');
-                    cur.chunks.push({
-                        x: parseInt(chunk[0]), 
-                        z: parseInt(chunk[1])
-                    }); // push chunk info
-                }
+                // get cord and split
+                let l = prompt('South West-most block coord');
+                let r = prompt('North East-most block coord');
+                l = l.replace(' ', '').split(',');
+                r = r.replace(' ', '').split(',');
+                // convert to number
+                l[0] = parseInt(l[0]);
+                l[1] = parseInt(l[1]);
+                r[0] = parseInt(r[0]);
+                r[1] = parseInt(r[1]);
+                // add dimension to the build
+                cur.dimensions = { x: r[0] - l[0], z: r[1] - l[1] }
+                // convert to chunks
+                l[0] = Math.floor(l[0] / 16);
+                l[1] = Math.floor(l[1] / 16);
+                r[0] = Math.floor(r[0] / 16);
+                r[1] = Math.floor(r[1] / 16);
+                // list all of the chunks inside it
+                for (let x = l[0]; x <= r[0]; x++) 
+                    for (let z = l[1]; z <= r[1]; z++)
+                        cur.chunks.push({ x: x, z: z }); // push chunk info
             } else
                 cur[l1] = prompt(TEMPLATE[l1]); // prompt question
 
