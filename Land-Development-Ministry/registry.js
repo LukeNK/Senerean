@@ -3,6 +3,7 @@ let REGISTRY = [
         "id": "FIRSTB",
         "owner": "LukeNK",
         "desc": "Modern seaside house",
+        "address": "N SEA CLIFF ave",
         "chunks": [
             {
                 "x": 5,
@@ -18,6 +19,7 @@ let REGISTRY = [
         "id": "NCLIFF",
         "owner": "LukeNK",
         "desc": "Wooden mansion",
+        "address": "N SEA CLIFF ave",
         "chunks": [
             {
                 "x": 2,
@@ -41,6 +43,7 @@ let REGISTRY = [
         "id": "FHOUSE",
         "owner": "LukeNK",
         "desc": "Modern house",
+        "address": "BEEHIVE ave",
         "chunks": [
             {
                 "x": 3,
@@ -56,6 +59,7 @@ let REGISTRY = [
         "id": "GREENC",
         "owner": "LukeNK",
         "desc": "Small house",
+        "address": "BEEHIVE ave",
         "chunks": [
             {
                 "x": 4,
@@ -67,6 +71,7 @@ let REGISTRY = [
         "id": "MLAFCE",
         "owner": "LukeNK",
         "desc": "Wooden house",
+        "address": "N SEA CLIFF ave",
         "chunks": [
             {
                 "x": 4,
@@ -82,6 +87,7 @@ let REGISTRY = [
         "id": "FARMHO",
         "owner": "LukeNK",
         "desc": "Wooden house with roof farm",
+        "address": "N SEA CLIFF ave",
         "chunks": [
             {
                 "x": 5,
@@ -93,6 +99,7 @@ let REGISTRY = [
         "id": "SEAAPP",
         "owner": "LukeNK",
         "desc": "Apartment for 3 with farm",
+        "address": "N SEA CLIFF ave",
         "chunks": [
             {
                 "x": 5,
@@ -108,6 +115,7 @@ let REGISTRY = [
         "id": "FAJOPS",
         "owner": "LukeNK",
         "desc": "Single family home",
+        "address": "N SEA CLIFF ave",
         "chunks": [
             {
                 "x": 5,
@@ -131,6 +139,7 @@ let REGISTRY = [
         "id": "APPF7P",
         "owner": "LukeNK",
         "desc": "Apartment for 7",
+        "address": "S SEA CLIFF ave",
         "chunks": [
             {
                 "x": 4,
@@ -146,6 +155,7 @@ let REGISTRY = [
         "id": "F3PV9K",
         "owner": "LukeNK",
         "desc": "Small wooden house",
+        "address": "S SEA CLIFF ave",
         "chunks": [
             {
                 "x": 5,
@@ -161,6 +171,7 @@ let REGISTRY = [
         "id": "H5JO3K",
         "owner": "Senerean",
         "desc": "Storage house with ship dock",
+        "address": "N SEA CLIFF ave",
         "chunks": [
             {
                 "x": 6,
@@ -180,6 +191,7 @@ let REGISTRY = [
         "id": "J8KO1P",
         "owner": "LukeNK",
         "desc": "Restaurant",
+        "address": "SEA CLIFF ave",
         "chunks": [
             {
                 "x": 5,
@@ -195,6 +207,7 @@ let REGISTRY = [
         "id": "I9FJ1A",
         "owner": "LukeNK",
         "desc": "Coffee shop",
+        "address": "UPHILL st",
         "chunks": [
             {
                 "x": 6,
@@ -210,6 +223,7 @@ let REGISTRY = [
         "id": "CLHOSP",
         "owner": "Senerean",
         "desc": "Three-floor hospital with ER connected to the street",
+        "address": "VALLEY ave",
         "chunks": [
             {
                 "x": 1,
@@ -225,6 +239,7 @@ let REGISTRY = [
         "id": "VACIMU",
         "owner": "Senerean",
         "desc": "Vaccine and imunization clinic",
+        "address": "VALLEY ave",
         "chunks": [
             {
                 "x": 1,
@@ -236,6 +251,7 @@ let REGISTRY = [
         "id": "TRRAIL",
         "owner": "Senerean",
         "desc": "Train manufacturing facility with showroom",
+        "address": "S SEA CLIFF ave",
         "chunks": [
             {
                 "x": 0,
