@@ -271,4 +271,324 @@ let REGISTRY = [
             }
         ]
     },
+    {
+        "id": "JAREMB",
+        "owner": "The Principality of Ballinngs",
+        "desc": "Embassy for The Principality of Ballinngs",
+        "address": "PEACE ave",
+        "chunks": [
+            {
+                "x": -4,
+                "z": 1
+            },
+            {
+                "x": -4,
+                "z": 2
+            },
+            {
+                "x": -4,
+                "z": 3
+            },
+            {
+                "x": -4,
+                "z": 4
+            },
+            {
+                "x": -3,
+                "z": 1
+            },
+            {
+                "x": -3,
+                "z": 2
+            },
+            {
+                "x": -3,
+                "z": 3
+            },
+            {
+                "x": -3,
+                "z": 4
+            },
+            {
+                "x": -2,
+                "z": 1
+            },
+            {
+                "x": -2,
+                "z": 2
+            },
+            {
+                "x": -2,
+                "z": 3
+            },
+            {
+                "x": -2,
+                "z": 4
+            },
+            {
+                "x": -1,
+                "z": 1
+            },
+            {
+                "x": -1,
+                "z": 2
+            },
+            {
+                "x": -1,
+                "z": 3
+            },
+            {
+                "x": -1,
+                "z": 4
+            },
+            {
+                "x": 0,
+                "z": 1
+            },
+            {
+                "x": 0,
+                "z": 2
+            },
+            {
+                "x": 0,
+                "z": 3
+            },
+            {
+                "x": 0,
+                "z": 4
+            }
+        ],
+        "dimensions": {
+            "x": 67,
+            "z": 46
+        },
+        "nw": {
+            "x": -54,
+            "z": 26
+        },
+        "se": {
+            "x": 13,
+            "z": 72
+        }
+    },
+    {
+        "id": "696635",
+        "owner": "The Republic of Wilhelma and the Flanfairs",
+        "desc": "The Republic of Wilhelma and the Flanfairs embassy",
+        "address": "2023 ave",
+        "chunks": [
+            {
+                "x": -4,
+                "z": -1
+            },
+            {
+                "x": -4,
+                "z": 0
+            },
+            {
+                "x": -3,
+                "z": -1
+            },
+            {
+                "x": -3,
+                "z": 0
+            },
+            {
+                "x": -2,
+                "z": -1
+            },
+            {
+                "x": -2,
+                "z": 0
+            },
+            {
+                "x": -1,
+                "z": -1
+            },
+            {
+                "x": -1,
+                "z": 0
+            },
+            {
+                "x": 0,
+                "z": -1
+            },
+            {
+                "x": 0,
+                "z": 0
+            },
+            {
+                "x": 1,
+                "z": -1
+            },
+            {
+                "x": 1,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 76,
+            "z": 27
+        },
+        "nw": {
+            "x": -51,
+            "z": -12
+        },
+        "se": {
+            "x": 25,
+            "z": 15
+        }
+    },
+    {
+        "id": "BEN001",
+        "owner": "BenPo",
+        "desc": "Hill-side embeded house",
+        "address": "BEEHIVE ave",
+        "chunks": [
+            {
+                "x": 2,
+                "z": -1
+            },
+            {
+                "x": 2,
+                "z": 0
+            },
+            {
+                "x": 3,
+                "z": -1
+            },
+            {
+                "x": 3,
+                "z": 0
+            },
+            {
+                "x": 4,
+                "z": -1
+            },
+            {
+                "x": 4,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 21,
+            "z": 17
+        },
+        "nw": {
+            "x": 46,
+            "z": -12
+        },
+        "se": {
+            "x": 67,
+            "z": 5
+        }
+    },
+    {
+        "id": "BEN002",
+        "owner": "BenPo",
+        "desc": "Port with capacity of 4",
+        "address": "UPHILL st",
+        "chunks": [
+            {
+                "x": 7,
+                "z": -4
+            },
+            {
+                "x": 7,
+                "z": -3
+            },
+            {
+                "x": 7,
+                "z": -2
+            },
+            {
+                "x": 8,
+                "z": -4
+            },
+            {
+                "x": 8,
+                "z": -3
+            },
+            {
+                "x": 8,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 19,
+            "z": 34
+        },
+        "nw": {
+            "x": 118,
+            "z": -52
+        },
+        "se": {
+            "x": 137,
+            "z": -18
+        }
+    },
+    {
+        "id": "BEN003",
+        "owner": "BenPo",
+        "desc": "2023 hill side sign",
+        "address": "BEEHIVE AVE",
+        "chunks": [
+            {
+                "x": 4,
+                "z": 2
+            },
+            {
+                "x": 5,
+                "z": 2
+            }
+        ],
+        "dimensions": {
+            "x": 18,
+            "z": 1
+        },
+        "nw": {
+            "x": 71,
+            "z": 34
+        },
+        "se": {
+            "x": 89,
+            "z": 35
+        }
+    },
+    {
+        "id": "BEN004",
+        "owner": "BenPo",
+        "desc": "2023 sign lookout",
+        "address": "UPHILL st",
+        "chunks": [
+            {
+                "x": 4,
+                "z": -1
+            },
+            {
+                "x": 4,
+                "z": 0
+            },
+            {
+                "x": 5,
+                "z": -1
+            },
+            {
+                "x": 5,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 16,
+            "z": 25
+        },
+        "nw": {
+            "x": 72,
+            "z": -13
+        },
+        "se": {
+            "x": 88,
+            "z": 12
+        }
+    }
 ]

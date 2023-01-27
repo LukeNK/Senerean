@@ -5,3 +5,9 @@ const TEMPLATE = {
     address: "Road base on main entrance, not include house number (you don't have it anyways)",
     chunks: 'Chunks that have the build (using x, z format), leave empty if all were listed'
 }
+
+// list of road type
+const ROAD_TYPE = [
+    'st',
+    'ave',
+]

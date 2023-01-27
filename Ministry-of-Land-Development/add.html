@@ -17,8 +17,8 @@
         for (const l1 in TEMPLATE) {
             if (l1 == 'chunks') {
                 // get cord and split
-                let l = prompt('South West-most block coord');
-                let r = prompt('North East-most block coord');
+                let l = prompt('North West-most block coord');
+                let r = prompt('South East-most block coord');
                 l = l.replace(' ', '').split(',');
                 r = r.replace(' ', '').split(',');
                 // convert to number
@@ -27,7 +27,9 @@
                 r[0] = parseInt(r[0]);
                 r[1] = parseInt(r[1]);
                 // add dimension to the build
-                cur.dimensions = { x: r[0] - l[0], z: r[1] - l[1] }
+                cur.dimensions = { x: r[0] - l[0] + 1, z: r[1] - l[1] + 1 }
+                cur.nw = { x: l[0], z: l[1]};
+                cur.se = { x: r[0], z: r[1]};
                 // convert to chunks
                 l[0] = Math.floor(l[0] / 16);
                 l[1] = Math.floor(l[1] / 16);
@@ -51,6 +53,11 @@
                         EXIT = true; 
                         alert('Conflict ID ' + cur.id);
                     }
+            } else if (l1 == 'address') {
+                cur[l1] = cur[l1].toUpperCase();
+                // replace road type capitalization
+                for (let type of ROAD_TYPE)
+                    cur[l1] = cur[l1].replace(' ' + type.toUpperCase(), ' ' + type);
             }
             if (EXIT) break;
         }
