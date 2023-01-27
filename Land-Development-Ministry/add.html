@@ -1,5 +1,11 @@
+<style>
+    #out {
+        color: white;
+        white-space: pre-wrap;
+    }
+</style>
 <body style="background-color: #222;">
-    <p style="color: white;">Please check the console.</p>
+    <code id="out">Sorry for such manual tedious way</code>
 </body>
 <script src="./template.js"></script>
 <script src="./registry.js"></script>
@@ -38,10 +44,10 @@
             }
             if (EXIT) break;
         }
-        REGISTRY.push(cur);
+        if (cur.id) REGISTRY.push(cur); // if there is current
         let reg = 'let REGISTRY = ' + JSON.stringify(REGISTRY, null, '    ');
         console.log(reg);
-        document.body.innerHTML = reg;
+        document.getElementById('out').innerHTML = reg;
         if (EXIT) break;
     }
 </script>
