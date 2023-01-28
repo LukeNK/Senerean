@@ -1480,25 +1480,6 @@ let REGISTRY = [
         }
     },
     {
-        "id": "136017",
-        "owner": "Senerean",
-        "desc": "Metro station",
-        "address": "VALLEY ave",
-        "chunks": [],
-        "dimensions": {
-            "x": -135868,
-            "z": null
-        },
-        "nw": {
-            "x": 136017,
-            "z": null
-        },
-        "se": {
-            "x": 148,
-            "z": 24
-        }
-    },
-    {
         "id": "VALLIB",
         "owner": "Senerean",
         "desc": "Library",
@@ -1616,6 +1597,34 @@ let REGISTRY = [
         "se": {
             "x": 57,
             "z": -18
+        }
+    },
+    {
+        "id": "136017",
+        "owner": "Senerean",
+        "desc": "Metro station",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 8,
+                "z": 1
+            },
+            {
+                "x": 9,
+                "z": 1
+            }
+        ],
+        "dimensions": {
+            "x": 13,
+            "z": 8
+        },
+        "nw": {
+            "x": 136,
+            "z": 17
+        },
+        "se": {
+            "x": 148,
+            "z": 24
         }
     }
 ]
