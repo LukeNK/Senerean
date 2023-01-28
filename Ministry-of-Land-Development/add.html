@@ -45,6 +45,13 @@
             if (l1 == 'id') {
                 // check if input ID is empty to exit
                 if (!cur.id) EXIT = true;
+                else if (cur.id == '.') {
+                    // if user ask for random-generated
+                    cur.id = '';
+                    for (let _ = 0; _ < 6; _++) 
+                        cur.id += ALLOW_CHAR[Math.floor(Math.random() * ALLOW_CHAR.length)];
+                }
+
                 // clean id to upper case
                 cur.id = cur.id.toUpperCase();
                 // check id conflict
@@ -65,14 +72,17 @@
         // if there is exit request
         if (EXIT) {
             const reg = 'let REGISTRY = ' + JSON.stringify(REGISTRY, null, '    ');
-            // download file
-            const link = document.createElement("a");
-            const file = new Blob([reg], { type: 'text/plain' });
-            link.href = URL.createObjectURL(file);
-            link.download = "registry.js";
-            link.click();
-            URL.revokeObjectURL(link.href);
-            break;
+            if (confirm('Do you want to download the registry?')) {
+                // create registry as a file then download it
+                const link = document.createElement("a");
+                const file = new Blob([reg], { type: 'text/plain' });
+                link.href = URL.createObjectURL(file);
+                link.download = "registry.js";
+                link.click();
+                URL.revokeObjectURL(link.href);
+            } else
+                document.getElementById('out').innerHTML = reg; // just in case of misclick
+            break; // either way, exit the loop
         };
     }
 </script>
