@@ -826,5 +826,561 @@ let REGISTRY = [
             "x": 62,
             "z": 45
         }
+    },
+    {
+        "id": "BEN007",
+        "owner": "BenPo",
+        "desc": "Low-rise avenue bridge crossing through a river",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 11,
+                "z": 0
+            },
+            {
+                "x": 11,
+                "z": 1
+            },
+            {
+                "x": 12,
+                "z": 0
+            },
+            {
+                "x": 12,
+                "z": 1
+            },
+            {
+                "x": 13,
+                "z": 0
+            },
+            {
+                "x": 13,
+                "z": 1
+            },
+            {
+                "x": 14,
+                "z": 0
+            },
+            {
+                "x": 14,
+                "z": 1
+            }
+        ],
+        "dimensions": {
+            "x": 58,
+            "z": 9
+        },
+        "nw": {
+            "x": 181,
+            "z": 11
+        },
+        "se": {
+            "x": 238,
+            "z": 19
+        }
+    },
+    {
+        "id": "G4AJ1E",
+        "owner": "Senerean",
+        "desc": "Metro station",
+        "address": "EMBASSY ave",
+        "chunks": [
+            {
+                "x": 2,
+                "z": 3
+            },
+            {
+                "x": 3,
+                "z": 3
+            }
+        ],
+        "dimensions": {
+            "x": 9,
+            "z": 8
+        },
+        "nw": {
+            "x": 45,
+            "z": 50
+        },
+        "se": {
+            "x": 53,
+            "z": 57
+        }
+    },
+    {
+        "id": "NAARCH",
+        "owner": "LukeNK",
+        "desc": "Archive house",
+        "address": "EMBASSY ave",
+        "chunks": [
+            {
+                "x": 3,
+                "z": 2
+            },
+            {
+                "x": 3,
+                "z": 3
+            }
+        ],
+        "dimensions": {
+            "x": 11,
+            "z": 13
+        },
+        "nw": {
+            "x": 53,
+            "z": 46
+        },
+        "se": {
+            "x": 63,
+            "z": 58
+        }
+    },
+    {
+        "id": "J1KE3R",
+        "owner": "Senerean",
+        "desc": "Hut for resting and looking at scenery",
+        "address": "BEEHIVE ave",
+        "chunks": [
+            {
+                "x": 4,
+                "z": -1
+            }
+        ],
+        "dimensions": {
+            "x": 8,
+            "z": 8
+        },
+        "nw": {
+            "x": 71,
+            "z": -12
+        },
+        "se": {
+            "x": 78,
+            "z": -5
+        }
+    },
+    {
+        "id": "H6RP2O",
+        "owner": "LukeNK",
+        "desc": "Iron smith shop",
+        "address": "BEEHIVE ave",
+        "chunks": [
+            {
+                "x": 4,
+                "z": -1
+            },
+            {
+                "x": 4,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 7,
+            "z": 7
+        },
+        "nw": {
+            "x": 71,
+            "z": -2
+        },
+        "se": {
+            "x": 77,
+            "z": 4
+        }
+    },
+    {
+        "id": "H8ER4T",
+        "owner": "LukeNK",
+        "desc": "Spruce wood house",
+        "address": "BEEHIVE ave",
+        "chunks": [
+            {
+                "x": 4,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 7,
+            "z": 7
+        },
+        "nw": {
+            "x": 71,
+            "z": 6
+        },
+        "se": {
+            "x": 77,
+            "z": 12
+        }
+    },
+    {
+        "id": "H8TJ3F",
+        "owner": "LukeNK",
+        "desc": "Shop with potion storage",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 4,
+                "z": 1
+            }
+        ],
+        "dimensions": {
+            "x": 9,
+            "z": 11
+        },
+        "nw": {
+            "x": 70,
+            "z": 17
+        },
+        "se": {
+            "x": 78,
+            "z": 27
+        }
+    },
+    {
+        "id": "A8RT4Q",
+        "owner": "LukeNK",
+        "desc": "Fast steak store",
+        "address": "2023 ave",
+        "chunks": [
+            {
+                "x": 4,
+                "z": 2
+            },
+            {
+                "x": 4,
+                "z": 3
+            }
+        ],
+        "dimensions": {
+            "x": 7,
+            "z": 7
+        },
+        "nw": {
+            "x": 66,
+            "z": 44
+        },
+        "se": {
+            "x": 72,
+            "z": 50
+        }
+    },
+    {
+        "id": "J8KD1R",
+        "owner": "LukeNK",
+        "desc": "Convenience potion store",
+        "address": "2023 ave",
+        "chunks": [
+            {
+                "x": 4,
+                "z": 2
+            },
+            {
+                "x": 4,
+                "z": 3
+            },
+            {
+                "x": 5,
+                "z": 2
+            },
+            {
+                "x": 5,
+                "z": 3
+            }
+        ],
+        "dimensions": {
+            "x": 8,
+            "z": 9
+        },
+        "nw": {
+            "x": 74,
+            "z": 44
+        },
+        "se": {
+            "x": 81,
+            "z": 52
+        }
+    },
+    {
+        "id": "K1QR3T",
+        "owner": "LukeNK",
+        "desc": "Fast food store",
+        "address": "EMBASSY ave",
+        "chunks": [
+            {
+                "x": 4,
+                "z": 3
+            }
+        ],
+        "dimensions": {
+            "x": 8,
+            "z": 6
+        },
+        "nw": {
+            "x": 71,
+            "z": 53
+        },
+        "se": {
+            "x": 78,
+            "z": 58
+        }
+    },
+    {
+        "id": "METHAL",
+        "owner": "Senerean",
+        "desc": "Meeting hall",
+        "address": "SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": -1
+            }
+        ],
+        "dimensions": {
+            "x": 13,
+            "z": 10
+        },
+        "nw": {
+            "x": 83,
+            "z": -11
+        },
+        "se": {
+            "x": 95,
+            "z": -2
+        }
+    },
+    {
+        "id": "KINDGT",
+        "owner": "Senerean",
+        "desc": "Daycare",
+        "address": "SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 13,
+            "z": 13
+        },
+        "nw": {
+            "x": 83,
+            "z": 0
+        },
+        "se": {
+            "x": 95,
+            "z": 12
+        }
+    },
+    {
+        "id": "G5RT2W",
+        "owner": "UNCLAIMED",
+        "desc": "Food store",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": 1
+            }
+        ],
+        "dimensions": {
+            "x": 7,
+            "z": 8
+        },
+        "nw": {
+            "x": 84,
+            "z": 17
+        },
+        "se": {
+            "x": 90,
+            "z": 24
+        }
+    },
+    {
+        "id": "SNRAIL",
+        "owner": "Senerean",
+        "desc": "Rail convention center",
+        "address": "EMBASSY ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": 3
+            },
+            {
+                "x": 5,
+                "z": 4
+            }
+        ],
+        "dimensions": {
+            "x": 7,
+            "z": 15
+        },
+        "nw": {
+            "x": 89,
+            "z": 51
+        },
+        "se": {
+            "x": 95,
+            "z": 65
+        }
+    },
+    {
+        "id": "T5YJ9V",
+        "owner": "LukeNK",
+        "desc": "Duplex with tree decoration on top",
+        "address": "EMBASSY ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": 4
+            },
+            {
+                "x": 6,
+                "z": 4
+            }
+        ],
+        "dimensions": {
+            "x": 13,
+            "z": 8
+        },
+        "nw": {
+            "x": 84,
+            "z": 68
+        },
+        "se": {
+            "x": 96,
+            "z": 75
+        }
+    },
+    {
+        "id": "GREERG",
+        "owner": "Senerean",
+        "desc": "Community garden",
+        "address": "SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 6,
+                "z": -2
+            },
+            {
+                "x": 6,
+                "z": -1
+            },
+            {
+                "x": 6,
+                "z": 0
+            },
+            {
+                "x": 7,
+                "z": -2
+            },
+            {
+                "x": 7,
+                "z": -1
+            },
+            {
+                "x": 7,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 15,
+            "z": 28
+        },
+        "nw": {
+            "x": 100,
+            "z": -27
+        },
+        "se": {
+            "x": 114,
+            "z": 0
+        }
+    },
+    {
+        "id": "U7OQ8K",
+        "owner": "LukeNK",
+        "desc": "Wooden house",
+        "address": "SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 6,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 10,
+            "z": 7
+        },
+        "nw": {
+            "x": 100,
+            "z": 3
+        },
+        "se": {
+            "x": 109,
+            "z": 9
+        }
+    },
+    {
+        "id": "H1KN8M",
+        "owner": "UNCLAIMED",
+        "desc": "Market",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 6,
+                "z": 0
+            },
+            {
+                "x": 6,
+                "z": 1
+            }
+        ],
+        "dimensions": {
+            "x": 11,
+            "z": 7
+        },
+        "nw": {
+            "x": 100,
+            "z": 10
+        },
+        "se": {
+            "x": 110,
+            "z": 16
+        }
+    },
+    {
+        "id": "DISCOR",
+        "owner": "LukeNK",
+        "desc": "Discord office",
+        "address": "2023 ave",
+        "chunks": [
+            {
+                "x": 6,
+                "z": 3
+            },
+            {
+                "x": 6,
+                "z": 4
+            },
+            {
+                "x": 7,
+                "z": 3
+            },
+            {
+                "x": 7,
+                "z": 4
+            }
+        ],
+        "dimensions": {
+            "x": 15,
+            "z": 10
+        },
+        "nw": {
+            "x": 100,
+            "z": 56
+        },
+        "se": {
+            "x": 114,
+            "z": 65
+        }
     }
 ]

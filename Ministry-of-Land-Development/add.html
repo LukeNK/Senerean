@@ -61,10 +61,18 @@
             }
             if (EXIT) break;
         }
-        if (cur.id) REGISTRY.push(cur); // if there is current
-        let reg = 'let REGISTRY = ' + JSON.stringify(REGISTRY, null, '    ');
-        console.log(reg);
-        document.getElementById('out').innerHTML = reg;
-        if (EXIT) break;
+        if (cur.id) REGISTRY.push(cur); // if the curent build is available to add
+        // if there is exit request
+        if (EXIT) {
+            const reg = 'let REGISTRY = ' + JSON.stringify(REGISTRY, null, '    ');
+            // download file
+            const link = document.createElement("a");
+            const file = new Blob([reg], { type: 'text/plain' });
+            link.href = URL.createObjectURL(file);
+            link.download = "registry.js";
+            link.click();
+            URL.revokeObjectURL(link.href);
+            break;
+        };
     }
 </script>
