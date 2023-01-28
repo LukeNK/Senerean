@@ -646,5 +646,185 @@ let REGISTRY = [
             "x": 63,
             "z": 75
         }
+    },
+    {
+        "id": "SAFEIJ",
+        "owner": "Senerean",
+        "desc": "Safe injection building",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 1,
+                "z": -1
+            },
+            {
+                "x": 2,
+                "z": -1
+            }
+        ],
+        "dimensions": {
+            "x": 8,
+            "z": 8
+        },
+        "nw": {
+            "x": 31,
+            "z": -12
+        },
+        "se": {
+            "x": 38,
+            "z": -5
+        }
+    },
+    {
+        "id": "HIBATH",
+        "owner": "LukeNK",
+        "desc": "50,17",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 3,
+                "z": 1
+            }
+        ],
+        "dimensions": {
+            "x": 9,
+            "z": 9
+        },
+        "nw": {
+            "x": 50,
+            "z": 17
+        },
+        "se": {
+            "x": 58,
+            "z": 25
+        }
+    },
+    {
+        "id": "A4FH1D",
+        "owner": "LukeNK",
+        "desc": "Basic house",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 3,
+                "z": 1
+            },
+            {
+                "x": 4,
+                "z": 1
+            }
+        ],
+        "dimensions": {
+            "x": 7,
+            "z": 7
+        },
+        "nw": {
+            "x": 61,
+            "z": 17
+        },
+        "se": {
+            "x": 67,
+            "z": 23
+        }
+    },
+    {
+        "id": "NEWSCE",
+        "owner": "LukeNK",
+        "desc": "Boardcast centre with cell tower",
+        "address": "EMBASSY ave",
+        "chunks": [
+            {
+                "x": 1,
+                "z": 2
+            },
+            {
+                "x": 1,
+                "z": 3
+            },
+            {
+                "x": 2,
+                "z": 2
+            },
+            {
+                "x": 2,
+                "z": 3
+            }
+        ],
+        "dimensions": {
+            "x": 20,
+            "z": 13
+        },
+        "nw": {
+            "x": 26,
+            "z": 38
+        },
+        "se": {
+            "x": 45,
+            "z": 50
+        }
+    },
+    {
+        "id": "INTNEG",
+        "owner": "Senerean",
+        "desc": "International negotiation hall",
+        "address": "EMBASSY ave",
+        "chunks": [
+            {
+                "x": 1,
+                "z": 3
+            },
+            {
+                "x": 1,
+                "z": 4
+            },
+            {
+                "x": 2,
+                "z": 3
+            },
+            {
+                "x": 2,
+                "z": 4
+            }
+        ],
+        "dimensions": {
+            "x": 16,
+            "z": 15
+        },
+        "nw": {
+            "x": 31,
+            "z": 61
+        },
+        "se": {
+            "x": 46,
+            "z": 75
+        }
+    },
+    {
+        "id": "HRTRIB",
+        "owner": "Senerean",
+        "desc": "Human Rights tribunal",
+        "address": "2023 ave",
+        "chunks": [
+            {
+                "x": 2,
+                "z": 2
+            },
+            {
+                "x": 3,
+                "z": 2
+            }
+        ],
+        "dimensions": {
+            "x": 17,
+            "z": 12
+        },
+        "nw": {
+            "x": 46,
+            "z": 34
+        },
+        "se": {
+            "x": 62,
+            "z": 45
+        }
     }
 ]
