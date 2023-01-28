@@ -1382,5 +1382,240 @@ let REGISTRY = [
             "x": 114,
             "z": 65
         }
+    },
+    {
+        "id": "ENVCOL",
+        "owner": "Senerean",
+        "desc": "Environment management college",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 7,
+                "z": -1
+            },
+            {
+                "x": 7,
+                "z": 0
+            },
+            {
+                "x": 8,
+                "z": -1
+            },
+            {
+                "x": 8,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 15,
+            "z": 19
+        },
+        "nw": {
+            "x": 114,
+            "z": -5
+        },
+        "se": {
+            "x": 128,
+            "z": 13
+        }
+    },
+    {
+        "id": "SAKURA",
+        "owner": "Omnomnom",
+        "desc": "Sakura tree with camping site",
+        "address": "UPHILL st",
+        "chunks": [
+            {
+                "x": 7,
+                "z": -1
+            },
+            {
+                "x": 7,
+                "z": 0
+            },
+            {
+                "x": 8,
+                "z": -1
+            },
+            {
+                "x": 8,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 17,
+            "z": 15
+        },
+        "nw": {
+            "x": 126,
+            "z": -14
+        },
+        "se": {
+            "x": 142,
+            "z": 0
+        }
+    },
+    {
+        "id": "G4HN5A",
+        "owner": "LukeNK",
+        "desc": "Medival style house",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 8,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 10,
+            "z": 10
+        },
+        "nw": {
+            "x": 129,
+            "z": 5
+        },
+        "se": {
+            "x": 138,
+            "z": 14
+        }
+    },
+    {
+        "id": "136017",
+        "owner": "Senerean",
+        "desc": "Metro station",
+        "address": "VALLEY ave",
+        "chunks": [],
+        "dimensions": {
+            "x": -135868,
+            "z": null
+        },
+        "nw": {
+            "x": 136017,
+            "z": null
+        },
+        "se": {
+            "x": 148,
+            "z": 24
+        }
+    },
+    {
+        "id": "VALLIB",
+        "owner": "Senerean",
+        "desc": "Library",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 8,
+                "z": -1
+            },
+            {
+                "x": 8,
+                "z": 0
+            },
+            {
+                "x": 9,
+                "z": -1
+            },
+            {
+                "x": 9,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 18,
+            "z": 18
+        },
+        "nw": {
+            "x": 142,
+            "z": -4
+        },
+        "se": {
+            "x": 159,
+            "z": 13
+        }
+    },
+    {
+        "id": "HMRMED",
+        "owner": "Senerean",
+        "desc": "Human Rights mediation hall",
+        "address": "UPHILL st",
+        "chunks": [
+            {
+                "x": 9,
+                "z": 1
+            },
+            {
+                "x": 9,
+                "z": 2
+            }
+        ],
+        "dimensions": {
+            "x": 9,
+            "z": 17
+        },
+        "nw": {
+            "x": 149,
+            "z": 17
+        },
+        "se": {
+            "x": 157,
+            "z": 33
+        }
+    },
+    {
+        "id": "H4KO3Q",
+        "owner": "UNCLAIMED",
+        "desc": "A giant jar",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 10,
+                "z": 0
+            },
+            {
+                "x": 11,
+                "z": 0
+            }
+        ],
+        "dimensions": {
+            "x": 11,
+            "z": 10
+        },
+        "nw": {
+            "x": 168,
+            "z": 4
+        },
+        "se": {
+            "x": 178,
+            "z": 13
+        }
+    },
+    {
+        "id": "PENGUI",
+        "owner": "Senerean",
+        "desc": "Penguin statue with Senrean flag",
+        "address": "S SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 2,
+                "z": -2
+            },
+            {
+                "x": 3,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 15,
+            "z": 15
+        },
+        "nw": {
+            "x": 43,
+            "z": -32
+        },
+        "se": {
+            "x": 57,
+            "z": -18
+        }
     }
 ]
