@@ -1172,8 +1172,8 @@ let REGISTRY = [
         }
     },
     {
-        "id": "G5RT2W",
-        "owner": "UNCLAIMED",
+        "id": "777777",
+        "owner": "Omnomnom",
         "desc": "Food store",
         "address": "VALLEY ave",
         "chunks": [
@@ -1420,7 +1420,7 @@ let REGISTRY = [
         }
     },
     {
-        "id": "SAKURA",
+        "id": "999999",
         "owner": "Omnomnom",
         "desc": "Sakura tree with camping site",
         "address": "UPHILL st",
@@ -1544,8 +1544,8 @@ let REGISTRY = [
         }
     },
     {
-        "id": "H4KO3Q",
-        "owner": "UNCLAIMED",
+        "id": "KOMJAR",
+        "owner": "Omnomnom",
         "desc": "A giant jar",
         "address": "VALLEY ave",
         "chunks": [
@@ -1624,6 +1624,30 @@ let REGISTRY = [
         },
         "se": {
             "x": 148,
+            "z": 24
+        }
+    },
+    {
+        "id": "ALLAHH",
+        "owner": "Omnomnom",
+        "desc": "Decorative tree",
+        "address": "2023 ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": 1
+            }
+        ],
+        "dimensions": {
+            "x": 7,
+            "z": 8
+        },
+        "nw": {
+            "x": 84,
+            "z": 17
+        },
+        "se": {
+            "x": 90,
             "z": 24
         }
     }
