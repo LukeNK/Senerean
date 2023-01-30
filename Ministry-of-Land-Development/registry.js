@@ -1650,5 +1650,65 @@ let REGISTRY = [
             "x": 90,
             "z": 24
         }
+    },
+    {
+        "id": "B7DM7K",
+        "owner": "Senerean",
+        "desc": "Fire department will call center",
+        "address": "UPHILL st",
+        "chunks": [
+            {
+                "x": -1,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 10,
+            "z": 15
+        },
+        "nw": {
+            "x": -12,
+            "z": -32
+        },
+        "se": {
+            "x": -3,
+            "z": -18
+        }
+    },
+    {
+        "id": "H0CFZL",
+        "owner": "Senerean",
+        "desc": "Ministry of Land Development",
+        "address": "UPHILL st",
+        "chunks": [
+            {
+                "x": 8,
+                "z": 2
+            },
+            {
+                "x": 8,
+                "z": 3
+            },
+            {
+                "x": 9,
+                "z": 2
+            },
+            {
+                "x": 9,
+                "z": 3
+            }
+        ],
+        "dimensions": {
+            "x": 17,
+            "z": 14
+        },
+        "nw": {
+            "x": 140,
+            "z": 35
+        },
+        "se": {
+            "x": 156,
+            "z": 48
+        }
     }
 ]
