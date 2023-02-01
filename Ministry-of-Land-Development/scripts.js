@@ -27,9 +27,9 @@ ${builds.join(', ')}`;
 }
 
 function idSearch(query) {
-    // search for ID
-    let ids = [];
+    // search for ID, return all matching builds
+    let builds = [];
     for (const build of REGISTRY)
-        if (build.id.includes(query)) ids.push(build.id);
-    return ids;
+        if (build.id.includes(query)) builds.push(build);
+    return builds;
 }

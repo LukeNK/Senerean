@@ -3,6 +3,9 @@
     --color-fg: #000000;
     --color-dark-theme: #000080;
     --color-bright-theme: #00ff00;
+    --font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;
+    --font-size: 19px;
+
 }
 
 /* Individual element */
@@ -11,31 +14,54 @@ a {
     color: var(--color-fg);
 }
 
-/* Page elements */
-body {
-    margin: 0;
-    font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;;
+input {
+    border: 1px solid var(--color-dark-theme);
+    border-radius: 0;
+    outline: 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
 }
 
-/* Header */
+/* Page elements */
+html * {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-bg);
+}
+
 header {
     background-color:  var(--color-bg);
 }
+
 #navTop {
     /* Top of navbar */
     padding: 1rem 5rem;
     display: flex;
 }
-#navTop img {
+#navTop a {
     height: 4rem;
 }
+#navTop a img {
+    height: 4rem;
+    margin-right: 1rem;
+}
+header hr {
+    margin-top: 0;
+}
+
 nav {
     flex-grow: 1;
 }
+
 #curPage {
     margin-left: 1rem;
     text-align: right;
 }
-header hr {
-    margin-top: 0;
+
+main {
+    padding: 0 1rem;
 }

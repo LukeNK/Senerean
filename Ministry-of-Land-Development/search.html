@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head html-src="../website/head.html">
+    <style>
+        #searchBar {
+            margin: 0 1rem;
+        }
+        .build b {
+            color: var(--color-dark-theme);
+        }
+    </style>
+</head>
+<body>
+    <header html-src="../website/header.html"></header>
+    <main>
+        <label>
+            Search using ID
+            <input id="searchBar" oninput="runSearch()">
+        </label>
+        <div id="result"></div>
+    </main>
+</body>
+<script src="../website/scripts.js"></script>
+<script src="./registry.js"></script>
+<script src="./scripts.js"></script>
+<script>
+    function runSearch() {
+        let builds = idSearch(document.getElementById('searchBar').value.toUpperCase());
+        let result = document.getElementById('result');
+        result.innerHTML = '';
+        // display build information
+        for (const build of builds) {
+            let res = ''; // result
+            for (const prop in build) {
+                if (prop == 'chunks') res += `${build[prop].length} chunks<br>`;
+                else if (typeof(build[prop]) =="object") 'pass';
+                else if (prop != 'id') res += `${prop}: ${build[prop]}<br>`;
+            }
+            result.innerHTML += 
+`<div class="build">
+    <b>${build.id}</b>
+    ${res}
+</div>`;
+        }
+        
+    }
+</script>

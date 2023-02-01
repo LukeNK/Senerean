@@ -17,5 +17,7 @@ function compLoaded() {
     if (COMP_LOAD != 0) return; // if not done loading
 
     // all components loaded
-    document.getElementById('curPage').innerHTML = document.location.pathname;
+    // Get current page division name
+    let curPage = document.location.pathname.split('/').at(-2).replace(new RegExp('-', 'g'), ' ')
+    document.getElementById('curPage').innerHTML = curPage;
 }
