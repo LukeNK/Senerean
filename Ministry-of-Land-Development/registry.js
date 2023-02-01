@@ -1710,5 +1710,29 @@ let REGISTRY = [
             "x": 156,
             "z": 48
         }
+    },
+    {
+        "id": "BQ3WAX",
+        "owner": "LukeNK",
+        "desc": "Wooden house with two separate room",
+        "address": "TURTLE ave",
+        "chunks": [
+            {
+                "x": 9,
+                "z": 3
+            }
+        ],
+        "dimensions": {
+            "x": 11,
+            "z": 9
+        },
+        "nw": {
+            "x": 146,
+            "z": 48
+        },
+        "se": {
+            "x": 156,
+            "z": 56
+        }
     }
 ]
