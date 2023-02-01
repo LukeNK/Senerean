@@ -3,7 +3,6 @@ function taxReport(owner) {
     // ~~use to calculate tax~~
     const fixRate = 1, // basic fixed tax rate;
         taxRate = 1.09; // how much Sener/block (sorry flat cus I am lazy)
-
         
     let area = 0, // total owned area
         builds = []; // list of all builds
@@ -25,4 +24,12 @@ List of all builds:
 ${builds.join(', ')}`;
 
     return report;
+}
+
+function idSearch(query) {
+    // search for ID
+    let ids = [];
+    for (const build of REGISTRY)
+        if (build.id.includes(query)) ids.push(build.id);
+    return ids;
 }

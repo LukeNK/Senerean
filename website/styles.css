@@ -1,0 +1,41 @@
+:root {
+    --color-bg: #ffffff;
+    --color-fg: #000000;
+    --color-dark-theme: #000080;
+    --color-bright-theme: #00ff00;
+}
+
+/* Individual element */
+a {
+    text-decoration: none;
+    color: var(--color-fg);
+}
+
+/* Page elements */
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;;
+}
+
+/* Header */
+header {
+    background-color:  var(--color-bg);
+}
+#navTop {
+    /* Top of navbar */
+    padding: 1rem 5rem;
+    display: flex;
+}
+#navTop img {
+    height: 4rem;
+}
+nav {
+    flex-grow: 1;
+}
+#curPage {
+    margin-left: 1rem;
+    text-align: right;
+}
+header hr {
+    margin-top: 0;
+}
