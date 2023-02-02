@@ -5,23 +5,26 @@ function taxReport(owner) {
         taxRate = 1.09; // how much Sener/block (sorry flat cus I am lazy)
         
     let area = 0, // total owned area
-        builds = []; // list of all builds
+        builds = [], // list of all builds
+        totalBuilds = 0; // total number of builds
     for (let build of REGISTRY) 
         if (build.owner == owner) {
-            builds.push(build.id);
             // if there is dimension (to supports legacy database)
-            if (build.dimensions)
+            if (build.dimensions) {
+                builds.push(build.id);
                 area += build.dimensions.x * build.dimensions.z;
+            }
+            totalBuilds++
         }
 
     let report = 
 `# ${owner}'s land development tax report
 # ${new Date().toLocaleDateString()}
 Total number of builds: ${builds.length}
-Total area covered: ${area}
-Total tax due: ${fixRate + area*taxRate} Seners
-List of all builds:
-${builds.join(', ')}`;
+Total area covered: ${area} blocks^2
+Total tax due: ${(fixRate + area*taxRate).toFixed(2)} Seners
+List of all builds that are taxable (${builds.length}/${totalBuilds}):
+${builds.join(', ')};`
 
     return report;
 }
