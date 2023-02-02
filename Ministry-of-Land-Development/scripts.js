@@ -20,11 +20,11 @@ function taxReport(owner) {
     let report = 
 `# ${owner}'s land development tax report
 # ${new Date().toLocaleDateString()}
-Total number of builds: ${builds.length}
+Total number of taxable builds: ${builds.length}
 Total area covered: ${area} blocks^2
 Total tax due: ${(fixRate + area*taxRate).toFixed(2)} Seners
 List of all builds that are taxable (${builds.length}/${totalBuilds}):
-${builds.join(', ')};`
+${builds.join(', ')}`
 
     return report;
 }
