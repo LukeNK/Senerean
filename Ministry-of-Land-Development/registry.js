@@ -1734,5 +1734,69 @@ let REGISTRY = [
             "x": 156,
             "z": 56
         }
+    },
+    {
+        "id": "9HW0OR",
+        "owner": "Senerean",
+        "desc": "Emergency Coastal Response team",
+        "address": "UPHILL st",
+        "chunks": [
+            {
+                "x": 10,
+                "z": 2
+            },
+            {
+                "x": 10,
+                "z": 3
+            },
+            {
+                "x": 11,
+                "z": 2
+            },
+            {
+                "x": 11,
+                "z": 3
+            }
+        ],
+        "dimensions": {
+            "x": 13,
+            "z": 16
+        },
+        "nw": {
+            "x": 164,
+            "z": 36
+        },
+        "se": {
+            "x": 176,
+            "z": 51
+        }
+    },
+    {
+        "id": "WLBD43",
+        "owner": "LukeNK",
+        "desc": "Wooden house",
+        "address": "TURTLE ave",
+        "chunks": [
+            {
+                "x": 8,
+                "z": 3
+            },
+            {
+                "x": 9,
+                "z": 3
+            }
+        ],
+        "dimensions": {
+            "x": 7,
+            "z": 8
+        },
+        "nw": {
+            "x": 139,
+            "z": 49
+        },
+        "se": {
+            "x": 145,
+            "z": 56
+        }
     }
 ]
