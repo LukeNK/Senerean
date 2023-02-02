@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <head html-src="../website/head.html"></head>
 <style>
-    code {
-        color: white;
-        white-space: pre-wrap;
+    form {
+        padding: auto 1rem;
+    }
+    form input {
+        margin: auto 1rem;
+        width: 80%;
     }
 </style>
-<body style="background-color: #222;">
+<body>
     <header html-src="../website/header.html"></header>
-    <code id="out">Sorry for such manual tedious way</code>
+    <form onsubmit="return false">
+        <label>
+            <p>ID of the build, type a dot "." to auto-generate (think it as number plate for builds)</p>
+            <input id="id" type="text" maxlength="6">
+        </label>
+        <label>
+            <p>The name of the current owner</p>
+            <input id="owner" type="text">
+        </label>
+        <label>
+            <p>Breif summary of the build</p>
+            <input id="desc" type="text">
+        </label>
+        <label>
+            <p>Road base on main entrance, not include house number (you don't have it anyways)</p>
+            <input id="address" type="text">
+        </label>
+        <label>
+            <p>North west-most block</p>
+            <input id="nw" type="text">
+        </label>
+        <label>
+            <p>South east-most block</p>
+            <input id="se" type="text">
+        </label>
+        <button onclick="add()">Print registry</button>
+        <button onclick="add(1)">Download registry</button>
+    </form>
+    <textarea id="out">Sorry for such manual tedious way</textarea>
 </body>
 <script src="../website/scripts.js"></script>
 <script src="./scripts.js"></script>
 <script src="./template.js"></script>
 <script src="./registry.js"></script>
 <script>
-    let EXIT = false; // exit all loop
-    while (true) {
+    function add(download) {
         let cur = {...TEMPLATE};
         cur.chunks = []; // change chunk to array instead of hint string
         for (const l1 in TEMPLATE) {
             if (l1 == 'chunks') {
                 // get cord and split
-                let l = prompt('North West-most block coord');
-                let r = prompt('South East-most block coord');
+                let l = document.getElementById('nw').value;
+                let r = document.getElementById('se').value;
                 l = l.replace(' ', '').split(',');
                 r = r.replace(' ', '').split(',');
                 // convert to number
@@ -45,12 +75,10 @@
                     for (let z = l[1]; z <= r[1]; z++)
                         cur.chunks.push({ x: x, z: z }); // push chunk info
             } else
-                cur[l1] = prompt(TEMPLATE[l1]); // prompt question
+                cur[l1] = document.getElementById(l1).value;
 
             if (l1 == 'id') {
-                // check if input ID is empty to exit
-                if (!cur.id) EXIT = true;
-                else if (cur.id == '.') {
+                if (cur.id == '.') {
                     // if user ask for random-generated
                     cur.id = '';
                     for (let _ = 0; _ < 6; _++) 
@@ -61,33 +89,26 @@
                 cur.id = cur.id.toUpperCase();
                 // check id conflict
                 for (const build of REGISTRY)
-                    if (cur.id == build.id) {
-                        EXIT = true; 
-                        alert('Conflict ID ' + cur.id);
-                    }
+                    if (cur.id == build.id) alert('Conflict ID ' + cur.id);
             } else if (l1 == 'address') {
                 cur[l1] = cur[l1].toUpperCase();
                 // replace road type capitalization
                 for (let type of ROAD_TYPE)
                     cur[l1] = cur[l1].replace(' ' + type.toUpperCase(), ' ' + type);
             }
-            if (EXIT) break;
         }
         if (cur.id) REGISTRY.push(cur); // if the curent build is available to add
-        // if there is exit request
-        if (EXIT) {
-            const reg = 'let REGISTRY = ' + JSON.stringify(REGISTRY, null, '    ');
-            if (confirm('Do you want to download the registry?')) {
-                // create registry as a file then download it
-                const link = document.createElement("a");
-                const file = new Blob([reg], { type: 'text/plain' });
-                link.href = URL.createObjectURL(file);
-                link.download = "registry.js";
-                link.click();
-                URL.revokeObjectURL(link.href);
-            } else
-                document.getElementById('out').innerHTML = reg; // just in case of misclick
-            break; // either way, exit the loop
-        };
+
+        const reg = 'let REGISTRY = ' + JSON.stringify(REGISTRY, null, '    ');
+        if (download) {
+            // create registry as a file then download it
+            const link = document.createElement("a");
+            const file = new Blob([reg], { type: 'text/plain' });
+            link.href = URL.createObjectURL(file);
+            link.download = "registry.js";
+            link.click();
+            URL.revokeObjectURL(link.href);
+        } else
+            document.getElementById('out').innerHTML = reg; // just in case of misclick
     }
 </script>
