@@ -1798,5 +1798,41 @@ let REGISTRY = [
             "x": 145,
             "z": 56
         }
+    },
+    {
+        "id": "0KBMCQ",
+        "owner": "LukeNK",
+        "desc": "Post office with train loading bay",
+        "address": "UPHILL st",
+        "chunks": [
+            {
+                "x": 8,
+                "z": 3
+            },
+            {
+                "x": 8,
+                "z": 4
+            },
+            {
+                "x": 9,
+                "z": 3
+            },
+            {
+                "x": 9,
+                "z": 4
+            }
+        ],
+        "dimensions": {
+            "x": 19,
+            "z": 13
+        },
+        "nw": {
+            "x": 138,
+            "z": 60
+        },
+        "se": {
+            "x": 156,
+            "z": 72
+        }
     }
 ]
