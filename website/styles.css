@@ -82,6 +82,17 @@ main {
     padding: 0 1rem;
 }
 
+footer {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--color-fg);
+    color: var(--color-bg);
+}
+
+footer img {
+    height: 3rem;
+}
+
 /* Classes */
 .linkList {
     display: flex;
