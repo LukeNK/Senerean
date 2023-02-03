@@ -5,7 +5,12 @@
     --color-bright-theme: #00ff00;
     --font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;
     --font-size: 19px;
+}
 
+.darkTheme {
+    /* Add to <body> to change theme */
+    --color-bg: #222222;
+    --color-fg: #ffffff;
 }
 
 /* Individual element */
@@ -14,16 +19,26 @@ a {
     color: var(--color-fg);
 }
 
+button {
+    border-radius: 0;
+    border: 0px solid var(--color-dark-theme);
+    background-color: var(--color-bright-theme);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
 input {
     border: 1px solid var(--color-dark-theme);
     border-radius: 0;
     outline: 0;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
     font-family: var(--font-family);
     font-size: var(--font-size);
 }
 
 /* Page elements */
-html * {
+html {
     font-family: var(--font-family);
     font-size: var(--font-size);
 }
@@ -31,10 +46,11 @@ html * {
 body {
     margin: 0;
     background-color: var(--color-bg);
+    color: var(--color-fg);
 }
 
 header {
-    background-color:  var(--color-bg);
+    background-color: var(--color-bg);
 }
 
 #navTop {
@@ -64,4 +80,17 @@ nav {
 
 main {
     padding: 0 1rem;
+}
+
+/* Classes */
+.linkList {
+    display: flex;
+}
+.linkList div {
+    flex-grow: 1;
+}
+.linkList div a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--color-dark-theme);
 }

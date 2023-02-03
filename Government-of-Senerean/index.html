@@ -1,9 +1,56 @@
 <!DOCTYPE html>
-<head html-src="../website/head.html"></head>
+<head html-src="../website/head.html">
+    <style>
+        #welcome {
+            position: relative;
+            width: 100%;
+        }
+        #welcome img {
+            width: 100%;
+        }
+        #welcome h1 {
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            padding: 1rem 1rem;
+            background-color: #000000A0;
+            color: var(--color-bg);
+        }
+
+        #freqLinks {
+            display: flex;
+        }
+        #freqLinks a {
+            flex-grow: 1;
+            text-align: center;
+            color: var(--color-dark-theme);
+        }
+    </style>
+</head>
 <body>
     <header html-src="../website/header.html"></header>
+    <div id="welcome">
+        <img src="../website/welcome.png">
+        <h1>Welcome to the offical website of<br>Government of Senerean</h1>
+    </div>
     <main>
-        
+        <!-- <section>
+            <h1>Frequently visit links</h1>
+            <div id="freqLinks">
+                <a href="../Ministry-of-Land-Development/search.html">Land development look up</a>
+                <a href="../Ministry-of-Land-Development/add.html">Apply for land development</a>
+            </div>
+        </section> -->
+        <section class="linkList">
+            <div>
+                <a href="../Ministry-of-Land-Development/search.html">Land development look up</a>
+                <p>Look up land development ID.</p>
+            </div>
+            <div>
+                <a href="../Ministry-of-Land-Development/add.html">Apply for land development</a>
+                <p>Proceadure to apply, when to apply, and where to apply.</p>
+            </div>
+        </section>
     </main>
 </body>
 <script src="../website/scripts.js"></script>

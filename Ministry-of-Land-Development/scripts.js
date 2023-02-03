@@ -39,7 +39,8 @@ function idSearch(query) {
 function landTax(area) {
     // function to calculate tax PER BUILD
     // please use desmos before changing values here
-    const maxTax = 0.65, // highest tax percent over value
+    const fixedRate = 100, // fixed rate for every builds 
+        maxTax = 0.65, // highest tax percent over value
         maxBracket = 200, // block^2 where it is maxTax
         taxExp = 4, // tax exponent that being raised to
         valPerBlock = 15; // seners per block
@@ -48,5 +49,5 @@ function landTax(area) {
 
     let bracket = min(area / maxBracket, 1); // calculate current bracket
     let taxPercent = maxTax * pow(bracket, taxExp) // get percent of bracket
-    return (area * valPerBlock * taxPercent);
+    return fixedRate + area * valPerBlock * taxPercent;
 }
