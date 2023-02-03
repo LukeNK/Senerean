@@ -20,4 +20,10 @@ function compLoaded() {
     // Get current page division name
     let curPage = document.location.pathname.split('/').at(-2).replace(new RegExp('-', 'g'), ' ')
     document.getElementById('curPage').innerHTML = curPage;
+
+    // page title if there is no title
+    if (!document.getElementsByTagName('title').length) {
+        document.getElementsByTagName('head')[0].innerHTML += 
+            `<title>${curPage}</title>`
+    }
 }
