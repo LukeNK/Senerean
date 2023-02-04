@@ -273,7 +273,7 @@ let REGISTRY = [
     },
     {
         "id": "JAREMB",
-        "owner": "The Principality of Ballinngs",
+        "owner": "Ballinngs",
         "desc": "Embassy for The Principality of Ballinngs",
         "address": "PEACE ave",
         "chunks": [
@@ -373,7 +373,7 @@ let REGISTRY = [
     },
     {
         "id": "696635",
-        "owner": "The Republic of Wilhelma and the Flanfairs",
+        "owner": "Wilhelma and the Flanfairs",
         "desc": "The Republic of Wilhelma and the Flanfairs embassy",
         "address": "2023 ave",
         "chunks": [
@@ -1833,6 +1833,70 @@ let REGISTRY = [
         "se": {
             "x": 156,
             "z": 72
+        }
+    },
+    {
+        "id": "Q9O005",
+        "owner": "Senerean",
+        "desc": "Railway switch access",
+        "address": "2023 ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": 2
+            },
+            {
+                "x": 5,
+                "z": 3
+            }
+        ],
+        "dimensions": {
+            "x": 5,
+            "z": 8
+        },
+        "nw": {
+            "x": 82,
+            "z": 44
+        },
+        "se": {
+            "x": 86,
+            "z": 51
+        }
+    },
+    {
+        "id": "819IFJ",
+        "owner": "LukeNK",
+        "desc": "Bank of Nuvak",
+        "address": "TURTLE ave",
+        "chunks": [
+            {
+                "x": 7,
+                "z": 3
+            },
+            {
+                "x": 7,
+                "z": 4
+            },
+            {
+                "x": 8,
+                "z": 3
+            },
+            {
+                "x": 8,
+                "z": 4
+            }
+        ],
+        "dimensions": {
+            "x": 13,
+            "z": 11
+        },
+        "nw": {
+            "x": 126,
+            "z": 59
+        },
+        "se": {
+            "x": 138,
+            "z": 69
         }
     }
 ]
