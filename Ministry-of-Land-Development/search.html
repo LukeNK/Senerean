@@ -27,6 +27,8 @@
         let builds = idSearch(document.getElementById('searchBar').value.toUpperCase());
         let result = document.getElementById('result');
         result.innerHTML = '';
+        // reverse builds
+        builds.reverse()
         // display build information
         for (const build of builds) {
             let res = ''; // result
