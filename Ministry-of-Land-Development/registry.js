@@ -1898,5 +1898,33 @@ let REGISTRY = [
             "x": 138,
             "z": 69
         }
+    },
+    {
+        "id": "019049",
+        "owner": "Senerean",
+        "desc": "Metro station",
+        "address": "S SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 1,
+                "z": -3
+            },
+            {
+                "x": 1,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 9,
+            "z": 13
+        },
+        "nw": {
+            "x": 19,
+            "z": -40
+        },
+        "se": {
+            "x": 27,
+            "z": -28
+        }
     }
 ]
