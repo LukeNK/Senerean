@@ -99,6 +99,7 @@ footer img {
 }
 .linkList div {
     flex-grow: 1;
+    flex-basis: 0;
 }
 .linkList div a {
     font-weight: bold;
