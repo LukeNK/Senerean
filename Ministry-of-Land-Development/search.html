@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <head html-src="../website/head.html">
     <style>
+        code {
+            background-color: #333;
+            color: crimson;
+        }
+
         #searchBar {
             margin: 0 1rem;
         }
+
         .build b {
             color: var(--color-dark-theme);
         }
@@ -12,19 +18,21 @@
 <body>
     <header html-src="../website/header.html"></header>
     <main>
+        <p>Search using name, description, exact match of the owner's name, or <code>[x],[z]</code> format for coordinate</p>
         <label>
-            Search using ID
+            Search
             <input id="searchBar" oninput="runSearch()">
         </label>
         <div id="result"></div>
     </main>
+    <footer html-src="../website/footer.html"></footer>
 </body>
 <script src="../website/scripts.js"></script>
 <script src="./registry.js"></script>
 <script src="./scripts.js"></script>
 <script>
     function runSearch() {
-        let builds = idSearch(document.getElementById('searchBar').value.toUpperCase());
+        let builds = buildSearch(document.getElementById('searchBar').value);
         let result = document.getElementById('result');
         result.innerHTML = '';
         // reverse builds
@@ -38,11 +46,11 @@
                 else if (prop != 'id') res += `${prop}: ${build[prop]}<br>`;
             }
             result.innerHTML += 
-`<div class="build">
-    <b>${build.id}</b>
-    ${res}
-</div>`;
+                `<div class="build">
+                    <b>${build.id}</b>
+                    ${res}
+                </div>`;
         }
-        
     }
+    runSearch(''); // run an empty one before to get all results
 </script>
