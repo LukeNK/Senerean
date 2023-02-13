@@ -54,8 +54,11 @@ function buildSearch(query) {
     } else // normal phrase search
         for (const build of REGISTRY)
             if (
-                build.id.includes(query.toUpperCase())
-                || build.desc.toUpperCase().includes(query.toUpperCase())
+                [
+                    build.id.toUpperCase(),
+                    build.desc.toUpperCase(),
+                    build.address.toUpperCase()
+                ].include(includes(query.toUpperCase())) // short hand include
                 || build.owner.toUpperCase() == query.toUpperCase()
             ) builds.push(build);
     return builds;
