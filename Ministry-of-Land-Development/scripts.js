@@ -38,6 +38,7 @@ Total  = ${totalTax.toLocaleString('en-CA',
 function buildSearch(query) {
     // search for build, return all matching builds
     let builds = [];
+    query = query.toUpperCase(); // clean up
     if (query.includes(',')) {
         // if there is a comma, that mean user is searching for cord
         query = query.split(',');
@@ -55,11 +56,11 @@ function buildSearch(query) {
         for (const build of REGISTRY)
             if (
                 [
-                    build.id.toUpperCase(),
+                    build.id,
                     build.desc.toUpperCase(),
                     build.address.toUpperCase()
-                ].include(includes(query.toUpperCase())) // short hand include
-                || build.owner.toUpperCase() == query.toUpperCase()
+                ].find(e => e.includes(query)) // short hand include
+                || build.owner.toUpperCase() == query
             ) builds.push(build);
     return builds;
 }

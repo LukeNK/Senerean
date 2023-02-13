@@ -32,7 +32,12 @@
 <script src="./scripts.js"></script>
 <script>
     function runSearch() {
-        let builds = buildSearch(document.getElementById('searchBar').value);
+        // solve empty search result
+        document.getElementById('searchBar').value = 
+            document.getElementById('searchBar').value
+            || window.location.hash.substring(1);
+        // get builds
+        let builds = buildSearch( document.getElementById('searchBar').value );
         let result = document.getElementById('result');
         result.innerHTML = '';
         // reverse builds
@@ -52,5 +57,5 @@
                 </div>`;
         }
     }
-    runSearch(''); // run an empty one before to get all results
+    runSearch(); // run an empty one before to get all results
 </script>

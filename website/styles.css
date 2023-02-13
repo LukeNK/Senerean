@@ -46,12 +46,19 @@ html {
 
 body {
     margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     background-color: var(--color-bg);
     color: var(--color-fg);
 }
 
 header {
     background-color: var(--color-bg);
+}
+
+main {
+    flex: 1;
 }
 
 #navTop {
