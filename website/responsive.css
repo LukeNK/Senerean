@@ -1,6 +1,6 @@
 /* For responsive feature */
 @media (max-width: 700px) {
-    #navTop p, #navTop nav {
+    #navTop > p {
         display: none;
     }
     #navTop {
