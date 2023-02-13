@@ -1926,5 +1926,169 @@ let REGISTRY = [
             "x": 27,
             "z": -28
         }
+    },
+    {
+        "id": "SCECBB",
+        "owner": "LukeNK",
+        "desc": "A wooden townhouse",
+        "address": "SUGAR SHORE",
+        "chunks": [
+            {
+                "x": 10,
+                "z": 3
+            },
+            {
+                "x": 10,
+                "z": 4
+            },
+            {
+                "x": 11,
+                "z": 3
+            },
+            {
+                "x": 11,
+                "z": 4
+            }
+        ],
+        "dimensions": {
+            "x": 13,
+            "z": 14
+        },
+        "nw": {
+            "x": 165,
+            "z": 53
+        },
+        "se": {
+            "x": 177,
+            "z": 66
+        }
+    },
+    {
+        "id": "SC7EJA",
+        "owner": "LukeNK",
+        "desc": "A wooden townhouse",
+        "address": "SUGAR SHORE ave",
+        "chunks": [
+            {
+                "x": 11,
+                "z": 3
+            },
+            {
+                "x": 11,
+                "z": 4
+            },
+            {
+                "x": 12,
+                "z": 3
+            },
+            {
+                "x": 12,
+                "z": 4
+            }
+        ],
+        "dimensions": {
+            "x": 13,
+            "z": 13
+        },
+        "nw": {
+            "x": 180,
+            "z": 54
+        },
+        "se": {
+            "x": 192,
+            "z": 66
+        }
+    },
+    {
+        "id": "ODLW8X",
+        "owner": "LukeNK",
+        "desc": "A wooden townhouse",
+        "address": "2023 ave",
+        "chunks": [
+            {
+                "x": 6,
+                "z": 4
+            },
+            {
+                "x": 6,
+                "z": 5
+            }
+        ],
+        "dimensions": {
+            "x": 8,
+            "z": 13
+        },
+        "nw": {
+            "x": 100,
+            "z": 69
+        },
+        "se": {
+            "x": 107,
+            "z": 81
+        }
+    },
+    {
+        "id": "9WW4IR",
+        "owner": "LukeNK",
+        "desc": "A wooden townhouse",
+        "address": "EMBASSY ave",
+        "chunks": [
+            {
+                "x": 6,
+                "z": 4
+            },
+            {
+                "x": 6,
+                "z": 5
+            },
+            {
+                "x": 7,
+                "z": 4
+            },
+            {
+                "x": 7,
+                "z": 5
+            }
+        ],
+        "dimensions": {
+            "x": 7,
+            "z": 13
+        },
+        "nw": {
+            "x": 108,
+            "z": 68
+        },
+        "se": {
+            "x": 114,
+            "z": 80
+        }
+    },
+    {
+        "id": "RW3MWJ",
+        "owner": "LukeNK",
+        "desc": "Bricks townhouse",
+        "address": "2023 ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": 4
+            },
+            {
+                "x": 5,
+                "z": 5
+            }
+        ],
+        "dimensions": {
+            "x": 11,
+            "z": 11
+        },
+        "nw": {
+            "x": 84,
+            "z": 76
+        },
+        "se": {
+            "x": 94,
+            "z": 86
+        }
     }
 ]
