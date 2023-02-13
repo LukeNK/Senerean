@@ -678,7 +678,7 @@ let REGISTRY = [
     {
         "id": "HIBATH",
         "owner": "LukeNK",
-        "desc": "50,17",
+        "desc": "All-gender bath house",
         "address": "VALLEY ave",
         "chunks": [
             {
