@@ -90,7 +90,7 @@
                 cur.id = cur.id.toUpperCase();
                 // check id conflict
                 for (const build of REGISTRY)
-                    if (cur.id == build.id) alert('Conflict ID ' + cur.id);
+                    if (cur.id == build.id) return alert('Conflict ID ' + cur.id);
             } else if (l1 == 'address') {
                 cur[l1] = cur[l1].toUpperCase();
                 // replace road type capitalization

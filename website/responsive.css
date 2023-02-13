@@ -1,0 +1,23 @@
+/* For responsive feature */
+@media (max-width: 700px) {
+    #navTop p, #navTop nav {
+        display: none;
+    }
+    #navTop {
+        display: flex;
+        justify-content: center;
+    }
+    #navTop a {
+        text-align: center;
+    }
+    #navTop a img {
+        margin-right: 0;
+    }
+
+    footer {
+        justify-content: center;
+    }
+    footer span, footer address {
+        display: none;
+    }
+}

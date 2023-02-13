@@ -89,9 +89,15 @@ footer {
     background-color: var(--color-fg);
     color: var(--color-bg);
 }
-
 footer img {
     height: 3rem;
+}
+footer p {
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+footer address {
+    margin: 1rem 1rem 0 0;
 }
 
 /* Classes */
