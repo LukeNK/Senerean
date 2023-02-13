@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<body></body>
+<script>
+    // list of shortened links
+    const LINKS = {
+        HOME: './Government-of-Senerean/index.html'
+    }
+    // Link shortener
+    let hash = window.location.hash.substring(1);
+    if (LINKS[hash]) window.location.replace(LINKS[hash]);
+    else document.body.innerHTML = 'No link existed';
+</script>
