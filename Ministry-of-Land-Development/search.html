@@ -23,6 +23,7 @@
             Search
             <input id="searchBar" oninput="runSearch()">
         </label>
+        <p>Found <span id="searchInfo"></span> result(s)</p>
         <div id="result"></div>
     </main>
     <footer html-src="../website/footer.html"></footer>
@@ -60,6 +61,7 @@
                     ${res}
                 </div>`;
         }
+        document.getElementById('searchInfo').innerHTML = builds.length;
     }
     runSearch(true); // run first time to get all results
 </script>
