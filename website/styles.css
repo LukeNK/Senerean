@@ -16,8 +16,8 @@
 
 /* Individual element */
 a {
-    text-decoration: none;
-    color: var(--color-fg);
+    text-decoration: underline;
+    /* color: var(--color-fg); */
 }
 
 address a {
@@ -41,6 +41,10 @@ input {
     color: var(--color-fg);
     font-family: var(--font-family);
     font-size: var(--font-size);
+}
+
+summary {
+    cursor: pointer;
 }
 
 /* Page elements */

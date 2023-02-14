@@ -20,4 +20,8 @@
     footer span, footer address {
         display: none;
     }
+
+    .linkList {
+        flex-direction: column;
+    }
 }
