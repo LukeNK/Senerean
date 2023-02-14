@@ -1348,9 +1348,9 @@ let REGISTRY = [
         }
     },
     {
-        "id": "DISCOR",
+        "id": "8JASOP",
         "owner": "LukeNK",
-        "desc": "Discord office",
+        "desc": "Office of a company that starts with M",
         "address": "2023 ave",
         "chunks": [
             {

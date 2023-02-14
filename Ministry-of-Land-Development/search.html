@@ -31,11 +31,10 @@
 <script src="./registry.js"></script>
 <script src="./scripts.js"></script>
 <script>
-    function runSearch() {
-        // solve empty search result
-        document.getElementById('searchBar').value = 
-            document.getElementById('searchBar').value
-            || window.location.hash.substring(1);
+    function runSearch(first) {
+        // first run, use hash location
+        if (first)
+            document.getElementById('searchBar').value = window.location.hash.substring(1);
         // get builds
         let builds = buildSearch( document.getElementById('searchBar').value );
         let result = document.getElementById('result');
@@ -47,7 +46,12 @@
             let res = ''; // result
             for (const prop in build) {
                 if (prop == 'chunks') res += `${build[prop].length} chunks<br>`;
-                else if (typeof(build[prop]) =="object") 'pass';
+                else if (prop == 'nw') {
+                    // if it is cord
+                    let c = build[prop];
+                    res += `coordinate: ${c.x}, ${c.z}`;
+                }
+                else if (typeof(build[prop]) == "object") 'pass'; // to prevent objects being log
                 else if (prop != 'id') res += `${prop}: ${build[prop]}<br>`;
             }
             result.innerHTML += 
@@ -57,5 +61,5 @@
                 </div>`;
         }
     }
-    runSearch(); // run an empty one before to get all results
+    runSearch(true); // run first time to get all results
 </script>
