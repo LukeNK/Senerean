@@ -21,7 +21,7 @@ a {
 }
 
 address a {
-    color: var(--color-bg);
+    color: var(--color-fg);
     text-decoration: underline;
 }
 
@@ -111,19 +111,22 @@ footer p {
 footer address {
     margin: 1rem 1rem 0 0;
 }
+footer address a {
+    color: var(--color-bg);
+}
 
 /* Classes */
 .linkList {
     display: flex;
     flex-wrap: wrap;
 }
-.linkList div {
+.linkList > div {
     flex-grow: 1;
     flex-basis: 0;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
-.linkList div a {
+.linkList > div > a {
     font-weight: bold;
     text-decoration: underline;
     color: var(--color-dark-theme);
