@@ -6,15 +6,15 @@
         }
 
         /* Minecraft visualizer */
-        div[mcVisual = top] td {
-            /* For top view cases */
-            width: 10vw;
-            height: 10vw;
+        div[mcVisual] td {
+            width: 6rem;
+            height: 3rem;
             text-align: center;
         }
 
         .blackstone { background-color: black; color: white; }
         .stone_brick { background-color: gray; }
+        .smooth_stone { background-color: lightgray; }
     </style>
 </head>
 <body>
@@ -29,10 +29,13 @@
             - Basic street design:
         </p>
         <div mcVisual>
-            -           air        air        air        -
-            stone_brick air        air        air        stone_brick
-            air         blackstone blackstone blackstone air
-            air         -          -          -          air
+            stone_brick -          -          -          stone_brick
+            -           blackstone blackstone blackstone -
+        </div>
+        <p>In case there is an avenue beside the street:</p>
+        <div mcVisual>
+            stone_brick -          -          -          smooth_stone stone_brick stone_brick stone_brick 
+            -           blackstone blackstone blackstone -            -           -           -
         </div>
 
         <h1>Sign convention</h1>
