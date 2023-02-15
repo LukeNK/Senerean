@@ -4,13 +4,36 @@
         code, p {
             white-space: pre-line;
         }
+
+        /* Minecraft visualizer */
+        div[mcVisual = top] td {
+            /* For top view cases */
+            width: 10vw;
+            height: 10vw;
+            text-align: center;
+        }
+
+        .blackstone { background-color: black; color: white; }
+        .stone_brick { background-color: gray; }
     </style>
 </head>
 <body>
     <header html-src="../website/header.html"></header>
     <main>
         <h1>Road convention</h1>
-        <p>- Suface marking must use smooth quartz</p>
+        <h2>Street convention</h2>
+        <p>
+            - Street surface shall be more than 3-block wide
+            - Direction are restricted to multiple of 45 degree
+            - Suface marking must use smooth quartz
+            - Basic street design:
+        </p>
+        <div mcVisual>
+            -           air        air        air        -
+            stone_brick air        air        air        stone_brick
+            air         blackstone blackstone blackstone air
+            air         -          -          -          air
+        </div>
 
         <h1>Sign convention</h1>
         <h2>Standard:</h2>
@@ -48,3 +71,4 @@
     <footer html-src="../website/footer.html"></footer>
 </body>
 <script src="../website/scripts.js"></script>
+<script src="mcVisual.js"></script>

@@ -2,7 +2,7 @@ let COMP_LOAD = document.querySelectorAll("[html-src]").length; // total number 
 
 (() => {
     // Load all HTML using fetch
-    document.querySelectorAll("[html-src]").forEach((elm) => {
+    document.querySelectorAll("[html-src]").forEach(elm => {
         fetch(elm.getAttribute('html-src')).then(res => res.text())
         .then((res) => {
             elm.innerHTML += res;
