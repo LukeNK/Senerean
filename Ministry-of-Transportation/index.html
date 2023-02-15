@@ -6,26 +6,54 @@
         }
 
         /* Minecraft visualizer */
-        div[mcVisual] td {
-            width: 6rem;
-            height: 3rem;
-            text-align: center;
+        [mcVisual] {
+            /* Visual config */
+            --std-length: 5rem; /* Standard side length of a block */
+            font-size: 14px;
         }
 
-        .blackstone { background-color: black; color: white; }
-        .stone_brick { background-color: gray; }
-        .smooth_stone { background-color: lightgray; }
+        div[mcVisual] {
+            overflow-x: auto;
+        }
+        div[mcVisual] td {
+            width: var(--std-length);
+            height: calc(var(--std-length) / 2);
+            background-size: cover;
+            text-align: center;
+        }
+        div[mcVisual="top"] td {
+            height: var(--std-length);
+        }
+
+        /* Texture from https://minecraft.fandom.com/wiki/List_of_block_textures */
+        .blackstone { 
+            background-color: black;
+            background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075496364022181978/blackstone.png);
+            color: white; 
+        }
+        .stone_brick {
+            background-color: gray; 
+            background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075495651854520320/stone_brick.png);
+        }
+        .smooth_stone {
+            background-color: lightgray;
+            background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075497637941362699/smooth_stone.png);
+        }
+        .quartz {
+            background-color: antiquewhite;
+            background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075496942504779926/quartz.png);
+        }
     </style>
 </head>
 <body>
     <header html-src="../website/header.html"></header>
     <main>
+        <p>Note: all "quartz" mentioned in this article is smooth quartz</p>
         <h1>Road convention</h1>
         <h2>Street convention</h2>
         <p>
             - Street surface shall be more than 3-block wide
             - Direction are restricted to multiple of 45 degree
-            - Suface marking must use smooth quartz
             - Basic street design:
         </p>
         <div mcVisual>
@@ -37,6 +65,44 @@
             stone_brick -          -          -          smooth_stone stone_brick stone_brick stone_brick 
             -           blackstone blackstone blackstone -            -           -           -
         </div>
+        <h3>Street markings</h3>
+        <p>
+            - Suface marking must use smooth quartz
+            - One dot for a lane means caution. In an intersection, only one high-demand direction shall be caution, while others shall be yield/stop.
+            - If it is possible for left turning in the middle of the intersection, there shall be a dot there.
+        </p>
+        <div mcVisual="top">
+            stone_brick blackstone blackstone blackstone stone_brick
+            stone_brick blackstone quartz     blackstone stone_brick
+            stone_brick blackstone blackstone blackstone stone_brick
+        </div>
+        <p>Intersection example (from intersection between Highland st and Uphill st). Note that Uphill st is the vertical street in this case and got priority.</p>
+        <div mcVisual="top">
+            stone_brick blackstone blackstone blackstone stone_brick -
+            stone_brick blackstone quartz     blackstone stone_brick stone_brick
+            stone_brick blackstone blackstone blackstone quartz      blackstone
+            stone_brick blackstone quartz     blackstone quartz      blackstone
+            stone_brick blackstone blackstone blackstone quartz      blackstone
+            stone_brick blackstone quartz     blackstone stone_brick stone_brick
+            stone_brick blackstone blackstone blackstone stone_brick -
+        </div>
+        <p>If the priority is yield for avenue crossing, the avenue shall be raised by half a block, and the marking is 1 block away from the avenue.</p>
+        <div mcVisual="top">
+            stone_brick blackstone  quartz      blackstone  stone_brick
+            stone_brick blackstone  blackstone  blackstone  stone_brick
+            stone_brick stone_brick stone_brick stone_brick stone_brick
+            stone_brick stone_brick stone_brick stone_brick stone_brick
+            stone_brick stone_brick stone_brick stone_brick stone_brick
+            stone_brick blackstone  blackstone  blackstone  stone_brick
+            stone_brick blackstone  quartz      blackstone  stone_brick
+        </div>
+        <br>
+        <div mcVisual>
+            stone_brick stone_brick stone_brick stone_brick stone_brick
+            -           blackstone  blackstone  blackstone  -
+        </div>
+        
+        <h2>Avenue convention</h2>
 
         <h1>Sign convention</h1>
         <h2>Standard:</h2>

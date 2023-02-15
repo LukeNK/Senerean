@@ -14,7 +14,7 @@ document.querySelectorAll('[mcVisual]').forEach(elm => {
     for (const row of data) {
         res += '<tr>'
         for (const cell of row)
-            res += `<td class="${cell}">${cell}</td>`;
+            res += `<td class="${cell}"></td>`;
         res += '</tr>'
     }
     res += '</table>'
