@@ -1574,7 +1574,7 @@ let REGISTRY = [
     {
         "id": "PENGUI",
         "owner": "Senerean",
-        "desc": "Penguin statue with Senrean flag",
+        "desc": "Penguin statue with Senerean flag",
         "address": "S SEA CLIFF ave",
         "chunks": [
             {
