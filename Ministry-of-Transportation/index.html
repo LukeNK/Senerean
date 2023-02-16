@@ -43,6 +43,13 @@
             background-color: antiquewhite;
             background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075496942504779926/quartz.png);
         }
+        .rail {
+            background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075651328786837544/rail.png);
+        }
+        .yellow_carpet, .yellow_wool {
+            background-color: yellow;
+            background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075651328581324860/yellow_carpet.png);
+        }
     </style>
 </head>
 <body>
@@ -101,8 +108,6 @@
             stone_brick stone_brick stone_brick stone_brick stone_brick
             -           blackstone  blackstone  blackstone  -
         </div>
-        
-        <h2>Avenue convention</h2>
 
         <h1>Sign convention</h1>
         <h2>Standard:</h2>
@@ -136,6 +141,26 @@
             - In an avenue intersection, the sign is at the middle of the road, and raised by smooth stone to be horizontal at eye level if necessary
             - In a street intersection, the sign is located at the corner of the intersection, raised by 3 blocks from the street level using spruce fence
         </p>
+
+        <h1>Railway</h1>
+        <h2>Train station</h2>
+        <p>
+            - Train platform shall be at least 3 blocks wide for one-direction platform, 5 for combined platform.
+            - However, it is recommended to be 4 and 7 respectively.
+            - The the block adjacent to the railway on the platform shall be cover with carpet, or yellow wool for aesthetic purpose.
+            Single-direction platform:
+        </p>
+        <div mcVisual="top">
+            rail yellow_carpet smooth_stone smooth_stone
+            rail yellow_carpet smooth_stone smooth_stone
+            rail yellow_carpet smooth_stone smooth_stone
+        </div>
+        <p>Combinded platform:</p>
+        <div mcVisual="top">
+            rail yellow_carpet smooth_stone smooth_stone smooth_stone yellow_carpet rail
+            rail yellow_carpet smooth_stone smooth_stone smooth_stone yellow_carpet rail
+            rail yellow_carpet smooth_stone smooth_stone smooth_stone yellow_carpet rail
+        </div>
     </main>
     <footer html-src="../website/footer.html"></footer>
 </body>
