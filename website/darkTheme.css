@@ -1,9 +1,12 @@
-.darkTheme {
-    /* Add to <body> to change theme, swapping dark/bright color */
-    --color-bg: #222222;
-    --color-fg: #ffffff;
-    --color-dark-theme: #00ff00;
-    --color-bright-theme: #000080;
+@media screen {
+    /* Only apply dark theme to screen, not print */
+    .darkTheme {
+        /* Add to <body> to change theme, swapping dark/bright color */
+        --color-bg: #222222;
+        --color-fg: #ffffff;
+        --color-dark-theme: #00ff00;
+        --color-bright-theme: #000080;
+    }
 }
 
 .darkTheme #navTop button {

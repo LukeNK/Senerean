@@ -13,6 +13,9 @@
     #navTop a img {
         margin-right: 0;
     }
+    #navTop button {
+        display: none;
+    }
 
     footer {
         justify-content: center;
