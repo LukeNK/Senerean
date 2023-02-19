@@ -8,12 +8,6 @@
     --font-size: 19px;
 }
 
-.darkTheme {
-    /* Add to <body> to change theme */
-    --color-bg: #222222;
-    --color-fg: #ffffff;
-}
-
 /* Individual element */
 a {
     text-decoration: underline;
@@ -28,6 +22,7 @@ address a {
 button {
     border-radius: 0;
     border: 0px solid var(--color-dark-theme);
+    cursor: pointer;
     background-color: var(--color-bright-theme);
     font-family: var(--font-family);
     font-size: var(--font-size);
@@ -72,16 +67,33 @@ main {
 
 #navTop {
     /* Top of navbar */
-    padding: 1rem 5rem;
+    padding: 1rem 1rem 1rem 5rem;
     display: flex;
 }
 #navTop a {
-    height: 4rem;
+    height: 3rem;
 }
 #navTop a img {
-    height: 4rem;
+    height: 3rem;
     margin-right: 1rem;
 }
+#navTop p {
+    margin-bottom: 0;
+}
+
+#curPage {
+    margin-left: 1rem;
+    text-align: right;
+}
+#navTop button {
+    margin-left: 1rem;
+    height: 3rem;
+    width: 3rem;
+    background-color: transparent;
+    background-size: contain;
+    background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1076402435158970418/whiteTheme.png);
+}
+
 header hr {
     margin-top: 0;
 }
@@ -90,10 +102,6 @@ nav {
     flex-grow: 1;
 }
 
-#curPage {
-    margin-left: 1rem;
-    text-align: right;
-}
 
 main {
     padding: 0 1rem;
