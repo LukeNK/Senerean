@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="Train Map.svg"
+   inkscape:export-filename="..\..\..\..\Desktop\Train Map.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.65161853"
+     inkscape:cx="548.63388"
+     inkscape:cy="405.14502"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3"
+     showguides="false" />
+  <defs
+     id="defs2">
+    <rect
+       x="952.18038"
+       y="16.881042"
+       width="170.3393"
+       height="65.989529"
+       id="rect10688" />
+    <rect
+       x="113.56338"
+       y="41.435286"
+       width="343.75941"
+       height="98.216974"
+       id="rect9706" />
+    <rect
+       x="0"
+       y="0"
+       width="323.52759"
+       height="116.76255"
+       id="rect2462" />
+    <rect
+       x="0"
+       y="0"
+       width="323.52759"
+       height="88.11248"
+       id="rect2456" />
+    <rect
+       x="113.56338"
+       y="41.435287"
+       width="343.7594"
+       height="98.216972"
+       id="rect9706-0" />
+    <rect
+       x="113.56338"
+       y="41.435287"
+       width="343.7594"
+       height="98.216972"
+       id="rect9706-0-6" />
+    <rect
+       x="113.56338"
+       y="41.435287"
+       width="343.7594"
+       height="98.216972"
+       id="rect9706-0-6-4" />
+    <rect
+       x="113.56338"
+       y="41.435287"
+       width="343.7594"
+       height="98.216972"
+       id="rect9706-0-64" />
+    <rect
+       x="952.18036"
+       y="16.881042"
+       width="170.33929"
+       height="65.989532"
+       id="rect10688-5" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Track">
+    <path
+       style="fill:none;stroke:#016fb9;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 58.108125,99.783363 V 144.85383 H 127.95976"
+       id="path9377" />
+    <path
+       style="fill:none;stroke:#016fb9;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 235.85072,99.783363 V 144.85383 H 124.17699"
+       id="path9377-1" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#353531;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 65.233005,54.574557 H 165.68921 v 94.669433 h 86.24185"
+       id="path9702" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Legend">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#353531;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 241.30341,33.871995 H 210.8504"
+       id="path10613" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#016fb9;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 241.30341,13.169433 H 210.8504"
+       id="path10613-1" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-2.0302011,3.4961258)"
+       id="text10686"
+       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect10688);display:inline"><tspan
+         x="952.17969"
+         y="51.045853"
+         id="tspan10851">Metro</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-2.0302011,24.889669)"
+       id="text10686-3"
+       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect10688-5);display:inline"><tspan
+         x="952.17969"
+         y="51.045853"
+         id="tspan10853">Cargo</tspan></text>
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text2454"
+       style="font-size:18.6667px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect2456);display:inline" />
+    <rect
+       style="fill:#353531;fill-opacity:1;stroke-width:0.499999"
+       id="rect4775"
+       width="95.313652"
+       height="68.57933"
+       x="-131.73431"
+       y="-57.730621" />
+    <rect
+       style="fill:#016fb9;fill-opacity:1;stroke-width:0.499999"
+       id="rect6281"
+       width="28.28413"
+       height="87.564575"
+       x="-131.73431"
+       y="10.848709" />
+    <rect
+       style="fill:#ec4e20;fill-opacity:1;stroke-width:0.499999"
+       id="rect8508"
+       width="67.029518"
+       height="65.092255"
+       x="-103.45018"
+       y="33.321033" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#016fb9;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+       id="path8875"
+       cx="57.733009"
+       cy="99.783546"
+       r="7.5" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#353531;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+       id="path8875-8"
+       cx="57.733009"
+       cy="54.71302"
+       r="7.5" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#353531;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+       id="path8875-8-6"
+       cx="258.02155"
+       cy="-149.0876"
+       r="7.5"
+       transform="scale(1,-1)" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#016fb9;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+       id="path8875-9"
+       cx="123.10556"
+       cy="-144.85432"
+       r="7.5"
+       transform="scale(1,-1)" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#016fb9;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+       id="path8875-2"
+       cx="236.0769"
+       cy="-99.783546"
+       r="7.5"
+       transform="scale(1,-1)" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-13.16819,19.08389)"
+       id="text9704"
+       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect9706);display:inline"><tspan
+         x="113.5625"
+         y="75.60054"
+         id="tspan10855">Factory + siding</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-13.68544,65.874751)"
+       id="text9704-3"
+       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect9706-0);display:inline"><tspan
+         x="113.5625"
+         y="75.60054"
+         id="tspan10857">Sea Cliff avenue</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,52.90076,147.79624)"
+       id="text9704-3-1"
+       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect9706-0-6);display:inline"><tspan
+         x="113.5625"
+         y="75.60054"
+         id="tspan10859">Beehive avenue</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,171.38909,64.699296)"
+       id="text9704-3-1-7"
+       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect9706-0-6-4);display:inline"><tspan
+         x="113.5625"
+         y="75.60054"
+         id="tspan10861">Valley avenue</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,200.95417,147.79624)"
+       id="text9704-3-6"
+       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect9706-0-64);display:inline"><tspan
+         x="113.5625"
+         y="75.60054"
+         id="tspan10863">Post office</tspan></text>
+  </g>
+</svg>
