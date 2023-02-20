@@ -28,6 +28,11 @@ button {
     font-size: var(--font-size);
 }
 
+details {
+    border-left: 0.5rem solid var(--color-dark-theme);
+    padding-left: 1rem;
+}
+
 input {
     border: 1px solid var(--color-dark-theme);
     border-radius: 0;
@@ -40,6 +45,12 @@ input {
 
 summary {
     cursor: pointer;
+    padding: 1rem;
+    color: var(--color-dark-theme);
+}
+summary:hover {
+    background-color: var(--color-dark-theme);
+    color: var(--color-bright-theme);
 }
 
 /* Page elements */
