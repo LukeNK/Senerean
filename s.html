@@ -3,12 +3,17 @@
 <script>
     // list of shortened links
     const LINKS = {
-        h: 'Government-of-Senerean/index.html',
         jaremb: 'Ministry-of-Land-Development/search.html#JAREMB',
+        h: 'Government-of-Senerean/index.html',
         wafemb: 'Ministry-of-Land-Development/search.html#696635',
+        phtxt: () => `Parliament/hansards/${hash[1]}-${hash[2]}-${hash[3]}.md`
     }
     // Link shortener
-    let hash = window.location.hash.substring(1);
-    if (LINKS[hash]) window.location.replace(LINKS[hash]);
-    else document.body.innerHTML = 'No link existed';
+    let hash = window.location.hash.substring(1).split('-');
+    if (typeof LINKS[hash[0]] == 'string') 
+        window.location.replace(LINKS[hash[0]]);
+    else if (typeof LINKS[hash[0]] == 'function') 
+        window.location.replace(LINKS[hash[0]]())
+    else 
+        document.body.innerHTML = 'No link existed';
 </script>

@@ -3,7 +3,7 @@
     --color-fg: #000000;
     --color-dark-theme: #000080;
     --color-bright-theme: #00ff00;
-    --color-red: #FF4242ff; 
+    --color-red: #FF4242ff;
     --font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;
     --font-size: 19px;
 }
@@ -29,8 +29,11 @@ button {
 }
 
 details {
-    border-left: 0.5rem solid var(--color-dark-theme);
+    border-left: none;
     padding-left: 1rem;
+}
+details[open] {
+    border-left: 0.5rem solid var(--color-dark-theme);
 }
 
 input {

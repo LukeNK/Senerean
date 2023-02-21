@@ -11,6 +11,14 @@
 <body>
     <header html-src="../website/header.html"></header>
     <main>
+        <h1>Parliament structure</h1>
+        <h2>Senate</h2>
+        <p>The Senate have the responsibility to discuss external matters that might need public attention. Usually executive questions raised by the Head of State will be presented to the Senate.</p>
+        <h2>House of Commons</h2>
+        <p>The House of Commons discuss important internal issues that usually raised by the Prime Minister or the general public.</p>
+
+        <h1>Hansards</h1>
+        <p>Sorted from newest to oldest</p>
         <div id="hansards"></div>
     </main>
     <footer html-src="../website/footer.html"></footer>
@@ -24,10 +32,16 @@
     let hansards = document.getElementById('hansards');
     for (const date of hansardsList)
         hansards.innerHTML += `
-            <details>
+            <details id="${date}">
                 <summary>${date}</summary>
                 <code html-src="./hansards/${date}.md"></code>
-            </details>
-        `
+            </details>`
+
+    // open hansard
+    if (window.location.hash) {
+        let elm = document.getElementById(window.location.hash.substr(1));
+        elm.scrollIntoView();
+        elm.setAttribute('open', 'true')
+    }
 </script>
 <script src="../website/scripts.js"></script>
