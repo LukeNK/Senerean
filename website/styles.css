@@ -51,7 +51,7 @@ summary {
     padding: 1rem;
     color: var(--color-dark-theme);
 }
-summary:hover {
+summary:hover, details[open] summary {
     background-color: var(--color-dark-theme);
     color: var(--color-bright-theme);
 }
