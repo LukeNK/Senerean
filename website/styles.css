@@ -151,10 +151,9 @@ footer address a {
     flex-wrap: wrap;
 }
 .linkList > div {
-    flex-grow: 1;
-    flex-basis: 0;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    width: 25%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .linkList > div > a {
     font-weight: bold;

@@ -27,4 +27,7 @@
     .linkList {
         flex-direction: column;
     }
+    .linkList > div {
+        width: 100%;
+    }
 }
