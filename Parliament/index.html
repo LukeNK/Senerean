@@ -18,11 +18,7 @@
         border: 1px solid var(--color-fg);
     }
 
-    section.linkList details { width: 33%; }
     section.linkList details[open] { width: 100%; }
-    @media (max-width: 700px) {
-        section.linkList details { width: 100%;}
-    }
 </style>
 <body>
     <header html-src="../website/header.html"></header>
@@ -134,13 +130,14 @@
 
         <h1>Hansards</h1>
         <p>Sorted from newest to oldest</p>
-        <div id="hansards"></div>
+        <div id="hansards" class="linkList"></div>
     </main>
     <footer html-src="../website/footer.html"></footer>
 </body>
 <script>
     // use standard html-src to fetch data
     const hansardsList = [
+        '2023-02-23',
         '2023-02-19',
         '2023-02-18'
     ]
