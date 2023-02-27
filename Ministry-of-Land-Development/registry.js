@@ -2090,5 +2090,73 @@ let REGISTRY = [
             "x": 58,
             "z": 63
         }
+    },
+    {
+        "id": "LIGHT0",
+        "owner": "Senerean",
+        "desc": "A lighthouse focus to north and east direction",
+        "address": "UPHILL st",
+        "chunks": [
+            {
+                "x": 10,
+                "z": -1
+            }
+        ],
+        "dimensions": {
+            "x": 9,
+            "z": 9
+        },
+        "nw": {
+            "x": 166,
+            "z": -11
+        },
+        "se": {
+            "x": 174,
+            "z": -3
+        }
+    },
+    {
+        "id": "H294HY",
+        "owner": "LukeNK",
+        "desc": "Parking facility",
+        "address": "HIGHLAND st",
+        "chunks": [
+            {
+                "x": 1,
+                "z": 4
+            },
+            {
+                "x": 1,
+                "z": 5
+            },
+            {
+                "x": 2,
+                "z": 4
+            },
+            {
+                "x": 2,
+                "z": 5
+            },
+            {
+                "x": 3,
+                "z": 4
+            },
+            {
+                "x": 3,
+                "z": 5
+            }
+        ],
+        "dimensions": {
+            "x": 19,
+            "z": 17
+        },
+        "nw": {
+            "x": 31,
+            "z": 77
+        },
+        "se": {
+            "x": 49,
+            "z": 93
+        }
     }
 ]
