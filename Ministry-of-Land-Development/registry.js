@@ -880,34 +880,6 @@ let REGISTRY = [
         }
     },
     {
-        "id": "G4AJ1E",
-        "owner": "Senerean",
-        "desc": "Metro station",
-        "address": "EMBASSY ave",
-        "chunks": [
-            {
-                "x": 2,
-                "z": 3
-            },
-            {
-                "x": 3,
-                "z": 3
-            }
-        ],
-        "dimensions": {
-            "x": 9,
-            "z": 8
-        },
-        "nw": {
-            "x": 45,
-            "z": 50
-        },
-        "se": {
-            "x": 53,
-            "z": 57
-        }
-    },
-    {
         "id": "NAARCH",
         "owner": "LukeNK",
         "desc": "Archive house",
@@ -2089,6 +2061,34 @@ let REGISTRY = [
         "se": {
             "x": 94,
             "z": 86
+        }
+    },
+    {
+        "id": "G4AJ1E",
+        "owner": "Senerean",
+        "desc": "Metro station",
+        "address": "EMBASSY ave",
+        "chunks": [
+            {
+                "x": 2,
+                "z": 3
+            },
+            {
+                "x": 3,
+                "z": 3
+            }
+        ],
+        "dimensions": {
+            "x": 14,
+            "z": 14
+        },
+        "nw": {
+            "x": 45,
+            "z": 50
+        },
+        "se": {
+            "x": 58,
+            "z": 63
         }
     }
 ]
