@@ -40,6 +40,10 @@ details[open] {
     border-left: 0.5rem solid var(--color-dark-theme);
 }
 
+dl > dt {
+    font-weight: bold;
+}
+
 input {
     border: 1px solid var(--color-dark-theme);
     border-radius: 0;
