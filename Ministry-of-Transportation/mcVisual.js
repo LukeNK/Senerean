@@ -10,7 +10,6 @@ document.querySelectorAll('[mcVisual]').forEach(elm => {
             .split(' ');
     // create element
     res = '<table>';
-    console.log(data)
     for (const row of data) {
         res += '<tr>'
         for (const cell of row)
@@ -19,5 +18,4 @@ document.querySelectorAll('[mcVisual]').forEach(elm => {
     }
     res += '</table>'
     elm.innerHTML = res;
-    console.log(res)
 })
