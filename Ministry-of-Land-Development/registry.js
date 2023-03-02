@@ -2158,5 +2158,49 @@ let REGISTRY = [
             "x": 49,
             "z": 93
         }
+    },
+    {
+        "id": "EXSCOF",
+        "owner": "LukeNK",
+        "desc": "Wooden triplex townhouse",
+        "address": "BEEHIVE st",
+        "chunks": [
+            {
+                "x": 4,
+                "z": 4
+            },
+            {
+                "x": 4,
+                "z": 5
+            },
+            {
+                "x": 4,
+                "z": 6
+            },
+            {
+                "x": 5,
+                "z": 4
+            },
+            {
+                "x": 5,
+                "z": 5
+            },
+            {
+                "x": 5,
+                "z": 6
+            }
+        ],
+        "dimensions": {
+            "x": 14,
+            "z": 21
+        },
+        "nw": {
+            "x": 70,
+            "z": 79
+        },
+        "se": {
+            "x": 83,
+            "z": 99
+        }
     }
 ]
