@@ -2202,5 +2202,29 @@ let REGISTRY = [
             "x": 83,
             "z": 99
         }
+    },
+    {
+        "id": "CAYDA3",
+        "owner": "LukeNK",
+        "desc": "Wooden house with metro lookout",
+        "address": "TURTLE ave",
+        "chunks": [
+            {
+                "x": 8,
+                "z": 3
+            }
+        ],
+        "dimensions": {
+            "x": 7,
+            "z": 7
+        },
+        "nw": {
+            "x": 132,
+            "z": 51
+        },
+        "se": {
+            "x": 138,
+            "z": 57
+        }
     }
 ]
