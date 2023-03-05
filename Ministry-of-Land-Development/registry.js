@@ -2163,7 +2163,7 @@ let REGISTRY = [
         "id": "EXSCOF",
         "owner": "LukeNK",
         "desc": "Wooden triplex townhouse",
-        "address": "BEEHIVE st",
+        "address": "BEEHIVE ave",
         "chunks": [
             {
                 "x": 4,
@@ -2225,6 +2225,94 @@ let REGISTRY = [
         "se": {
             "x": 138,
             "z": 57
+        }
+    },
+    {
+        "id": "LQ7BDR",
+        "owner": "Senerean",
+        "desc": "Nature and environment laboratory",
+        "address": "BEEHIVE ave",
+        "chunks": [
+            {
+                "x": 3,
+                "z": 5
+            },
+            {
+                "x": 3,
+                "z": 6
+            },
+            {
+                "x": 4,
+                "z": 5
+            },
+            {
+                "x": 4,
+                "z": 6
+            }
+        ],
+        "dimensions": {
+            "x": 15,
+            "z": 17
+        },
+        "nw": {
+            "x": 53,
+            "z": 83
+        },
+        "se": {
+            "x": 67,
+            "z": 99
+        }
+    },
+    {
+        "id": "VQYP6P",
+        "owner": "Senerean",
+        "desc": "Public toilet",
+        "address": "NATSAK ave",
+        "chunks": [
+            {
+                "x": 3,
+                "z": 4
+            },
+            {
+                "x": 3,
+                "z": 5
+            }
+        ],
+        "dimensions": {
+            "x": 3,
+            "z": 5
+        },
+        "nw": {
+            "x": 51,
+            "z": 78
+        },
+        "se": {
+            "x": 53,
+            "z": 82
+        }
+    },
+    {
+        "id": "0LJ4MG",
+        "owner": "LukeNK",
+        "desc": "Cliff-side wooden house",
+        "address": "EMBASSY ave",
+        "chunks": [
+            {
+                "x": 7,
+                "z": 4
+            }
+        ],
+        "dimensions": {
+            "x": 10,
+            "z": 7
+        },
+        "nw": {
+            "x": 117,
+            "z": 64
+        },
+        "se": {
+            "x": 126,
+            "z": 70
         }
     }
 ]
