@@ -89,7 +89,7 @@ main {
 
 #navTop {
     /* Top of navbar */
-    padding: 1rem 1rem 1rem 5rem;
+    padding: 1rem 5rem 1rem 5rem;
     display: flex;
 }
 #navTop a {
