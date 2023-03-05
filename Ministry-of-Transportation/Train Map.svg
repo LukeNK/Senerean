@@ -7,7 +7,7 @@
    viewBox="0 0 297 210"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    sodipodi:docname="Train Map.svg"
    inkscape:export-filename="..\..\..\..\Desktop\Train Map.png"
    inkscape:export-xdpi="100"
@@ -27,15 +27,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.65161853"
-     inkscape:cx="548.63388"
-     inkscape:cy="405.14502"
-     inkscape:window-width="1366"
-     inkscape:window-height="745"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:zoom="3.7456075"
+     inkscape:cx="214.78492"
+     inkscape:cy="330.92095"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer2"
      showguides="false" />
   <defs
      id="defs2">
@@ -98,57 +98,229 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Track">
-    <path
-       style="fill:none;stroke:#016fb9;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="M 58.108125,99.783363 V 144.85383 H 127.95976"
-       id="path9377" />
-    <path
-       style="fill:none;stroke:#016fb9;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="M 235.85072,99.783363 V 144.85383 H 124.17699"
-       id="path9377-1" />
-    <path
-       style="fill:none;fill-opacity:1;stroke:#353531;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="M 65.233005,54.574557 H 165.68921 v 94.669433 h 86.24185"
-       id="path9702" />
+    <rect
+       style="fill:#353531;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-8-1-8"
+       width="93.606812"
+       height="5"
+       x="164.82607"
+       y="108.76839" />
+    <rect
+       style="fill:#016fb9;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498"
+       width="73.11554"
+       height="5"
+       x="95.99588"
+       y="-247.55786"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#016fb9;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-3"
+       width="109.02641"
+       height="5"
+       x="-247.33672"
+       y="-169.11142"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#016fb9;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-3-5"
+       width="88.470284"
+       height="5"
+       x="-142.59833"
+       y="-169.11142"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#353531;fill-opacity:1;stroke:#ffffff;stroke-width:2.49999;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-8-0-3-0-0"
+       width="22.1467"
+       height="5"
+       x="39.570213"
+       y="-66.13839"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#016fb9;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-3-1"
+       width="94.675644"
+       height="5"
+       x="-240.16133"
+       y="-161.61142"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#016fb9;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-1"
+       width="65.61554"
+       height="5"
+       x="95.99588"
+       y="-240.05794"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#353531;fill-opacity:1;stroke:#ffffff;stroke-width:2.49999;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-8-0-3-0"
+       width="89.957626"
+       height="5"
+       x="23.810762"
+       y="-73.638382"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#016fb9;fill-opacity:1;stroke:#ffffff;stroke-width:2.49999;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-3-1-5-1"
+       width="37.009815"
+       height="5"
+       x="-61.13839"
+       y="-66.716911"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#353531;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-8-1"
+       width="91.187683"
+       height="5"
+       x="68.638382"
+       y="108.76839" />
+    <rect
+       style="fill:#353531;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-8-0-3"
+       width="13.785263"
+       height="5"
+       x="113.76839"
+       y="-164.82607"
+       transform="rotate(90)" />
+    <rect
+       style="display:inline;fill:#353531;fill-opacity:1;stroke:#ffffff;stroke-width:2.50001;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-8-1-6"
+       width="98.687691"
+       height="5"
+       x="66.13839"
+       y="122.55364" />
+    <rect
+       style="fill:#016fb9;fill-opacity:1;stroke:#ffffff;stroke-width:2.50001;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-1-3"
+       width="55.836731"
+       height="5"
+       x="66.716911"
+       y="-66.13839"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#016fb9;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-1-8"
+       width="99.894508"
+       height="5"
+       x="69.216911"
+       y="-58.63839"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#353531;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-8-0"
+       width="81.3293"
+       height="5"
+       x="108.76839"
+       y="-263.43286"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#016fb9;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-3-1-5"
+       width="34.509811"
+       height="5"
+       x="-58.63839"
+       y="-74.216911"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#016fb9;fill-opacity:1;stroke:#ffffff;stroke-width:2.50001;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-1-3-5"
+       width="34.057781"
+       height="5"
+       x="127.55364"
+       y="-66.13839"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#016fb9;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-3-1-4"
+       width="81.459938"
+       height="5"
+       x="-142.59833"
+       y="-161.61142"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#353531;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-8-1-5"
+       width="45.593838"
+       height="5"
+       x="20.54455"
+       y="32.070217" />
+    <rect
+       style="fill:#353531;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect498-8-1-5-2"
+       width="48.09383"
+       height="5"
+       x="20.54455"
+       y="23.810768" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Stations">
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#353531;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="path3110"
+       cx="260.93286"
+       cy="181.63254"
+       r="6.25" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#016fb9;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="path3110-2"
+       cx="245.05794"
+       cy="89.74588"
+       r="6.25" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#016fb9;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="path3110-2-2"
+       cx="237.55794"
+       cy="89.74588"
+       r="6.25" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#016fb9;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="path3110-2-4"
+       cx="144.56032"
+       cy="166.61142"
+       r="6.25" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#016fb9;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="path3110-2-2-8"
+       cx="144.56032"
+       cy="159.11142"
+       r="6.25" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#016fb9;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="path3110-2-4-2"
+       cx="25.283695"
+       cy="71.716911"
+       r="6.25" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#016fb9;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="path3110-2-2-8-5"
+       cx="25.283695"
+       cy="64.216911"
+       r="6.25" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#353531;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="path3110-6"
+       cx="25.283695"
+       cy="33.810768"
+       r="6.25" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#353531;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1"
+       id="path3110-6-8"
+       cx="25.283695"
+       cy="26.310768"
+       r="6.25" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Legend">
-    <path
-       style="fill:none;fill-opacity:1;stroke:#353531;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="M 241.30341,33.871995 H 210.8504"
-       id="path10613" />
-    <path
-       style="fill:none;fill-opacity:1;stroke:#016fb9;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="M 241.30341,13.169433 H 210.8504"
-       id="path10613-1" />
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-2.0302011,3.4961258)"
-       id="text10686"
-       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect10688);display:inline"><tspan
-         x="952.17969"
-         y="51.045853"
-         id="tspan10851">Metro</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-2.0302011,24.889669)"
-       id="text10686-3"
-       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect10688-5);display:inline"><tspan
-         x="952.17969"
-         y="51.045853"
-         id="tspan10853">Cargo</tspan></text>
-  </g>
+     inkscape:label="Legend" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <text
-       xml:space="preserve"
-       transform="scale(0.26458333)"
-       id="text2454"
-       style="font-size:18.6667px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect2456);display:inline" />
     <rect
        style="fill:#353531;fill-opacity:1;stroke-width:0.499999"
        id="rect4775"
@@ -170,78 +342,5 @@
        height="65.092255"
        x="-103.45018"
        y="33.321033" />
-    <circle
-       style="fill:#ffffff;fill-opacity:1;stroke:#016fb9;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
-       id="path8875"
-       cx="57.733009"
-       cy="99.783546"
-       r="7.5" />
-    <circle
-       style="fill:#ffffff;fill-opacity:1;stroke:#353531;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
-       id="path8875-8"
-       cx="57.733009"
-       cy="54.71302"
-       r="7.5" />
-    <circle
-       style="fill:#ffffff;fill-opacity:1;stroke:#353531;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
-       id="path8875-8-6"
-       cx="258.02155"
-       cy="-149.0876"
-       r="7.5"
-       transform="scale(1,-1)" />
-    <circle
-       style="fill:#ffffff;fill-opacity:1;stroke:#016fb9;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
-       id="path8875-9"
-       cx="123.10556"
-       cy="-144.85432"
-       r="7.5"
-       transform="scale(1,-1)" />
-    <circle
-       style="fill:#ffffff;fill-opacity:1;stroke:#016fb9;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
-       id="path8875-2"
-       cx="236.0769"
-       cy="-99.783546"
-       r="7.5"
-       transform="scale(1,-1)" />
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-13.16819,19.08389)"
-       id="text9704"
-       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect9706);display:inline"><tspan
-         x="113.5625"
-         y="75.60054"
-         id="tspan10855">Factory + siding</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-13.68544,65.874751)"
-       id="text9704-3"
-       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect9706-0);display:inline"><tspan
-         x="113.5625"
-         y="75.60054"
-         id="tspan10857">Sea Cliff avenue</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,52.90076,147.79624)"
-       id="text9704-3-1"
-       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect9706-0-6);display:inline"><tspan
-         x="113.5625"
-         y="75.60054"
-         id="tspan10859">Beehive avenue</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,171.38909,64.699296)"
-       id="text9704-3-1-7"
-       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect9706-0-6-4);display:inline"><tspan
-         x="113.5625"
-         y="75.60054"
-         id="tspan10861">Valley avenue</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,200.95417,147.79624)"
-       id="text9704-3-6"
-       style="font-size:37.3333px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect9706-0-64);display:inline"><tspan
-         x="113.5625"
-         y="75.60054"
-         id="tspan10863">Post office</tspan></text>
   </g>
 </svg>
