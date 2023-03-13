@@ -28,7 +28,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.93276977"
-     inkscape:cx="683.44839"
+     inkscape:cx="684.52047"
      inkscape:cy="371.4743"
      inkscape:window-width="1920"
      inkscape:window-height="1051"
@@ -99,7 +99,7 @@
      id="layer5"
      inkscape:label="background">
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-linecap:round;stroke-opacity:1"
+       style="display:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-linecap:round;stroke-opacity:1"
        id="rect2212"
        width="297"
        height="210"
