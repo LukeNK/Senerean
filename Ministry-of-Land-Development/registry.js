@@ -2314,5 +2314,69 @@ let REGISTRY = [
             "x": 126,
             "z": 70
         }
+    },
+    {
+        "id": "9LCGKT",
+        "owner": "LukeNK",
+        "desc": "A wooden townhouse",
+        "address": "SUGAR SHORE ave",
+        "chunks": [
+            {
+                "x": 10,
+                "z": 4
+            },
+            {
+                "x": 11,
+                "z": 4
+            }
+        ],
+        "dimensions": {
+            "x": 15,
+            "z": 8
+        },
+        "nw": {
+            "x": 165,
+            "z": 71
+        },
+        "se": {
+            "x": 179,
+            "z": 78
+        }
+    },
+    {
+        "id": "CRAQUA",
+        "owner": "Senerean",
+        "desc": "Coral aquarium",
+        "address": "UPHILL st",
+        "chunks": [
+            {
+                "x": 10,
+                "z": 1
+            },
+            {
+                "x": 10,
+                "z": 2
+            },
+            {
+                "x": 11,
+                "z": 1
+            },
+            {
+                "x": 11,
+                "z": 2
+            }
+        ],
+        "dimensions": {
+            "x": 18,
+            "z": 18
+        },
+        "nw": {
+            "x": 167,
+            "z": 18
+        },
+        "se": {
+            "x": 184,
+            "z": 35
+        }
     }
 ]
