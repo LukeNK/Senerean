@@ -1,277 +1,5 @@
 let REGISTRY = [
     {
-        "id": "FIRSTB",
-        "owner": "LukeNK",
-        "desc": "Modern seaside house",
-        "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": -4
-            },
-            {
-                "x": 5,
-                "z": -3
-            }
-        ]
-    },
-    {
-        "id": "NCLIFF",
-        "owner": "LukeNK",
-        "desc": "Wooden mansion",
-        "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 2,
-                "z": -4
-            },
-            {
-                "x": 2,
-                "z": -3
-            },
-            {
-                "x": 3,
-                "z": -4
-            },
-            {
-                "x": 3,
-                "z": -3
-            }
-        ]
-    },
-    {
-        "id": "FHOUSE",
-        "owner": "LukeNK",
-        "desc": "Modern house",
-        "address": "BEEHIVE ave",
-        "chunks": [
-            {
-                "x": 3,
-                "z": -2
-            },
-            {
-                "x": 4,
-                "z": -2
-            }
-        ]
-    },
-    {
-        "id": "GREENC",
-        "owner": "LukeNK",
-        "desc": "Small house",
-        "address": "BEEHIVE ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": -2
-            }
-        ]
-    },
-    {
-        "id": "MLAFCE",
-        "owner": "LukeNK",
-        "desc": "Wooden house",
-        "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": -3
-            },
-            {
-                "x": 5,
-                "z": -3
-            }
-        ]
-    },
-    {
-        "id": "FARMHO",
-        "owner": "LukeNK",
-        "desc": "Wooden house with roof farm",
-        "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": -3
-            }
-        ]
-    },
-    {
-        "id": "SEAAPP",
-        "owner": "LukeNK",
-        "desc": "Apartment for 3 with farm",
-        "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": -3
-            },
-            {
-                "x": 6,
-                "z": -3
-            }
-        ]
-    },
-    {
-        "id": "FAJOPS",
-        "owner": "LukeNK",
-        "desc": "Single family home",
-        "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": -3
-            },
-            {
-                "x": 5,
-                "z": -2
-            },
-            {
-                "x": 6,
-                "z": -3
-            },
-            {
-                "x": 6,
-                "z": -2
-            }
-        ]
-    },
-    {
-        "id": "APPF7P",
-        "owner": "LukeNK",
-        "desc": "Apartment for 7",
-        "address": "S SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": -2
-            },
-            {
-                "x": 4,
-                "z": -1
-            }
-        ]
-    },
-    {
-        "id": "F3PV9K",
-        "owner": "LukeNK",
-        "desc": "Small wooden house",
-        "address": "S SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": -3
-            },
-            {
-                "x": 5,
-                "z": -2
-            }
-        ]
-    },
-    {
-        "id": "H5JO3K",
-        "owner": "Senerean",
-        "desc": "Storage house with ship dock",
-        "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 6,
-                "z": -3
-            },
-            {
-                "x": 6,
-                "z": -2
-            },
-            {
-                "x": 7,
-                "z": -3
-            }
-        ]
-    },
-    {
-        "id": "J8KO1P",
-        "owner": "LukeNK",
-        "desc": "Restaurant",
-        "address": "SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": -2
-            },
-            {
-                "x": 6,
-                "z": -2
-            }
-        ]
-    },
-    {
-        "id": "I9FJ1A",
-        "owner": "LukeNK",
-        "desc": "Coffee shop",
-        "address": "UPHILL st",
-        "chunks": [
-            {
-                "x": 6,
-                "z": -2
-            },
-            {
-                "x": 7,
-                "z": -2
-            }
-        ]
-    },
-    {
-        "id": "CLHOSP",
-        "owner": "Senerean",
-        "desc": "Three-floor hospital with ER connected to the street",
-        "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 1,
-                "z": -2
-            },
-            {
-                "x": 2,
-                "z": -2
-            }
-        ]
-    },
-    {
-        "id": "VACIMU",
-        "owner": "Senerean",
-        "desc": "Vaccine and imunization clinic",
-        "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 1,
-                "z": -2
-            }
-        ]
-    },
-    {
-        "id": "TRRAIL",
-        "owner": "Senerean",
-        "desc": "Train manufacturing facility with showroom",
-        "address": "S SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 0,
-                "z": -3
-            },
-            {
-                "x": 0,
-                "z": -2
-            },
-            {
-                "x": 1,
-                "z": -3
-            },
-            {
-                "x": 1,
-                "z": -2
-            }
-        ]
-    },
-    {
         "id": "JAREMB",
         "owner": "Ballinngs",
         "desc": "Embassy for The Principality of Ballinngs",
@@ -2377,6 +2105,466 @@ let REGISTRY = [
         "se": {
             "x": 184,
             "z": 35
+        }
+    },
+    {
+        "id": "FIRSTB",
+        "owner": "LukeNK",
+        "desc": "Modern seaside house",
+        "address": "N SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": -4
+            },
+            {
+                "x": 5,
+                "z": -3
+            }
+        ],
+        "dimensions": {
+            "x": 5,
+            "z": 5
+        },
+        "nw": {
+            "x": 90,
+            "z": -51
+        },
+        "se": {
+            "x": 94,
+            "z": -47
+        }
+    },
+    {
+        "id": "NCLIFF",
+        "owner": "LukeNK",
+        "desc": "Wooden mansion",
+        "address": "N SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 3,
+                "z": -4
+            },
+            {
+                "x": 3,
+                "z": -3
+            }
+        ],
+        "dimensions": {
+            "x": 9,
+            "z": 15
+        },
+        "nw": {
+            "x": 48,
+            "z": -57
+        },
+        "se": {
+            "x": 56,
+            "z": -43
+        }
+    },
+    {
+        "id": "FHOUSE",
+        "owner": "LukeNK",
+        "desc": "Modern house",
+        "address": "N SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 3,
+                "z": -2
+            },
+            {
+                "x": 4,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 10,
+            "z": 8
+        },
+        "nw": {
+            "x": 58,
+            "z": -25
+        },
+        "se": {
+            "x": 67,
+            "z": -18
+        }
+    },
+    {
+        "id": "MLAFCE",
+        "owner": "LukeNK",
+        "desc": "Wooden house",
+        "address": "N SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 4,
+                "z": -3
+            },
+            {
+                "x": 5,
+                "z": -3
+            }
+        ],
+        "dimensions": {
+            "x": 8,
+            "z": 8
+        },
+        "nw": {
+            "x": 73,
+            "z": -44
+        },
+        "se": {
+            "x": 80,
+            "z": -37
+        }
+    },
+    {
+        "id": "FARMHO",
+        "owner": "LukeNK",
+        "desc": "Wooden house with roof farm",
+        "address": "N SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": -3
+            }
+        ],
+        "dimensions": {
+            "x": 7,
+            "z": 7
+        },
+        "nw": {
+            "x": 81,
+            "z": -44
+        },
+        "se": {
+            "x": 87,
+            "z": -38
+        }
+    },
+    {
+        "id": "GREENC",
+        "owner": "LukeNK",
+        "desc": "Small house",
+        "address": "BEEHIVE ave",
+        "chunks": [
+            {
+                "x": 4,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 4,
+            "z": 5
+        },
+        "nw": {
+            "x": 64,
+            "z": -32
+        },
+        "se": {
+            "x": 67,
+            "z": -28
+        }
+    },
+    {
+        "id": "SEAAPP",
+        "owner": "LukeNK",
+        "desc": "Apartment for 3 with farm",
+        "address": "N SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": -3
+            },
+            {
+                "x": 6,
+                "z": -3
+            }
+        ],
+        "dimensions": {
+            "x": 10,
+            "z": 7
+        },
+        "nw": {
+            "x": 88,
+            "z": -44
+        },
+        "se": {
+            "x": 97,
+            "z": -38
+        }
+    },
+    {
+        "id": "FAJOPS",
+        "owner": "LukeNK",
+        "desc": "Single family house",
+        "address": "N SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": -3
+            },
+            {
+                "x": 5,
+                "z": -2
+            },
+            {
+                "x": 6,
+                "z": -3
+            },
+            {
+                "x": 6,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 9,
+            "z": 8
+        },
+        "nw": {
+            "x": 88,
+            "z": -37
+        },
+        "se": {
+            "x": 96,
+            "z": -30
+        }
+    },
+    {
+        "id": "APPF7P",
+        "owner": "LukeNK",
+        "desc": "Apartment for 7",
+        "address": "S SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 4,
+                "z": -2
+            },
+            {
+                "x": 4,
+                "z": -1
+            }
+        ],
+        "dimensions": {
+            "x": 8,
+            "z": 18
+        },
+        "nw": {
+            "x": 68,
+            "z": -30
+        },
+        "se": {
+            "x": 75,
+            "z": -13
+        }
+    },
+    {
+        "id": "F3PV9K",
+        "owner": "LukeNK",
+        "desc": "Small wooden house",
+        "address": "S SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": -3
+            },
+            {
+                "x": 5,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 7,
+            "z": 7
+        },
+        "nw": {
+            "x": 82,
+            "z": -36
+        },
+        "se": {
+            "x": 88,
+            "z": -30
+        }
+    },
+    {
+        "id": "H5JO3K",
+        "owner": "Senerean",
+        "desc": "Storage house with ship dock",
+        "address": "N SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 6,
+                "z": -3
+            },
+            {
+                "x": 6,
+                "z": -2
+            },
+            {
+                "x": 7,
+                "z": -3
+            },
+            {
+                "x": 7,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 19,
+            "z": 11
+        },
+        "nw": {
+            "x": 100,
+            "z": -39
+        },
+        "se": {
+            "x": 118,
+            "z": -29
+        }
+    },
+    {
+        "id": "J8KO1P",
+        "owner": "LukeNK",
+        "desc": "Storage house with ship dock",
+        "address": "SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 5,
+                "z": -2
+            },
+            {
+                "x": 6,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 11,
+            "z": 7
+        },
+        "nw": {
+            "x": 86,
+            "z": -28
+        },
+        "se": {
+            "x": 96,
+            "z": -22
+        }
+    },
+    {
+        "id": "I9FJ1A",
+        "owner": "LukeNK",
+        "desc": "Coffee shop",
+        "address": "UPHILL st",
+        "chunks": [
+            {
+                "x": 6,
+                "z": -2
+            },
+            {
+                "x": 7,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 15,
+            "z": 9
+        },
+        "nw": {
+            "x": 107,
+            "z": -28
+        },
+        "se": {
+            "x": 121,
+            "z": -20
+        }
+    },
+    {
+        "id": "CLHOSP",
+        "owner": "Senerean",
+        "desc": "Three-floor hospital with ER connected to Uphill st",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 1,
+                "z": -2
+            },
+            {
+                "x": 2,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 13,
+            "z": 15
+        },
+        "nw": {
+            "x": 30,
+            "z": -32
+        },
+        "se": {
+            "x": 42,
+            "z": -18
+        }
+    },
+    {
+        "id": "VACIMU",
+        "owner": "Senerean",
+        "desc": "Vaccine and immunization clinic",
+        "address": "VALLEY ave",
+        "chunks": [
+            {
+                "x": 1,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 10,
+            "z": 11
+        },
+        "nw": {
+            "x": 17,
+            "z": -28
+        },
+        "se": {
+            "x": 26,
+            "z": -18
+        }
+    },
+    {
+        "id": "TRRAIL",
+        "owner": "Senerean",
+        "desc": "Train manufacturing factory with showroom",
+        "address": "S SEA CLIFF ave",
+        "chunks": [
+            {
+                "x": 0,
+                "z": -3
+            },
+            {
+                "x": 0,
+                "z": -2
+            },
+            {
+                "x": 1,
+                "z": -3
+            },
+            {
+                "x": 1,
+                "z": -2
+            }
+        ],
+        "dimensions": {
+            "x": 14,
+            "z": 30
+        },
+        "nw": {
+            "x": 3,
+            "z": -47
+        },
+        "se": {
+            "x": 16,
+            "z": -18
         }
     }
 ]
