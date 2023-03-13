@@ -4,88 +4,6 @@ let REGISTRY = [
         "owner": "Ballinngs",
         "desc": "Embassy for The Principality of Ballinngs",
         "address": "PEACE ave",
-        "chunks": [
-            {
-                "x": -4,
-                "z": 1
-            },
-            {
-                "x": -4,
-                "z": 2
-            },
-            {
-                "x": -4,
-                "z": 3
-            },
-            {
-                "x": -4,
-                "z": 4
-            },
-            {
-                "x": -3,
-                "z": 1
-            },
-            {
-                "x": -3,
-                "z": 2
-            },
-            {
-                "x": -3,
-                "z": 3
-            },
-            {
-                "x": -3,
-                "z": 4
-            },
-            {
-                "x": -2,
-                "z": 1
-            },
-            {
-                "x": -2,
-                "z": 2
-            },
-            {
-                "x": -2,
-                "z": 3
-            },
-            {
-                "x": -2,
-                "z": 4
-            },
-            {
-                "x": -1,
-                "z": 1
-            },
-            {
-                "x": -1,
-                "z": 2
-            },
-            {
-                "x": -1,
-                "z": 3
-            },
-            {
-                "x": -1,
-                "z": 4
-            },
-            {
-                "x": 0,
-                "z": 1
-            },
-            {
-                "x": 0,
-                "z": 2
-            },
-            {
-                "x": 0,
-                "z": 3
-            },
-            {
-                "x": 0,
-                "z": 4
-            }
-        ],
         "dimensions": {
             "x": 67,
             "z": 46
@@ -104,56 +22,6 @@ let REGISTRY = [
         "owner": "Wilhelma and the Flanfairs",
         "desc": "The Republic of Wilhelma and the Flanfairs embassy",
         "address": "2023 ave",
-        "chunks": [
-            {
-                "x": -4,
-                "z": -1
-            },
-            {
-                "x": -4,
-                "z": 0
-            },
-            {
-                "x": -3,
-                "z": -1
-            },
-            {
-                "x": -3,
-                "z": 0
-            },
-            {
-                "x": -2,
-                "z": -1
-            },
-            {
-                "x": -2,
-                "z": 0
-            },
-            {
-                "x": -1,
-                "z": -1
-            },
-            {
-                "x": -1,
-                "z": 0
-            },
-            {
-                "x": 0,
-                "z": -1
-            },
-            {
-                "x": 0,
-                "z": 0
-            },
-            {
-                "x": 1,
-                "z": -1
-            },
-            {
-                "x": 1,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 76,
             "z": 27
@@ -172,32 +40,6 @@ let REGISTRY = [
         "owner": "BenPo",
         "desc": "Hill-side embeded house",
         "address": "BEEHIVE ave",
-        "chunks": [
-            {
-                "x": 2,
-                "z": -1
-            },
-            {
-                "x": 2,
-                "z": 0
-            },
-            {
-                "x": 3,
-                "z": -1
-            },
-            {
-                "x": 3,
-                "z": 0
-            },
-            {
-                "x": 4,
-                "z": -1
-            },
-            {
-                "x": 4,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 21,
             "z": 17
@@ -216,32 +58,6 @@ let REGISTRY = [
         "owner": "BenPo",
         "desc": "Port with capacity of 4",
         "address": "UPHILL st",
-        "chunks": [
-            {
-                "x": 7,
-                "z": -4
-            },
-            {
-                "x": 7,
-                "z": -3
-            },
-            {
-                "x": 7,
-                "z": -2
-            },
-            {
-                "x": 8,
-                "z": -4
-            },
-            {
-                "x": 8,
-                "z": -3
-            },
-            {
-                "x": 8,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 19,
             "z": 34
@@ -260,16 +76,6 @@ let REGISTRY = [
         "owner": "BenPo",
         "desc": "2023 hill side sign",
         "address": "BEEHIVE AVE",
-        "chunks": [
-            {
-                "x": 4,
-                "z": 2
-            },
-            {
-                "x": 5,
-                "z": 2
-            }
-        ],
         "dimensions": {
             "x": 18,
             "z": 1
@@ -288,24 +94,6 @@ let REGISTRY = [
         "owner": "BenPo",
         "desc": "2023 sign lookout",
         "address": "UPHILL st",
-        "chunks": [
-            {
-                "x": 4,
-                "z": -1
-            },
-            {
-                "x": 4,
-                "z": 0
-            },
-            {
-                "x": 5,
-                "z": -1
-            },
-            {
-                "x": 5,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 16,
             "z": 25
@@ -324,16 +112,6 @@ let REGISTRY = [
         "owner": "BenPo",
         "desc": "A wooden coffee shop",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 3,
-                "z": 0
-            },
-            {
-                "x": 4,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 13,
             "z": 10
@@ -352,16 +130,6 @@ let REGISTRY = [
         "owner": "BenPo",
         "desc": "Cliff side hanging house",
         "address": "EMBASSY ave",
-        "chunks": [
-            {
-                "x": 3,
-                "z": 3
-            },
-            {
-                "x": 3,
-                "z": 4
-            }
-        ],
         "dimensions": {
             "x": 9,
             "z": 15
@@ -380,16 +148,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Safe injection building",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 1,
-                "z": -1
-            },
-            {
-                "x": 2,
-                "z": -1
-            }
-        ],
         "dimensions": {
             "x": 8,
             "z": 8
@@ -408,12 +166,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "All-gender bath house",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 3,
-                "z": 1
-            }
-        ],
         "dimensions": {
             "x": 9,
             "z": 9
@@ -432,16 +184,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Basic house",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 3,
-                "z": 1
-            },
-            {
-                "x": 4,
-                "z": 1
-            }
-        ],
         "dimensions": {
             "x": 7,
             "z": 7
@@ -460,24 +202,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Boardcast centre with cell tower",
         "address": "EMBASSY ave",
-        "chunks": [
-            {
-                "x": 1,
-                "z": 2
-            },
-            {
-                "x": 1,
-                "z": 3
-            },
-            {
-                "x": 2,
-                "z": 2
-            },
-            {
-                "x": 2,
-                "z": 3
-            }
-        ],
         "dimensions": {
             "x": 20,
             "z": 13
@@ -496,24 +220,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "International negotiation hall",
         "address": "EMBASSY ave",
-        "chunks": [
-            {
-                "x": 1,
-                "z": 3
-            },
-            {
-                "x": 1,
-                "z": 4
-            },
-            {
-                "x": 2,
-                "z": 3
-            },
-            {
-                "x": 2,
-                "z": 4
-            }
-        ],
         "dimensions": {
             "x": 16,
             "z": 15
@@ -532,16 +238,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Human Rights tribunal",
         "address": "2023 ave",
-        "chunks": [
-            {
-                "x": 2,
-                "z": 2
-            },
-            {
-                "x": 3,
-                "z": 2
-            }
-        ],
         "dimensions": {
             "x": 17,
             "z": 12
@@ -560,40 +256,6 @@ let REGISTRY = [
         "owner": "BenPo",
         "desc": "Low-rise avenue bridge crossing through a river",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 11,
-                "z": 0
-            },
-            {
-                "x": 11,
-                "z": 1
-            },
-            {
-                "x": 12,
-                "z": 0
-            },
-            {
-                "x": 12,
-                "z": 1
-            },
-            {
-                "x": 13,
-                "z": 0
-            },
-            {
-                "x": 13,
-                "z": 1
-            },
-            {
-                "x": 14,
-                "z": 0
-            },
-            {
-                "x": 14,
-                "z": 1
-            }
-        ],
         "dimensions": {
             "x": 58,
             "z": 9
@@ -612,16 +274,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Archive house",
         "address": "EMBASSY ave",
-        "chunks": [
-            {
-                "x": 3,
-                "z": 2
-            },
-            {
-                "x": 3,
-                "z": 3
-            }
-        ],
         "dimensions": {
             "x": 11,
             "z": 13
@@ -640,12 +292,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Hut for resting and looking at scenery",
         "address": "BEEHIVE ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": -1
-            }
-        ],
         "dimensions": {
             "x": 8,
             "z": 8
@@ -664,16 +310,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Iron smith shop",
         "address": "BEEHIVE ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": -1
-            },
-            {
-                "x": 4,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 7,
             "z": 7
@@ -692,12 +328,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Spruce wood house",
         "address": "BEEHIVE ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 7,
             "z": 7
@@ -716,12 +346,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Shop with potion storage",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": 1
-            }
-        ],
         "dimensions": {
             "x": 9,
             "z": 11
@@ -740,16 +364,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Fast steak store",
         "address": "2023 ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": 2
-            },
-            {
-                "x": 4,
-                "z": 3
-            }
-        ],
         "dimensions": {
             "x": 7,
             "z": 7
@@ -768,24 +382,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Convenience potion store",
         "address": "2023 ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": 2
-            },
-            {
-                "x": 4,
-                "z": 3
-            },
-            {
-                "x": 5,
-                "z": 2
-            },
-            {
-                "x": 5,
-                "z": 3
-            }
-        ],
         "dimensions": {
             "x": 8,
             "z": 9
@@ -804,12 +400,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Fast food store",
         "address": "EMBASSY ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": 3
-            }
-        ],
         "dimensions": {
             "x": 8,
             "z": 6
@@ -828,12 +418,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Meeting hall",
         "address": "SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": -1
-            }
-        ],
         "dimensions": {
             "x": 13,
             "z": 10
@@ -852,12 +436,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Daycare",
         "address": "SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 13,
             "z": 13
@@ -876,12 +454,6 @@ let REGISTRY = [
         "owner": "Omnomnom",
         "desc": "Food store",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": 1
-            }
-        ],
         "dimensions": {
             "x": 7,
             "z": 8
@@ -900,16 +472,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Rail convention center",
         "address": "EMBASSY ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": 3
-            },
-            {
-                "x": 5,
-                "z": 4
-            }
-        ],
         "dimensions": {
             "x": 7,
             "z": 15
@@ -928,16 +490,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Duplex with tree decoration on top",
         "address": "EMBASSY ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": 4
-            },
-            {
-                "x": 6,
-                "z": 4
-            }
-        ],
         "dimensions": {
             "x": 13,
             "z": 8
@@ -956,32 +508,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Community garden",
         "address": "SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 6,
-                "z": -2
-            },
-            {
-                "x": 6,
-                "z": -1
-            },
-            {
-                "x": 6,
-                "z": 0
-            },
-            {
-                "x": 7,
-                "z": -2
-            },
-            {
-                "x": 7,
-                "z": -1
-            },
-            {
-                "x": 7,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 15,
             "z": 28
@@ -1000,12 +526,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Wooden house",
         "address": "SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 6,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 10,
             "z": 7
@@ -1024,16 +544,6 @@ let REGISTRY = [
         "owner": "UNCLAIMED",
         "desc": "Market",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 6,
-                "z": 0
-            },
-            {
-                "x": 6,
-                "z": 1
-            }
-        ],
         "dimensions": {
             "x": 11,
             "z": 7
@@ -1052,24 +562,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Office of a company that starts with M",
         "address": "2023 ave",
-        "chunks": [
-            {
-                "x": 6,
-                "z": 3
-            },
-            {
-                "x": 6,
-                "z": 4
-            },
-            {
-                "x": 7,
-                "z": 3
-            },
-            {
-                "x": 7,
-                "z": 4
-            }
-        ],
         "dimensions": {
             "x": 15,
             "z": 10
@@ -1088,24 +580,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Environment management college",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 7,
-                "z": -1
-            },
-            {
-                "x": 7,
-                "z": 0
-            },
-            {
-                "x": 8,
-                "z": -1
-            },
-            {
-                "x": 8,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 15,
             "z": 19
@@ -1124,24 +598,6 @@ let REGISTRY = [
         "owner": "Omnomnom",
         "desc": "Sakura tree with camping site",
         "address": "UPHILL st",
-        "chunks": [
-            {
-                "x": 7,
-                "z": -1
-            },
-            {
-                "x": 7,
-                "z": 0
-            },
-            {
-                "x": 8,
-                "z": -1
-            },
-            {
-                "x": 8,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 17,
             "z": 15
@@ -1160,12 +616,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Medival style house",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 8,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 10,
             "z": 10
@@ -1184,24 +634,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Library",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 8,
-                "z": -1
-            },
-            {
-                "x": 8,
-                "z": 0
-            },
-            {
-                "x": 9,
-                "z": -1
-            },
-            {
-                "x": 9,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 18,
             "z": 18
@@ -1220,16 +652,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Human Rights mediation hall",
         "address": "UPHILL st",
-        "chunks": [
-            {
-                "x": 9,
-                "z": 1
-            },
-            {
-                "x": 9,
-                "z": 2
-            }
-        ],
         "dimensions": {
             "x": 9,
             "z": 17
@@ -1248,16 +670,6 @@ let REGISTRY = [
         "owner": "Omnomnom",
         "desc": "A giant jar",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 10,
-                "z": 0
-            },
-            {
-                "x": 11,
-                "z": 0
-            }
-        ],
         "dimensions": {
             "x": 11,
             "z": 10
@@ -1276,16 +688,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Penguin statue with Senerean flag",
         "address": "S SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 2,
-                "z": -2
-            },
-            {
-                "x": 3,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 15,
             "z": 15
@@ -1304,16 +706,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Metro station",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 8,
-                "z": 1
-            },
-            {
-                "x": 9,
-                "z": 1
-            }
-        ],
         "dimensions": {
             "x": 13,
             "z": 8
@@ -1332,12 +724,6 @@ let REGISTRY = [
         "owner": "Omnomnom",
         "desc": "Decorative tree",
         "address": "2023 ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": 1
-            }
-        ],
         "dimensions": {
             "x": 7,
             "z": 8
@@ -1356,12 +742,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Fire department will call center",
         "address": "UPHILL st",
-        "chunks": [
-            {
-                "x": -1,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 10,
             "z": 15
@@ -1380,24 +760,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Ministry of Land Development",
         "address": "UPHILL st",
-        "chunks": [
-            {
-                "x": 8,
-                "z": 2
-            },
-            {
-                "x": 8,
-                "z": 3
-            },
-            {
-                "x": 9,
-                "z": 2
-            },
-            {
-                "x": 9,
-                "z": 3
-            }
-        ],
         "dimensions": {
             "x": 17,
             "z": 14
@@ -1416,12 +778,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Wooden house with two separate room",
         "address": "TURTLE ave",
-        "chunks": [
-            {
-                "x": 9,
-                "z": 3
-            }
-        ],
         "dimensions": {
             "x": 11,
             "z": 9
@@ -1440,24 +796,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Emergency Coastal Response team",
         "address": "UPHILL st",
-        "chunks": [
-            {
-                "x": 10,
-                "z": 2
-            },
-            {
-                "x": 10,
-                "z": 3
-            },
-            {
-                "x": 11,
-                "z": 2
-            },
-            {
-                "x": 11,
-                "z": 3
-            }
-        ],
         "dimensions": {
             "x": 13,
             "z": 16
@@ -1476,16 +814,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Wooden house",
         "address": "TURTLE ave",
-        "chunks": [
-            {
-                "x": 8,
-                "z": 3
-            },
-            {
-                "x": 9,
-                "z": 3
-            }
-        ],
         "dimensions": {
             "x": 7,
             "z": 8
@@ -1504,24 +832,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Post office with train loading bay",
         "address": "UPHILL st",
-        "chunks": [
-            {
-                "x": 8,
-                "z": 3
-            },
-            {
-                "x": 8,
-                "z": 4
-            },
-            {
-                "x": 9,
-                "z": 3
-            },
-            {
-                "x": 9,
-                "z": 4
-            }
-        ],
         "dimensions": {
             "x": 19,
             "z": 13
@@ -1540,16 +850,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Railway switch access",
         "address": "2023 ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": 2
-            },
-            {
-                "x": 5,
-                "z": 3
-            }
-        ],
         "dimensions": {
             "x": 5,
             "z": 8
@@ -1568,24 +868,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Bank of Nuvak",
         "address": "TURTLE ave",
-        "chunks": [
-            {
-                "x": 7,
-                "z": 3
-            },
-            {
-                "x": 7,
-                "z": 4
-            },
-            {
-                "x": 8,
-                "z": 3
-            },
-            {
-                "x": 8,
-                "z": 4
-            }
-        ],
         "dimensions": {
             "x": 13,
             "z": 11
@@ -1604,16 +886,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Metro station",
         "address": "S SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 1,
-                "z": -3
-            },
-            {
-                "x": 1,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 9,
             "z": 13
@@ -1632,24 +904,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "A wooden townhouse",
         "address": "SUGAR SHORE",
-        "chunks": [
-            {
-                "x": 10,
-                "z": 3
-            },
-            {
-                "x": 10,
-                "z": 4
-            },
-            {
-                "x": 11,
-                "z": 3
-            },
-            {
-                "x": 11,
-                "z": 4
-            }
-        ],
         "dimensions": {
             "x": 13,
             "z": 14
@@ -1668,24 +922,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "A wooden townhouse",
         "address": "SUGAR SHORE ave",
-        "chunks": [
-            {
-                "x": 11,
-                "z": 3
-            },
-            {
-                "x": 11,
-                "z": 4
-            },
-            {
-                "x": 12,
-                "z": 3
-            },
-            {
-                "x": 12,
-                "z": 4
-            }
-        ],
         "dimensions": {
             "x": 13,
             "z": 13
@@ -1704,16 +940,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "A wooden townhouse",
         "address": "2023 ave",
-        "chunks": [
-            {
-                "x": 6,
-                "z": 4
-            },
-            {
-                "x": 6,
-                "z": 5
-            }
-        ],
         "dimensions": {
             "x": 8,
             "z": 13
@@ -1732,24 +958,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "A wooden townhouse",
         "address": "EMBASSY ave",
-        "chunks": [
-            {
-                "x": 6,
-                "z": 4
-            },
-            {
-                "x": 6,
-                "z": 5
-            },
-            {
-                "x": 7,
-                "z": 4
-            },
-            {
-                "x": 7,
-                "z": 5
-            }
-        ],
         "dimensions": {
             "x": 7,
             "z": 13
@@ -1768,16 +976,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Bricks townhouse",
         "address": "2023 ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": 4
-            },
-            {
-                "x": 5,
-                "z": 5
-            }
-        ],
         "dimensions": {
             "x": 11,
             "z": 11
@@ -1796,16 +994,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Metro station",
         "address": "EMBASSY ave",
-        "chunks": [
-            {
-                "x": 2,
-                "z": 3
-            },
-            {
-                "x": 3,
-                "z": 3
-            }
-        ],
         "dimensions": {
             "x": 14,
             "z": 14
@@ -1824,12 +1012,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "A lighthouse focus to north and east direction",
         "address": "UPHILL st",
-        "chunks": [
-            {
-                "x": 10,
-                "z": -1
-            }
-        ],
         "dimensions": {
             "x": 9,
             "z": 9
@@ -1848,32 +1030,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Parking facility",
         "address": "HIGHLAND st",
-        "chunks": [
-            {
-                "x": 1,
-                "z": 4
-            },
-            {
-                "x": 1,
-                "z": 5
-            },
-            {
-                "x": 2,
-                "z": 4
-            },
-            {
-                "x": 2,
-                "z": 5
-            },
-            {
-                "x": 3,
-                "z": 4
-            },
-            {
-                "x": 3,
-                "z": 5
-            }
-        ],
         "dimensions": {
             "x": 19,
             "z": 17
@@ -1892,32 +1048,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Wooden triplex townhouse",
         "address": "BEEHIVE ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": 4
-            },
-            {
-                "x": 4,
-                "z": 5
-            },
-            {
-                "x": 4,
-                "z": 6
-            },
-            {
-                "x": 5,
-                "z": 4
-            },
-            {
-                "x": 5,
-                "z": 5
-            },
-            {
-                "x": 5,
-                "z": 6
-            }
-        ],
         "dimensions": {
             "x": 14,
             "z": 21
@@ -1936,12 +1066,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Wooden house with metro lookout",
         "address": "TURTLE ave",
-        "chunks": [
-            {
-                "x": 8,
-                "z": 3
-            }
-        ],
         "dimensions": {
             "x": 7,
             "z": 7
@@ -1960,24 +1084,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Nature and environment laboratory",
         "address": "BEEHIVE ave",
-        "chunks": [
-            {
-                "x": 3,
-                "z": 5
-            },
-            {
-                "x": 3,
-                "z": 6
-            },
-            {
-                "x": 4,
-                "z": 5
-            },
-            {
-                "x": 4,
-                "z": 6
-            }
-        ],
         "dimensions": {
             "x": 15,
             "z": 17
@@ -1996,16 +1102,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Public toilet",
         "address": "NATSAK ave",
-        "chunks": [
-            {
-                "x": 3,
-                "z": 4
-            },
-            {
-                "x": 3,
-                "z": 5
-            }
-        ],
         "dimensions": {
             "x": 3,
             "z": 5
@@ -2024,12 +1120,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Cliff-side wooden house",
         "address": "EMBASSY ave",
-        "chunks": [
-            {
-                "x": 7,
-                "z": 4
-            }
-        ],
         "dimensions": {
             "x": 10,
             "z": 7
@@ -2048,16 +1138,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "A wooden townhouse",
         "address": "SUGAR SHORE ave",
-        "chunks": [
-            {
-                "x": 10,
-                "z": 4
-            },
-            {
-                "x": 11,
-                "z": 4
-            }
-        ],
         "dimensions": {
             "x": 15,
             "z": 8
@@ -2076,24 +1156,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Coral aquarium",
         "address": "UPHILL st",
-        "chunks": [
-            {
-                "x": 10,
-                "z": 1
-            },
-            {
-                "x": 10,
-                "z": 2
-            },
-            {
-                "x": 11,
-                "z": 1
-            },
-            {
-                "x": 11,
-                "z": 2
-            }
-        ],
         "dimensions": {
             "x": 18,
             "z": 18
@@ -2112,16 +1174,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Modern seaside house",
         "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": -4
-            },
-            {
-                "x": 5,
-                "z": -3
-            }
-        ],
         "dimensions": {
             "x": 5,
             "z": 5
@@ -2140,16 +1192,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Wooden mansion",
         "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 3,
-                "z": -4
-            },
-            {
-                "x": 3,
-                "z": -3
-            }
-        ],
         "dimensions": {
             "x": 9,
             "z": 15
@@ -2168,16 +1210,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Modern house",
         "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 3,
-                "z": -2
-            },
-            {
-                "x": 4,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 10,
             "z": 8
@@ -2196,16 +1228,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Wooden house",
         "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": -3
-            },
-            {
-                "x": 5,
-                "z": -3
-            }
-        ],
         "dimensions": {
             "x": 8,
             "z": 8
@@ -2224,12 +1246,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Wooden house with roof farm",
         "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": -3
-            }
-        ],
         "dimensions": {
             "x": 7,
             "z": 7
@@ -2248,12 +1264,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Small house",
         "address": "BEEHIVE ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 4,
             "z": 5
@@ -2272,16 +1282,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Apartment for 3 with farm",
         "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": -3
-            },
-            {
-                "x": 6,
-                "z": -3
-            }
-        ],
         "dimensions": {
             "x": 10,
             "z": 7
@@ -2300,24 +1300,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Single family house",
         "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": -3
-            },
-            {
-                "x": 5,
-                "z": -2
-            },
-            {
-                "x": 6,
-                "z": -3
-            },
-            {
-                "x": 6,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 9,
             "z": 8
@@ -2336,16 +1318,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Apartment for 7",
         "address": "S SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 4,
-                "z": -2
-            },
-            {
-                "x": 4,
-                "z": -1
-            }
-        ],
         "dimensions": {
             "x": 8,
             "z": 18
@@ -2364,16 +1336,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Small wooden house",
         "address": "S SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": -3
-            },
-            {
-                "x": 5,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 7,
             "z": 7
@@ -2392,24 +1354,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Storage house with ship dock",
         "address": "N SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 6,
-                "z": -3
-            },
-            {
-                "x": 6,
-                "z": -2
-            },
-            {
-                "x": 7,
-                "z": -3
-            },
-            {
-                "x": 7,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 19,
             "z": 11
@@ -2428,16 +1372,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Storage house with ship dock",
         "address": "SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 5,
-                "z": -2
-            },
-            {
-                "x": 6,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 11,
             "z": 7
@@ -2456,16 +1390,6 @@ let REGISTRY = [
         "owner": "LukeNK",
         "desc": "Coffee shop",
         "address": "UPHILL st",
-        "chunks": [
-            {
-                "x": 6,
-                "z": -2
-            },
-            {
-                "x": 7,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 15,
             "z": 9
@@ -2484,16 +1408,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Three-floor hospital with ER connected to Uphill st",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 1,
-                "z": -2
-            },
-            {
-                "x": 2,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 13,
             "z": 15
@@ -2512,12 +1426,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Vaccine and immunization clinic",
         "address": "VALLEY ave",
-        "chunks": [
-            {
-                "x": 1,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 10,
             "z": 11
@@ -2536,24 +1444,6 @@ let REGISTRY = [
         "owner": "Senerean",
         "desc": "Train manufacturing factory with showroom",
         "address": "S SEA CLIFF ave",
-        "chunks": [
-            {
-                "x": 0,
-                "z": -3
-            },
-            {
-                "x": 0,
-                "z": -2
-            },
-            {
-                "x": 1,
-                "z": -3
-            },
-            {
-                "x": 1,
-                "z": -2
-            }
-        ],
         "dimensions": {
             "x": 14,
             "z": 30

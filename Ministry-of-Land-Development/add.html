@@ -66,15 +66,6 @@
                 cur.dimensions = { x: r[0] - l[0] + 1, z: r[1] - l[1] + 1 }
                 cur.nw = { x: l[0], z: l[1]};
                 cur.se = { x: r[0], z: r[1]};
-                // convert to chunks
-                l[0] = Math.floor(l[0] / 16);
-                l[1] = Math.floor(l[1] / 16);
-                r[0] = Math.floor(r[0] / 16);
-                r[1] = Math.floor(r[1] / 16);
-                // list all of the chunks inside it
-                for (let x = l[0]; x <= r[0]; x++) 
-                    for (let z = l[1]; z <= r[1]; z++)
-                        cur.chunks.push({ x: x, z: z }); // push chunk info
             } else
                 cur[l1] = document.getElementById(l1).value;
 
@@ -111,5 +102,17 @@
             URL.revokeObjectURL(link.href);
         } else
             document.getElementById('out').innerHTML = reg; // just in case of misclick
+    }
+
+    function _convertToChunk() {
+        // convert to chunks placeholder function
+        l[0] = Math.floor(l[0] / 16);
+        l[1] = Math.floor(l[1] / 16);
+        r[0] = Math.floor(r[0] / 16);
+        r[1] = Math.floor(r[1] / 16);
+        // list all of the chunks inside it
+        for (let x = l[0]; x <= r[0]; x++) 
+            for (let z = l[1]; z <= r[1]; z++)
+                cur.chunks.push({ x: x, z: z }); // push chunk info
     }
 </script>

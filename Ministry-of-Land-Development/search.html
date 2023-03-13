@@ -46,8 +46,7 @@
         for (const build of builds) {
             let res = ''; // result
             for (const prop in build) {
-                if (prop == 'chunks') res += `${build[prop].length} chunks<br>`;
-                else if (prop == 'nw') {
+                if (prop == 'nw') {
                     // if it is cord
                     let c = build[prop];
                     res += `Coordinate: ${c.x}, ${c.z}`;
