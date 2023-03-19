@@ -73,8 +73,12 @@
                 if (cur.id == '.') {
                     // if user ask for random-generated
                     cur.id = '';
-                    for (let _ = 0; _ < 6; _++) 
-                        cur.id += ALLOW_CHAR[Math.floor(Math.random() * ALLOW_CHAR.length)];
+                    // at second and fifth position, use number instead of letter
+                    for (let l1 = 0; l1 < 6; l1++) 
+                        if ([1, 4].includes(l1))
+                            cur.id += ALLOW_NUM[Math.floor(Math.random() * ALLOW_NUM.length)]
+                        else
+                            cur.id += ALLOW_CHAR[Math.floor(Math.random() * ALLOW_CHAR.length)];
                 }
 
                 // clean id to upper case
