@@ -1456,5 +1456,43 @@ let REGISTRY = [
             "x": 16,
             "z": -18
         }
+    },
+    {
+        "id": "8SEHEO",
+        "owner": "LukeNK",
+        "desc": "A townhouse with the first floor is a fast-food restaurant",
+        "address": "S SEA CLIFF ave",
+        "chunks": [],
+        "dimensions": {
+            "x": 11,
+            "z": 12
+        },
+        "nw": {
+            "x": -23,
+            "z": -28
+        },
+        "se": {
+            "x": -13,
+            "z": -17
+        }
+    },
+    {
+        "id": "KFFLXG",
+        "owner": "LukeNK",
+        "desc": "A duplex townhouse with shops on the first floor",
+        "address": "S SEA CLIFF ave",
+        "chunks": [],
+        "dimensions": {
+            "x": 8,
+            "z": 14
+        },
+        "nw": {
+            "x": -10,
+            "z": -48
+        },
+        "se": {
+            "x": -3,
+            "z": -35
+        }
     }
 ]
