@@ -1494,5 +1494,24 @@ let REGISTRY = [
             "x": -3,
             "z": -35
         }
+    },
+    {
+        "id": "A0TO4M",
+        "owner": "LukeNK",
+        "desc": "Wooden shop with house on the second floor. The house crossed through valley avenue with the front door on the shopping square.",
+        "address": "S SEA CLIFF ave",
+        "chunks": [],
+        "dimensions": {
+            "x": 14,
+            "z": 13
+        },
+        "nw": {
+            "x": -9,
+            "z": -59
+        },
+        "se": {
+            "x": 4,
+            "z": -47
+        }
     }
 ]
