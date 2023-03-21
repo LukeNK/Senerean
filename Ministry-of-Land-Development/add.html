@@ -49,7 +49,7 @@
 <script>
     function add(download) {
         let cur = {...TEMPLATE};
-        cur.chunks = []; // change chunk to array instead of hint string
+        delete cur.chunks; // still leave chunks for the script to run to get the coord
         for (const l1 in TEMPLATE) {
             if (l1 == 'chunks') {
                 // get cord and split

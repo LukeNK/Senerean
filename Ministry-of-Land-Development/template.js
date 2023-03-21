@@ -3,7 +3,7 @@ const TEMPLATE = {
     owner: 'The name of the current owner',
     desc: 'Breif summary of the build',
     address: "Road base on main entrance, not include house number (you don't have it anyways)",
-    chunks: 'Chunks that have the build (using x, z format), leave empty if all were listed'
+    chunks: 'Empty space to signify for the script to save dimension and cord'
 }
 
 // list of road type
