@@ -62,8 +62,6 @@
                 l[1] = parseInt(l[1]);
                 r[0] = parseInt(r[0]);
                 r[1] = parseInt(r[1]);
-                // add dimension to the build
-                cur.dimensions = { x: r[0] - l[0] + 1, z: r[1] - l[1] + 1 }
                 cur.nw = { x: l[0], z: l[1]};
                 cur.se = { x: r[0], z: r[1]};
             } else
@@ -109,6 +107,8 @@
     }
 
     function _convertToChunk() {
+        // add dimension to the build
+        cur.dimensions = { x: r[0] - l[0] + 1, z: r[1] - l[1] + 1 }
         // convert to chunks placeholder function
         l[0] = Math.floor(l[0] / 16);
         l[1] = Math.floor(l[1] / 16);

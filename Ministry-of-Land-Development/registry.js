@@ -1,4 +1,4 @@
-[
+let REGISTRY = [
     {
         "id": "JAREMB",
         "owner": "Ballinngs",
@@ -1173,6 +1173,20 @@
         "se": {
             "x": 4,
             "z": -47
+        }
+    },
+    {
+        "id": "SHOPMA",
+        "owner": "LukeNK",
+        "desc": "Shopping mall with 8 shops and tables for sitting on the second floor.",
+        "address": "S SEA CLIFF ave",
+        "nw": {
+            "x": -43,
+            "z": -54
+        },
+        "se": {
+            "x": -10,
+            "z": -35
         }
     }
 ]
