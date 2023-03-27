@@ -10,6 +10,10 @@
             margin: 0 1rem;
         }
 
+        .build p {
+            margin-top: 0;
+            margin-left: 40px;
+        }
         .build b {
             color: var(--color-dark-theme);
         }
@@ -49,7 +53,7 @@
                 if (prop == 'nw') {
                     // if it is cord
                     let c = build[prop];
-                    res += `Coordinate: ${c.x}, ${c.z}`;
+                    res += `North-West block: ${c.x}, ${c.z}`;
                 }
                 else if (typeof(build[prop]) == "object") 'pass'; // to prevent objects being log
                 else if (prop != 'id') res += `${prop}: ${build[prop]}<br>`;
@@ -57,7 +61,7 @@
             result.innerHTML += 
                 `<div class="build">
                     <b>${build.id}</b>
-                    ${res}
+                    <p>${res}</p>
                 </div>`;
         }
         document.getElementById('searchInfo').innerHTML = builds.length;

@@ -198,7 +198,7 @@ let REGISTRY = [
     {
         "id": "BEN007",
         "owner": "BenPo",
-        "desc": "Low-rise avenue bridge crossing through a river",
+        "desc": "Low-rise street bridge crossing through a river",
         "address": "VALLEY ave",
         "nw": {
             "x": 181,
@@ -1164,7 +1164,7 @@ let REGISTRY = [
     {
         "id": "A0TO4M",
         "owner": "LukeNK",
-        "desc": "Wooden shop with house on the second floor. The house crossed through valley avenue with the front door on the shopping square.",
+        "desc": "Wooden shop with house on the second floor. The house crossed through Valley avenue with the front door on the shopping square.",
         "address": "S SEA CLIFF ave",
         "nw": {
             "x": -9,

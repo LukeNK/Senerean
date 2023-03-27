@@ -9,6 +9,10 @@
     }
 }
 
+.darkTheme button {
+    color: white;
+}
+
 .darkTheme #navTop button {
     background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1076402435368681472/darkTheme.png);
 }
