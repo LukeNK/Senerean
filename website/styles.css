@@ -82,6 +82,9 @@ body {
 header {
     background-color: var(--color-bg);
 }
+header hr {
+    margin-top: 0;
+}
 
 main {
     flex: 1;
@@ -114,10 +117,6 @@ main {
     background-color: transparent;
     background-size: contain;
     background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1076402435158970418/whiteTheme.png);
-}
-
-header hr {
-    margin-top: 0;
 }
 
 nav {
