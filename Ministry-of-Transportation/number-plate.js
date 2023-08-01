@@ -1,5 +1,5 @@
 let nationCode = 'EI'
-    input = 'EI-PARL-GOV';
+    input = 'NC-NICE-CAR';
 
 // convert, position = character numerical value, hypen don't have value
 const toNumber = '-1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ',

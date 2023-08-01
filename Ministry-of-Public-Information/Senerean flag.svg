@@ -2,16 +2,16 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="200mm"
+   height="100mm"
+   viewBox="0 0 200 100"
    version="1.1"
    id="svg5"
    sodipodi:docname="Senerean flag.svg"
-   inkscape:export-filename="seal.png"
+   inkscape:export-filename="..\..\..\..\Desktop\1.png"
    inkscape:export-xdpi="100"
    inkscape:export-ydpi="100"
-   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,15 +27,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.34142107"
-     inkscape:cx="335.36301"
-     inkscape:cy="700.01538"
-     inkscape:window-width="1366"
-     inkscape:window-height="745"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:zoom="1.0564106"
+     inkscape:cx="780.94635"
+     inkscape:cy="264.57516"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="svg5"
      showguides="false" />
   <defs
      id="defs2" />
@@ -302,7 +302,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer4"
-     inkscape:label="Seal">
+     inkscape:label="Seal"
+     style="display:none">
     <path
        sodipodi:type="star"
        style="font-variation-settings:'wght' 400;display:inline;fill:#000000;fill-opacity:1;stroke-width:3.84292"
@@ -528,6 +529,90 @@
   </g>
   <g
      inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Nenerean flag"
+     style="display:none">
+    <path
+       sodipodi:type="star"
+       style="fill:#000080;stroke-width:2.49797;stroke-linejoin:round"
+       id="path1485"
+       inkscape:flatsided="false"
+       sodipodi:sides="3"
+       sodipodi:cx="50.118855"
+       sodipodi:cy="20.543419"
+       sodipodi:r1="19.371849"
+       sodipodi:r2="9.6859245"
+       sodipodi:arg1="0.52359878"
+       sodipodi:arg2="1.5707963"
+       inkscape:rounded="-2.810252e-16"
+       inkscape:randomized="0"
+       d="m 66.895368,30.229343 -16.776513,0 -16.776514,0 8.388257,-14.528886 8.388257,-14.5288872 8.388256,14.5288862 z"
+       inkscape:transform-center-y="4.1666669"
+       transform="matrix(0.74508926,-0.74508926,0.43017748,0.43017748,49.653005,74.339034)"
+       inkscape:transform-center-x="-4.1666663" />
+    <path
+       sodipodi:type="star"
+       style="fill:#00ff00;stroke-width:2.49797;stroke-linejoin:round"
+       id="path1485-9"
+       inkscape:flatsided="false"
+       sodipodi:sides="3"
+       sodipodi:cx="50.118855"
+       sodipodi:cy="20.543419"
+       sodipodi:r1="19.371849"
+       sodipodi:r2="9.6859245"
+       sodipodi:arg1="0.52359878"
+       sodipodi:arg2="1.5707963"
+       inkscape:rounded="-2.810252e-16"
+       inkscape:randomized="0"
+       d="m 66.895368,30.229343 -16.776513,0 -16.776514,0 8.388257,-14.528886 8.388257,-14.5288872 8.388256,14.5288862 z"
+       inkscape:transform-center-y="-4.1666628"
+       transform="matrix(-0.74508926,0.74508926,-0.43017748,-0.43017748,150.34701,25.660963)"
+       inkscape:transform-center-x="4.1666627" />
+    <rect
+       style="fill:#000080;stroke-width:2;stroke-linejoin:round"
+       id="rect1509"
+       width="37.5"
+       height="25"
+       x="50"
+       y="37.5" />
+    <rect
+       style="fill:#00ff00;stroke-width:2;stroke-linejoin:round"
+       id="rect1509-9"
+       width="37.5"
+       height="25"
+       x="112.50001"
+       y="37.5" />
+    <rect
+       style="fill:#00ff00;stroke-width:1.99999;stroke-linejoin:round"
+       id="rect1563"
+       width="24.999998"
+       height="37.5"
+       x="87.5"
+       y="0" />
+    <rect
+       style="fill:#000080;stroke-width:1.99999;stroke-linejoin:round"
+       id="rect1563-6"
+       width="24.999998"
+       height="37.5"
+       x="87.5"
+       y="62.500004" />
+    <rect
+       style="fill:#000080;stroke-width:2;stroke-linejoin:round"
+       id="rect1723"
+       width="49.999996"
+       height="100"
+       x="0"
+       y="0" />
+    <rect
+       style="fill:#00ff00;stroke-width:2;stroke-linejoin:round"
+       id="rect1723-3"
+       width="49.999996"
+       height="100"
+       x="150"
+       y="1.1920928e-07" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="White monotone flag"
      style="display:none">
@@ -655,7 +740,7 @@
      inkscape:label="Main flag"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:none">
+     style="display:inline">
     <rect
        style="font-variation-settings:'wght' 400;fill:#000080;fill-opacity:1;stroke-width:3"
        id="rect111"
