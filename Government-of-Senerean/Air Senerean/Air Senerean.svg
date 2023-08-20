@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300"
+   height="300"
+   viewBox="0 0 79.374998 79.375"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="Air Senerean.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="3.5178564"
+     inkscape:cx="109.01525"
+     inkscape:cy="287.53305"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Main logo"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#2667ff;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 78.052096,39.646241 V 78.09342"
+       id="path1143" />
+    <path
+       style="fill:none;stroke:#2667ff;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 39.891714,48.788102 V 78.052084"
+       id="path1143-0" />
+    <path
+       style="fill:none;stroke:#2667ff;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 20.811524,63.975658 V 78.052079"
+       id="path1143-0-2" />
+    <path
+       style="fill:none;stroke:#2667ff;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 58.971904,42.187238 V 78.108451"
+       id="path1143-0-9" />
+    <path
+       style="display:inline;fill:#2667ff;stroke:#ffffff;stroke-width:2.64583;stroke-linejoin:round;stroke-dasharray:none;fill-opacity:1.0"
+       d="M 1.3223676,78.052429 78.052096,1.3227343 V 39.687582 Z"
+       id="path317" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:1.5px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';text-align:center;text-anchor:middle;display:none;fill:#000080;stroke:#000080;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+     x="14.858018"
+     y="-14.404338"
+     id="text1465"
+     inkscape:label="Color pallete"><tspan
+       sodipodi:role="line"
+       id="tspan1463"
+       style="stroke:none;stroke-width:2.64583"
+       x="14.858017"
+       y="-14.404338">https://coolors.co/ff1053-000500-fffffa-2667ff-5aff15</tspan></text>
+</svg>
