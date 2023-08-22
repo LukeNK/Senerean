@@ -8,7 +8,7 @@
     --color-dark-theme: #000080;
     --color-bright-theme: #00ff00;
     --color-red: #FF4242ff;
-    --font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;
+    --font-family: inter;
     --font-size: 19px;
 }
 

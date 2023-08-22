@@ -58,10 +58,12 @@ function getCookie(cname) {
 function theme() {
     // toogle theme
     if (DARK_THEME) {
-        document.body.classList.remove('darkTheme')
+        // from dark theme turn back to white theme
+        document.body.classList.remove('darkTheme');
+        document.getElementById('headerLogo').setAttribute('src', '../website/logo.png')
     } else {
-        // not dark theme
-        document.body.classList.add('darkTheme')
+        document.body.classList.add('darkTheme');
+        document.getElementById('headerLogo').setAttribute('src', '../website/logo_white.png')
     }
     DARK_THEME = !DARK_THEME;
     setCookie('darkTheme', DARK_THEME? 1 : 0)
