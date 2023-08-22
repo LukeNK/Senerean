@@ -1188,5 +1188,19 @@ let REGISTRY = [
             "x": -10,
             "z": -35
         }
+    },
+    {
+        "id": "A4BG4P",
+        "owner": "LukeNK",
+        "desc": "Local secure storage house",
+        "address": "S SEA CLIFF ave",
+        "nw": {
+            "x": -34,
+            "z": -29
+        },
+        "se": {
+            "x": -26,
+            "z": -18
+        }
     }
 ]
