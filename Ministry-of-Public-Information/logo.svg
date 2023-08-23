@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="0.43227116"
-     inkscape:cx="545.95362"
-     inkscape:cy="301.89384"
+     inkscape:zoom="1.5706171"
+     inkscape:cx="143.89249"
+     inkscape:cy="137.20722"
      inkscape:window-width="1920"
      inkscape:window-height="1051"
      inkscape:window-x="-9"
@@ -78,28 +78,28 @@
      id="layer1"
      style="display:inline">
     <rect
-       style="fill:#000000;stroke:none;stroke-width:9.99999;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       style="fill:#000000;stroke:none;stroke-width:15;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers;stroke-opacity:1;stroke-linecap:round"
        id="rect1235"
        width="10"
        height="200"
        x="145"
        y="50" />
     <rect
-       style="fill:#000000;stroke:none;stroke-width:9.99999;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       style="fill:#000000;stroke:none;stroke-width:15;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers;stroke-opacity:1;stroke-linecap:round"
        id="rect1235-0"
        width="10"
        height="200"
        x="110"
        y="50" />
     <rect
-       style="fill:#000000;stroke:none;stroke-width:9.99999;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       style="fill:#000000;stroke:none;stroke-width:15;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers;stroke-opacity:1;stroke-linecap:round"
        id="rect1235-0-8"
        width="10"
        height="200"
        x="180"
        y="50" />
     <rect
-       style="fill:#000000;stroke:none;stroke-width:9.99998;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       style="fill:#000000;stroke:none;stroke-width:15;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers;stroke-opacity:1;stroke-linecap:round"
        id="rect1235-0-8-0"
        width="10"
        height="130"
@@ -107,7 +107,7 @@
        y="-215"
        transform="rotate(90)" />
     <rect
-       style="fill:#000000;stroke:none;stroke-width:9.99998;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       style="fill:#000000;stroke:none;stroke-width:15;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers;stroke-opacity:1;stroke-linecap:round"
        id="rect1235-0-8-0-4"
        width="10"
        height="130"
@@ -115,7 +115,7 @@
        y="-215"
        transform="rotate(90)" />
     <rect
-       style="fill:#000000;stroke:none;stroke-width:9.99998;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       style="fill:#000000;stroke:none;stroke-width:15;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers;stroke-opacity:1;stroke-linecap:round"
        id="rect1235-0-8-0-4-4"
        width="10"
        height="150"
@@ -123,7 +123,7 @@
        y="-225"
        transform="rotate(90)" />
     <rect
-       style="fill:#000000;stroke:none;stroke-width:9.99998;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       style="fill:#000000;stroke:none;stroke-width:15;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers;stroke-opacity:1;stroke-linecap:round"
        id="rect1235-0-8-0-4-4-9"
        width="10"
        height="150"
@@ -133,7 +133,7 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-weight:bold;font-size:100px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';text-orientation:upright;display:inline;fill:#000000;stroke:none;stroke-width:10;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+     style="font-weight:bold;font-size:100px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';text-orientation:upright;display:none;fill:#000000;stroke:none;stroke-width:10;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
      x="220.3091"
      y="123.47841"
      id="text1423"><tspan
