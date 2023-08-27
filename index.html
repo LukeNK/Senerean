@@ -1,10 +1,25 @@
 <!-- Website to redirect to main government page -->
 <!DOCTYPE html>
-<head>
-    <meta http-equiv="Refresh" content="0; url='./Government-of-Senerean/index.html'" />
-</head>
 <body>
-    <main>
-        <p>If you are not being redirected, please click <a href="./Government-of-Senerean/index.html">Here</a></p>
-    </main>
+    <p>If you are not being redirected, please click <a id="redirect" href="./Government-of-Senerean/index.html">Here</a></p>
 </body>
+<script>
+    // list of shortened links
+    const LINKS = {
+        jaremb: 'Ministry-of-Land-Development/search.html#JAREMB',
+        wafemb: 'Ministry-of-Land-Development/search.html#696635',
+        phtxt: () => `Parliament/hansards/${hash[1]}-${hash[2]}-${hash[3]}.md`
+    }
+    // Link shortener
+    let hash = window.location.hash.substring(1).split('-');
+    if (typeof LINKS[hash[0]] == 'string') {
+        // redirect and set link
+        document.getElementById('redirect').setAttribute('href', LINKS[hash[0]])
+        window.location.replace(LINKS[hash[0]]);
+    } else if (typeof LINKS[hash[0]] == 'function') 
+        // execute function
+        window.location.replace(LINKS[hash[0]]());
+    else 
+        // go to home
+        window.location.replace('./Government-of-Senerean/index.html');
+</script>
