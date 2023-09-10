@@ -1244,5 +1244,19 @@ let REGISTRY = [
             "x": 111,
             "z": 63
         }
+    },
+    {
+        "id": "H9KQ7O",
+        "owner": "LukeNK",
+        "desc": "Gift shop with a small bedroom at the bottom",
+        "address": "S SEA CLIFF ave",
+        "nw": {
+            "x": -52,
+            "z": -54
+        },
+        "se": {
+            "x": -45,
+            "z": -47
+        }
     }
 ]
