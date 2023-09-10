@@ -1230,5 +1230,19 @@ let REGISTRY = [
             "x": 29,
             "z": -39
         }
+    },
+    {
+        "id": "V9GU0X",
+        "owner": "Senerean",
+        "desc": "Two indoor badminton courts embedded into the mountain",
+        "address": "VALLEY ave",
+        "nw": {
+            "x": 85,
+            "z": 20
+        },
+        "se": {
+            "x": 111,
+            "z": 63
+        }
     }
 ]
