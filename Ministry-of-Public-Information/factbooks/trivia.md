@@ -132,3 +132,38 @@ When stamping cancellation, it is recommended to the operator stamp in a way tha
         [td][url=URL]Source[/url][/td]
     [/tr]
 ```
+
+# Time in Senerean
+[img]https://cdn.discordapp.com/attachments/1075495496560410655/1158778927913910353/map.png[/img]
+Senerean is divided into three time zones and doesn't observe daylight saving time. The official time of the nation is maintained by the Government of Senerean using local atomic clocks for precision with the UTC standard. The government is also responsible for time servers around the country to allow digital synchronization.
+
+[size=150][b][u]Time notation[/size][/b][/u]
+Despite the majority of the population using English, a large portion of the population uses the 24-hour clock (eg. 20:57). The Government of Senerean also recommended the usage of the 24-hour clock to prevent confusion. Combined with date, the standard date time notation in Senerean is in decreasing significant order (the first item is the largest, the second item is smaller,...):
+YYYY-MM-DD HH:MM:SS
+
+[size=150][b][u]Zones[/size][/b][/u]
+There are three time zones in Senerean which are decided by the provinces/clusters government. The Shore Cluster made a recent switch from UTC+1 to UTC on New Year's Eve of 2023, making citizens there technically celebrate New Year's Eve twice.
+
+Before the Nenerean Reunion, Senerean used UTC+1 entirely while Nenerean used UTC-1. After the Reunion, UTC was chosen as the standard time for the entire nation to ensure neutrality as well as help with international trading. The Senerean region still remains with UTC+1 because the majority of trading happens with Estica to the south.
+[table]
+    [tr]
+        [td]Time zone[/td]
+        [td]Name[/td]
+        [td]Provinces/Clusters[/td]
+    [/tr]
+    [tr]
+        [td]UTC-1[/td]
+        [td]Nenerean Standard Time (NST)[/td]
+        [td]Artic Province, Kakurinu, Komanada, North cluster, West Cluster, South cluster[/td]
+    [/tr]
+    [tr]
+        [td]UTC[/td]
+        [td]Xenereanu Standard Time (XST)[/td]
+        [td]Nanenurean, Ledaru, Barinuka, Xubaxu, East cluster, Sore cluster, Central cluster[/td]
+    [/tr]
+    [tr]
+        [td]UTC+1[/td]
+        [td]Senerean Standard Time (SST)[/td]
+        [td]Weneridaixu, Naxinufinixe[/td]
+    [/tr]
+[/table]
