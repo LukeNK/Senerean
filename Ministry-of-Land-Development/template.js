@@ -2,7 +2,8 @@ const TEMPLATE = {
     id: 'ID of the build, type a dot "." to auto-generate (think it as number plate for builds)',
     owner: 'The name of the current owner',
     desc: 'Breif summary of the build',
-    address: "Road base on main entrance, not include house number (you don't have it anyways)",
+    road: "Road base on main entrance, not include house number (you don't have it anyways)",
+    province: "Administrative province",
     chunks: 'Empty space to signify for the script to save dimension and cord'
 }
 

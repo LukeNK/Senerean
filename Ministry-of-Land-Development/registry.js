@@ -3,7 +3,8 @@ let REGISTRY = [
         "id": "JAREMB",
         "owner": "Ballinngs",
         "desc": "Embassy for The Principality of Ballinngs",
-        "address": "PEACE ave",
+        "road": "PEACE ave",
+        "province": "EC",
         "nw": {
             "x": -54,
             "z": 26
@@ -17,7 +18,8 @@ let REGISTRY = [
         "id": "696635",
         "owner": "Wilhelma and the Flanfairs",
         "desc": "The Republic of Wilhelma and the Flanfairs embassy",
-        "address": "2023 ave",
+        "road": "2023 ave",
+        "province": "EC",
         "nw": {
             "x": -51,
             "z": -12
@@ -31,7 +33,8 @@ let REGISTRY = [
         "id": "BEN001",
         "owner": "BenPo",
         "desc": "Hill-side embeded house",
-        "address": "BEEHIVE ave",
+        "road": "BEEHIVE ave",
+        "province": "EC",
         "nw": {
             "x": 46,
             "z": -12
@@ -45,7 +48,8 @@ let REGISTRY = [
         "id": "BEN002",
         "owner": "BenPo",
         "desc": "Port with capacity of 4",
-        "address": "UPHILL st",
+        "road": "UPHILL st",
+        "province": "EC",
         "nw": {
             "x": 118,
             "z": -52
@@ -59,7 +63,8 @@ let REGISTRY = [
         "id": "BEN003",
         "owner": "BenPo",
         "desc": "2023 hill side sign",
-        "address": "BEEHIVE AVE",
+        "road": "BEEHIVE AVE",
+        "province": "EC",
         "nw": {
             "x": 71,
             "z": 34
@@ -73,7 +78,8 @@ let REGISTRY = [
         "id": "BEN004",
         "owner": "BenPo",
         "desc": "2023 sign lookout",
-        "address": "UPHILL st",
+        "road": "UPHILL st",
+        "province": "EC",
         "nw": {
             "x": 72,
             "z": -13
@@ -87,7 +93,8 @@ let REGISTRY = [
         "id": "BEN005",
         "owner": "BenPo",
         "desc": "A wooden coffee shop",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 55,
             "z": 4
@@ -101,7 +108,8 @@ let REGISTRY = [
         "id": "BEN006",
         "owner": "BenPo",
         "desc": "Cliff side hanging house",
-        "address": "EMBASSY ave",
+        "road": "EMBASSY ave",
+        "province": "EC",
         "nw": {
             "x": 55,
             "z": 61
@@ -115,7 +123,8 @@ let REGISTRY = [
         "id": "SAFEIJ",
         "owner": "Senerean",
         "desc": "Safe injection building",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 31,
             "z": -12
@@ -129,7 +138,8 @@ let REGISTRY = [
         "id": "HIBATH",
         "owner": "LukeNK",
         "desc": "All-gender bath house",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 50,
             "z": 17
@@ -143,7 +153,8 @@ let REGISTRY = [
         "id": "A4FH1D",
         "owner": "LukeNK",
         "desc": "Basic house",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 61,
             "z": 17
@@ -157,7 +168,8 @@ let REGISTRY = [
         "id": "NEWSCE",
         "owner": "LukeNK",
         "desc": "Boardcast centre with cell tower",
-        "address": "EMBASSY ave",
+        "road": "EMBASSY ave",
+        "province": "EC",
         "nw": {
             "x": 26,
             "z": 38
@@ -171,7 +183,8 @@ let REGISTRY = [
         "id": "INTNEG",
         "owner": "Senerean",
         "desc": "International negotiation hall",
-        "address": "EMBASSY ave",
+        "road": "EMBASSY ave",
+        "province": "EC",
         "nw": {
             "x": 31,
             "z": 61
@@ -185,7 +198,8 @@ let REGISTRY = [
         "id": "HRTRIB",
         "owner": "Senerean",
         "desc": "Human Rights tribunal",
-        "address": "2023 ave",
+        "road": "2023 ave",
+        "province": "EC",
         "nw": {
             "x": 46,
             "z": 34
@@ -199,7 +213,8 @@ let REGISTRY = [
         "id": "BEN007",
         "owner": "BenPo",
         "desc": "Low-rise street bridge crossing through a river",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 181,
             "z": 11
@@ -213,7 +228,8 @@ let REGISTRY = [
         "id": "NAARCH",
         "owner": "LukeNK",
         "desc": "Archive house",
-        "address": "EMBASSY ave",
+        "road": "EMBASSY ave",
+        "province": "EC",
         "nw": {
             "x": 53,
             "z": 46
@@ -227,7 +243,8 @@ let REGISTRY = [
         "id": "J1KE3R",
         "owner": "Senerean",
         "desc": "Hut for resting and looking at scenery",
-        "address": "BEEHIVE ave",
+        "road": "BEEHIVE ave",
+        "province": "EC",
         "nw": {
             "x": 71,
             "z": -12
@@ -241,7 +258,8 @@ let REGISTRY = [
         "id": "H6RP2O",
         "owner": "LukeNK",
         "desc": "Iron smith shop",
-        "address": "BEEHIVE ave",
+        "road": "BEEHIVE ave",
+        "province": "EC",
         "nw": {
             "x": 71,
             "z": -2
@@ -255,7 +273,8 @@ let REGISTRY = [
         "id": "H8ER4T",
         "owner": "LukeNK",
         "desc": "Spruce wood house",
-        "address": "BEEHIVE ave",
+        "road": "BEEHIVE ave",
+        "province": "EC",
         "nw": {
             "x": 71,
             "z": 6
@@ -269,7 +288,8 @@ let REGISTRY = [
         "id": "H8TJ3F",
         "owner": "LukeNK",
         "desc": "Shop with potion storage",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 70,
             "z": 17
@@ -283,7 +303,8 @@ let REGISTRY = [
         "id": "A8RT4Q",
         "owner": "LukeNK",
         "desc": "Fast steak store",
-        "address": "2023 ave",
+        "road": "2023 ave",
+        "province": "EC",
         "nw": {
             "x": 66,
             "z": 44
@@ -297,7 +318,8 @@ let REGISTRY = [
         "id": "J8KD1R",
         "owner": "LukeNK",
         "desc": "Convenience potion store",
-        "address": "2023 ave",
+        "road": "2023 ave",
+        "province": "EC",
         "nw": {
             "x": 74,
             "z": 44
@@ -311,7 +333,8 @@ let REGISTRY = [
         "id": "K1QR3T",
         "owner": "LukeNK",
         "desc": "Fast food store",
-        "address": "EMBASSY ave",
+        "road": "EMBASSY ave",
+        "province": "EC",
         "nw": {
             "x": 71,
             "z": 53
@@ -325,7 +348,8 @@ let REGISTRY = [
         "id": "METHAL",
         "owner": "Senerean",
         "desc": "Meeting hall",
-        "address": "SEA CLIFF ave",
+        "road": "SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 83,
             "z": -11
@@ -339,7 +363,8 @@ let REGISTRY = [
         "id": "KINDGT",
         "owner": "Senerean",
         "desc": "Daycare",
-        "address": "SEA CLIFF ave",
+        "road": "SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 83,
             "z": 0
@@ -353,7 +378,8 @@ let REGISTRY = [
         "id": "777777",
         "owner": "Omnomnom",
         "desc": "Food store",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 84,
             "z": 17
@@ -367,7 +393,8 @@ let REGISTRY = [
         "id": "SNRAIL",
         "owner": "Senerean",
         "desc": "Rail convention center",
-        "address": "EMBASSY ave",
+        "road": "EMBASSY ave",
+        "province": "EC",
         "nw": {
             "x": 89,
             "z": 51
@@ -381,7 +408,8 @@ let REGISTRY = [
         "id": "T5YJ9V",
         "owner": "LukeNK",
         "desc": "Duplex with tree decoration on top",
-        "address": "EMBASSY ave",
+        "road": "EMBASSY ave",
+        "province": "EC",
         "nw": {
             "x": 84,
             "z": 68
@@ -395,7 +423,8 @@ let REGISTRY = [
         "id": "GREERG",
         "owner": "Senerean",
         "desc": "Community garden",
-        "address": "SEA CLIFF ave",
+        "road": "SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 100,
             "z": -27
@@ -409,7 +438,8 @@ let REGISTRY = [
         "id": "U7OQ8K",
         "owner": "LukeNK",
         "desc": "Wooden house",
-        "address": "SEA CLIFF ave",
+        "road": "SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 100,
             "z": 3
@@ -423,7 +453,8 @@ let REGISTRY = [
         "id": "H1KN8M",
         "owner": "UNCLAIMED",
         "desc": "Market",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 100,
             "z": 10
@@ -437,7 +468,8 @@ let REGISTRY = [
         "id": "8JASOP",
         "owner": "LukeNK",
         "desc": "Office of a company that starts with M",
-        "address": "2023 ave",
+        "road": "2023 ave",
+        "province": "EC",
         "nw": {
             "x": 100,
             "z": 56
@@ -451,7 +483,8 @@ let REGISTRY = [
         "id": "ENVCOL",
         "owner": "Senerean",
         "desc": "Environment management college",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 114,
             "z": -5
@@ -465,7 +498,8 @@ let REGISTRY = [
         "id": "999999",
         "owner": "Omnomnom",
         "desc": "Sakura tree with camping site",
-        "address": "UPHILL st",
+        "road": "UPHILL st",
+        "province": "EC",
         "nw": {
             "x": 126,
             "z": -14
@@ -479,7 +513,8 @@ let REGISTRY = [
         "id": "G4HN5A",
         "owner": "LukeNK",
         "desc": "Medival style house",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 129,
             "z": 5
@@ -493,7 +528,8 @@ let REGISTRY = [
         "id": "VALLIB",
         "owner": "Senerean",
         "desc": "Library",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 142,
             "z": -4
@@ -507,7 +543,8 @@ let REGISTRY = [
         "id": "HMRMED",
         "owner": "Senerean",
         "desc": "Human Rights mediation hall",
-        "address": "UPHILL st",
+        "road": "UPHILL st",
+        "province": "EC",
         "nw": {
             "x": 149,
             "z": 17
@@ -521,7 +558,8 @@ let REGISTRY = [
         "id": "KOMJAR",
         "owner": "Omnomnom",
         "desc": "A giant jar",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 168,
             "z": 4
@@ -535,7 +573,8 @@ let REGISTRY = [
         "id": "PENGUI",
         "owner": "Senerean",
         "desc": "Penguin statue with Senerean flag",
-        "address": "S SEA CLIFF ave",
+        "road": "S SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 43,
             "z": -32
@@ -549,7 +588,8 @@ let REGISTRY = [
         "id": "136017",
         "owner": "Senerean",
         "desc": "Metro station",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 136,
             "z": 17
@@ -563,7 +603,8 @@ let REGISTRY = [
         "id": "ALLAHH",
         "owner": "Omnomnom",
         "desc": "Decorative tree",
-        "address": "2023 ave",
+        "road": "2023 ave",
+        "province": "EC",
         "nw": {
             "x": 84,
             "z": 17
@@ -577,7 +618,8 @@ let REGISTRY = [
         "id": "B7DM7K",
         "owner": "Senerean",
         "desc": "Fire department will call center",
-        "address": "UPHILL st",
+        "road": "UPHILL st",
+        "province": "EC",
         "nw": {
             "x": -12,
             "z": -32
@@ -591,7 +633,8 @@ let REGISTRY = [
         "id": "H0CFZL",
         "owner": "Senerean",
         "desc": "Ministry of Land Development",
-        "address": "UPHILL st",
+        "road": "UPHILL st",
+        "province": "EC",
         "nw": {
             "x": 140,
             "z": 35
@@ -605,7 +648,8 @@ let REGISTRY = [
         "id": "BQ3WAX",
         "owner": "LukeNK",
         "desc": "Wooden house with two separate room",
-        "address": "TURTLE ave",
+        "road": "TURTLE ave",
+        "province": "EC",
         "nw": {
             "x": 146,
             "z": 48
@@ -619,7 +663,8 @@ let REGISTRY = [
         "id": "9HW0OR",
         "owner": "Senerean",
         "desc": "Emergency Coastal Response team",
-        "address": "UPHILL st",
+        "road": "UPHILL st",
+        "province": "EC",
         "nw": {
             "x": 164,
             "z": 36
@@ -633,7 +678,8 @@ let REGISTRY = [
         "id": "WLBD43",
         "owner": "LukeNK",
         "desc": "Wooden house",
-        "address": "TURTLE ave",
+        "road": "TURTLE ave",
+        "province": "EC",
         "nw": {
             "x": 139,
             "z": 49
@@ -647,7 +693,8 @@ let REGISTRY = [
         "id": "0KBMCQ",
         "owner": "LukeNK",
         "desc": "Post office with train loading bay",
-        "address": "UPHILL st",
+        "road": "UPHILL st",
+        "province": "EC",
         "nw": {
             "x": 138,
             "z": 60
@@ -661,7 +708,8 @@ let REGISTRY = [
         "id": "Q9O005",
         "owner": "Senerean",
         "desc": "Railway switch access",
-        "address": "2023 ave",
+        "road": "2023 ave",
+        "province": "EC",
         "nw": {
             "x": 82,
             "z": 44
@@ -675,7 +723,8 @@ let REGISTRY = [
         "id": "819IFJ",
         "owner": "LukeNK",
         "desc": "Bank of Nuvak",
-        "address": "TURTLE ave",
+        "road": "TURTLE ave",
+        "province": "EC",
         "nw": {
             "x": 126,
             "z": 59
@@ -689,7 +738,8 @@ let REGISTRY = [
         "id": "019049",
         "owner": "Senerean",
         "desc": "Metro station",
-        "address": "S SEA CLIFF ave",
+        "road": "S SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 19,
             "z": -40
@@ -703,7 +753,8 @@ let REGISTRY = [
         "id": "SCECBB",
         "owner": "LukeNK",
         "desc": "A wooden townhouse",
-        "address": "SUGAR SHORE",
+        "road": "SUGAR SHORE",
+        "province": "EC",
         "nw": {
             "x": 165,
             "z": 53
@@ -717,7 +768,8 @@ let REGISTRY = [
         "id": "SC7EJA",
         "owner": "LukeNK",
         "desc": "A wooden townhouse",
-        "address": "SUGAR SHORE ave",
+        "road": "SUGAR SHORE ave",
+        "province": "EC",
         "nw": {
             "x": 180,
             "z": 54
@@ -731,7 +783,8 @@ let REGISTRY = [
         "id": "ODLW8X",
         "owner": "LukeNK",
         "desc": "A wooden townhouse",
-        "address": "2023 ave",
+        "road": "2023 ave",
+        "province": "EC",
         "nw": {
             "x": 100,
             "z": 69
@@ -745,7 +798,8 @@ let REGISTRY = [
         "id": "9WW4IR",
         "owner": "LukeNK",
         "desc": "A wooden townhouse",
-        "address": "EMBASSY ave",
+        "road": "EMBASSY ave",
+        "province": "EC",
         "nw": {
             "x": 108,
             "z": 68
@@ -759,7 +813,8 @@ let REGISTRY = [
         "id": "RW3MWJ",
         "owner": "LukeNK",
         "desc": "Bricks townhouse",
-        "address": "2023 ave",
+        "road": "2023 ave",
+        "province": "EC",
         "nw": {
             "x": 84,
             "z": 76
@@ -773,7 +828,8 @@ let REGISTRY = [
         "id": "G4AJ1E",
         "owner": "Senerean",
         "desc": "Metro station",
-        "address": "EMBASSY ave",
+        "road": "EMBASSY ave",
+        "province": "EC",
         "nw": {
             "x": 45,
             "z": 50
@@ -787,7 +843,8 @@ let REGISTRY = [
         "id": "LIGHT0",
         "owner": "Senerean",
         "desc": "A lighthouse focus to north and east direction",
-        "address": "UPHILL st",
+        "road": "UPHILL st",
+        "province": "EC",
         "nw": {
             "x": 166,
             "z": -11
@@ -801,7 +858,8 @@ let REGISTRY = [
         "id": "H294HY",
         "owner": "LukeNK",
         "desc": "Parking facility",
-        "address": "HIGHLAND st",
+        "road": "HIGHLAND st",
+        "province": "EC",
         "nw": {
             "x": 31,
             "z": 77
@@ -815,7 +873,8 @@ let REGISTRY = [
         "id": "EXSCOF",
         "owner": "LukeNK",
         "desc": "Wooden triplex townhouse",
-        "address": "BEEHIVE ave",
+        "road": "BEEHIVE ave",
+        "province": "EC",
         "nw": {
             "x": 70,
             "z": 79
@@ -829,7 +888,8 @@ let REGISTRY = [
         "id": "CAYDA3",
         "owner": "LukeNK",
         "desc": "Wooden house with metro lookout",
-        "address": "TURTLE ave",
+        "road": "TURTLE ave",
+        "province": "EC",
         "nw": {
             "x": 132,
             "z": 51
@@ -843,7 +903,8 @@ let REGISTRY = [
         "id": "LQ7BDR",
         "owner": "Senerean",
         "desc": "Nature and environment laboratory",
-        "address": "BEEHIVE ave",
+        "road": "BEEHIVE ave",
+        "province": "EC",
         "nw": {
             "x": 53,
             "z": 83
@@ -857,7 +918,8 @@ let REGISTRY = [
         "id": "VQYP6P",
         "owner": "Senerean",
         "desc": "Public toilet",
-        "address": "NATSAK ave",
+        "road": "NATSAK ave",
+        "province": "EC",
         "nw": {
             "x": 51,
             "z": 78
@@ -871,7 +933,8 @@ let REGISTRY = [
         "id": "0LJ4MG",
         "owner": "LukeNK",
         "desc": "Cliff-side wooden house",
-        "address": "EMBASSY ave",
+        "road": "EMBASSY ave",
+        "province": "EC",
         "nw": {
             "x": 117,
             "z": 64
@@ -885,7 +948,8 @@ let REGISTRY = [
         "id": "9LCGKT",
         "owner": "LukeNK",
         "desc": "A wooden townhouse",
-        "address": "SUGAR SHORE ave",
+        "road": "SUGAR SHORE ave",
+        "province": "EC",
         "nw": {
             "x": 165,
             "z": 71
@@ -899,7 +963,8 @@ let REGISTRY = [
         "id": "CRAQUA",
         "owner": "Senerean",
         "desc": "Coral aquarium",
-        "address": "UPHILL st",
+        "road": "UPHILL st",
+        "province": "EC",
         "nw": {
             "x": 167,
             "z": 18
@@ -913,7 +978,8 @@ let REGISTRY = [
         "id": "FIRSTB",
         "owner": "LukeNK",
         "desc": "Modern seaside house",
-        "address": "N SEA CLIFF ave",
+        "road": "N SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 90,
             "z": -51
@@ -927,7 +993,8 @@ let REGISTRY = [
         "id": "NCLIFF",
         "owner": "LukeNK",
         "desc": "Wooden mansion",
-        "address": "N SEA CLIFF ave",
+        "road": "N SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 48,
             "z": -57
@@ -941,7 +1008,8 @@ let REGISTRY = [
         "id": "FHOUSE",
         "owner": "LukeNK",
         "desc": "Modern house",
-        "address": "N SEA CLIFF ave",
+        "road": "N SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 58,
             "z": -25
@@ -955,7 +1023,8 @@ let REGISTRY = [
         "id": "MLAFCE",
         "owner": "LukeNK",
         "desc": "Wooden house",
-        "address": "N SEA CLIFF ave",
+        "road": "N SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 73,
             "z": -44
@@ -969,7 +1038,8 @@ let REGISTRY = [
         "id": "FARMHO",
         "owner": "LukeNK",
         "desc": "Wooden house with roof farm",
-        "address": "N SEA CLIFF ave",
+        "road": "N SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 81,
             "z": -44
@@ -983,7 +1053,8 @@ let REGISTRY = [
         "id": "GREENC",
         "owner": "LukeNK",
         "desc": "Small house",
-        "address": "BEEHIVE ave",
+        "road": "BEEHIVE ave",
+        "province": "EC",
         "nw": {
             "x": 64,
             "z": -32
@@ -997,7 +1068,8 @@ let REGISTRY = [
         "id": "SEAAPP",
         "owner": "LukeNK",
         "desc": "Apartment for 3 with farm",
-        "address": "N SEA CLIFF ave",
+        "road": "N SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 88,
             "z": -44
@@ -1011,7 +1083,8 @@ let REGISTRY = [
         "id": "FAJOPS",
         "owner": "LukeNK",
         "desc": "Single family house",
-        "address": "N SEA CLIFF ave",
+        "road": "N SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 88,
             "z": -37
@@ -1025,7 +1098,8 @@ let REGISTRY = [
         "id": "APPF7P",
         "owner": "LukeNK",
         "desc": "Apartment for 7",
-        "address": "S SEA CLIFF ave",
+        "road": "S SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 68,
             "z": -30
@@ -1039,7 +1113,8 @@ let REGISTRY = [
         "id": "F3PV9K",
         "owner": "LukeNK",
         "desc": "Small wooden house",
-        "address": "S SEA CLIFF ave",
+        "road": "S SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 82,
             "z": -36
@@ -1053,7 +1128,8 @@ let REGISTRY = [
         "id": "H5JO3K",
         "owner": "Senerean",
         "desc": "Storage house with ship dock",
-        "address": "N SEA CLIFF ave",
+        "road": "N SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 100,
             "z": -39
@@ -1067,7 +1143,8 @@ let REGISTRY = [
         "id": "J8KO1P",
         "owner": "LukeNK",
         "desc": "Storage house with ship dock",
-        "address": "SEA CLIFF ave",
+        "road": "SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 86,
             "z": -28
@@ -1081,7 +1158,8 @@ let REGISTRY = [
         "id": "I9FJ1A",
         "owner": "LukeNK",
         "desc": "Coffee shop",
-        "address": "UPHILL st",
+        "road": "UPHILL st",
+        "province": "EC",
         "nw": {
             "x": 107,
             "z": -28
@@ -1095,7 +1173,8 @@ let REGISTRY = [
         "id": "CLHOSP",
         "owner": "Senerean",
         "desc": "Three-floor hospital with ER connected to Uphill st",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 30,
             "z": -32
@@ -1109,7 +1188,8 @@ let REGISTRY = [
         "id": "VACIMU",
         "owner": "Senerean",
         "desc": "Vaccine and immunization clinic",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 17,
             "z": -28
@@ -1123,7 +1203,8 @@ let REGISTRY = [
         "id": "TRRAIL",
         "owner": "Senerean",
         "desc": "Train manufacturing factory with showroom",
-        "address": "S SEA CLIFF ave",
+        "road": "S SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": 3,
             "z": -47
@@ -1137,7 +1218,8 @@ let REGISTRY = [
         "id": "8SEHEO",
         "owner": "LukeNK",
         "desc": "A townhouse with the first floor is a fast-food restaurant",
-        "address": "S SEA CLIFF ave",
+        "road": "S SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": -23,
             "z": -28
@@ -1151,7 +1233,8 @@ let REGISTRY = [
         "id": "KFFLXG",
         "owner": "LukeNK",
         "desc": "A duplex townhouse with shops on the first floor",
-        "address": "S SEA CLIFF ave",
+        "road": "S SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": -10,
             "z": -48
@@ -1165,7 +1248,8 @@ let REGISTRY = [
         "id": "A0TO4M",
         "owner": "LukeNK",
         "desc": "Wooden shop with house on the second floor. The house crossed through Valley avenue with the front door on the shopping square.",
-        "address": "S SEA CLIFF ave",
+        "road": "S SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": -9,
             "z": -59
@@ -1179,7 +1263,8 @@ let REGISTRY = [
         "id": "SHOPMA",
         "owner": "LukeNK",
         "desc": "Shopping mall with 8 shops and tables for sitting on the second floor.",
-        "address": "S SEA CLIFF ave",
+        "road": "S SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": -43,
             "z": -54
@@ -1193,7 +1278,8 @@ let REGISTRY = [
         "id": "A4BG4P",
         "owner": "LukeNK",
         "desc": "Local secure storage house",
-        "address": "S SEA CLIFF ave",
+        "road": "S SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": -34,
             "z": -29
@@ -1207,7 +1293,8 @@ let REGISTRY = [
         "id": "T8UB5R",
         "owner": "Senerean",
         "desc": "Metro station",
-        "address": "S SEA CLIFF ave",
+        "road": "S SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": -52,
             "z": -44
@@ -1221,7 +1308,8 @@ let REGISTRY = [
         "id": "O7VT1Q",
         "owner": "LukeNK",
         "desc": "Miku Capsule Hotel",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 13,
             "z": -55
@@ -1235,7 +1323,8 @@ let REGISTRY = [
         "id": "V9GU0X",
         "owner": "Senerean",
         "desc": "Two indoor badminton courts embedded into the mountain",
-        "address": "VALLEY ave",
+        "road": "VALLEY ave",
+        "province": "EC",
         "nw": {
             "x": 85,
             "z": 20
@@ -1249,7 +1338,8 @@ let REGISTRY = [
         "id": "H9KQ7O",
         "owner": "LukeNK",
         "desc": "Gift shop with a small bedroom at the bottom",
-        "address": "S SEA CLIFF ave",
+        "road": "S SEA CLIFF ave",
+        "province": "EC",
         "nw": {
             "x": -52,
             "z": -54

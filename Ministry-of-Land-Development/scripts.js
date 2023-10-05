@@ -6,15 +6,12 @@ function taxReport(owner) {
         totalTax = 0;
     for (let build of REGISTRY) 
         if (build.owner == owner) {
-            // if there is dimension (to supports legacy database)
-            if (build.dimensions) {
-                builds.push(build.id + ' = ');
-                let buildDim = build.dimensions.x * build.dimensions.z;
-                area += buildDim;
-                totalTax += devTax(buildDim);
-                builds[builds.length - 1] = 
-                    builds.at(-1) + devTax(buildDim).toFixed(2)
-            }
+            builds.push(build.id + ' = ');
+            let buildDim = (build.se.x - build.nw.x) * (build.se.z - build.nw.z);
+            area += buildDim;
+            totalTax += devTax(buildDim);
+            builds[builds.length - 1] = 
+                builds.at(-1) + devTax(buildDim).toFixed(2);
             totalBuilds++
         }
 
@@ -30,7 +27,7 @@ Total  = ${totalTax.toLocaleString('en-CA',
         minimumFractionDigits: 2, 
         maximumFractionDigits:2
     })
-} Seners`
+} xenerus`
 
     return report;
 }
@@ -46,7 +43,6 @@ function buildSearch(query) {
         for (const build of REGISTRY) {
             let nw = build.nw || 0, 
                 se = build.se || 0;
-            if (!nw || !se) continue; // sorry legacy builds
             if (
                 nw.x < x && x < se.x
                 && nw.z < z && z < se.z
@@ -56,11 +52,12 @@ function buildSearch(query) {
         for (const build of REGISTRY)
             if (
                 [
-                    build.id,
                     build.desc.toUpperCase(),
-                    build.address.toUpperCase()
+                    build.road.toUpperCase()
                 ].find(e => e.includes(query)) // short hand include
                 || build.owner.toUpperCase() == query
+                || build.id == query.toUpperCase() // only match exact id
+                || build.province == query
             ) builds.push(build);
     return builds;
 }
@@ -70,13 +67,14 @@ function devTax(area) {
     // please use desmos before changing values here
     const fixedRate = 100, // fixed rate for every builds 
         maxTax = 0.65, // highest tax percent over value
-        maxBracket = 200, // block^2 where it is maxTax
+        maxBracket = 256, // block^2 where it is maxTax
         taxExp = 4, // tax exponent that being raised to
-        valPerBlock = 15; // seners per block
+        valPerBlock = 15, // xeneru per block
+        fixedPerBlock = 2; // fixed tax per block for assessment
     // function define
     const min = Math.min, pow = Math.pow;
 
     let bracket = min(area / maxBracket, 1); // calculate current bracket
     let taxPercent = maxTax * pow(bracket, taxExp) // get percent of bracket
-    return fixedRate + area * valPerBlock * taxPercent;
+    return fixedRate + area * valPerBlock * taxPercent + fixedPerBlock * area + fixedRate;
 }

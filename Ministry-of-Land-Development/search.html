@@ -44,7 +44,7 @@
         let builds = buildSearch( document.getElementById('searchBar').value );
         let result = document.getElementById('result');
         result.innerHTML = '';
-        // reverse builds
+        // reverse builds to get newest result first
         builds.reverse()
         // display build information
         for (const build of builds) {

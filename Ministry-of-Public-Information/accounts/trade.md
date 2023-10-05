@@ -103,3 +103,17 @@ All stamps in this set are designed with the A10 size (26mm x 37mm).
         [url=https://www.pixiv.net/en/artworks/63119372]Source[/url][/td]
     [/tr]
 [/table]
+
+# New land development tax constants were issued
+This afternoon, a new tax calculation method was issued and will start to be implemented next month. This tax does not affect any already existing land developments, but only on new developments. Pending applications will still be subjected to the old tax.
+
+The new tax issued was one of the measures made by the government to expand the budget in light of following the new environment treaty signed by the Prime Minister this Monday. The new tax method hoped to centralize development plans by reducing tax for builds with areas between 160 m^2 and 225 m^2. Meanwhile, smaller buildings may get taxed up to 225% compared to the old tax to remove the incentive to build mini-homes and compact homes out of health concerns being raised recently. However, the "megastructure" tax category was also being raised by 150% which many economists consider too high to support the Senerean economy.
+
+[img]https://cdn.discordapp.com/attachments/1075495496560410655/1159414494955581501/image.png[/img]
+[center][i]The new (green line) tax method compared with the old (black line) tax method[/i][/center]
+
+Commented on the raised tax, a homeowner said: "I think the new tax is rather harsh on property owners and developers, as it increased linearly with the area which is an exponent value of dimension. It also can be considered a drawback since now it creates an incentive for citizens to build mini-skyscrapers with small land footprints, making it dangerous during disasters."
+
+Meanwhile, meeting with the Premier of Nenerean, who happened to be the daughter of the homeowner we interviewed above, commented: "I think the new tax issued is considered a forward-thinking move by the government, but it is also up to the municipality government to manage other aspects like construction, infrastructure, and managing to fully incorporate."
+
+The announced tax hike was met with anger by the official opposition party in the national Parliament: "Mr. Speaker, this gentleman here is trying to protect the future, but with this tax hike, we would be homeless before we can 'rebuild our home'. Ballooned housing, decreased in service, increased in tax, and insane decisions: this Prime Minister is trying to smash our economy harder than our sponsor, [i][product placement][/i]. I wish this Parliament could consider my words, both what I said before and during my product placement. Thank you."

@@ -26,7 +26,11 @@
         </label>
         <label>
             <p>Road base on main entrance, not include house number (you don't have it anyways)</p>
-            <input id="address" type="text">
+            <input id="road" type="text">
+        </label>
+        <label>
+            <p>The administrative province/cluster</p>
+            <input id="province" type="text">
         </label>
         <label>
             <p>North west-most block</p>
@@ -84,7 +88,7 @@
                 // check id conflict
                 for (const build of REGISTRY)
                     if (cur.id == build.id) return alert('Conflict ID ' + cur.id);
-            } else if (l1 == 'address') {
+            } else if (l1 == 'road') {
                 cur[l1] = cur[l1].toUpperCase();
                 // replace road type capitalization
                 for (let type of ROAD_TYPE)
