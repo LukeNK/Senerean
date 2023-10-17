@@ -52,8 +52,8 @@
     [hr]
 
     [b]Establishment[/b]
-    - Western Chief Assembly (1865-4-1)
-    - Senerean Constitution (1872-9-12)
+    - Senerean Assembly (1248-9-12)
+    - Senerean Constitution (1772-9-12)
     - Nenerean Reunion (1953-2-10)
     [hr]
 
@@ -120,7 +120,7 @@
 
 [b][u][size=150][anchor=Ety]Etymology[/anchor][/b][/u][/size]
 
-    There isn't any official theory for the origin of [i]Senerean[/i] (and hence the word "Nenerean"). Many theories were suggested, but all of them were rejected on one or miltiple fatal flaw. The name "Senerean" never got its official origin, but many evidences suggest that it come from the word "share" in English.
+    There isn't any official theory for the origin of [i]Senerean[/i] (and hence the word "Nenerean"). Many theories were suggested, but all of them were rejected on one or more fatal flaw. The name "Senerean" never got its official origin, but many evidences suggest that it come from the word "share" in English.
 
     The word "Nenerean" have the origin stem from the word "Northern Senerean", where the starting constant starting to merge. The origin of "Menerean" also developed similarly.
 
@@ -139,15 +139,27 @@
 
     Despite strong connections between tribes, there is no administrative body above the Chiefs. The closest to a national government that was established at that time was the Assembly, which comprised village/tribe chiefs from the area. The Assembly may have comprised chiefs from as far as southern Estica. The meeting place was mostly chosen to be in [nation=noflag]Estica[/nation] due to the denser population, but Nuvak was sometimes chosen. The power of the Assembly at that time was mostly limited to knowledge exchange and acted more like a negotiation ground for the tribes. Some may even consider it a VIP lounge in a market.
 
-[b][u][anchor=ColPer]Middle Ages[/anchor][/u][/b]
-
     A change happened in Senerean after 500 CE following the developments in Ninoarura. Despite multiple speculations suggesting that Ninoarura was populous thanks to trading between Ballinngs and the rest of the nation, it was still unclear how the area became the centre of the Nenerean region. However, multiple factors including a beneficial geographical location for wood logging, fur hunting, and a pleasant climate played a large factor in the development of the area, despite the area usually being faced with earthquakes. It may be said that because at that time, permanent mega-structures were rare, the effect of earthquakes was not considerably devastating compared to today. This factor played a huge role in the development of small-size housing culture that played a huge role until this day.
     
     Conflicts between tribes happened in light of protecting trading interests and usually took place in the form of sanctions. Physical altercations and micro-wars also occur but are usually resolved quickly for many villages and tribes lack a self-sufficient economy. It is also notable that at the time, there was a lack of a well-defined border beyond the village perimeter. Resources beyond a village are usually considered natural and can be harvested by anybody, but tribe members only harvest the resources their tribe excels at in terms of production to increase the economy of scale as well as having the proper equipment to process it.
 
+[b][u][anchor=ColPer]Middle Ages[/anchor][/u][/b]
+
+    Those dynamics remained unchanged when the Grand Solomon Empire took over the land where Ballinngs, Estica, and Senerean reside today. This can be attributed to the lack of a clearly defined border to begin with in combination with a rather soft ruling by the Empire. Many tribes enjoyed the collaborative atmosphere provided by the Empire. Moreover, the lack of external threats helped with economic development. 
+
+    However, corruption results in the Grand Solomon Empire abusing its "occupation" status. This prompted the Chief Assembly to execute one of its first major decisions: establishing an army to be controlled by the Master Chief. The reason to reserve the control of the army to one single person is to ensure the speed of decision, since one Assembly meeting may take months to plan. 
+
+    Under the command of the Master Chief, the Chief Assembly quickly took control of Nuvak, the main administrative centre of the Solomon Empire over Senerean. However, the Master Chief didn't report the victory to the Assembly but instead used the loot to hire a mercenary army from the Tudor Empire. This delay proved to be crucial because many soldiers from the initial army were sent home, thinking they would be rewarded but now facing hunger and demoralized. The loot is more than enough for the mercenary to loot villages and block trading resources. Since most of the Senerean villages can't be self-sustaining, this marks the ruling of the Master Chief over Senerean starting from 1175. He called the Senerean Empire, which marks the first usage of the word "Senerean" to refer to [the] land.
+
+    The Senerean Empire continued to be ruled by other two empresses consecutively before the War of the Four Emperors began in 1236. Sensing the danger from the mercenary, the Last Empress called for an emergency meeting with the Assembly. While having no respect for the empress, the Assembly decided to meet with the empress in fear of being invaded. The meeting happened in Ninoarura, with the Empire ship picking up many Chiefs along the coastal area. Meanwhile, the Tudor Empire "officially" declared war on the Senerean simply by delivering the mail to the mercenary, to which never reached the officials of the Senerean Empires.
+
+    Learning from the last time, the Assembly decided to appoint three Master Chiefs to fight on three different fronts: Ballinngs, Tudor (Estica), and Solomon. While many were afraid that the Last Empress might continue her atrocities, it is undeniable that her strategic skills are vital, therefore the Last Empress was kept inland to act as a general commander.
+
+    The war dragged on for 12 years until 1248, when the war suddenly ended with the perish of the Grand Solomon Empire as well as Senerean signing a peace treaty with the Tudor Empire. The Tudor-Senerean peace treaty was being administered by the Last Empress. After it was signed, the Last Empress was never to be seen again. Many speculate that because she has committed multiple crimes against the Assembly, the Chief decided to kill her as a form of revenge; others suggested that the Last Empress understood that she wouldn't have a proper social standing after the war, so she decided to leave the public for good. This made the Last Empress, despite with her oppression during the first few years of her rule, the symbol of integrity. Her leave also marked the end of the Senerean Empire. The Assembly, meanwhile, understood the difficulties ahead and decided to establish Senerean.
+
 [b][u][anchor=Independence]Independence[/anchor][/u][/b]
 
-    In 1800s, the industrial revolution along with the expansion of transportation prompt the Assembly to seek for a much more unified status accross Senerean. Many people in Nenerean, however, find themself separated from the rest of Senerean because of distance as well as a much different climate ([i]haha pun[/i]) to understand each other well. Because of that, "the Assembly" decided to separate into two areas called "Northern Senerean" and "Southern Senerean", which the first became "Nenerean" while the latter further split into two regions: Menerean and Senerean. All of the Chiefs in Southern Senerean established the Western Chief Assembly on 1865-4-1.
+    In 1800s, the industrial revolution along with the expansion of transportation prompt the Assembly to seek for a much more unified status accross Senerean. Many people in Nenerean, however, find themself separated from the rest of Senerean because of distance as well as a much different climate ([i]haha pun[/i]) to understand each other well. Because of that, "the Assembly" decided to separate into two areas called "Northern Senerean" and "Southern Senerean", which the first became "Nenerean" while the latter further split into two regions: Menerean and Senerean. All of the Chiefs in Southern Senerean established the Western Chief Assembly on 1865-9-12.
 
     During this period, the area started to being considered as a nation, but the lack of official government make it difficult to voice Senerean's concerns to the world. Therefore, tribes in the Senerean and Menerean region decided to vote for a national government to unite them all together. The Senerean Constitution was drafted and recieved all signatures on September 1872. The Senerean Parliament at that time have very little power except international diplomatic power and resolving disputes between the First Nations. This dynamic quickly changed when the Great War broke out in Europe.
 
