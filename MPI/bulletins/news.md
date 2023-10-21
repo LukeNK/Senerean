@@ -64,3 +64,10 @@ Now, I am here at the meeting hall in Ninoarura. To protect the ministers, the i
 The next possible course of action for the government, according to experts suggested that the government may invoke the Emergency Act and temporarily suspend multiple rights and services to keep national security. That also means the next election will be delayed. It is impossible to predict will a short national union government will be established or not when the government is facing the Senerean’s flu and this attack from the Protectors Cult. 
 
 — Iphone-chan, intern at the Ninoarura National News (NNN) and the Speaker of the Senate; reviewed by Peter, external checker, the Head of State of the Bayer Free State, and the Head of State of the Wilhelma and the Flanfairs.
+
+# Series of attack continues, strikes during midnight in Central Cluster.
+At midnight, a ship moving 50 nautical miles (92km) away from the Central Cluster was being attacked with bombs. Details about the attack are unclear, but the ship quickly sank after the explosion, hinting a large amount of ammunition was detonated. The crew consists of 27 people, all Senerean citizens, departing from Nuvak with the destination is Ballinngs, carrying wood logs and timber. Despite the efforts, the lifeboat has not yet been found in the rough sea. 
+
+The Protectors once again informed their involvement in this attack, citing the cargo was depleting Senerean of its resources and there would be more to come. The Ministry of Foreign Affairs made a speech at the doorstep of the Ninoarura meeting hall, saying the government will not give in to the terrorist actions, but still suggest harbours and ports to operate with precautions. To ensure safety, the Coastal Emergency Response Unit also patrols ships around the densely populated area. 
+
+— Idea-chan, intern at Ninoarura National News, the Secondary Speaker of the Senate, the Primary Speaker of the House of Comoons, and really need sleep right now
