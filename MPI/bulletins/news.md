@@ -22,7 +22,7 @@ The Estican government announced 26 confirmed cases this morning and 2 deaths fr
 
 It is undeniable that Senerians are among the healthiest citizens in the Union. Despite that, speculations arise when it comes to the government’s speed in terms of crisis management. As the next election is looming, will this just be another easy victory for the liberal government, or this flu turn out to be a failed prediction by the running party that will change the government? The answer awaits...
 
-—Phone-chan, the Speaker of the Senate and interim at Ninoarura National News (NNN)
+— Iphone-chan, the Speaker of the Senate and interim at Ninoarura National News (NNN)
 
 # Where are the cases?
 According to [url=https://www.nationstates.net/page=dispatch/id=1946360]Wilhelma and the Flanfairs headlines[/url], four schools have been closed today because of Senerean's flu. However, the alleged source of the flu denies all claims and still considers the disease seasonal flu. Why is there a conflict with the reports between Senerean and the rest of the Almersen Union?
@@ -40,3 +40,27 @@ Citizens are extremely concerned with the government's message being conflicted 
 At this time, information speed is extremely important, communication is crucial, and the truth is vital. Will this be another Covid-19 or this is just a flu? The question awaits for an answer.
 
 — Idea-chan, volunteer at Ninoarura National News (NNN), Secondary Speaker of the Senate, Primary Speaker of the House of Common
+
+# Chaos ensues this evening after two plane crashes
+[b]BREAKING NEWS: Two planes shot down by military-grade missiles, the Protectors Cult take responsibility[/b]
+This evening, two planes (both of Air Senerean) were shot down by military-grade missiles over Ninoarura and Nuvak, claiming 398 lives on board and an unconfirmed number of deaths on the ground. This is a surprise attack and completely unprompted by the Protectors Cult, who took full responsibility and warned the public "to appease the Gods' anger".
+
+Because of the crash location in a densely populated area, the firefighting effort still continues until now. It is estimated that the damage is more than 100 million Xenerus per city and counting. Moreover, on-air firefighting is not an option due to the nature of the missile and the fear that further attacks may be possible. Traffic jams are also an issue, but the collaborative attitude of the citizens was extremely helpful. 
+
+According to sources, both planes were taken down in the same manner: a ground-to-air missile fired shortly after the plane took off. Because both planes were taking off during foggy weather in Ninoarura and Nuvak, establishing the source proved to be impossible. Moreover, the missiles flew at a short distance, making the military radar doesn’t have enough time to triangulate the position. However, the national grounding order was issued, because both planes were taken down with military-grade missiles.
+
+Currently, police and the Emergency Response Unit from both cities are patrolling around the cities on high alert. Moreover, checkpoints were set up at the exits of both cities to check documents, creating huge traffic jams in both directions. The Ministry of National Security also suggested that the Protectors Cults may reside in the woods of the Xubaxu province and military search planes are being dispatched to scramble for the headquater of the cult. Information also suggested that the operation was being planned and ordered completely online.
+
+[b]The Protectors and their belief[/b]
+The Protectors Cult believes that they are the last stop of humanity before reaching the final breaking points of the Gods. They claimed that when the Last Star rises above the horizon, it marks the ultimate end of humanity. The virus, according to Protector believers, is a sign that the Gods are angry and it getting worse. In the Protectors' manifesto, Senerians are a superior race and when there are too many Senerians, the Gods afraid that Senerians will become aggressive and ignore the Gods. The Cult is the main supporter of the two-child-only policy and the parental licensing program to keep the Senerean population low, according to their explanation.
+
+The Protectors Cult confirms: “If the number [of cases] continues, that means our sacrifice is not enough”.
+
+The most surprising thing is the Protectors got through the strict regulations about the religious institution and weren’t labelled as a “cult” until today. The problem is they endorsed many progressive bills and are also advocates for the development of science in Senerean. They exerted no harm to the rights and freedoms of others, so they managed to slit through the cracks in the system.
+
+[b]The government's future actions[/b]
+Now, I am here at the meeting hall in Ninoarura. To protect the ministers, the identity of those who entered and left the building is kept secret. However, an ambulance just came to pick up the Minister of National Security. The Prime Minister just informed from the front door of the building that the Minister was exhausted after the trip to Estica but now has to face this crisis — they haven’t eaten since this lunch. 
+
+The next possible course of action for the government, according to experts suggested that the government may invoke the Emergency Act and temporarily suspend multiple rights and services to keep national security. That also means the next election will be delayed. It is impossible to predict will a short national union government will be established or not when the government is facing the Senerean’s flu and this attack from the Protectors Cult. 
+
+— Iphone-chan, intern at the Ninoarura National News (NNN) and the Speaker of the Senate; reviewed by Peter, external checker, the Head of State of the Bayer Free State, and the Head of State of the Wilhelma and the Flanfairs.
