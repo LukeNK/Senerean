@@ -23,3 +23,20 @@ The Estican government announced 26 confirmed cases this morning and 2 deaths fr
 It is undeniable that Senerians are among the healthiest citizens in the Union. Despite that, speculations arise when it comes to the government’s speed in terms of crisis management. As the next election is looming, will this just be another easy victory for the liberal government, or this flu turn out to be a failed prediction by the running party that will change the government? The answer awaits...
 
 —Phone-chan, the Speaker of the Senate and interim at Ninoarura National News (NNN)
+
+# Where are the cases?
+According to [url=https://www.nationstates.net/page=dispatch/id=1946360]Wilhelma and the Flanfairs headlines[/url], four schools have been closed today because of Senerean's flu. However, the alleged source of the flu denies all claims and still considers the disease seasonal flu. Why is there a conflict with the reports between Senerean and the rest of the Almersen Union?
+
+The most important answer is that Senerean is refusing to collect or allow the collection of statistics about the flu. If all cases are reported as normal flu, the lack of statistics obviously made the understanding of the flu impossible. Despite that, multiple hospitals attempted to report Senerean's flu but so far, none has reported a complete case of Senerean's flu.
+
+"I once again reinstate my point: this is a common flu. There is a possibility that the cases being reported are being confused during the cross-checking data since Senerean has found no death from flu alone, let alone the 'Senerean's flu' that people are talking about. I reassure Senerians that a border lockdown order will not be imposed until absolutely necessary." — The Prime Minister of Senerean
+
+Meanwhile, a stagnating number of deaths has been reported around Senerean. There are fears that the Senerean government is keeping the number, hindering the public from preparing appropriately for the situation. Lockdown orders were also imposed across the Union. 
+
+From another perspective, doctors from across the nation still got confused about the cases being reported. A doctor from the Sea-cliff Hospital, Ninoarura told us: "The case reports being produced by Estican doctors are extremely accurate and we did try to match with the profiles of our patients, but the matching result is rather low. This is weird considering Senerean's healthcare system is closely related to the Estican counterpart. We are investigating deep into this, but it almost feels like Senerean's existing precautionary care is playing its part in this."
+
+Citizens are extremely concerned with the government's message being conflicted with other governments. People across the nation have started to prepare for this "just like the good old Covid-19 days". Self-sustaining models were set up by homeowners to prepare for the worst, while rural areas braced for the lack of supply for the next few months. In the people's eyes, the future is rather dark.
+
+At this time, information speed is extremely important, communication is crucial, and the truth is vital. Will this be another Covid-19 or this is just a flu? The question awaits for an answer.
+
+— Idea-chan, volunteer at Ninoarura National News (NNN), Secondary Speaker of the Senate, Primary Speaker of the House of Common
