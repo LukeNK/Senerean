@@ -71,3 +71,16 @@ At midnight, a ship moving 50 nautical miles (92km) away from the Central Cluste
 The Protectors once again informed their involvement in this attack, citing the cargo was depleting Senerean of its resources and there would be more to come. The Ministry of Foreign Affairs made a speech at the doorstep of the Ninoarura meeting hall, saying the government will not give in to the terrorist actions, but still suggest harbours and ports to operate with precautions. To ensure safety, the Coastal Emergency Response Unit also patrols ships around the densely populated area. 
 
 — Idea-chan, intern at Ninoarura National News, the Secondary Speaker of the Senate, the Primary Speaker of the House of Comoons, and really need sleep right now
+
+# Morning metro train bombed, more than 30 confirmed deaths
+At 11:30 this morning, a commuter metro train in Laxura was being bombed. Detonated when the train approached the Laxura central station in the third car of the train, the initial blast instantly killed more than 20 people while the shock happened after that increased the death toll. Concussion and brain damage are among the injured. 
+
+The survivors managed to escape the train by using the walkway alongside the main rail. The firefighters quickly arrived at the scene to put out the flame as well as treat the wounded.
+
+The Protectors Cult once again claim responsibility for this attack, claiming the attacks are not targeted but are completely random. It isn’t clear if the bomb was detonated remotely or if there is a presence of suicide bombing.
+
+The Prime Minister just announced that the government will not issue a nationwide lockdown order, but is up to the provincial and municipality governments to take appropriate actions. The Prime Minister also suggested citizens not go out in crowded areas amidst the terrorist threat and the Senerean’s flu. So far, the two major cities Ninoarura and Nuvak have suspended most of the major events and called private organizers to take a similar course of action to protect the people, but no further actions were taken. Critics have claimed that this is a weak and indecisive move from the government in the middle of the Protectors crisis and the Senerean’s flu.
+
+International communities, especially countries in the Almersen Union, have expressed their condolence. Ballinngs, Estica, and Wilhelma all expressed their willingness to send support for counter-terrorist actions.
+
+— Iphone-chan
