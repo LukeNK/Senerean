@@ -118,10 +118,24 @@
             <details>
                 <summary>Uria interceptors</summary>
                 <i>Interceptors series</i>
-                <p>After a new Ironu missile was developed, another rolling-selection competition will be opened by the National Security to find a possible defense against the Ironu series. Uria interceptors not only limited to missiles, but also UAV and other possible counter-missile weapons.</p>
+                <p>After a new Ironu missile was developed, another rolling-selection competition will be opened by the National Security to find a possible defense against the Ironu missiles series. Uria interceptors not only limited to missiles, but also UAV and other possible counter-missile weapons.</p>
             </details>
         </section>
     </main>
     <footer html-src="../website/footer.html"></footer>
 </body>
 <script src="../website/scripts.js"></script>
+<script>
+    let entities = document.querySelectorAll('section.linkList>details>summary'),
+        textP = document.querySelectorAll('section.linkList>details>p');
+        entities.forEach(e => {
+            e.setAttribute('id', e.innerHTML.replace(/ /g, '-'));
+            textP.forEach(para => {
+                // Replaced with link
+                para.innerHTML = para.innerHTML.replace(
+                    new RegExp(e.innerHTML, 'g'),
+                    '<a href="#' + e.getAttribute('id') + '"">' + e.innerHTML + '</a>'
+                )
+            })
+        });
+</script>
