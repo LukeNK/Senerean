@@ -84,3 +84,16 @@ The Prime Minister just announced that the government will not issue a nationwid
 International communities, especially countries in the Almersen Union, have expressed their condolence. Ballinngs, Estica, and Wilhelma all expressed their willingness to send support for counter-terrorist actions.
 
 — Iphone-chan
+
+# Express News from Senerean (2023-10-22)
+[b]Protectors Cult events[/b]
+- Cult terrorist attack in Ninoarura and Nuvak, two planes shot down with military missiles, more than 400 deaths, national airspace closed for security
+- A cargo ship near the Central Cluster with 27 members sank after being bombed, searching is impossible due to the rough sea
+- More than 30 people were killed in a metro line bombing in Laxura, major events cancelled, and crowds were banned in multiple cities
+- The official death toll is now 416 direct deaths because of the attacks
+- The Protectors Cult's headquarters is situated in the Xubaxu province, and military aircraft are searching the province's forest; international support offered
+- The Ministry of National Security collapsed due to exhaustion from crisis
+[b]Senerean's flu events[/b]
+- The government refused to recognize Senerean's flu initially, data collection hindered until the weekend
+- Wilhelma sent Senerean's flu sample to Senerean for further examination
+- The government considers invoking the Emergency Act, meaning the suspension of rights and freedoms, including delaying the next election
