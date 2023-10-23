@@ -24,7 +24,7 @@
     <header html-src="../website/header.html"></header>
     <main>
         <h1>Senerean entities</h1>
-        <p>Unless stated otherwise, the lists were sorted by alphabetical order</p>
+        <p>Unless stated otherwise, the lists were sorted by alphabetical order. Please use <code>ctrl+f</code> to search</p>
 
         <h2>Events (in timeline order)</h2>
         <section class="linkList">
@@ -32,6 +32,16 @@
                 <summary>War of the Four Emperors</summary>
                 <i>War from 1236-1248</i>
                 <p>A long war broke out between Ballinngs, Tudor (Estica), Senerean, and Solomon.</p>
+            </details>
+            <details>
+                <summary>March Health Crisis</summary>
+                <i>An event on 2023-03-30</i>
+                <p>While having a nap, Idea-chan got a heat shock from the open window. A missing alert was issued in order to find her, before she was rushed into the hospital. Luckily, she recovered before making a public live stream midnight, telling the nation that she is fine.</p>
+            </details>
+            <details>
+                <summary>Zero Villages</summary>
+                <i>Government project from 1937-1970</i>
+                <p>A project supposed to rehabilitate convicts by sending them to remote area instead of prisons, but eventually become a death sentence to many involuntary participants. Eventually ended by Mr. H.</p>
             </details>
         </section>
 
@@ -71,11 +81,6 @@
                 <i>Hospital in Ninoarura</i>
                 <p>Senerean's most prominent hospital and research lab.</p>
             </details>
-            <details>
-                <summary>Zero Villages</summary>
-                <i>Government project from 1937-1970</i>
-                <p>A project supposed to rehabilitate convicts by sending them to remote area instead of prisons, but eventually become a death sentence to many involuntary participants. Eventually ended by Mr. H.</p>
-            </details>
         </section>
 
         <h2>People</h2>
@@ -111,19 +116,49 @@
                 <summary>Mr. H</summary>
                 <p>The survivor of the Zero Villages that revealed its truth</p>
             </details>
+            <details>
+                <summary>Riaa</summary>
+                <i>Estican artist</i>
+                <p>Supported Senerean parliament's uniform committee</p>
+            </details>
         </section>
 
         <h2>Other entities</h2>
         <section class="linkList">
             <details>
+                <summary>Canvas4U</summary>
+                <i>Government program</i>
+                <p>Government program that encourage arts by allowing citizens to draw on governmental buildings, provided that it is appropriate else risk being replaced by others.</p>
+            </details>
+            <details>
+                <summary>Express News</summary>
+                <i>Weekly news series published by Ninoarura National News</i>
+                <p>A point-form news that aim to summarize the week with events from being extremely important to positive events</p>
+            </details>
+            <details>
                 <summary>Expressway</summary>
                 <i>Road system</i>
-                <p>Highway system with unlimited speed limit. Requires a first-aid license.</p>
+                <p>Highway system with unlimited speed limit. Requires a first-aid license from foreigners, since Senerean's driver license already included a first-aid certificate.</p>
+            </details>
+            <details>
+                <summary>From sea to stars</summary>
+                <i>Senerean's moto</i>
+                <p>Means that Senerians have the countrol from the sea to the sky, navigating through the stars.</p>
+            </details>
+            <details>
+                <summary>Health and Education Card</summary>
+                <i>Government program</i>
+                <p>Usually called "HEC", this card can be used at a patient profile and education transcript across the issued province. During emergencies, it is recommended that citizens show their Senerean Insurance and Identification Card.<p>
             </details>
             <details>
                 <summary>Ironu missiles</summary>
                 <i>Strike missile series</i>
                 <p>The winner of a nation-wide missile-design competition will get their design to be tested and possibly used by the National Security. The Ironu series are missiles from that win in the competition.</p>
+            </details>
+            <details>
+                <summary>Mika</summary>
+                <i>Official currency</i>
+                <p>Senerean's official minor denomination. 1 xeneru = 100 mika.</p>
             </details>
             <details>
                 <summary>Milaru</summary>
@@ -132,12 +167,27 @@
             </details>
             <details>
                 <summary>Northern Shield</summary>
-                <p>Senerean air-strike intercepting system, started in 2003 and recieved little care. Recently, a competition was called to improve Senerean's strike missiles and the Northern Shield as a whole.</p>
+                <p>Senerean air-strike intercepting system, started in 2003 and recieved little care. Recently, a competition was called to improve Senerean's strike missiles and the Northern Shield as a whole. Uria interceptors are direct decendant of the Northern Shield's standard missile.</p>
+            </details>
+            <details>
+                <summary>Senerean Insurance and Identification Card</summary>
+                <i>Government program</i>
+                <p>Usually called "SIIC", this card is used to indentify and provide tax benefit to citizens. This card can be used across the nation, unlike the Health and Education Card.</p>
+            </details>
+            <details>
+                <summary>Senerean Insurance and Identification Number</summary>
+                <i>Government program</i>
+                <p>Usually called "SIIN", this nine-character letter and number string can be used to identify a person and access to their information with appropriate permission. Connect directly to the Senerean Insurance and Identification Card.</p>
             </details>
             <details>
                 <summary>Uria interceptors</summary>
                 <i>Interceptors series</i>
                 <p>After a new Ironu missile was developed, another rolling-selection competition will be opened by the National Security to find a possible defense against the Ironu missiles series. Uria interceptors not only limited to missiles, but also UAV and other possible counter-missile weapons.</p>
+            </details>
+            <details>
+                <summary>Xeneru</summary>
+                <i>Official currency</i>
+                <p>Senerean's official major denomination. 1 xeneru = 100 mika.</p>
             </details>
         </section>
     </main>
@@ -145,30 +195,47 @@
 </body>
 <script src="../website/scripts.js"></script>
 <script>
-    let entities = document.querySelectorAll('section.linkList > details > summary'),
+    let entities = [...document.querySelectorAll('section.linkList > details > summary')]
+            // sort by length so Regex will capture the longest first
+            .sort((a, b) => a.innerHTML.length > b.innerHTML.length? -1 : 1),
         textP = document.querySelectorAll(`
             section.linkList > details > i,
             section.linkList > details > p
         `);
 
-    for (let e of entities)
-        e.setAttribute('id', e.innerHTML.replace(/ /g, '-')); // ID for links
-
+    let setId = true; // only set in the first round
     for (let para of textP) {
-        // for each paragraph, find the one with largest matching
-        let maxLen = 0, max; // entity name with largest length
+        let matchList = []; // array to register matched items
         for (let e of entities) {
-            let len = (new RegExp(e.innerHTML, 'gi')).exec(para.innerHTML)? e.innerHTML.length : 0;
-            if (len > maxLen) {
-                maxLen = len;
-                max = e;
+            if (setId) {
+                e.setAttribute('id', e.innerHTML.replace(/ /g, '-')); // ID for links
+                let btn = document.createElement('button');
+                btn.innerText = 'Copy link'
+                btn.onclick = ev => {
+                    document.location.hash = e.getAttribute('id');
+                    navigator.clipboard.writeText(document.location.href)
+                }
+                e.parentElement.append(btn)
             }
-        }
 
-        if (maxLen > 0)
+
+            let match = new RegExp(e.innerHTML, 'gi');
+
+            if (!match.exec(para.innerHTML)) continue; // no match
+            let inMatchList = false; // check if a bigger item was matched
+            for (const item of matchList)
+                if (item.indexOf(e.innerHTML) >= 0) {
+                    inMatchList = true;
+                    break
+                }
+            if (inMatchList) continue;
+
             para.innerHTML = para.innerHTML.replace(
-                new RegExp(max.innerHTML, 'gi'),
-                '<a href="#' + max.getAttribute('id') + '"">' + max.innerHTML + '</a>'
+                match,
+                '<a href="#' + e.getAttribute('id') + '"">' + e.innerHTML + '</a>'
             );
+            matchList.push(e.innerHTML);
+        }
+        setId = false;
     }
 </script>
