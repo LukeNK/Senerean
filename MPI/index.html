@@ -54,6 +54,30 @@
             </details>
         </section>
 
+        <h2>Organizations</h2>
+        <section class="linkList">
+            <details>
+                <summary>Protectors</summary>
+                <i>Cult</i>
+                <p>A cult with main belief in the Gods, Senerian supremacy, and population control. Quite progressive because they believe that Senerians should have the best of the best. Conducted numerous terrorist attack after the Senerean's flu because they believe the Gods are angry because there are too much Senerians.</p>
+            </details>
+            <details>
+                <summary>Ninoarura National News</summary>
+                <i>Public service broadcasting. Broadcast acronym: NNN.</i>
+                <p>Based in Ninoarura, this is the main news outlet for the nation. Its name is rather controversial because it is using the capital city to represent the entire nation.</p>
+            </details>
+            <details>
+                <summary>Sea Cliff Hospital</summary>
+                <i>Hospital in Ninoarura</i>
+                <p>Senerean's most prominent hospital and research lab.</p>
+            </details>
+            <details>
+                <summary>Zero Villages</summary>
+                <i>Government project from 1937-1970</i>
+                <p>A project supposed to rehabilitate convicts by sending them to remote area instead of prisons, but eventually become a death sentence to many involuntary participants. Eventually ended by Mr. H.</p>
+            </details>
+        </section>
+
         <h2>People</h2>
         <section class="linkList">
             <details>
@@ -85,7 +109,7 @@
             </details>
             <details>
                 <summary>Mr. H</summary>
-                <p>The survivor of the Zero Village that revealed its truth</p>
+                <p>The survivor of the Zero Villages that revealed its truth</p>
             </details>
         </section>
 
@@ -111,11 +135,6 @@
                 <p>Senerean air-strike intercepting system, started in 2003 and recieved little care. Recently, a competition was called to improve Senerean's strike missiles and the Northern Shield as a whole.</p>
             </details>
             <details>
-                <summary>Sea Cliff Hospital</summary>
-                <i>Hospital in Ninoarura</i>
-                <p>Senerean's most prominent hospital and research lab.</p>
-            </details>
-            <details>
                 <summary>Uria interceptors</summary>
                 <i>Interceptors series</i>
                 <p>After a new Ironu missile was developed, another rolling-selection competition will be opened by the National Security to find a possible defense against the Ironu missiles series. Uria interceptors not only limited to missiles, but also UAV and other possible counter-missile weapons.</p>
@@ -126,16 +145,30 @@
 </body>
 <script src="../website/scripts.js"></script>
 <script>
-    let entities = document.querySelectorAll('section.linkList>details>summary'),
-        textP = document.querySelectorAll('section.linkList>details>p');
-        entities.forEach(e => {
-            e.setAttribute('id', e.innerHTML.replace(/ /g, '-'));
-            textP.forEach(para => {
-                // Replaced with link
-                para.innerHTML = para.innerHTML.replace(
-                    new RegExp(e.innerHTML, 'g'),
-                    '<a href="#' + e.getAttribute('id') + '"">' + e.innerHTML + '</a>'
-                )
-            })
-        });
+    let entities = document.querySelectorAll('section.linkList > details > summary'),
+        textP = document.querySelectorAll(`
+            section.linkList > details > i,
+            section.linkList > details > p
+        `);
+
+    for (let e of entities)
+        e.setAttribute('id', e.innerHTML.replace(/ /g, '-')); // ID for links
+
+    for (let para of textP) {
+        // for each paragraph, find the one with largest matching
+        let maxLen = 0, max; // entity name with largest length
+        for (let e of entities) {
+            let len = (new RegExp(e.innerHTML, 'gi')).exec(para.innerHTML)? e.innerHTML.length : 0;
+            if (len > maxLen) {
+                maxLen = len;
+                max = e;
+            }
+        }
+
+        if (maxLen > 0)
+            para.innerHTML = para.innerHTML.replace(
+                new RegExp(max.innerHTML, 'gi'),
+                '<a href="#' + max.getAttribute('id') + '"">' + max.innerHTML + '</a>'
+            );
+    }
 </script>
