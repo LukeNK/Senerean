@@ -13,7 +13,8 @@
     #navTop a img {
         margin-right: 0;
     }
-    #navTop button {
+    #navTop button,
+    #navTop nav {
         display: none;
     }
 

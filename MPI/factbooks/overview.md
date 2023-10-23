@@ -140,14 +140,14 @@
     Despite strong connections between tribes, there is no administrative body above the Chiefs. The closest to a national government that was established at that time was the Assembly, which comprised village/tribe chiefs from the area. The Assembly may have comprised chiefs from as far as southern Estica. The meeting place was mostly chosen to be in [nation=noflag]Estica[/nation] due to the denser population, but Nuvak was sometimes chosen. The power of the Assembly at that time was mostly limited to knowledge exchange and acted more like a negotiation ground for the tribes. Some may even consider it a VIP lounge in a market.
 
     A change happened in Senerean after 500 CE following the developments in Ninoarura. Despite multiple speculations suggesting that Ninoarura was populous thanks to trading between Ballinngs and the rest of the nation, it was still unclear how the area became the centre of the Nenerean region. However, multiple factors including a beneficial geographical location for wood logging, fur hunting, and a pleasant climate played a large factor in the development of the area, despite the area usually being faced with earthquakes. It may be said that because at that time, permanent mega-structures were rare, the effect of earthquakes was not considerably devastating compared to today. This factor played a huge role in the development of small-size housing culture that played a huge role until this day.
-    
+
     Conflicts between tribes happened in light of protecting trading interests and usually took place in the form of sanctions. Physical altercations and micro-wars also occur but are usually resolved quickly for many villages and tribes lack a self-sufficient economy. It is also notable that at the time, there was a lack of a well-defined border beyond the village perimeter. Resources beyond a village are usually considered natural and can be harvested by anybody, but tribe members only harvest the resources their tribe excels at in terms of production to increase the economy of scale as well as having the proper equipment to process it.
 
 [b][u][anchor=ColPer]Middle Ages[/anchor][/u][/b]
 
-    Those dynamics remained unchanged when the Grand Solomon Empire took over the land where Ballinngs, Estica, and Senerean reside today. This can be attributed to the lack of a clearly defined border to begin with in combination with a rather soft ruling by the Empire. Many tribes enjoyed the collaborative atmosphere provided by the Empire. Moreover, the lack of external threats helped with economic development. 
+    Those dynamics remained unchanged when the Grand Solomon Empire took over the land where Ballinngs, Estica, and Senerean reside today. This can be attributed to the lack of a clearly defined border to begin with in combination with a rather soft ruling by the Empire. Many tribes enjoyed the collaborative atmosphere provided by the Empire. Moreover, the lack of external threats helped with economic development.
 
-    However, corruption results in the Grand Solomon Empire abusing its "occupation" status. This prompted the Chief Assembly to execute one of its first major decisions: establishing an army to be controlled by the Master Chief. The reason to reserve the control of the army to one single person is to ensure the speed of decision, since one Assembly meeting may take months to plan. 
+    However, corruption results in the Grand Solomon Empire abusing its "occupation" status. This prompted the Chief Assembly to execute one of its first major decisions: establishing an army to be controlled by the Master Chief. The reason to reserve the control of the army to one single person is to ensure the speed of decision, since one Assembly meeting may take months to plan.
 
     Under the command of the Master Chief, the Chief Assembly quickly took control of Nuvak, the main administrative centre of the Solomon Empire over Senerean. However, the Master Chief didn't report the victory to the Assembly but instead used the loot to hire a mercenary army from the Tudor Empire. This delay proved to be crucial because many soldiers from the initial army were sent home, thinking they would be rewarded but now facing hunger and demoralized. The loot is more than enough for the mercenary to loot villages and block trading resources. Since most of the Senerean villages can't be self-sustaining, this marks the ruling of the Master Chief over Senerean starting from 1175. He called the Senerean Empire, which marks the first usage of the word "Senerean" to refer to [the] land.
 
@@ -216,7 +216,7 @@
     [center][i]Senerean religion demographic[/i][/center]
 [/box][/floatleft]
 
-    Following the newest census, 49.5% of Senerians are Christian, followed by 32.5% identify as non-religious or secular. 
+    Following the newest census, 49.5% of Senerians are Christian, followed by 32.5% identify as non-religious or secular.
 
 [u][b][anchor=Race]Ethnicity[/anchor][/b][/u]
 
@@ -238,7 +238,7 @@
 
     Education in Senerean follows the K-12 curriculum and is generally divided into pre-school, primary school, and secondary school, followed by post-secondary. The Right to a Childhood stated in the Constitution requires the government to provide education until the completion of secondary school. All levels before post-secondary are publicly funded by the national and provincial government (with the curriculum being overseen by the provincal government), while universities and colleges are partially funded by the national government. Typically, a students required at least 30 hours of community service and finish a project of their choice to graduate. Moreover, students are required to submit a post-secondary plan to the local government for necessary financial support before receiving their completion certificate. Partaking in post-secondary education is not compulsory but highly recommended.
 
-    English is the only language of instruction, but students in Senerean are required to learn Milaru up to intermediate level. Despite that, statistic shows that Senerean students mostly graduate highschool with three languages and a considerable amount finished with the completetion of four different language courses. 
+    English is the only language of instruction, but students in Senerean are required to learn Milaru up to intermediate level. Despite that, statistic shows that Senerean students mostly graduate highschool with three languages and a considerable amount finished with the completetion of four different language courses.
 
     Homeschooling is another important aspect in Senerean education system. Due to remote locations, more than 10% of school-age children in Senerean submit to homeschooling. When being homeschooled, students can request to have textbooks deliver to their home. During the summer, volunteer teachers will visit the student's house to administer a nation-wide test, ensuring the knowledge the student has attained during the school year. Many post-secondary institutions require homeschooled students to take a test of knowledge before approving the application. Many provinces also support online school where students can learn at home, but submit their homework online to a teacher and take tests by visiting a nearby school.
 
@@ -276,7 +276,7 @@
 
     Senerean is a republic comprise of 9 provinces and 6 island clusters, which usually being grouped into 3 regions: Nenerean, Menerean, and Senerean. The national government the practice of devolution, where power is substantially delegated to local authorities. Despite that, multiple sectors are being shared by both the national and provincial government. Provinces and islands cluster have the responnsibility to provide social service and administration of civil law, while funding come directly from the national government. Equalization payments are made by the national government to ensure a uniform standard of welfare. Most provinces doesn't implement income tax but citizens still subject to the national income tax.
 
-    In any legal capacity, an island cluster's government is similar to a provincial government. Both get their power directly from the national government with equal opportunity and power. The difference came from the fact that the cluster governments used to submit to the provincial government until a clear separation was made. This separation makes sense since some clusters may have even more people than many provinces. One notable example is the East Cluster with the capital Ninoarura. 
+    In any legal capacity, an island cluster's government is similar to a provincial government. Both get their power directly from the national government with equal opportunity and power. The difference came from the fact that the cluster governments used to submit to the provincial government until a clear separation was made. This separation makes sense since some clusters may have even more people than many provinces. One notable example is the East Cluster with the capital Ninoarura.
 
 [b][u][anchor=FR]Military and Foreign Relations[/anchor][/b][/u]
 
@@ -335,7 +335,7 @@
 
 [i]Main article: [url=MAIN FACTBOOK ON SPORTS]Sports in Senerean[/url][/i]
 
-    Because of the extreme cold weather, winter sports are a part of the Senerian culture, especially with outdoor sports like skiing or snowboarding. Hunting used to be a part of the culture but after the ban on gun after World War 2, it had become unpopular. 
+    Because of the extreme cold weather, winter sports are a part of the Senerian culture, especially with outdoor sports like skiing or snowboarding. Hunting used to be a part of the culture but after the ban on gun after World War 2, it had become unpopular.
 
     The Senerian government promotes cycling as a solution to inner-city travel, which highly supported by citizens. Because of that, Senerean tends to bid on hosting many international cycling competitions.
 
@@ -345,11 +345,11 @@
 
 [b][u][anchor=Anime]Anime, Vocaloid, and VTuber[/anchor][/u][/b]
 
-    The Japanese culture in general, and anime culture in particular, is considered to be widespread in Senerean. The culture started to develop in the late 1070s and at its peak in the early 2010s when the internet started to become popular. The anime's peak in 2010s can be also attributed to the release of [url=https://en.wikipedia.org/wiki/Hatsune_Miku]Hatsune Miku[/url]. Recently, the VTuber culture is also been strongly integrated into Senerean. 
+    The Japanese culture in general, and anime culture in particular, is considered to be widespread in Senerean. The culture started to develop in the late 1070s and at its peak in the early 2010s when the internet started to become popular. The anime's peak in 2010s can be also attributed to the release of [url=https://en.wikipedia.org/wiki/Hatsune_Miku]Hatsune Miku[/url]. Recently, the VTuber culture is also been strongly integrated into Senerean.
 
     The Senerian government provided large business subsidization for animation studios based in Senerean, but the online working after the Covid-19 pandemic made it difficult for the government to ensure the funding is going to businesses that employ Senerians. The government is also highly supportive of arts through the "Canvas4U" campaign where citizens can draw on any governmental building with their own art, provided that it is appropriate else risk being replaced by others. The campaign is noted to be similar to that of r/place by the social media platform [url=https://en.wikipedia.org/wiki/Reddit]Reddit[/url].
 
-    Despite unofficially, Petra Gurin is considered to be the mascot VTuber of Senerean. Likewise, Hatsune Miku is the Vocaloid mascot. 
+    Despite unofficially, Petra Gurin is considered to be the mascot VTuber of Senerean. Likewise, Hatsune Miku is the Vocaloid mascot.
 
 [b][u][anchor=Music]Music[/anchor][/u][/b]
 
