@@ -14,7 +14,7 @@
 - Hospital bills for foreigners increased
 
 # Senerean flu or seasonal flu?
-This afternoon, the Prime Minister addressed the accusation of other Member Nations of the Alermsen Union about Senerean’s flu outbreak. 
+This afternoon, the Prime Minister addressed the accusation of other Member Nations of the Alermsen Union about Senerean’s flu outbreak.
 
 “The public should not be feared of this flu. The government is working hard to identify the possible cause of this but so far, no Senerians have been affected by the flu. Our researchers considered this to be a seasonal flu, but we will monitor the situation closely. We once again ask our citizens to remain calm.”
 
@@ -31,7 +31,7 @@ The most important answer is that Senerean is refusing to collect or allow the c
 
 "I once again reinstate my point: this is a common flu. There is a possibility that the cases being reported are being confused during the cross-checking data since Senerean has found no death from flu alone, let alone the 'Senerean's flu' that people are talking about. I reassure Senerians that a border lockdown order will not be imposed until absolutely necessary." — The Prime Minister of Senerean
 
-Meanwhile, a stagnating number of deaths has been reported around Senerean. There are fears that the Senerean government is keeping the number, hindering the public from preparing appropriately for the situation. Lockdown orders were also imposed across the Union. 
+Meanwhile, a stagnating number of deaths has been reported around Senerean. There are fears that the Senerean government is keeping the number, hindering the public from preparing appropriately for the situation. Lockdown orders were also imposed across the Union.
 
 From another perspective, doctors from across the nation still got confused about the cases being reported. A doctor from the Sea-cliff Hospital, Ninoarura told us: "The case reports being produced by Estican doctors are extremely accurate and we did try to match with the profiles of our patients, but the matching result is rather low. This is weird considering Senerean's healthcare system is closely related to the Estican counterpart. We are investigating deep into this, but it almost feels like Senerean's existing precautionary care is playing its part in this."
 
@@ -45,7 +45,7 @@ At this time, information speed is extremely important, communication is crucial
 [b]BREAKING NEWS: Two planes shot down by military-grade missiles, the Protectors Cult take responsibility[/b]
 This evening, two planes (both of Air Senerean) were shot down by military-grade missiles over Ninoarura and Nuvak, claiming 398 lives on board and an unconfirmed number of deaths on the ground. This is a surprise attack and completely unprompted by the Protectors Cult, who took full responsibility and warned the public "to appease the Gods' anger".
 
-Because of the crash location in a densely populated area, the firefighting effort still continues until now. It is estimated that the damage is more than 100 million Xenerus per city and counting. Moreover, on-air firefighting is not an option due to the nature of the missile and the fear that further attacks may be possible. Traffic jams are also an issue, but the collaborative attitude of the citizens was extremely helpful. 
+Because of the crash location in a densely populated area, the firefighting effort still continues until now. It is estimated that the damage is more than 100 million Xenerus per city and counting. Moreover, on-air firefighting is not an option due to the nature of the missile and the fear that further attacks may be possible. Traffic jams are also an issue, but the collaborative attitude of the citizens was extremely helpful.
 
 According to sources, both planes were taken down in the same manner: a ground-to-air missile fired shortly after the plane took off. Because both planes were taking off during foggy weather in Ninoarura and Nuvak, establishing the source proved to be impossible. Moreover, the missiles flew at a short distance, making the military radar doesn’t have enough time to triangulate the position. However, the national grounding order was issued, because both planes were taken down with military-grade missiles.
 
@@ -59,21 +59,21 @@ The Protectors Cult confirms: “If the number [of cases] continues, that means 
 The most surprising thing is the Protectors got through the strict regulations about the religious institution and weren’t labelled as a “cult” until today. The problem is they endorsed many progressive bills and are also advocates for the development of science in Senerean. They exerted no harm to the rights and freedoms of others, so they managed to slit through the cracks in the system.
 
 [b]The government's future actions[/b]
-Now, I am here at the meeting hall in Ninoarura. To protect the ministers, the identity of those who entered and left the building is kept secret. However, an ambulance just came to pick up the Minister of National Security. The Prime Minister just informed from the front door of the building that the Minister was exhausted after the trip to Estica but now has to face this crisis — they haven’t eaten since this lunch. 
+Now, I am here at the meeting hall in Ninoarura. To protect the ministers, the identity of those who entered and left the building is kept secret. However, an ambulance just came to pick up the Minister of National Security. The Prime Minister just informed from the front door of the building that the Minister was exhausted after the trip to Estica but now has to face this crisis — they haven’t eaten since this lunch.
 
-The next possible course of action for the government, according to experts suggested that the government may invoke the Emergency Act and temporarily suspend multiple rights and services to keep national security. That also means the next election will be delayed. It is impossible to predict will a short national union government will be established or not when the government is facing the Senerean’s flu and this attack from the Protectors Cult. 
+The next possible course of action for the government, according to experts suggested that the government may invoke the Emergency Act and temporarily suspend multiple rights and services to keep national security. That also means the next election will be delayed. It is impossible to predict will a short national union government will be established or not when the government is facing the Senerean’s flu and this attack from the Protectors Cult.
 
 — Iphone-chan, intern at the Ninoarura National News (NNN) and the Speaker of the Senate; reviewed by Peter, external checker, the Head of State of the Bayer Free State, and the Head of State of the Wilhelma and the Flanfairs.
 
 # Series of attack continues, strikes during midnight in Central Cluster.
-At midnight, a ship moving 50 nautical miles (92km) away from the Central Cluster was being attacked with bombs. Details about the attack are unclear, but the ship quickly sank after the explosion, hinting a large amount of ammunition was detonated. The crew consists of 27 people, all Senerean citizens, departing from Nuvak with the destination is Ballinngs, carrying wood logs and timber. Despite the efforts, the lifeboat has not yet been found in the rough sea. 
+At midnight, a ship moving 50 nautical miles (92km) away from the Central Cluster was being attacked with bombs. Details about the attack are unclear, but the ship quickly sank after the explosion, hinting a large amount of ammunition was detonated. The crew consists of 27 people, all Senerean citizens, departing from Nuvak with the destination is Ballinngs, carrying wood logs and timber. Despite the efforts, the lifeboat has not yet been found in the rough sea.
 
-The Protectors once again informed their involvement in this attack, citing the cargo was depleting Senerean of its resources and there would be more to come. The Ministry of Foreign Affairs made a speech at the doorstep of the Ninoarura meeting hall, saying the government will not give in to the terrorist actions, but still suggest harbours and ports to operate with precautions. To ensure safety, the Coastal Emergency Response Unit also patrols ships around the densely populated area. 
+The Protectors once again informed their involvement in this attack, citing the cargo was depleting Senerean of its resources and there would be more to come. The Ministry of Foreign Affairs made a speech at the doorstep of the Ninoarura meeting hall, saying the government will not give in to the terrorist actions, but still suggest harbours and ports to operate with precautions. To ensure safety, the Coastal Emergency Response Unit also patrols ships around the densely populated area.
 
 — Idea-chan, intern at Ninoarura National News, the Secondary Speaker of the Senate, the Primary Speaker of the House of Comoons, and really need sleep right now
 
 # Morning metro train bombed, more than 30 confirmed deaths
-At 11:30 this morning, a commuter metro train in Laxura was being bombed. Detonated when the train approached the Laxura central station in the third car of the train, the initial blast instantly killed more than 20 people while the shock happened after that increased the death toll. Concussion and brain damage are among the injured. 
+At 11:30 this morning, a commuter metro train in Laxura was being bombed. Detonated when the train approached the Laxura central station in the third car of the train, the initial blast instantly killed more than 20 people while the shock happened after that increased the death toll. Concussion and brain damage are among the injured.
 
 The survivors managed to escape the train by using the walkway alongside the main rail. The firefighters quickly arrived at the scene to put out the flame as well as treat the wounded.
 
@@ -97,3 +97,14 @@ International communities, especially countries in the Almersen Union, have expr
 - The government refused to recognize Senerean's flu initially, data collection hindered until the weekend
 - Wilhelma sent Senerean's flu sample to Senerean for further examination
 - The government considers invoking the Emergency Act, meaning the suspension of rights and freedoms, including delaying the next election
+
+# Against all of the odds, 27 sailors were found!
+This morning, a lifeboat with 27 sailors onboard was miraculously found by the North Cluster Emergency Response Unit. Their original container ship was bombed and sunk this Sunday at midnight with the destination to [nation]Ballinngs[/nation].
+
+This was considered to be nearly impossible because of the recent rough sea and the looming weather. However, while scanning the surface for the lifeboat, a helicopter saw flares being launched by the sailors. Help quickly arrived and pick up all of the crew members. "Inside the lifeboat are 27 happy people who are relieved to be rescued and brought home", said the Chief of the North Cluster Emergency Response Unit. The crew is now being treated at the local hospital before being transported back to Nuvak, their departure port. Nobody was injured or killed in the attack.
+
+"It is extraordinary to have everybody on board following the protocols and procedures when the emergency happened. Collaboration and calmness are one of the main factors that led to the safety of the crew", said the captain, "except there is a member, which for obvious reasons I will keep their identity anonymous, got panicked and decided to jump off the ship. We have to rescue them [chuckle] but otherwise, it is amazing."
+
+The ship is one of the initial targets for the Protectors when bombing major Senerean infrastructures. However, it has been 4 days since the last attack, and the government has found no extra evidence from the attacks. It has been reported that there are about 30 arrested nationwide relating to the Protectors Cult's attacks, but no official statement from the government was issued. On the other hand, the government has confirmed that the Senerean's flu has been registered to the official sickness database and is tracked. While other nations constantly confirm new cases, Senerean is now considerably slow in terms of pandemic preparedness. Will the government catch up with other nations from the Almersen Union, or will this turn out to be a devastating error from the government? The question awaits the answer...
+
+— [url=https://lukenk.github.io/Senerean/MPI/#Idea-chan]Idea-chan, Secondary Speaker of the Senate, Primary Speaker of the House of Commons, and intern at the Ninoarura National News (NNN)[/url]; being woken up one hour early and didn't have her morning coffee
