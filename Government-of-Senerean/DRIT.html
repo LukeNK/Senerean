@@ -86,11 +86,11 @@
                 <summary>MRZ generator</summary>
 
                 <label>
-                    MRZ type: td1 for ID
+                    MRZ type: check for ID (TD1), leave blank for passport (TD3)
                     <input type="checkbox" id="mrzType">
                 </label>
                 <label>
-                    For children?
+                    Special document type?
                     <input type="checkbox" id="docType">
                 </label>
                 <br>
@@ -135,7 +135,7 @@ function checkDigit(str) {
     str = str.toUpperCase();
 
     let sum = 0;
-    for (let i = 0; i < str.length; i++) 
+    for (let i = 0; i < str.length; i++)
         sum += numVal.indexOf(str[i]) * weights[i % weights.length];
     return sum % 10;
 }
@@ -144,11 +144,15 @@ function genMRZ() {
     let inp = (id) => document.getElementById(id).value;
     let doc = {
         mrzType: document.getElementById('mrzType').checked,
-        type: document.getElementById('docType').checked? 'IC' : 'I',
         issuingCountry: 'SNR',
         number: inp('docNum'),
         EXD: new Date(inp('EXD')),
     }
+    doc.type = doc.mrzType? 'I' : 'P'; // ID or passport
+    doc.type += document.getElementById('docType').checked?
+        (doc.mrzType? 'C' : 'D') // Special document type: child or diplomatic
+        : '';
+    doc.type = doc.type.padEnd(2, '<')
     let user = {
         surname: inp('surname'),
         givenNames: inp('givenName'),
@@ -159,14 +163,14 @@ function genMRZ() {
 
     if (doc.mrzType == true) {
         // first line
-        let line1 = 
+        let line1 =
             doc.type + ((doc.type.length > 1)? '' : '<') +
             doc.issuingCountry +
             doc.number +
             checkDigit(doc.number);
 
         // second line
-        let strDOB = 
+        let strDOB =
                 user.DOB.getFullYear().toString().substring(2) +
                 (user.DOB.getMonth() + 1).toString().padStart(2, '0') +
                 user.DOB.getDate().toString().padStart(2, '0'),
@@ -184,12 +188,41 @@ function genMRZ() {
             user.surname.replace(new RegExp(' ', 'g'), '<') +
             '<<' +
             user.givenNames.replace(new RegExp(' ', 'g'), '<');
-            
+
         line1 = line1.padEnd(30, '<').toUpperCase();
         line2 = line2.toUpperCase();
         line3 = line3.padEnd(30, '<').toUpperCase();
 
         document.getElementById('mrz').innerText = line1 + '\n' + line2 + '\n' + line3;
+    } else {
+        let line1 =
+            doc.type
+            + doc.issuingCountry
+            + user.surname.replace(new RegExp(' ', 'g'), '<')
+            + '<<'
+            + user.givenNames.replace(new RegExp(' ', 'g'), '<');
+        line1 = line1.padEnd(44, '<').toUpperCase();
+
+        // second line
+        let strDOB =
+                user.DOB.getFullYear().toString().substring(2) +
+                (user.DOB.getMonth() + 1).toString().padStart(2, '0') +
+                user.DOB.getDate().toString().padStart(2, '0'),
+            strEXD =
+                doc.EXD.getFullYear().toString().substring(2) +
+                (doc.EXD.getMonth() + 1).toString().padStart(2, '0') +
+                doc.EXD.getDate().toString().padStart(2, '0');
+        strDOB += checkDigit(strDOB);
+        strEXD += checkDigit(strEXD);
+        let line2 =
+            doc.number + checkDigit(doc.number)
+            + user.nationality + strDOB + user.sex + strEXD;
+        line2 = line2.padEnd(43, '<');
+        line2 +=
+            checkDigit(line2.slice(0, 9) + line2.slice(13, 20) + line2.slice(21, 43));
+        line2 = line2.toUpperCase();
+
+        document.getElementById('mrz').innerText = line1 + '\n' + line2;
     }
 }
 </script>
