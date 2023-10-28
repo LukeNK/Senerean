@@ -65,6 +65,17 @@ summary:hover, details[open] summary {
     color: var(--color-bright-theme);
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th {
+    text-align: center;
+}
+td, th {
+    border: 1px solid var(--color-fg);
+}
+
 /* Page elements */
 html {
     font-family: var(--font-family);
