@@ -86,8 +86,12 @@
                 <summary>MRZ generator</summary>
 
                 <label>
-                    MRZ type: check for ID (TD1), leave blank for passport (TD3)
+                    MRZ type: check for ID (TD1), leave blank for passport and visa (TD3)
                     <input type="checkbox" id="mrzType">
+                </label>
+                <label>
+                    Is this a visa?
+                    <input type="checkbox" id="isVisa">
                 </label>
                 <label>
                     Special document type?
@@ -144,6 +148,7 @@ function genMRZ() {
     let inp = (id) => document.getElementById(id).value;
     let doc = {
         mrzType: document.getElementById('mrzType').checked,
+        isVisa: document.getElementById('isVisa').checked,
         issuingCountry: 'SNR',
         number: inp('docNum'),
         EXD: new Date(inp('EXD')),
@@ -152,13 +157,15 @@ function genMRZ() {
     doc.type += document.getElementById('docType').checked?
         (doc.mrzType? 'C' : 'D') // Special document type: child or diplomatic
         : '';
+    if (doc.isVisa) doc.type = 'V';
     doc.type = doc.type.padEnd(2, '<')
+
     let user = {
         surname: inp('surname'),
         givenNames: inp('givenName'),
         nationality: 'SNR',
         DOB: new Date(inp('DOB')),
-        sex: 'X'
+        sex: '<'
     }
 
     if (doc.mrzType == true) {
@@ -217,9 +224,11 @@ function genMRZ() {
         let line2 =
             doc.number + checkDigit(doc.number)
             + user.nationality + strDOB + user.sex + strEXD;
-        line2 = line2.padEnd(43, '<');
-        line2 +=
-            checkDigit(line2.slice(0, 9) + line2.slice(13, 20) + line2.slice(21, 43));
+        if (!doc.isVisa) { // Visa don't have check digit
+            line2 += checkDigit(line2.slice(28, 42));
+            line2 += checkDigit(line2.slice(0, 9) + line2.slice(13, 20) + line2.slice(21, 43));
+        }
+        line2 = line2.padEnd(44, '<');
         line2 = line2.toUpperCase();
 
         document.getElementById('mrz').innerText = line1 + '\n' + line2;
