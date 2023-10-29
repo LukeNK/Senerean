@@ -108,3 +108,17 @@ This was considered to be nearly impossible because of the recent rough sea and 
 The ship is one of the initial targets for the Protectors when bombing major Senerean infrastructures. However, it has been 4 days since the last attack, and the government has found no extra evidence from the attacks. It has been reported that there are about 30 arrested nationwide relating to the Protectors Cult's attacks, but no official statement from the government was issued. On the other hand, the government has confirmed that the Senerean's flu has been registered to the official sickness database and is tracked. While other nations constantly confirm new cases, Senerean is now considerably slow in terms of pandemic preparedness. Will the government catch up with other nations from the Almersen Union, or will this turn out to be a devastating error from the government? The question awaits the answer...
 
 — [url=https://lukenk.github.io/Senerean/MPI/#Idea-chan]Idea-chan, Secondary Speaker of the Senate, Primary Speaker of the House of Commons, and intern at the Ninoarura National News (NNN)[/url]; being woken up one hour early and didn't have her morning coffee
+
+# Express News from Senerean (2023-10-29)
+- 27 sailors from the Protectors Cult's attack was found
+- Uria 3 Seeker, Senerean's first UAV, took off for the first tactical mission to find the Protector Cult
+- 50 arrests nationwide in the investigation to find the Protestors
+- An angry mob stormed the Protectors' abandoned house in Ninoarura
+- The national air space will remain closed, said the Ministry of Transportation
+- Internet users found the Ministry of Public Information's connection with the Protectors, no official statement was made
+- Reduced public service in the midst of Senerean's flu and the Protector Cult
+- The question of invoking the Emergency Act remains
+- The Prime Minister: "A national unity government will not be formed"
+- Senerean found 12 cases of Senerean's flu, all patients are in good condition
+- Documentary about the Zero Village told Senerean's dark history incoming in November
+- New Senerian passport and visa basic design revealed. The government seeks art from people across the nation to be chosen as background art for visa pages on the passport.
