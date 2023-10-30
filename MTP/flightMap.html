@@ -17,7 +17,7 @@
 </body>
 
 <script>
-    const Delta = 1; // how much a tick represent compare to the unit (per hour)
+    const Delta = 0.1; // how much a tick represent compare to the unit (per hour)
     const PI = Math.PI,
         sqrt = Math.sqrt,
         sin = Math.sin,
@@ -198,5 +198,5 @@
             [randomItem(Fix.airport).name, randomItem(Fix.airport).name],
             200 + random() * 500
         )
-    }, 1000);
+    }, 1000 * Delta);
 </script>
