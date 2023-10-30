@@ -1,11 +1,13 @@
 <head>
     <style>
         .airport {
-            fill:lime;
+            fill: purple;
         }
 
         .flight {
-            fill: red
+            fill: limegreen;
+            stroke: black;
+            stroke-width: 10px;
         }
     </style>
 </head>
@@ -146,7 +148,7 @@
             for (let l1 in plan)
                 this.plan.push(Fix.list[plan[l1]]);
             this.speed = speed;
-            this.callsign = callsign || (randomItem(['SR'])) + randomName(4, 'n');
+            this.callsign = callsign || (randomItem(['EI'])) + randomName(4, 'n');
 
             this.x = this.plan[0].x; this.y = this.plan[0].y;
             this.plan.shift(); // remove depart airport
@@ -158,14 +160,13 @@
             this.elm.setAttribute('class', 'flight');
             this.elm.setAttribute('cx', 0); // this.tick() will deal with it
             this.elm.setAttribute('cy', 0);
-            this.elm.setAttribute('r', 100);
+            this.elm.setAttribute('r', 50);
             canvas.documentElement.append(this.elm)
 
             this.tick()
         }
         tick() {
             // move to the next tick
-
             let vec = Vector.fromPoints(this, this.plan[0]);
 
             if (vec.len < nm) {
@@ -187,12 +188,15 @@
     let sim = setInterval(() => {
         for (let l1 = 0; l1 < Flight.list.length; l1++) {
             const flight = Flight.list[l1];
-            if (flight.tick()) {
+            if (flight.plan.length <= 0 || flight.tick()) {
                 flight.elm.remove();
                 Flight.list.splice(l1, 1);
                 l1--
             }
         }
+        new Flight(
+            [randomItem(Fix.airport).name, randomItem(Fix.airport).name],
+            200 + random() * 500
+        )
     }, 1000);
-
 </script>
