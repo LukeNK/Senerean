@@ -1,6 +1,6 @@
 <head>
     <style>
-        .fix {
+        .airport {
             fill:lime;
         }
 
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <svg id="canvas" height="500" width="500" viewbox="0 0 10000 10000"></svg>
+    <object id="obj" width="100%" type="image/svg+xml" data="Union-aviation-map.svg"></object>
 </body>
 
 <script>
@@ -25,17 +25,16 @@
         min = Math.min,
         max = Math.max,
         random = Math.random,
-        floor = Math.floor,
-        canvas = document.getElementById('canvas');
-    const toRad = x => x * PI / 180,
+        floor = Math.floor;
+        const toRad = x => x * PI / 180,
         toDeg = x => x * 180 / PI;
-    const nm = 1.852; // nautical miles factor
+        const nm = 1.852; // nautical miles factor
 
-    // utils
+        // utils
     const randomItem = arr => arr[floor((random() * arr.length))];
     const randomName = (len, mode) => {
         const letter = 'abcdefghijklmnopqrstuvwxyz',
-            num = '0123456789';
+        num = '0123456789';
 
         let chars = ''
         if (mode == 'l') chars = letter;
@@ -46,6 +45,27 @@
         for (let l1 = 0; l1 < len; l1++) out += randomItem(chars);
         return out;
     }
+
+    let canvas = document.getElementById('obj');
+    canvas.addEventListener('load', () => {
+        canvas = canvas.contentDocument;
+
+        // copy style
+        canvas.documentElement.append(document.querySelector('style'))
+
+        // initialize
+        for (const fix of canvas.querySelectorAll('circle')) {
+            new Fix(
+                Number(fix.getAttribute('cx')),
+                Number(fix.getAttribute('cy')),
+                fix.getAttribute('inkscape:label'),
+                true
+            )
+            fix.remove()
+        }
+
+        new Flight(['EINV', 'EINA'], 100, 'EI1')
+    })
 
     class Vector {
         #dir = 0;
@@ -97,48 +117,49 @@
         constructor(x, y, name, isAirport) {
             this.x = x;
             this.y = y;
-            this.name = name || randomName(5);
+            this.name = name || randomName(5).toUpperCase();
             this.isAirport = Boolean(isAirport);
 
             Fix.list[this.name] = this;
-            if (isAirport) Fix.airport.push(this)
-
-            // display
-            this.elm = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+            if (isAirport) {
+                Fix.airport.push(this)
+                this.elm = canvas.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                this.elm.setAttribute('cx', x);
+                this.elm.setAttribute('cy', y);
+                this.elm.setAttribute('r', 100);
+            } else {
+                this.elm = canvas.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+                this.elm.setAttribute('points', `${x},${y-100} ${x+100},${y+100} ${x-100},${y+100}`)
+            }
             this.elm.setAttribute('id', this.name);
             this.elm.setAttribute('class', isAirport? 'airport': 'fix');
-            this.elm.setAttribute('points', `${x},${y-100} ${x+100},${y+100} ${x-100},${y+100}`)
 
-            canvas.append(this.elm);
+            canvas.documentElement.append(this.elm);
         }
     }
-    new Fix(100, 100, 'A1')
-    new Fix(3000, 3000, 'A2')
-    new Fix(3000, 5000, 'A3')
-
 
     class Flight {
-        static plan = [
-
-        ]
+        static plan = []
         static list = [];
         constructor(plan, speed, callsign) {
-            this.plan = plan;
+            this.plan = []
+            for (let l1 in plan)
+                this.plan.push(Fix.list[plan[l1]]);
             this.speed = speed;
             this.callsign = callsign || (randomItem(['SR'])) + randomName(4, 'n');
 
-            this.x = plan[0].x; this.y = plan[0].y;
+            this.x = this.plan[0].x; this.y = this.plan[0].y;
             this.plan.shift(); // remove depart airport
 
             Flight.list.push(this);
 
-            this.elm = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            this.elm = canvas.createElementNS('http://www.w3.org/2000/svg', 'circle');
             this.elm.setAttribute('id', this.callsign);
             this.elm.setAttribute('class', 'flight');
             this.elm.setAttribute('cx', 0); // this.tick() will deal with it
             this.elm.setAttribute('cy', 0);
             this.elm.setAttribute('r', 100);
-            canvas.append(this.elm)
+            canvas.documentElement.append(this.elm)
 
             this.tick()
         }
@@ -147,12 +168,11 @@
 
             let vec = Vector.fromPoints(this, this.plan[0]);
 
-            if (vec.len < 250) {
+            if (vec.len < nm) {
                 this.plan.shift();
                 if (this.plan.length == 0) return this.arrived = true;
                 vec = Vector.fromPoints(this, this.plan[0]);
             }
-
 
             vec.len = min(this.speed * Delta, vec.len);
             vec = vec.toPoint();
@@ -163,16 +183,6 @@
             this.elm.setAttribute('cy', this.y);
         }
     }
-    new Flight([
-        Fix.list['A2'],
-        Fix.list['A1'],
-        Fix.list['A3'],
-    ], 277.8, 'AF123')
-    new Flight([
-        Fix.list['A3'],
-        Fix.list['A1'],
-        Fix.list['A2'],
-    ], 300, 'AF13')
 
     let sim = setInterval(() => {
         for (let l1 = 0; l1 < Flight.list.length; l1++) {
