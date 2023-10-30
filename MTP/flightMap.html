@@ -1,0 +1,188 @@
+<head>
+    <style>
+        .fix {
+            fill:lime;
+        }
+
+        .flight {
+            fill: red
+        }
+    </style>
+</head>
+
+<body>
+    <svg id="canvas" height="500" width="500" viewbox="0 0 10000 10000"></svg>
+</body>
+
+<script>
+    const Delta = 1; // how much a tick represent compare to the unit (per hour)
+    const PI = Math.PI,
+        sqrt = Math.sqrt,
+        sin = Math.sin,
+        cos = Math.cos,
+        atan2 = Math.atan2,
+        abs = Math.abs,
+        min = Math.min,
+        max = Math.max,
+        random = Math.random,
+        floor = Math.floor,
+        canvas = document.getElementById('canvas');
+    const toRad = x => x * PI / 180,
+        toDeg = x => x * 180 / PI;
+    const nm = 1.852; // nautical miles factor
+
+    // utils
+    const randomItem = arr => arr[floor((random() * arr.length))];
+    const randomName = (len, mode) => {
+        const letter = 'abcdefghijklmnopqrstuvwxyz',
+            num = '0123456789';
+
+        let chars = ''
+        if (mode == 'l') chars = letter;
+        else if (mode == 'n') chars = num;
+        else chars = letter + num;
+
+        let out = ''
+        for (let l1 = 0; l1 < len; l1++) out += randomItem(chars);
+        return out;
+    }
+
+    class Vector {
+        #dir = 0;
+        get dir() {
+            return this.#dir;
+        }
+        set dir(x) {
+            if (x < 0) x = 360 * 10 - abs(x) ; // dumb patch work
+            this.#dir = x % 360;
+        }
+        constructor(length, direction) {
+            if (typeof length != "number" || typeof direction != "number")
+                throw TypeError('Vector constructor must be a number');
+            this.len = length;
+            this.dir = direction;
+        }
+        toPoint() {
+            // convert to the next relative points
+            // cos theta = (x/l)
+            let dir = this.dir, len = this.len;
+            return {
+                x: cos(toRad(dir)) * len,
+                y: sin(toRad(dir)) * len
+            }
+        }
+        static fromPoints(p1, p2) {
+            // generate vector from points
+            let x = p2.x - p1.x, y = p2.y - p1.y;
+            return new Vector(
+                sqrt(x*x + y*y),
+                toDeg(atan2(y, x))
+            );
+        }
+        copy() {
+            return new Vector(this.len, this.dir)
+        }
+        dirDiff(v2) {
+            // difference dir between two vectors
+            let d = this.dir - v2.dir; // difference between expected place
+            if (abs(d) > 180)
+                d = v2.dir - this.dir
+            return d;
+        }
+    }
+
+    class Fix {
+        static airport = []
+        static list = {}
+        constructor(x, y, name, isAirport) {
+            this.x = x;
+            this.y = y;
+            this.name = name || randomName(5);
+            this.isAirport = Boolean(isAirport);
+
+            Fix.list[this.name] = this;
+            if (isAirport) Fix.airport.push(this)
+
+            // display
+            this.elm = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+            this.elm.setAttribute('id', this.name);
+            this.elm.setAttribute('class', isAirport? 'airport': 'fix');
+            this.elm.setAttribute('points', `${x},${y-100} ${x+100},${y+100} ${x-100},${y+100}`)
+
+            canvas.append(this.elm);
+        }
+    }
+    new Fix(100, 100, 'A1')
+    new Fix(3000, 3000, 'A2')
+    new Fix(3000, 5000, 'A3')
+
+
+    class Flight {
+        static plan = [
+
+        ]
+        static list = [];
+        constructor(plan, speed, callsign) {
+            this.plan = plan;
+            this.speed = speed;
+            this.callsign = callsign || (randomItem(['SR'])) + randomName(4, 'n');
+
+            this.x = plan[0].x; this.y = plan[0].y;
+            this.plan.shift(); // remove depart airport
+
+            Flight.list.push(this);
+
+            this.elm = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            this.elm.setAttribute('id', this.callsign);
+            this.elm.setAttribute('class', 'flight');
+            this.elm.setAttribute('cx', 0); // this.tick() will deal with it
+            this.elm.setAttribute('cy', 0);
+            this.elm.setAttribute('r', 100);
+            canvas.append(this.elm)
+
+            this.tick()
+        }
+        tick() {
+            // move to the next tick
+
+            let vec = Vector.fromPoints(this, this.plan[0]);
+
+            if (vec.len < 250) {
+                this.plan.shift();
+                if (this.plan.length == 0) return this.arrived = true;
+                vec = Vector.fromPoints(this, this.plan[0]);
+            }
+
+
+            vec.len = min(this.speed * Delta, vec.len);
+            vec = vec.toPoint();
+            this.x += vec.x;
+            this.y += vec.y;
+
+            this.elm.setAttribute('cx', this.x);
+            this.elm.setAttribute('cy', this.y);
+        }
+    }
+    new Flight([
+        Fix.list['A2'],
+        Fix.list['A1'],
+        Fix.list['A3'],
+    ], 277.8, 'AF123')
+    new Flight([
+        Fix.list['A3'],
+        Fix.list['A1'],
+        Fix.list['A2'],
+    ], 300, 'AF13')
+
+    let sim = setInterval(() => {
+        for (let l1 = 0; l1 < Flight.list.length; l1++) {
+            const flight = Flight.list[l1];
+            if (flight.tick()) {
+                flight.elm.remove();
+                Flight.list.splice(l1, 1);
+                l1--
+            }
+        }
+    }, 1000);
+
+</script>
