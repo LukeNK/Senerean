@@ -5,10 +5,17 @@
             fill: purple;
         }
 
+        .fix {
+            fill: lime;
+        }
+
         .flight {
             fill: limegreen;
             stroke: black;
             stroke-width: 10px;
+        }
+        .divert {
+            fill: red;
         }
     </style>
     <style>
@@ -69,12 +76,10 @@
                 Number(fix.getAttribute('cx')),
                 Number(fix.getAttribute('cy')),
                 fix.getAttribute('inkscape:label'),
-                true
+                fix.parentElement.getAttribute('inkscape:label') == 'Airport'
             )
             fix.remove()
         }
-
-        new Flight(['EINV', 'EINA'], 100, 'EI1')
     })
 
     class Vector {
@@ -149,7 +154,30 @@
     }
 
     class Flight {
-        static plan = []
+        static plan = [
+            'BBED-OFHR',
+            'BBED-BAKAI-ESAT',
+            'BLTT-OFHR',
+            'BLTT-WHPG',
+            'BLTT-BAKAI-VGJA',
+            'BLTT-BAKAI-ESAT',
+            'BLTT-BAKAI-HAKAI-MIFM',
+            'BLTT-BAKAI-HAKAI-OLFA',
+            'ESAT-WHPG',
+            'ESAT-YSHL',
+            'ESAT-HAKAI-VGJA',
+            'GEHV-GUST',
+            'GUST-WHPG',
+            'GUST-KALOU-YSHL',
+            'MIFM-OLFA',
+            'MIFM-HAKAI-ESAT',
+            'MIFM-HAKAI-WHPG',
+            'MIFM-HAKAI-YSHL',
+            'OLFA-VGJA',
+            'OFHR-HAKAI-MIFM',
+            'OFHR-HAKAI-OLFA',
+            'VGJA-WHPG',
+        ]
         static list = [];
         constructor(plan, speed, callsign) {
             this.plan = []
@@ -157,6 +185,7 @@
                 this.plan.push(Fix.list[plan[l1]]);
             this.speed = speed;
             this.callsign = callsign || (randomItem(['EI'])) + randomName(4, 'n');
+            this.divert = false;
 
             this.x = this.plan[0].x; this.y = this.plan[0].y;
             this.plan.shift(); // remove depart airport
@@ -175,11 +204,28 @@
         }
         tick() {
             // move to the next tick
+            if (this.divert) {
+                // find the closest airport
+                this.plan = []; // clear
+
+                let min = Infinity, minName = '';
+                for (const airport of Fix.airport) {
+                    let vec = Vector.fromPoints(this, airport);
+                    if (vec.len < min) {
+                        min = vec.len;
+                        minName = airport.name;
+                    }
+                }
+
+                this.plan.push(Fix.list[minName])
+                this.elm.classList.add('divert')
+            }
+
             let vec = Vector.fromPoints(this, this.plan[0]);
 
             if (vec.len < nm) {
                 this.plan.shift();
-                if (this.plan.length == 0) return this.arrived = true;
+                if (this.plan.length == 0) return true;
                 vec = Vector.fromPoints(this, this.plan[0]);
             }
 
@@ -192,6 +238,10 @@
             this.elm.setAttribute('cy', this.y);
         }
     }
+    for (let l1 in Flight.plan) {
+        Flight.plan[l1] = Flight.plan[l1].split('-');
+        Flight.plan.push(Flight.plan[l1].toReversed())
+    }
 
     let sim = setInterval(() => {
         for (let l1 = 0; l1 < Flight.list.length; l1++) {
@@ -203,7 +253,7 @@
             }
         }
         new Flight(
-            [randomItem(Fix.airport).name, randomItem(Fix.airport).name],
+            randomItem(Flight.plan),
             300 + random() * 500
         )
     }, 1000 * Delta);
