@@ -9,15 +9,15 @@
         .airport {
             fill: purple;
         }
-        .divFromPort{
-            /* Divert from airport */
-            fill: red;
-        }
         .divToPort{
             /* Divert to airport */
             stroke: lime;
             stroke-opacity: 0.5;
             stroke-width: 200px;
+        }
+        .divFromPort{
+            /* Divert from airport */
+            fill: red;
         }
 
         .fix {
@@ -72,7 +72,7 @@
 </body>
 
 <script>
-    const Delta = 0.1; // how much a tick represent compare to the unit (per hour)
+    const Delta = 0.05; // how much a tick represent compare to the unit (per hour)
     const PI = Math.PI,
         sqrt = Math.sqrt,
         sin = Math.sin,
@@ -210,33 +210,33 @@
 
     class Flight {
         static plan = [
-            'A0E-OLFA-OLHW1-ESAT',
             'A0E-OLFA',
             'A0E-VGJA',
-            'A0E-OLHW2-WHPG',
+            'A0E-OLHW2-MOBAI-WHPG',
+            'A0E-OLFA-OLHW1-ESAT',
             'A0N-A0N1-EINV',
             'A0N-A0N1-MIFM',
             'A0N-OLFA',
             'A0N-EINA',
             'A0N-A0N1-EINV',
             'A0N-A0N1-ESAT',
-            'A0N-A0N1-SEKAI-WHPG',
-            'A0W-BBED',
-            'A0W-BLTT',
-            'A0W-ESAT',
-            'A0W-AWN1-EINA',
-            'A0W-AWN1-EINV',
-            'A0W-WHPG',
-            'A0W-SEKAI-MIFM',
-            'A0S-WHPG',
+            'A0N-EINV-MOBAI-WHPG',
             'A0S-OFHR',
-            'A0S-A0S1-MIFM',
             'A0S-A0S1-ESAT',
             'A0S-A0S1-YSHL',
+            'A0S-A0S1-WHPG',
+            'A0S-A0S1-ESAT-MIFM',
+            'A0W-BBED',
+            'A0W-BLTT',
+            'A0W-OFHR-WHPG',
+            'A0W-FAUNA-EINV',
+            'A0W-FAUNA-ESAT',
+            'A0W-BAILA-SEKAI-MIFM',
+            'A0W-BLTT-AWN1-EINA',
             'ANE-MIFM',
             'ANE-OLFA',
             'ANE-VGJA',
-            'ANE-OLFA-OLHW1-WHPG',
+            'ANE-OLFA-OLHW1-MOBAI-WHPG',
             'AWN-BBED',
             'AWN-BLTT',
             'AWN-A0N1-OLFA',
@@ -246,40 +246,48 @@
             'AWN-AWN1-SEKAI-MIFM',
 
             'BBED-BLTT',
-            'BBED-EINV',
-            'BBED-ESAT',
             'BBED-OFHR',
-            'BBED-WHPG',
-            'BBED-AWN1-EINA',
-            'BBED-SEKAI-OLFA',
-            'BLTT-AWN1-EINA',
-            'BLTT-EINV',
-            'BLTT-ESAT',
+            'BBED-BAILA-EINV',
+            'BBED-BAILA-ESAT',
+            'BBED-BAILA-EINA',
+            'BBED-FAUNA-WHPG',
+            'BBED-BAILA-SEKAI-MIFM-OLFA',
             'BLTT-OFHR',
-            'BLTT-WHPG',
             'BLTT-AWN1-EINA',
-            'BLTT-SEKAI-MIFM',
-            'BLTT-SEKAI-OLFA',
+            'BLTT-BAILA-EINV',
+            'BLTT-BAILA-ESAT',
+            'BLTT-AWN1-EINA',
+            'BLTT-BBED-FAUNA-WHPG',
+            'BLTT-BAILA-SEKAI-MIFM',
+            'BLTT-BAILA-SEKAI-MIFM-OLFA',
             'BLTT-OLHW1-OLHW2-VGJA',
-            'ESAT-WHPG',
-            'ESAT-YSHL',
-            'ESAT-OLHW1-OLHW2-VGJA',
+            'EINA-MIFM',
+            'EINA-OLFA',
             'EINA-WHPG',
-            'EINV-WHPG',
+            'EINA-SEKAI-EINV',
+            'EINA-SEKAI-EINV-ESAT',
+            'EINA-SEKAI-EINV-YSHL',
+            'EINV-ESAT',
+            'EINV-MIFM',
+            'EINV-MIFM-OLFA',
+            'EINV-MOBAI-WHPG',
+            'ESAT-YSHL',
+            'ESAT-MOBAI-WHPG',
+            'ESAT-OLHW1-OLHW2-VGJA',
             'GEHV-GUST',
             'GEHV-OLHW2-OLFA',
             'GUST-A0S1-WHPG',
             'GUST-KALOU-YSHL',
             'MIFM-OLFA',
             'MIFM-ESAT',
-            'MIFM-OFHR',
-            'MIFM-WHPG',
             'MIFM-YSHL',
+            'MIFM-MOBAI-WHPG',
+            'MIFM-SEKAI-BBED-OFHR',
             'OLFA-VGJA',
             'OLFA-KALOU-A0S',
-            'OLFA-OLHW1-WHPG',
             'OLFA-OLHW1-OFHR',
-            'VGJA-OLHW2-OLHW1-WHPG',
+            'OLFA-OLHW1-MOBAI-WHPG',
+            'VGJA-OLHW2-OLHW1-MOBAI-WHPG',
             'WHPG-YSHL',
         ]
         static list = [];
@@ -321,6 +329,7 @@
                     }
                 }
 
+                this.divert = false; // turn off the flag to not run the math
                 this.plan.push(Fix.list[minName])
                 this.elm.classList.add('divert')
             }
@@ -356,6 +365,9 @@
                 Flight.list[l1].divert = true;
             }
 
+        // remove from the list of possible waypoints
+        Fix.airport.splice(Fix.airport.indexOf(Fix.list[divertAirport[0]]), 1)
+
         // change flight plan
         for (const l1 in Flight.plan)
             for (const l2 in Flight.plan[l1])
@@ -378,14 +390,24 @@
         }
 
         if (allowTakeoff)
-            new Flight(
-                randomItem(Flight.plan),
-                600 + random() * 300
-            );
+            for (let _ = 0; _ < Fix.airport.length / 10; _++)
+                new Flight(randomItem(Flight.plan), 600 + random() * 300);
 
         if (random() < 0.025)
             randomItem(Flight.list).divert = true;
 
         document.getElementById('count').innerText = Flight.list.length;
     }, 1000 * Delta);
+
+    // setTimeout(() => {
+    //     let inp = document.getElementById('divert')
+    //     document.getElementById('divertAirport').value = 'EINV-ESAT'
+    //     divert();
+    //     document.getElementById('divertAirport').value = 'EINA-BLTT'
+    //     divert();
+    //     document.getElementById('divertAirport').value = 'SEKAI-ESAT'
+    //     divert();
+    //     document.getElementById('divertAirport').value = 'AWN1-BLTT'
+    //     divert();
+    // }, 10000);
 </script>
