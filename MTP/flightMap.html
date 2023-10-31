@@ -1,3 +1,8 @@
+<!--
+    PROCEDURE TO EXPORT THE BASE MAP
+    Use MPI/Union-map, adjust everything inside the Aviation layer
+    All points (fix/airport) must be put down at circle in the approriate sub-layer
+-->
 <head>
     <style>
         /* This will be move into the object */
@@ -48,14 +53,20 @@
             position: fixed;
             display: block;
         }
+
+        button, input {
+            outline: 0;
+            border: 0;
+            background-color: transparent;
+        }
     </style>
 </head>
 
 <body>
     <div>
-        <input type="text" id="divertAirport">
         <button onclick="divert()">Divert</button>
-        <p id="info"></p>
+        <input type="text" id="divertAirport">
+        <p>Flights: <span id="count">0</span> <span id="xInfo"></span></p>
     </div>
     <object id="obj" width="100%" type="image/svg+xml" data="Union-aviation-map.svg"></object>
 </body>
@@ -190,7 +201,7 @@
                     if (Flight.list[l1].plan.includes(Fix.list[name]))
                         Flight.list[l1].elm.classList.add('highlight')
                 }
-                document.getElementById('info').innerText = 'Highlighted flights to/via ' + name;
+                document.getElementById('xInfo').innerText = 'Highlighted flights to/via ' + name;
             })
 
             canvas.documentElement.append(this.elm);
@@ -199,54 +210,76 @@
 
     class Flight {
         static plan = [
-            'A0E-ESAT',
+            'A0E-OLFA-OLHW1-ESAT',
             'A0E-OLFA',
             'A0E-VGJA',
-            'A0E-WHPG',
-            'A0N-MIFM',
+            'A0E-OLHW2-WHPG',
+            'A0N-A0N1-EINV',
+            'A0N-A0N1-MIFM',
             'A0N-OLFA',
-            'A0N-HAKAI-ESAT',
-            'A0N-HAKAI-WHPG',
+            'A0N-EINA',
+            'A0N-A0N1-EINV',
+            'A0N-A0N1-ESAT',
+            'A0N-A0N1-SEKAI-WHPG',
             'A0W-BBED',
             'A0W-BLTT',
             'A0W-ESAT',
+            'A0W-AWN1-EINA',
+            'A0W-AWN1-EINV',
             'A0W-WHPG',
-            'A0W-HAKAI-MIFM',
-            'A0S-ESAT',
+            'A0W-SEKAI-MIFM',
             'A0S-WHPG',
-            'A0S-HAKAI-MIFM',
+            'A0S-OFHR',
+            'A0S-A0S1-MIFM',
+            'A0S-A0S1-ESAT',
+            'A0S-A0S1-YSHL',
             'ANE-MIFM',
             'ANE-OLFA',
             'ANE-VGJA',
-            'ANE-WHPG',
-            'AWN-BAKAI-ESAT',
+            'ANE-OLFA-OLHW1-WHPG',
+            'AWN-BBED',
+            'AWN-BLTT',
+            'AWN-A0N1-OLFA',
+            'AWN-AWN1-EINA',
+            'AWN-AWN1-EINV',
+            'AWN-AWN1-ESAT',
+            'AWN-AWN1-SEKAI-MIFM',
 
             'BBED-BLTT',
+            'BBED-EINV',
+            'BBED-ESAT',
             'BBED-OFHR',
             'BBED-WHPG',
-            'BBED-BAKAI-ESAT',
+            'BBED-AWN1-EINA',
+            'BBED-SEKAI-OLFA',
+            'BLTT-AWN1-EINA',
+            'BLTT-EINV',
+            'BLTT-ESAT',
             'BLTT-OFHR',
             'BLTT-WHPG',
-            'BLTT-BAKAI-VGJA',
-            'BLTT-BAKAI-ESAT',
-            'BLTT-BAKAI-HAKAI-MIFM',
-            'BLTT-BAKAI-HAKAI-OLFA',
+            'BLTT-AWN1-EINA',
+            'BLTT-SEKAI-MIFM',
+            'BLTT-SEKAI-OLFA',
+            'BLTT-OLHW1-OLHW2-VGJA',
             'ESAT-WHPG',
             'ESAT-YSHL',
-            'ESAT-HAKAI-VGJA',
+            'ESAT-OLHW1-OLHW2-VGJA',
+            'EINA-WHPG',
+            'EINV-WHPG',
             'GEHV-GUST',
-            'GEHV-OLFA',
-            'GUST-WHPG',
+            'GEHV-OLHW2-OLFA',
+            'GUST-A0S1-WHPG',
             'GUST-KALOU-YSHL',
             'MIFM-OLFA',
-            'MIFM-HAKAI-ESAT',
-            'MIFM-HAKAI-OFHR',
-            'MIFM-HAKAI-WHPG',
-            'MIFM-HAKAI-YSHL',
+            'MIFM-ESAT',
+            'MIFM-OFHR',
+            'MIFM-WHPG',
+            'MIFM-YSHL',
             'OLFA-VGJA',
-            'OLFA-WHPG',
-            'OLFA-HAKAI-OFHR',
-            'VGJA-WHPG',
+            'OLFA-KALOU-A0S',
+            'OLFA-OLHW1-WHPG',
+            'OLFA-OLHW1-OFHR',
+            'VGJA-OLHW2-OLHW1-WHPG',
             'WHPG-YSHL',
         ]
         static list = [];
@@ -347,10 +380,12 @@
         if (allowTakeoff)
             new Flight(
                 randomItem(Flight.plan),
-                300 + random() * 500
+                600 + random() * 300
             );
 
         if (random() < 0.025)
             randomItem(Flight.list).divert = true;
+
+        document.getElementById('count').innerText = Flight.list.length;
     }, 1000 * Delta);
 </script>
