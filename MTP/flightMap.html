@@ -4,6 +4,16 @@
         .airport {
             fill: purple;
         }
+        .divFromPort{
+            /* Divert from airport */
+            fill: red;
+        }
+        .divToPort{
+            /* Divert to airport */
+            stroke: lime;
+            stroke-opacity: 0.5;
+            stroke-width: 200px;
+        }
 
         .fix {
             fill: lime;
@@ -14,8 +24,16 @@
             stroke: black;
             stroke-width: 10px;
         }
+        .highlight {
+            stroke: limegreen;
+            stroke-opacity: 0.5;
+            stroke-width: 200px;
+        }
         .divert {
             fill: red;
+            stroke: yellow;
+            stroke-opacity: 0.5;
+            stroke-width: 200px;
         }
     </style>
     <style>
@@ -24,10 +42,21 @@
             padding: 0;
             margin: 0;
         }
+
+        div {
+            z-index: 6;
+            position: fixed;
+            display: block;
+        }
     </style>
 </head>
 
 <body>
+    <div>
+        <input type="text" id="divertAirport">
+        <button onclick="divert()">Divert</button>
+        <p id="info"></p>
+    </div>
     <object id="obj" width="100%" type="image/svg+xml" data="Union-aviation-map.svg"></object>
 </body>
 
@@ -79,6 +108,14 @@
                 fix.parentElement.getAttribute('inkscape:label') == 'Airport'
             )
             fix.remove()
+        }
+
+        // convert and validate plan
+        for (let l1 in Flight.plan) {
+            Flight.plan[l1] = Flight.plan[l1].split('-');
+            for (const fix of Flight.plan[l1])
+                if (!(fix in Fix.list)) console.log(fix + ' is invalid')
+            Flight.plan.push(Flight.plan[l1].toReversed())
         }
     })
 
@@ -148,6 +185,13 @@
             }
             this.elm.setAttribute('id', this.name);
             this.elm.setAttribute('class', isAirport? 'airport': 'fix');
+            this.elm.addEventListener('click', () => {
+                for (let l1 in Flight.list) {
+                    if (Flight.list[l1].plan.includes(Fix.list[name]))
+                        Flight.list[l1].elm.classList.add('highlight')
+                }
+                document.getElementById('info').innerText = 'Highlighted flights to/via ' + name;
+            })
 
             canvas.documentElement.append(this.elm);
         }
@@ -155,7 +199,31 @@
 
     class Flight {
         static plan = [
+            'A0E-ESAT',
+            'A0E-OLFA',
+            'A0E-VGJA',
+            'A0E-WHPG',
+            'A0N-MIFM',
+            'A0N-OLFA',
+            'A0N-HAKAI-ESAT',
+            'A0N-HAKAI-WHPG',
+            'A0W-BBED',
+            'A0W-BLTT',
+            'A0W-ESAT',
+            'A0W-WHPG',
+            'A0W-HAKAI-MIFM',
+            'A0S-ESAT',
+            'A0S-WHPG',
+            'A0S-HAKAI-MIFM',
+            'ANE-MIFM',
+            'ANE-OLFA',
+            'ANE-VGJA',
+            'ANE-WHPG',
+            'AWN-BAKAI-ESAT',
+
+            'BBED-BLTT',
             'BBED-OFHR',
+            'BBED-WHPG',
             'BBED-BAKAI-ESAT',
             'BLTT-OFHR',
             'BLTT-WHPG',
@@ -167,16 +235,19 @@
             'ESAT-YSHL',
             'ESAT-HAKAI-VGJA',
             'GEHV-GUST',
+            'GEHV-OLFA',
             'GUST-WHPG',
             'GUST-KALOU-YSHL',
             'MIFM-OLFA',
             'MIFM-HAKAI-ESAT',
+            'MIFM-HAKAI-OFHR',
             'MIFM-HAKAI-WHPG',
             'MIFM-HAKAI-YSHL',
             'OLFA-VGJA',
-            'OFHR-HAKAI-MIFM',
-            'OFHR-HAKAI-OLFA',
+            'OLFA-WHPG',
+            'OLFA-HAKAI-OFHR',
             'VGJA-WHPG',
+            'WHPG-YSHL',
         ]
         static list = [];
         constructor(plan, speed, callsign) {
@@ -238,9 +309,29 @@
             this.elm.setAttribute('cy', this.y);
         }
     }
-    for (let l1 in Flight.plan) {
-        Flight.plan[l1] = Flight.plan[l1].split('-');
-        Flight.plan.push(Flight.plan[l1].toReversed())
+
+    let allowTakeoff = true;
+
+    function divert() {
+        let divertAirport = document.getElementById('divertAirport').value;
+        divertAirport = divertAirport.split('-');
+
+        // change enroute plan destination
+        for (const l1 in Flight.list)
+            if (Flight.list[l1].plan.at(-1).name == divertAirport[0]) {
+                Flight.list[l1].elm.classList.add('divert')
+                Flight.list[l1].divert = true;
+            }
+
+        // change flight plan
+        for (const l1 in Flight.plan)
+            for (const l2 in Flight.plan[l1])
+                if (Flight.plan[l1][l2] == divertAirport[0])
+                    Flight.plan[l1][l2] = divertAirport[1];
+
+        // change airport style
+        Fix.list[divertAirport[0]].elm.classList.add('divFromPort');
+        Fix.list[divertAirport[1]].elm.classList.add('divToPort');
     }
 
     let sim = setInterval(() => {
@@ -252,9 +343,14 @@
                 l1--
             }
         }
-        new Flight(
-            randomItem(Flight.plan),
-            300 + random() * 500
-        )
+
+        if (allowTakeoff)
+            new Flight(
+                randomItem(Flight.plan),
+                300 + random() * 500
+            );
+
+        if (random() < 0.025)
+            randomItem(Flight.list).divert = true;
     }, 1000 * Delta);
 </script>
