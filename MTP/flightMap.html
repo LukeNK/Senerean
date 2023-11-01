@@ -250,6 +250,8 @@
                 'A0W-BLTT-AWN1-EINA',
                 'ANE-A0N1-EINA',
                 'ANE-OVFK-MIFM-EINV',
+                'ASW-ASW1-WHON-MOBAI-EINV',
+                'ASW-BLTT-AWN1-EINA',
                 'AWN-AWN1-EINA',
                 'AWN-AWN1-EINV',
 
@@ -526,14 +528,14 @@
         }
 
         if (allowTakeoff)
-            for (let _ = 0; _ < Fix.airport.length / 10; _++) {
-                let airline = randomItem(Object.keys(Flight.plan));
-                new Flight(
-                    randomItem(Flight.plan[airline]),
-                    600 + random() * 300,
-                    airline
-                );
-            }
+            for (const airline of Object.keys(Flight.plan))
+                for (const route of Flight.plan[airline])
+                    if (random() < 0.1 * Delta) // 1 flight per hour
+                        new Flight(
+                            randomItem(Flight.plan[airline]),
+                            800 + random() * 200,
+                            airline
+                        );
 
         if (random() < 0.025)
             randomItem(Flight.list).divert = true;
