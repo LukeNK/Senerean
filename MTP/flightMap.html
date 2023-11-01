@@ -95,7 +95,8 @@
         return out;
     }
 
-    let canvas = document.getElementById('obj');
+    let canvas = document.getElementById('obj'),
+        airportLayer;
     canvas.addEventListener('load', () => {
         canvas = canvas.contentDocument;
 
@@ -104,11 +105,16 @@
 
         // initialize
         for (const fix of canvas.querySelectorAll('circle')) {
+            let isAirport = fix.parentElement.getAttribute('inkscape:label') == 'Airport';
+            if (!airportLayer && isAirport) {
+                // save for UI
+                airportLayer = fix.parentElement;
+            }
             new Fix(
                 Number(fix.getAttribute('cx')),
                 Number(fix.getAttribute('cy')),
                 fix.getAttribute('inkscape:label'),
-                fix.parentElement.getAttribute('inkscape:label') == 'Airport'
+                isAirport
             )
             fix.remove()
         }
@@ -447,7 +453,7 @@
             this.elm.setAttribute('cx', 0); // this.tick() will deal with it
             this.elm.setAttribute('cy', 0);
             this.elm.setAttribute('r', 50);
-            canvas.documentElement.append(this.elm)
+            airportLayer.prepend(this.elm)
 
             this.tick()
         }
