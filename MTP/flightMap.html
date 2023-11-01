@@ -3,7 +3,7 @@
     Use MPI/Union-map, adjust everything inside the Aviation layer
     All points (fix/airport) must be put down at circle in the approriate sub-layer
 -->
-<head>
+<head html-src="../website/head.html">
     <style>
         /* This will be move into the object */
         .airport {
@@ -35,7 +35,7 @@
             stroke: white;
         }
         .flWH {
-            fill: #cb7f49;
+            fill: #ff9040;
             stroke: black;
         }
         .highlight {
@@ -50,36 +50,19 @@
             stroke-width: 200px;
         }
     </style>
-    <style>
-        /* This will stay here */
-        body {
-            padding: 0;
-            margin: 0;
-        }
-
-        div {
-            z-index: 6;
-            position: fixed;
-            display: block;
-        }
-
-        button, input {
-            outline: 0;
-            border: 0;
-            background-color: transparent;
-        }
-    </style>
 </head>
 
 <body>
-    <div>
+    <header html-src="../website/header.html"></header>
+    <main>
+        <object id="obj" width="100%" type="image/svg+xml" data="Union-aviation-map.svg"></object>
         <button onclick="divert()">Divert</button>
         <input type="text" id="divertAirport">
         <p>Flights: <span id="count">0</span> <span id="xInfo"></span></p>
-    </div>
-    <object id="obj" width="100%" type="image/svg+xml" data="Union-aviation-map.svg"></object>
+    </main>
+    <footer html-src="../website/footer.html"></footer>
 </body>
-
+<script src="../website/scripts.js"></script>
 <script>
     const Delta = 0.05; // how much a tick represent compare to the unit (per hour)
     const PI = Math.PI,
@@ -130,7 +113,7 @@
             fix.remove()
         }
 
-        // permutate the plan
+        // permutate the plan domestically
         for (let airline of Object.keys(Flight.plan)) {
             if (['EI', 'WH'].includes(airline)) continue; // skip
             for (let l1 in Fix.airport) {
@@ -138,15 +121,27 @@
                 if (dep.startsWith(airline))
                     for (let l2 in Fix.airport) {
                         let arv = Fix.airport[l2].name;
-                        if (dep == arv) continue;
+                        if (
+                            dep == arv
+                            || !(
+                                dep.startsWith(airline)
+                                && arv.startsWith(airline)
+                            )
+                        ) continue; // find domestic flights
 
                         // check if plan existed
                         let existed = false;
                         for (let l3 in Flight.plan[airline])
                             if (
-                                Flight.plan[airline][l3].startsWith(dep)
-                                && Flight.plan[airline][l3].endsWith(arv)
+                                (
+                                    Flight.plan[airline][l3].startsWith(dep)
+                                    || Flight.plan[airline][l3].endsWith(dep)
+                                ) && (
+                                    Flight.plan[airline][l3].startsWith(arv)
+                                    || Flight.plan[airline][l3].endsWith(arv)
+                                )
                             ) {
+                                console.log(dep)
                                 existed = true;
                                 break
                             };
@@ -251,6 +246,7 @@
                 'A0N-EINA',
                 'A0E-OLHW2-MIFM-EINA',
                 'A0E-OLHW2-OLHW1-EINV',
+                'A0W-BBSJ-BAILA-EINV',
                 'A0W-BLTT-AWN1-EINA',
                 'ANE-A0N1-EINA',
                 'ANE-OVFK-MIFM-EINV',
@@ -264,6 +260,7 @@
                 'EINA-AWN1-BLTT',
                 'EINA-SEKAI-EINV',
                 'EINA-WHON-A0S',
+                'EINA-AWN1-BLTT-TIHN',
                 'EINA-MIFM-OLHW2-VGJS',
                 'EINA-SEKAI-EINV-ESAT',
 
@@ -284,13 +281,55 @@
                 // 'WHMB',
                 // 'WHON',
                 // 'WHSE',
+                // DOMESTIC
+                'WHON-WHSE',
+                'WHON-WHFV',
+                'WHON-WHMB',
+                'WHON-WHJJ',
+                'WHON-WHHN',
+                'WHSE-WHFV',
+                'WHSE-WHMB',
+                'WHSE-WHJJ',
+                'WHSE-WHHN',
+                'WHFV-WHMB',
+                'WHFV-WHJJ',
+                'WHFV-WHHN',
+                'WHMB-WHJJ',
+                'WHMB-WHHN',
+                'WHJJ-WHHN',
+                'WHSE-WHON',
+                'WHFV-WHON',
+                'WHMB-WHON',
+                'WHJJ-WHON',
+                'WHHN-WHON',
+                'WHFV-WHSE',
+                'WHMB-WHSE',
+                'WHJJ-WHSE',
+                'WHHN-WHSE',
+                'WHMB-WHFV',
+                'WHJJ-WHFV',
+                'WHHN-WHFV',
+                'WHJJ-WHMB',
+                'WHHN-WHMB',
+                'WHHN-WHJJ',
 
+                // INTERNATIONAL
                 'WHFV-MOBAI-EINV-A0N',
-                'WHHN-SEKAI-A0N1-A0N',
                 'WHJJ-MOBAI-EINV-A0N',
-                'WHMB-MOBAI-EINV-A0N',
                 'WHON-SEKAI-A0N1-A0N',
-                'WHSE-SEKAI-A0N1-A0N',
+                'WHFV-VGUG-VGJS-A0E',
+                'WHJJ-VGUG-VGJS-A0E',
+                'WHON-VGUG-VGJS-A0E',
+                'WHFV-A0S1-A0S',
+                'WHJJ-A0S1-A0S',
+                'WHON-A0S',
+                'WHFV-TIHN-A0W',
+                'WHJJ-TIHN-A0W',
+                'WHON-TIHN-A0W',
+                'WHFV-MOBAI-OLHW1-OVVK-ANE',
+                'WHJJ-MOBAI-OLHW1-OVVK-ANE',
+                'WHON-MOBAI-OLHW1-OVVK-ANE',
+                'WHFV-FAUNA-BLTT-AWN',
                 'WHJJ-FAUNA-BLTT-AWN',
                 'WHON-FAUNA-BLTT-AWN',
 
@@ -301,11 +340,8 @@
                 'WHON-EINA',
                 'WHSE-EINA',
                 'WHFV-MOBAI-EINV',
-                'WHHN-MOBAI-EINV',
                 'WHJJ-MOBAI-EINV',
-                'WHMB-MOBAI-EINV',
                 'WHON-MOBAI-EINV',
-                'WHSE-MOBAI-EINV',
 
                 'WHFV-MOBAI-ESAT',
                 'WHHN-MOBAI-ESAT',
@@ -335,11 +371,8 @@
                 'WHON-GJKR-GJKB',
                 'WHSE-GJKR-GJKB',
                 'WHFV-GJKR',
-                'WHHN-GJKR',
                 'WHJJ-GJKR',
-                'WHMB-GJKR',
                 'WHON-GJKR',
-                'WHSE-GJKR',
 
                 'WHFV-YSHL-GNSF',
                 'WHHN-GNSF',
@@ -349,23 +382,14 @@
                 'WHSE-YSHL-GNSF',
 
                 'WHFV-MOBAI-OVVA',
-                'WHHN-MOBAI-OVVA',
                 'WHJJ-MOBAI-OVVA',
-                'WHMB-MOBAI-OVVA',
                 'WHON-MOBAI-OVVA',
-                'WHSE-MOBAI-OVVA',
                 'WHFV-MOBAI-MIFM-OVTR',
-                'WHHN-MOBAI-MIFM-OVTR',
                 'WHJJ-MOBAI-MIFM-OVTR',
-                'WHMB-MOBAI-MIFM-OVTR',
                 'WHON-MOBAI-MIFM-OVTR',
-                'WHSE-MOBAI-MIFM-OVTR',
                 'WHFV-MOBAI-OLHW1-OVFK',
-                'WHHN-MOBAI-OLHW1-OVFK',
                 'WHJJ-MOBAI-OLHW1-OVFK',
-                'WHMB-MOBAI-OLHW1-OVFK',
                 'WHON-MOBAI-OLHW1-OVFK',
-                'WHSE-MOBAI-OLHW1-OVFK',
                 'WHFV-MOBAI-OLHW1-OVVK',
                 'WHHN-MOBAI-OLHW1-OVVK',
                 'WHJJ-MOBAI-OLHW1-OVVK',
@@ -380,18 +404,12 @@
                 'WHON-WHSE-TIHN',
                 'WHSE-TIHN',
                 'WHFV-WHSE-TILZ',
-                'WHHN-TILZ',
                 'WHJJ-WHSE-TILZ',
-                'WHMB-WHSE-TILZ',
                 'WHON-WHSE-TILZ',
-                'WHSE-TILZ',
 
                 'WHFV-VGUG',
-                'WHHN-WHMB-VGUG',
                 'WHJJ-VGUG',
-                'WHMB-VGUG',
                 'WHON-WHMB-VGUG',
-                'WHSE-WHMB-VGUG',
                 'WHFV-VGUG-VGJS',
                 'WHHN-WHMB-VGUG-VGJS',
                 'WHJJ-VGUG-VGJS',
@@ -405,7 +423,7 @@
                 'WHMB-YSHL',
                 'WHON-YSHL',
                 'WHSE-YSHL',
-            ]
+            ],
         }
         static list = [];
         constructor(plan, speed, airline) {
@@ -473,7 +491,7 @@
 
     function divert() {
         let divertAirport = document.getElementById('divertAirport').value;
-        divertAirport = divertAirport.split('-');
+        divertAirport = divertAirport[0].split('-');
 
         // change enroute plan destination
         for (const l1 in Flight.list)
