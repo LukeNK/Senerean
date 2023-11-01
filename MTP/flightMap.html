@@ -18,6 +18,7 @@
         .divFromPort{
             /* Divert from airport */
             fill: red;
+            stroke-width: 0;
         }
 
         .fix {
@@ -28,6 +29,14 @@
             fill: limegreen;
             stroke: black;
             stroke-width: 10px;
+        }
+        .flEI {
+            fill: #000080;
+            stroke: white;
+        }
+        .flWH {
+            fill: #cb7f49;
+            stroke: black;
         }
         .highlight {
             stroke: limegreen;
@@ -121,13 +130,41 @@
             fix.remove()
         }
 
-        // convert and validate plan
-        for (let l1 in Flight.plan) {
-            Flight.plan[l1] = Flight.plan[l1].split('-');
-            for (const fix of Flight.plan[l1])
-                if (!(fix in Fix.list)) console.log(fix + ' is invalid')
-            Flight.plan.push(Flight.plan[l1].toReversed())
+        // permutate the plan
+        for (let airline of Object.keys(Flight.plan)) {
+            if (['EI', 'WH'].includes(airline)) continue; // skip
+            for (let l1 in Fix.airport) {
+                let dep = Fix.airport[l1].name;
+                if (dep.startsWith(airline))
+                    for (let l2 in Fix.airport) {
+                        let arv = Fix.airport[l2].name;
+                        if (dep == arv) continue;
+
+                        // check if plan existed
+                        let existed = false;
+                        for (let l3 in Flight.plan[airline])
+                            if (
+                                Flight.plan[airline][l3].startsWith(dep)
+                                && Flight.plan[airline][l3].endsWith(arv)
+                            ) {
+                                existed = true;
+                                break
+                            };
+
+                        if (!existed) Flight.plan[airline].push(dep + '-' + arv);
+                    }
+            }
         }
+
+        // convert and validate plan
+        for (let l1 in Flight.plan)
+            for (let l2 in Flight.plan[l1]) {
+                Flight.plan[l1][l2] = Flight.plan[l1][l2].split('-');
+                for (const fix of Flight.plan[l1][l2])
+                    if (!(fix in Fix.list)) console.log(fix + ' is invalid')
+                // return direction
+                Flight.plan[l1].push(Flight.plan[l1][l2].toReversed());
+            }
     })
 
     class Vector {
@@ -209,94 +246,174 @@
     }
 
     class Flight {
-        static plan = [
-            'A0E-OLFA',
-            'A0E-VGJA',
-            'A0E-OLHW2-MOBAI-WHPG',
-            'A0E-OLFA-OLHW1-ESAT',
-            'A0N-A0N1-EINV',
-            'A0N-A0N1-MIFM',
-            'A0N-OLFA',
-            'A0N-EINA',
-            'A0N-A0N1-EINV',
-            'A0N-A0N1-ESAT',
-            'A0N-EINV-MOBAI-WHPG',
-            'A0S-OFHR',
-            'A0S-A0S1-ESAT',
-            'A0S-A0S1-YSHL',
-            'A0S-A0S1-WHPG',
-            'A0S-A0S1-ESAT-MIFM',
-            'A0W-BBED',
-            'A0W-BLTT',
-            'A0W-OFHR-WHPG',
-            'A0W-FAUNA-EINV',
-            'A0W-FAUNA-ESAT',
-            'A0W-BAILA-SEKAI-MIFM',
-            'A0W-BLTT-AWN1-EINA',
-            'ANE-MIFM',
-            'ANE-OLFA',
-            'ANE-VGJA',
-            'ANE-OLFA-OLHW1-MOBAI-WHPG',
-            'AWN-BBED',
-            'AWN-BLTT',
-            'AWN-A0N1-OLFA',
-            'AWN-AWN1-EINA',
-            'AWN-AWN1-EINV',
-            'AWN-AWN1-ESAT',
-            'AWN-AWN1-SEKAI-MIFM',
+        static plan = {
+            EI: [
+                'A0N-EINA',
+                'A0E-OLHW2-MIFM-EINA',
+                'A0E-OLHW2-OLHW1-EINV',
+                'A0W-BLTT-AWN1-EINA',
+                'ANE-A0N1-EINA',
+                'ANE-OVFK-MIFM-EINV',
+                'AWN-AWN1-EINA',
+                'AWN-AWN1-EINV',
 
-            'BBED-BLTT',
-            'BBED-OFHR',
-            'BBED-BAILA-EINV',
-            'BBED-BAILA-ESAT',
-            'BBED-BAILA-EINA',
-            'BBED-FAUNA-WHPG',
-            'BBED-BAILA-SEKAI-MIFM-OLFA',
-            'BLTT-OFHR',
-            'BLTT-AWN1-EINA',
-            'BLTT-BAILA-EINV',
-            'BLTT-BAILA-ESAT',
-            'BLTT-AWN1-EINA',
-            'BLTT-BBED-FAUNA-WHPG',
-            'BLTT-BAILA-SEKAI-MIFM',
-            'BLTT-BAILA-SEKAI-MIFM-OLFA',
-            'BLTT-OLHW1-OLHW2-VGJA',
-            'EINA-MIFM',
-            'EINA-OLFA',
-            'EINA-WHPG',
-            'EINA-SEKAI-EINV',
-            'EINA-SEKAI-EINV-ESAT',
-            'EINA-SEKAI-EINV-YSHL',
-            'EINV-ESAT',
-            'EINV-MIFM',
-            'EINV-MIFM-OLFA',
-            'EINV-MOBAI-WHPG',
-            'ESAT-YSHL',
-            'ESAT-MOBAI-WHPG',
-            'ESAT-OLHW1-OLHW2-VGJA',
-            'GEHV-GUST',
-            'GEHV-OLHW2-OLFA',
-            'GUST-A0S1-WHPG',
-            'GUST-KALOU-YSHL',
-            'MIFM-OLFA',
-            'MIFM-ESAT',
-            'MIFM-YSHL',
-            'MIFM-MOBAI-WHPG',
-            'MIFM-SEKAI-BBED-OFHR',
-            'OLFA-VGJA',
-            'OLFA-KALOU-A0S',
-            'OLFA-OLHW1-OFHR',
-            'OLFA-OLHW1-MOBAI-WHPG',
-            'VGJA-OLHW2-OLHW1-MOBAI-WHPG',
-            'WHPG-YSHL',
-        ]
+                'EINA-MIFM',
+                'EINA-OVVK',
+                'EINA-WHON',
+                'EINA-AWN1-BBSJ',
+                'EINA-AWN1-BLTT',
+                'EINA-SEKAI-EINV',
+                'EINA-WHON-A0S',
+                'EINA-MIFM-OLHW2-VGJS',
+                'EINA-SEKAI-EINV-ESAT',
+
+                'EINV-MIFM',
+                'EINV-ESAT',
+                'EINV-BAILA-BBSJ',
+                'EINV-BAILA-BLTT',
+                'EINV-MIFM-OVVK',
+                'EINV-MIFM-OVTR',
+                'EINV-MOBAI-A0S1-A0S',
+                'EINV-OLHW1-OLHW2-VGJS',
+                'EINV-OLHW1-OLHW2-VGUG',
+            ],
+            WH: [
+                // 'WHFV',
+                // 'WHHN',
+                // 'WHJJ',
+                // 'WHMB',
+                // 'WHON',
+                // 'WHSE',
+
+                'WHFV-MOBAI-EINV-A0N',
+                'WHHN-SEKAI-A0N1-A0N',
+                'WHJJ-MOBAI-EINV-A0N',
+                'WHMB-MOBAI-EINV-A0N',
+                'WHON-SEKAI-A0N1-A0N',
+                'WHSE-SEKAI-A0N1-A0N',
+                'WHJJ-FAUNA-BLTT-AWN',
+                'WHON-FAUNA-BLTT-AWN',
+
+                'WHFV-EINA',
+                'WHHN-EINA',
+                'WHJJ-EINA',
+                'WHMB-EINA',
+                'WHON-EINA',
+                'WHSE-EINA',
+                'WHFV-MOBAI-EINV',
+                'WHHN-MOBAI-EINV',
+                'WHJJ-MOBAI-EINV',
+                'WHMB-MOBAI-EINV',
+                'WHON-MOBAI-EINV',
+                'WHSE-MOBAI-EINV',
+
+                'WHFV-MOBAI-ESAT',
+                'WHHN-MOBAI-ESAT',
+                'WHJJ-MOBAI-ESAT',
+                'WHMB-MOBAI-ESAT',
+                'WHON-MOBAI-ESAT',
+                'WHSE-MOBAI-ESAT',
+
+                'WHFV-FAUNA-BBSJ',
+                'WHHN-FAUNA-BBSJ',
+                'WHJJ-FAUNA-BBSJ',
+                'WHMB-FAUNA-BBSJ',
+                'WHON-FAUNA-BBSJ',
+                'WHSE-FAUNA-BBSJ',
+
+                'WHFV-FAUNA-BLTT',
+                'WHHN-FAUNA-BLTT',
+                'WHJJ-FAUNA-BLTT',
+                'WHMB-FAUNA-BLTT',
+                'WHON-FAUNA-BLTT',
+                'WHSE-FAUNA-BLTT',
+
+                'WHFV-KALOU-GJKB',
+                'WHHN-GJKR-GJKB',
+                'WHJJ-GJKR-GJKB',
+                'WHMB-KALOU-GJKB',
+                'WHON-GJKR-GJKB',
+                'WHSE-GJKR-GJKB',
+                'WHFV-GJKR',
+                'WHHN-GJKR',
+                'WHJJ-GJKR',
+                'WHMB-GJKR',
+                'WHON-GJKR',
+                'WHSE-GJKR',
+
+                'WHFV-YSHL-GNSF',
+                'WHHN-GNSF',
+                'WHJJ-GNSF',
+                'WHMB-YSHL-GNSF',
+                'WHON-YSHL-GNSF',
+                'WHSE-YSHL-GNSF',
+
+                'WHFV-MOBAI-OVVA',
+                'WHHN-MOBAI-OVVA',
+                'WHJJ-MOBAI-OVVA',
+                'WHMB-MOBAI-OVVA',
+                'WHON-MOBAI-OVVA',
+                'WHSE-MOBAI-OVVA',
+                'WHFV-MOBAI-MIFM-OVTR',
+                'WHHN-MOBAI-MIFM-OVTR',
+                'WHJJ-MOBAI-MIFM-OVTR',
+                'WHMB-MOBAI-MIFM-OVTR',
+                'WHON-MOBAI-MIFM-OVTR',
+                'WHSE-MOBAI-MIFM-OVTR',
+                'WHFV-MOBAI-OLHW1-OVFK',
+                'WHHN-MOBAI-OLHW1-OVFK',
+                'WHJJ-MOBAI-OLHW1-OVFK',
+                'WHMB-MOBAI-OLHW1-OVFK',
+                'WHON-MOBAI-OLHW1-OVFK',
+                'WHSE-MOBAI-OLHW1-OVFK',
+                'WHFV-MOBAI-OLHW1-OVVK',
+                'WHHN-MOBAI-OLHW1-OVVK',
+                'WHJJ-MOBAI-OLHW1-OVVK',
+                'WHMB-MOBAI-OLHW1-OVVK',
+                'WHON-MOBAI-OLHW1-OVVK',
+                'WHSE-MOBAI-OLHW1-OVVK',
+
+                'WHFV-WHSE-TIHN',
+                'WHHN-TIHN',
+                'WHJJ-WHSE-TIHN',
+                'WHMB-WHSE-TIHN',
+                'WHON-WHSE-TIHN',
+                'WHSE-TIHN',
+                'WHFV-WHSE-TILZ',
+                'WHHN-TILZ',
+                'WHJJ-WHSE-TILZ',
+                'WHMB-WHSE-TILZ',
+                'WHON-WHSE-TILZ',
+                'WHSE-TILZ',
+
+                'WHFV-VGUG',
+                'WHHN-WHMB-VGUG',
+                'WHJJ-VGUG',
+                'WHMB-VGUG',
+                'WHON-WHMB-VGUG',
+                'WHSE-WHMB-VGUG',
+                'WHFV-VGUG-VGJS',
+                'WHHN-WHMB-VGUG-VGJS',
+                'WHJJ-VGUG-VGJS',
+                'WHMB-VGUG-VGJS',
+                'WHON-WHMB-VGUG-VGJS',
+                'WHSE-WHMB-VGUG-VGJS',
+
+                'WHFV-YSHL',
+                'WHHN-YSHL',
+                'WHJJ-YSHL',
+                'WHMB-YSHL',
+                'WHON-YSHL',
+                'WHSE-YSHL',
+            ]
+        }
         static list = [];
-        constructor(plan, speed, callsign) {
+        constructor(plan, speed, airline) {
             this.plan = []
             for (let l1 in plan)
                 this.plan.push(Fix.list[plan[l1]]);
             this.speed = speed;
-            this.callsign = callsign || (randomItem(['EI'])) + randomName(4, 'n');
+            this.callsign = airline + randomName(4, 'n');
             this.divert = false;
 
             this.x = this.plan[0].x; this.y = this.plan[0].y;
@@ -306,7 +423,7 @@
 
             this.elm = canvas.createElementNS('http://www.w3.org/2000/svg', 'circle');
             this.elm.setAttribute('id', this.callsign);
-            this.elm.setAttribute('class', 'flight');
+            this.elm.setAttribute('class', 'flight fl' + airline);
             this.elm.setAttribute('cx', 0); // this.tick() will deal with it
             this.elm.setAttribute('cy', 0);
             this.elm.setAttribute('r', 50);
@@ -369,10 +486,11 @@
         Fix.airport.splice(Fix.airport.indexOf(Fix.list[divertAirport[0]]), 1)
 
         // change flight plan
-        for (const l1 in Flight.plan)
-            for (const l2 in Flight.plan[l1])
-                if (Flight.plan[l1][l2] == divertAirport[0])
-                    Flight.plan[l1][l2] = divertAirport[1];
+        for (const airline in Flight.plan)
+            for (const l1 in Flight.plan[airline])
+                for (const l2 in Flight.plan[airline][l1])
+                    if (Flight.plan[airline][l1][l2] == divertAirport[0])
+                        Flight.plan[airline][l1][l2] = divertAirport[1];
 
         // change airport style
         Fix.list[divertAirport[0]].elm.classList.add('divFromPort');
@@ -390,8 +508,14 @@
         }
 
         if (allowTakeoff)
-            for (let _ = 0; _ < Fix.airport.length / 10; _++)
-                new Flight(randomItem(Flight.plan), 600 + random() * 300);
+            for (let _ = 0; _ < Fix.airport.length / 10; _++) {
+                let airline = randomItem(Object.keys(Flight.plan));
+                new Flight(
+                    randomItem(Flight.plan[airline]),
+                    600 + random() * 300,
+                    airline
+                );
+            }
 
         if (random() < 0.025)
             randomItem(Flight.list).divert = true;
