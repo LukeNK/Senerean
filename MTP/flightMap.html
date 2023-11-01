@@ -50,12 +50,19 @@
             stroke-width: 200px;
         }
     </style>
+    <style>
+        /* This will not be moved to inside the object */
+        #obj { width: 100%; }
+        @media (max-width: 700px) {
+            #obj { width: 500%; }
+        }
+    </style>
 </head>
 
 <body>
     <header html-src="../website/header.html"></header>
     <main>
-        <object id="obj" width="100%" type="image/svg+xml" data="Union-aviation-map.svg"></object>
+        <object id="obj" type="image/svg+xml" data="Union-aviation-map.svg"></object>
         <button onclick="divert()">Divert</button>
         <input type="text" id="divertAirport">
         <p>Flights: <span id="count">0</span> <span id="xInfo"></span></p>
