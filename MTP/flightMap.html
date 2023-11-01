@@ -36,9 +36,17 @@
             stroke: black;
             stroke-width: 10px;
         }
+        .flBL {
+            fill: #8a46f0;
+            stroke: black;
+        }
         .flEI {
             fill: #000080;
             stroke: white;
+        }
+        .flOV {
+            fill: #60cec5;
+            stroke: #f06718;
         }
         .flWH {
             fill: #ff9040;
@@ -132,9 +140,9 @@
             fix.remove()
         }
 
-        // permutate the plan domestically
+        // permutate domestic plan
         for (let airline of Object.keys(Flight.plan)) {
-            if (['EI', 'WH'].includes(airline)) continue; // skip
+            if (['EI'].includes(airline)) continue; // skip
             for (let l1 in Fix.airport) {
                 let dep = Fix.airport[l1].name;
                 if (dep.startsWith(airline))
@@ -160,7 +168,6 @@
                                     || Flight.plan[airline][l3].endsWith(arv)
                                 )
                             ) {
-                                console.log(dep)
                                 existed = true;
                                 break
                             };
@@ -171,7 +178,7 @@
         }
 
         // convert and validate plan
-        for (let l1 in Flight.plan)
+        for (let l1 in Flight.plan) {
             for (let l2 in Flight.plan[l1]) {
                 Flight.plan[l1][l2] = Flight.plan[l1][l2].split('-');
                 for (const fix of Flight.plan[l1][l2])
@@ -179,6 +186,8 @@
                 // return direction
                 Flight.plan[l1].push(Flight.plan[l1][l2].toReversed());
             }
+            console.log(l1 + ': ' + Flight.plan[l1].length + ' routes');
+        }
     })
 
     class Vector {
@@ -261,6 +270,45 @@
 
     class Flight {
         static plan = {
+            BL: [
+                // 'BLJP',
+                // 'BLTT',
+                'BLTT-BAILA-EINV-OLHW1-OLHW2-A0E',
+                'BLTT-AWN1-A0N',
+                'BLTT-FAUNA-A0S',
+                'BLTT-A0W',
+                'BLTT-AWN1-A0N1-ANE',
+                'BLTT-ASW',
+                'BLTT-AWN',
+
+                'BLJP-BBSJ',
+                'BLTT-BBSJ',
+
+                'BLJP-AWN1-EINA',
+                'BLTT-AWN1-EINA',
+
+                'BLJP-ESAT',
+                'BLTT-BAILA-ESAT',
+
+                'BLJP-FAUNA-KALOU-GJKB',
+                'BLTT-FAUNA-KALOU-GJKB',
+
+                'BLTT-BAILA-MOBAI-GNSF',
+
+                'BLJP-SEKAI-MIFM-OVVK',
+                'BLTT-SEKAI-MIFM-OVVK',
+
+                'BLJP-TIHN',
+                'BLTT-TIHN',
+
+                'BLTT-BAILA-EINV-OLHW1-OLHW2-VGJS',
+
+                'BLJP-FAUNA-WHON',
+                'BLTT-FAUNA-WHON',
+
+                'BLJP-MOBAI-YSHL',
+                'BLTT-MOBAI-YSHL',
+            ],
             EI: [
                 'A0N-EINA',
                 'A0E-OLHW2-MIFM-EINA',
@@ -295,6 +343,12 @@
                 'EINV-OLHW1-OLHW2-VGJS',
                 'EINV-OLHW1-OLHW2-VGUG',
             ],
+            OV: [
+                // 'OVFK',
+                // 'OVTR',
+                // 'OVVA',
+                // 'OVVK',
+            ],
             WH: [
                 // 'WHFV',
                 // 'WHHN',
@@ -302,39 +356,6 @@
                 // 'WHMB',
                 // 'WHON',
                 // 'WHSE',
-                // DOMESTIC
-                'WHON-WHSE',
-                'WHON-WHFV',
-                'WHON-WHMB',
-                'WHON-WHJJ',
-                'WHON-WHHN',
-                'WHSE-WHFV',
-                'WHSE-WHMB',
-                'WHSE-WHJJ',
-                'WHSE-WHHN',
-                'WHFV-WHMB',
-                'WHFV-WHJJ',
-                'WHFV-WHHN',
-                'WHMB-WHJJ',
-                'WHMB-WHHN',
-                'WHJJ-WHHN',
-                'WHSE-WHON',
-                'WHFV-WHON',
-                'WHMB-WHON',
-                'WHJJ-WHON',
-                'WHHN-WHON',
-                'WHFV-WHSE',
-                'WHMB-WHSE',
-                'WHJJ-WHSE',
-                'WHHN-WHSE',
-                'WHMB-WHFV',
-                'WHJJ-WHFV',
-                'WHHN-WHFV',
-                'WHJJ-WHMB',
-                'WHHN-WHMB',
-                'WHHN-WHJJ',
-
-                // INTERNATIONAL
                 'WHFV-MOBAI-EINV-A0N',
                 'WHJJ-MOBAI-EINV-A0N',
                 'WHON-SEKAI-A0N1-A0N',
@@ -354,6 +375,20 @@
                 'WHJJ-FAUNA-BLTT-AWN',
                 'WHON-FAUNA-BLTT-AWN',
 
+                'WHFV-FAUNA-BBSJ',
+                'WHHN-FAUNA-BBSJ',
+                'WHJJ-FAUNA-BBSJ',
+                'WHMB-FAUNA-BBSJ',
+                'WHON-FAUNA-BBSJ',
+                'WHSE-FAUNA-BBSJ',
+
+                'WHFV-FAUNA-BLWB-BLTT',
+                'WHHN-FAUNA-BLWB-BLTT',
+                'WHJJ-FAUNA-BLWB-BLTT',
+                'WHMB-FAUNA-BLWB-BLTT',
+                'WHON-FAUNA-BLWB-BLTT',
+                'WHSE-FAUNA-BLWB-BLTT',
+
                 'WHFV-EINA',
                 'WHHN-EINA',
                 'WHJJ-EINA',
@@ -370,20 +405,6 @@
                 'WHMB-MOBAI-ESAT',
                 'WHON-MOBAI-ESAT',
                 'WHSE-MOBAI-ESAT',
-
-                'WHFV-FAUNA-BBSJ',
-                'WHHN-FAUNA-BBSJ',
-                'WHJJ-FAUNA-BBSJ',
-                'WHMB-FAUNA-BBSJ',
-                'WHON-FAUNA-BBSJ',
-                'WHSE-FAUNA-BBSJ',
-
-                'WHFV-FAUNA-BLTT',
-                'WHHN-FAUNA-BLTT',
-                'WHJJ-FAUNA-BLTT',
-                'WHMB-FAUNA-BLTT',
-                'WHON-FAUNA-BLTT',
-                'WHSE-FAUNA-BLTT',
 
                 'WHFV-KALOU-GJKB',
                 'WHHN-GJKR-GJKB',

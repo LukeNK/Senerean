@@ -122,3 +122,6 @@ The ship is one of the initial targets for the Protectors when bombing major Sen
 - Senerean found 12 cases of Senerean's flu, all patients are in good condition
 - Documentary about the Zero Village told Senerean's dark history incoming in November
 - New Senerian passport and visa basic design revealed. The government seeks art from people across the nation to be chosen as background art for visa pages on the passport.
+
+# Senerean airspace reopened
+This afternoon, the Ministry of Transportation (MTP) reopened the airspace for all international traffic after 10 days of a nationwide grounding order. All air traffic going through the nation shall resume like before, with the exception of flights transverse through the Xubaxu region (suspected Protectors’ headquarter) and the two cities that were attacked: Ninoarura and Nuvak. Commercial planes overflying these areas will be monitored heavily with both the standard procedure and the Northern Shield system to ensure the devastating attacks won’t happen again. Recreational activities, lightweight aircrafts, and private jets are not allowed in these areas. Despite the airspace being opened after more than a week, restrictions imposed because of the Senerean’s flu are now in place to reduce transmission.
