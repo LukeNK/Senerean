@@ -76,10 +76,19 @@
 <body>
     <header html-src="../website/header.html"></header>
     <main>
+        <table id="countTable">
+            <tr>
+                <th>Airport</th>
+                <th>Take-off count</th>
+                <th>En-route</th>
+                <th>Landing count</th>
+                <th>Average flight rate (flight/hour, take-off and landing)</th>
+            </tr>
+        </table>
+        <p>Flights: <span id="count">0</span> <span id="xInfo"></span></p>
         <object id="obj" type="image/svg+xml" data="Union-aviation-map.svg"></object>
         <button onclick="divert()">Divert</button>
         <input type="text" id="divertAirport">
-        <p>Flights: <span id="count">0</span> <span id="xInfo"></span></p>
     </main>
     <footer html-src="../website/footer.html"></footer>
 </body>
@@ -240,8 +249,9 @@
         constructor(x, y, name, isAirport) {
             this.x = x;
             this.y = y;
-            this.name = name || randomName(5).toUpperCase();
+            this.name = name;
             this.isAirport = Boolean(isAirport);
+            this.enroute = 0; // live enroute count
 
             Fix.list[this.name] = this;
             if (isAirport) {
@@ -250,6 +260,15 @@
                 this.elm.setAttribute('cx', x);
                 this.elm.setAttribute('cy', y);
                 this.elm.setAttribute('r', 100);
+
+                document.getElementById('countTable').innerHTML += `
+                    <tr>
+                        <td>${name}</td>
+                        <td id="countTaO${name}"></td>
+                        <td id="countEnR${name}"></td>
+                        <td id="countLan${name}"></td>
+                        <td id="countFlR${name}"></td>
+                    </tr>`
             } else {
                 this.elm = canvas.createElementNS('http://www.w3.org/2000/svg', 'polygon');
                 this.elm.setAttribute('points', `${x},${y-100} ${x+100},${y+100} ${x-100},${y+100}`)
@@ -313,6 +332,8 @@
                 'A0N-EINA',
                 'A0E-OLHW2-MIFM-EINA',
                 'A0E-OLHW2-OLHW1-EINV',
+                'A0S-WHON-EINA',
+                'A0S-A0S1-MOBAI-EINV',
                 'A0W-BBSJ-BAILA-EINV',
                 'A0W-BLTT-AWN1-EINA',
                 'ANE-A0N1-EINA',
@@ -323,23 +344,23 @@
                 'AWN-AWN1-EINV',
 
                 'EINA-MIFM',
+                'EINA-OVTR',
                 'EINA-OVVK',
                 'EINA-WHON',
                 'EINA-AWN1-BBSJ',
                 'EINA-AWN1-BLTT',
                 'EINA-SEKAI-EINV',
-                'EINA-WHON-A0S',
+                'EINA-OLHW1-OVVA',
                 'EINA-AWN1-BLTT-TIHN',
                 'EINA-MIFM-OLHW2-VGJS',
                 'EINA-SEKAI-EINV-ESAT',
 
-                'EINV-MIFM',
                 'EINV-ESAT',
+                'EINV-MIFM',
                 'EINV-BAILA-BBSJ',
                 'EINV-BAILA-BLTT',
                 'EINV-MIFM-OVVK',
                 'EINV-MIFM-OVTR',
-                'EINV-MOBAI-A0S1-A0S',
                 'EINV-OLHW1-OLHW2-VGJS',
                 'EINV-OLHW1-OLHW2-VGUG',
             ],
@@ -348,6 +369,105 @@
                 // 'OVTR',
                 // 'OVVA',
                 // 'OVVK',
+                'OVFK-A0E',
+                'OVTR-OVVK-A0E',
+                'OVVA-OLHW2-A0E',
+                'OVVK-A0E',
+                'OVFK-OVTR-A0N',
+                'OVTR-A0N',
+                'OVVK-OVTR-A0N',
+                'OVFK-OVVA-KALOU-A0S',
+                'OVVA-KALOU-A0S',
+                'OVVK-OVVA-KALOU-A0S',
+                'OVFK-ANE',
+                'OVTR-ANE',
+                'OVVK-ANE',
+                'OVVK-OLHW1-MOBAI-ASW1-ASW',
+                'OVVK-A0N1-AWN',
+
+                'OVFK-MIFM-SEKAI-BAILA-BBSJ',
+                'OVTR-SEKAI-BAILA-BBSJ',
+                'OVVA-OLHW1-BAILA-BBSJ',
+                'OVVK-MIFM-SEKAI-BAILA-BBSJ',
+
+                'OVFK-MIFM-SEKAI-BLTT',
+                'OVTR-SEKAI-BLTT',
+                'OVVA-OLHW1-EINV-BAILA-BLTT',
+                'OVVK-MIFM-SEKAI-BLTT',
+
+                'OVFK-MIFM-EINV',
+                'OVTR-MIFM-EINV',
+                'OVVA-OLHW1-EINV',
+                'OVVK-MIFM-EINV',
+
+                'OVFK-MIFM-ESAT',
+                'OVTR-MIFM-ESAT',
+                'OVVA-OLHW1-ESAT',
+                'OVVK-MIFM-ESAT',
+
+                'OVFK-OVVK-OLHW2-GJKB',
+                'OVTR-OVVA-GJKB',
+                'OVVA-GJKB',
+                'OVVK-OLHW2-GJKB',
+
+                'OVFK-OVVK-OLHW2-GNSF',
+                'OVTR-OVVA-GNSF',
+                'OVVA-GNSF',
+                'OVVK-OLHW2-GNSF',
+
+                'OVFK-MIFM',
+                'OVTR-MIFM',
+                'OVVA-OLHW1-MIFM',
+                'OVVK-MIFM',
+
+                'OVFK-MIFM-SEKAI-BAILA-BBSJ-TIHN',
+                'OVTR-SEKAI-BAILA-BBSJ-TIHN',
+                'OVVA-MOBAI-FAUNA-TIHN',
+                'OVVK-MIFM-SEKAI-BAILA-BBSJ-TIHN',
+
+                'OVFK-VGJS',
+                'OVTR-OVVK-VGJS',
+                'OVVA-OLHW2-VGJS',
+                'OVVK-VGJS',
+                'OVVA-VGUG',
+                'OVVK-VGUG',
+
+                'OVFK-MOBAI-WHFV',
+                'OVTR-MOBAI-MIFM-WHFV',
+                'OVVA-MOBAI-WHFV',
+                'OVVK-MOBAI-WHFV',
+                'OVFK-MOBAI-WHJJ',
+                'OVTR-MOBAI-MIFM-WHJJ',
+                'OVVA-MOBAI-WHJJ',
+                'OVVK-MOBAI-WHJJ',
+                'OVFK-MOBAI-WHON',
+                'OVTR-MOBAI-MIFM-WHON',
+                'OVVA-MOBAI-WHON',
+                'OVVK-MOBAI-WHON',
+
+                // OUTSIDE MAINLAND OUTSIDE UNION FLIGHTS
+                'GJKB-A0S',
+
+                'TIHN-AWN1-A0N',
+                'TIHN-A0W',
+                'TIHN-ASW',
+                'TIHN-AWN',
+
+                'VGJS-A0E',
+                'VGJS-GJKB-A0S',
+                'VGJS-ANE',
+
+                // OUTSIDE MAINLAND INTERNATIONAL FLIGHTS
+                'GJKB-A0S1-WHHN-TIHN',
+
+                // OUTSIDE MAINLAND DOMESTIC FLIGHTS
+                'GNSF-GJKB',
+
+                'GJKB-GJKR',
+
+                'TIHN-TILZ',
+
+                'VGJS-VGUG'
             ],
             WH: [
                 // 'WHFV',
@@ -371,6 +491,12 @@
                 'WHFV-MOBAI-OLHW1-OVVK-ANE',
                 'WHJJ-MOBAI-OLHW1-OVVK-ANE',
                 'WHON-MOBAI-OLHW1-OVVK-ANE',
+                'WHFV-ASW1-ASW',
+                'WHHN-ASW1-ASW',
+                'WHJJ-ASW1-ASW',
+                'WHMB-ASW1-ASW',
+                'WHON-ASW1-ASW',
+                'WHSE-ASW1-ASW',
                 'WHFV-FAUNA-BLTT-AWN',
                 'WHJJ-FAUNA-BLTT-AWN',
                 'WHON-FAUNA-BLTT-AWN',
@@ -475,8 +601,18 @@
             this.speed = speed;
             this.callsign = airline + randomName(4, 'n');
             this.divert = false;
+            this.destination = this.plan.at(-1);
 
             this.x = this.plan[0].x; this.y = this.plan[0].y;
+            if (this.plan[0].isAirport) { // avoid counting fix
+                let count = document.getElementById('countTaO' + this.plan[0].name);
+                count.innerHTML = Number(count.innerHTML) + 1;
+            }
+            if (this.destination.isAirport) {
+                this.destination.enroute++;
+                let count = document.getElementById('countLan' + this.destination.name);
+                count.innerHTML = Number(count.innerHTML) + 1;
+            }
             this.plan.shift(); // remove depart airport
 
             Flight.list.push(this);
@@ -515,7 +651,7 @@
 
             if (vec.len < nm) {
                 this.plan.shift();
-                if (this.plan.length == 0) return true;
+                if (this.plan.length == 0) return this.destination;
                 vec = Vector.fromPoints(this, this.plan[0]);
             }
 
@@ -557,41 +693,43 @@
         Fix.list[divertAirport[1]].elm.classList.add('divToPort');
     }
 
+    let tickCount = 0; // number of tick passed
     let sim = setInterval(() => {
+        tickCount++
         for (let l1 = 0; l1 < Flight.list.length; l1++) {
             const flight = Flight.list[l1];
             if (flight.plan.length <= 0 || flight.tick()) {
+                flight.destination.enroute--;
                 flight.elm.remove();
                 Flight.list.splice(l1, 1);
-                l1--
+                l1--;
             }
         }
 
         if (allowTakeoff)
             for (const airline of Object.keys(Flight.plan))
                 for (const route of Flight.plan[airline])
-                    if (random() < 0.1 * Delta) // 1 flight per hour
+                    if (random() < 0.1 * Delta) { // 1 flight per hour
                         new Flight(
                             randomItem(Flight.plan[airline]),
                             800 + random() * 200,
                             airline
                         );
+                    };
 
         if (random() < 0.025)
             randomItem(Flight.list).divert = true;
 
         document.getElementById('count').innerText = Flight.list.length;
+        for (const airport of Fix.airport) {
+            document.getElementById('countEnR' + airport.name).innerHTML = airport.enroute;
+            document.getElementById('countFlR' + airport.name).innerHTML =
+                (
+                    (
+                        ~~document.getElementById('countTaO' + airport.name).innerHTML
+                        +  ~~document.getElementById('countTaO' + airport.name).innerHTML
+                    ) / (tickCount * Delta)
+                ).toFixed(1);
+        }
     }, 1000 * Delta);
-
-    // setTimeout(() => {
-    //     let inp = document.getElementById('divert')
-    //     document.getElementById('divertAirport').value = 'EINV-ESAT'
-    //     divert();
-    //     document.getElementById('divertAirport').value = 'EINA-BLTT'
-    //     divert();
-    //     document.getElementById('divertAirport').value = 'SEKAI-ESAT'
-    //     divert();
-    //     document.getElementById('divertAirport').value = 'AWN1-BLTT'
-    //     divert();
-    // }, 10000);
 </script>
