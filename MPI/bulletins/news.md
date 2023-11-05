@@ -125,3 +125,15 @@ The ship is one of the initial targets for the Protectors when bombing major Sen
 
 # Senerean airspace reopened
 This afternoon, the Ministry of Transportation (MTP) reopened the airspace for all international traffic after 10 days of a nationwide grounding order. All air traffic going through the nation shall resume like before, with the exception of flights transverse through the Xubaxu region (suspected Protectors’ headquarter) and the two cities that were attacked: Ninoarura and Nuvak. Commercial planes overflying these areas will be monitored heavily with both the standard procedure and the Northern Shield system to ensure the devastating attacks won’t happen again. Recreational activities, lightweight aircrafts, and private jets are not allowed in these areas. Despite the airspace being opened after more than a week, restrictions imposed because of the Senerean’s flu are now in place to reduce transmission.
+
+# Express News from Senerean (2023-11-05)
+- The number of Senerean’s flu patients rose to 100
+- The Protectors’ headquarter was found by Uria 3 UAV, but all documents were destroyed while the suspected escape to the forest
+- 10 suspects from the Protectors' headquarter were captured
+- Plan approved to increase national average Wi-Fi speed
+- The Emergency Act may be invoked, said the Prime Minister
+- The government partnered with universities to launch first-class communication satellites
+- Xakai, a Senerean-based plane manufacturer, announces its first-ever commercial plane Xakai 100
+- Dark History documentary series delayed due to being understaffed
+- The Po admitted to the Almersen Union with Senerean's approval
+- Air Senerean opened flights from Ninoarura to Polio in the middle of Senerean’s flu
