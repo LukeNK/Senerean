@@ -80,6 +80,7 @@
 <body>
     <header html-src="../website/header.html"></header>
     <main>
+        <h3>Data for the last 24 hours</h3>
         <table id="countTable">
             <tr>
                 <th>Airport</th>
@@ -89,6 +90,9 @@
                 <th>Average flight rate (flight/hour, take-off and landing)</th>
             </tr>
         </table>
+
+        <h3>Union flight map</h3>
+        <p>Day: <span id="countDay">0</span>, hour: <span id="countHour">0</span></p>
         <p>Flights: <span id="count">0</span> <span id="xInfo"></span></p>
         <object id="obj" type="image/svg+xml" data="Union-aviation-map.svg"></object>
         <!-- <button onclick="divert()">Divert</button>
@@ -494,10 +498,29 @@
                 'VGJS-VGUG'
             ],
             PO: [
+                // 'POOC',
+                // 'POPL',
+                // 'POWP',
+                'POPL-ASW1-BBSJ',
+
+                'POPL-ASW1-BLTT',
                 'POWP-ASW1-BLJP',
 
                 'POOC-ASW1-EINV',
+                'POPL-ASW1-BAILA-AWN1-EINA',
 
+                'POOC-ASW1-ESAT',
+                'POPL-ASW1-ESAT',
+
+                'POPL-GJKB',
+
+                'POPL-MOBAI-OVVK',
+
+                'POPL-TIHN',
+
+                'POPL-A0S1-VGUG-VGJS',
+
+                'POPL-WHHN-WHON',
                 'POPL-WHSE',
             ],
             WH: [
@@ -752,15 +775,30 @@
             randomItem(Flight.list).divert = true;
 
         document.getElementById('count').innerText = Flight.list.length;
+        document.getElementById('countDay').innerHTML = floor((tickCount * Delta) / 24);
+        document.getElementById('countHour').innerHTML = floor((tickCount * Delta) % 24);
+        if (((tickCount * Delta) % 24).toFixed(2) == 0) {
+            for (const airport of Fix.airport) {
+                document.getElementById('countLan' + airport.name).innerHTML = 0;
+                document.getElementById('countTaO' + airport.name).innerHTML = 0;
+            }
+            return; // avoid division by 0
+        }
+
         for (const airport of Fix.airport) {
             document.getElementById('countEnR' + airport.name).innerHTML = airport.enroute;
             document.getElementById('countFlR' + airport.name).innerHTML =
                 (
                     (
                         ~~document.getElementById('countTaO' + airport.name).innerHTML
-                        +  ~~document.getElementById('countTaO' + airport.name).innerHTML
-                    ) / (tickCount * Delta)
+                        +  ~~document.getElementById('countLan' + airport.name).innerHTML
+                    ) / ((tickCount * Delta) % 24)
                 ).toFixed(1);
         }
     }, 1000 * Delta);
+
+        // for (const airport of Fix.airport) {
+        //     document.getElementById('countTaO' + airport.name).innerHTML = 0;
+        //     document.getElementById('countLan' + airport.name).innerHTML = 0;
+        // }
 </script>
