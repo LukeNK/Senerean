@@ -1348,5 +1348,20 @@ let REGISTRY = [
             "x": -45,
             "z": -47
         }
+    },
+    {
+        "id": "TREE24",
+        "owner": "LukeNK",
+        "desc": "Walking square with a Christmas tree betweeen Natsak ave and Beehive ave. Inspired by Onimai EP 9.",
+        "road": "NATSAK ave",
+        "province": "EC",
+        "nw": {
+            "x": 50,
+            "z": 100
+        },
+        "se": {
+            "x": 70,
+            "z": 125
+        }
     }
 ]
