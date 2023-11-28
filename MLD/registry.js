@@ -1363,5 +1363,20 @@ let REGISTRY = [
             "x": 70,
             "z": 125
         }
+    },
+    {
+        "id": "24MALL",
+        "owner": "LukeNK",
+        "desc": "Shopping mall with water fountain on top. In between Beehive ave and Natsak ave.",
+        "road": "2024 ave",
+        "province": "EC",
+        "nw": {
+            "x": 53,
+            "z": 121
+        },
+        "se": {
+            "x": 67,
+            "z": 182
+        }
     }
 ]
