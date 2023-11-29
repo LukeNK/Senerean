@@ -1393,5 +1393,20 @@ let REGISTRY = [
             "x": 114,
             "z": 96
         }
+    },
+    {
+        "id": "126125",
+        "owner": "Senerean",
+        "desc": "Metro station under Uphill st",
+        "road": "TURTLE ave",
+        "province": "EC",
+        "nw": {
+            "x": 126,
+            "z": 125
+        },
+        "se": {
+            "x": 133,
+            "z": 141
+        }
     }
 ]
