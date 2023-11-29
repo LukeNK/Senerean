@@ -1408,5 +1408,20 @@ let REGISTRY = [
             "x": 133,
             "z": 141
         }
+    },
+    {
+        "id": "185195",
+        "owner": "Senerean",
+        "desc": "Metro station with split platform",
+        "road": "2024 ave",
+        "province": "EC",
+        "nw": {
+            "x": 43,
+            "z": 185
+        },
+        "se": {
+            "x": 65,
+            "z": 195
+        }
     }
 ]
