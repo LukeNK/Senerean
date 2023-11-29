@@ -1378,5 +1378,20 @@ let REGISTRY = [
             "x": 67,
             "z": 182
         }
+    },
+    {
+        "id": "ONIMAI",
+        "owner": "LukeNK",
+        "desc": "Single-family house based on Onimai's Oyama residence.",
+        "road": "2023 ave",
+        "province": "EC",
+        "nw": {
+            "x": 99,
+            "z": 81
+        },
+        "se": {
+            "x": 114,
+            "z": 96
+        }
     }
 ]
