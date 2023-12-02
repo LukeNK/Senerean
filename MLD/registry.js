@@ -1423,5 +1423,20 @@ let REGISTRY = [
             "x": 65,
             "z": 195
         }
+    },
+    {
+        "id": "2024SQ",
+        "owner": "LukeNK",
+        "desc": "Shopping market square with a 2024 sign and sea lanterns as visual stars.",
+        "road": "BEEHIVE ave",
+        "province": "EC",
+        "nw": {
+            "x": 71,
+            "z": 103
+        },
+        "se": {
+            "x": 83,
+            "z": 125
+        }
     }
 ]
