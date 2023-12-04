@@ -915,21 +915,6 @@ let REGISTRY = [
         }
     },
     {
-        "id": "VQYP6P",
-        "owner": "Senerean",
-        "desc": "Public toilet",
-        "road": "NATSAK ave",
-        "province": "EC",
-        "nw": {
-            "x": 51,
-            "z": 78
-        },
-        "se": {
-            "x": 53,
-            "z": 82
-        }
-    },
-    {
         "id": "0LJ4MG",
         "owner": "LukeNK",
         "desc": "Cliff-side wooden house",
