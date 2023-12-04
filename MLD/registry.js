@@ -1438,5 +1438,20 @@ let REGISTRY = [
             "x": 83,
             "z": 125
         }
+    },
+    {
+        "id": "2570ST",
+        "owner": "LukeNK",
+        "desc": "Official residence of the Head of State",
+        "road": "HIGHLAND st",
+        "province": "EC",
+        "nw": {
+            "x": -3,
+            "z": 104
+        },
+        "se": {
+            "x": 22,
+            "z": 123
+        }
     }
 ]
