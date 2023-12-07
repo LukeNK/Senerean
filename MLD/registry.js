@@ -1438,5 +1438,20 @@ let REGISTRY = [
             "x": 22,
             "z": 123
         }
+    },
+    {
+        "id": "1ST570",
+        "owner": "LukeNK",
+        "desc": "Official residence of the Prime Minister",
+        "road": "PEACE ave",
+        "province": "EC",
+        "nw": {
+            "x": -3,
+            "z": 82
+        },
+        "se": {
+            "x": 23,
+            "z": 103
+        }
     }
 ]
