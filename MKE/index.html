@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head html-src="../website/head.html"></head>
+<body>
+    <header html-src="../website/header.html"></header>
+    <main>
+        <label>
+            Two-row-per line writing system?
+            <input type="checkbox">
+        </label>
+        <label>
+            Text to convert to Milaru writing system
+            <textarea oninput="writeText(this.value)"></textarea>
+        </label>
+        <svg id="svgDisplay"  width="1000" height="500">
+            <g>
+                <line x1="0" y1="0" x2="100" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+                <line x1="0" y1="0" x2="150" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+            </g>
+            <g>
+                <line x1="50" y1="0" x2="100" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+                <line x1="50" y1="0" x2="150" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+            </g>
+        </svg>
+    </main>
+    <footer html-src="../website/footer.html"></footer>
+</body>
+<script src="../website/scripts.js"></script>
+<script src="./milaru.js"></script>
+<script>
+    const namespace = 'http://www.w3.org/2000/svg';
+    let svg = document.getElementById('svgDisplay');
+
+    function writeText(text) {
+        text = splitText(text);
+        let row = 0; col = 0;
+
+        // clean svg
+        svg.innerHTML = '';
+
+        for (const syll of text) {
+            // create writing box
+            let box = document.createElementNS(namespace, 'g');
+            box.setAttribute('transform', `translate(${col * 100}, ${row * 100})`);
+            box.setAttribute('stroke-width', 10);
+            box.setAttribute('stroke', 'green');
+
+            if (syll.group == 0) {
+                // empty vowel
+            } else if (syll.group <= 4) {
+                // consonant syllable
+                let base = document.createElementNS(namespace, 'line');
+                base.setAttribute('x1', 25);
+                base.setAttribute('y1', 50);
+                base.setAttribute('x2', 50);
+                base.setAttribute('y2', 50);
+
+                let group = document.createElementNS(namespace, 'line');
+                // rod location
+                let baseLoc = ((syll.group <= 2))? 1 : 2;
+                group.setAttribute('x1', base.getAttribute('x' + baseLoc));
+                group.setAttribute('y1', base.getAttribute('y' + baseLoc));
+                // rod rotation
+                let groupRot = ((syll.group + 1) % 2)? -1 : 1;
+                group.setAttribute('x2', group.getAttribute('x1') - 10 * groupRot);
+                group.setAttribute('y2', group.getAttribute('y1') - 20);
+
+                if (syll.index != 1) {
+                    // Skip empty
+                    let member = document.createElementNS(namespace, 'line');
+                    member.setAttribute('x1', group.getAttribute('x1'));
+                    member.setAttribute('y1', group.getAttribute('y1'));
+                    // convert to number with "~~"
+                    member.setAttribute('x2', ~~member.getAttribute('x1') + 10 * (syll.index - 1));
+                    member.setAttribute('y2', ~~member.getAttribute('y1') + 20);
+
+                    box.append(member);
+                }
+
+                box.append(base, group);
+            } else {
+
+            }
+
+            svg.append(box);
+        }
+    }
+</script>
