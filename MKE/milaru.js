@@ -1,5 +1,5 @@
 const CHAR_GROUP = [
-        'aiueo', // vowel groups
+        'aiuoe', // vowel groups
         'btd',
         'khx',
         'fmn',

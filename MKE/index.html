@@ -45,7 +45,19 @@
             box.setAttribute('stroke', 'green');
 
             if (syll.group == 0) {
-                // empty vowel
+                let base = document.createElementNS(namespace, 'line');
+                base.setAttribute('x1', 25);
+                base.setAttribute('y1', 40);
+                base.setAttribute('x2', 50);
+                base.setAttribute('y2', 40);
+
+                let base2 = document.createElementNS(namespace, 'line');
+                base2.setAttribute('x1', 25);
+                base2.setAttribute('y1', 60);
+                base2.setAttribute('x2', 50);
+                base2.setAttribute('y2', 60);
+
+                box.append(base, base2)
             } else if (syll.group <= 4) {
                 // consonant syllable
                 let base = document.createElementNS(namespace, 'line');
@@ -79,6 +91,33 @@
                 box.append(base, group);
             } else {
 
+            }
+
+            if (syll.vowel) {
+                let vowel = document.createElementNS(namespace, 'line'),
+                    vowLoc = syll.vowel == 1 || syll.vowel == 4; // true for top
+                vowel.setAttribute('x1', 80)
+                vowel.setAttribute('y1', vowLoc? 0 : 100);
+                vowel.setAttribute('x2', 100)
+                vowel.setAttribute('y2', vowLoc? 20 : 80);
+
+                if (syll.vowel >= 3) {
+                    // two lines
+                    let vowel2 = document.createElementNS(namespace, 'line');
+                    vowel2.setAttribute('x1', ~~vowel.getAttribute('x1') - 15)
+                    vowel2.setAttribute('y1', vowLoc? 0 : 100);
+                    vowel2.setAttribute('x2', ~~vowel.getAttribute('x2') - 15)
+                    vowel2.setAttribute('y2', vowLoc? 20 : 80);
+
+                    box.append(vowel2)
+                }
+
+                box.append(vowel)
+            }
+
+            row++
+            if (row > 1) {
+                row = 0; col++
             }
 
             svg.append(box);
