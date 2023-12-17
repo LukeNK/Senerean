@@ -144,6 +144,16 @@
                         break
 
                 }
+            } else if (syll.group == 6) {
+                // control characters
+                switch(syll.index) {
+                    case 0:
+                        // new line
+                        col = 0;
+                        row = -1;
+                        line++;
+                        break;
+                }
             }
 
             if (syll.vowel) {
