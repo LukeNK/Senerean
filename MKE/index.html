@@ -59,8 +59,6 @@
         svg.innerHTML = '';
 
         for (const syll of text) {
-            if (syll?.group == undefined) continue; // invalid
-
             // create writing box
             let box = document.createElementNS(namespace, 'g');
             box.setAttribute('stroke-width', 10);
@@ -167,6 +165,17 @@
                             col--; // don't space
                         break;
                 }
+            } else if (syll.group == undefined) {
+                // Strange characters write from other language
+                let text = document.createElementNS(namespace, 'text');
+                text.setAttribute('x', 0)
+                text.setAttribute('y', CharBox.y - 25)
+                text.setAttribute('font-size', '50px')
+                text.setAttribute('stroke-width', 1);
+                text.setAttribute('fill', box.getAttribute('stroke'));
+                text.innerHTML = syll.chars;
+
+                box.append(text)
             }
 
             if (syll.vowel) {

@@ -48,17 +48,15 @@ class Syllable {
  * @returns {Syllable[]}
  */
 function splitText(text) {
-    text = text.toLowerCase();
-
     let result = [];
     for (let l1 = 0; l1 < text.length; l1++) {
-        let char = text[l1];
+        let char = text[l1].toLowerCase();
         let info = Syllable.getIndex(char);
         if (info?.group == 0 || info?.group > 4)
             result.push(new Syllable(char))
         else if (info) {
             // if it is valid, it is consonant
-            result.push(new Syllable(char + text[l1 + 1]));
+            result.push(new Syllable((char + text[l1 + 1]).toLowerCase()));
             l1++; // skip
         } else {
             // strange character, scan ahead until see a punctuation
