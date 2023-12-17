@@ -4,23 +4,18 @@
     <header html-src="../website/header.html"></header>
     <main>
         <label>
+            Draw character border?
+            <input id="drawBox" type="checkbox" oninput="writeText()" checked>
+        </label>
+        <label>
             Two-row-per line writing system?
-            <input type="checkbox">
+            <input id="twoRows" type="checkbox" oninput="writeText()" checked>
         </label>
         <label>
             Text to convert to Milaru writing system
-            <textarea oninput="writeText(this.value)"></textarea>
+            <textarea id="inpArea" oninput="writeText(this.value)"></textarea>
         </label>
-        <svg id="svgDisplay" width="1000" height="500">
-            <g>
-                <line x1="0" y1="0" x2="100" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
-                <line x1="0" y1="0" x2="150" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
-            </g>
-            <g>
-                <line x1="50" y1="0" x2="100" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
-                <line x1="50" y1="0" x2="150" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
-            </g>
-        </svg>
+        <svg id="svgDisplay" width="1050" height="600"></svg>
     </main>
     <footer html-src="../website/footer.html"></footer>
 </body>
@@ -28,11 +23,16 @@
 <script src="./milaru.js"></script>
 <script>
     // Milaru writing font config
-    const CharBase = {
+    const CharBox = {
+        // character write box
+        x: 100, // width
+        y: 100, // height
+    },
+    CharBase = {
         // Character base
         x1: 25, y: 50,
-        x2: 55,
-        yDiff: 10 // Spacing between empty vowel
+        x2: 50,
+        yDiff: 10 // Spacing between lines of empty vowel
     },
     CharCon = {
         // consonant rotation difference
@@ -40,8 +40,8 @@
         yDiff: 20,
     },
     CharVowel = {
-        x1: 80, x2: 100,
-        xDiff: -15, // Spacing between first and second vowel stroke
+        x1: 60, x2: 80,
+        xDiff: 15, // Spacing between first and second vowel stroke
         y1Top: 10, y1Bottom: 90, // first point top and bottom of the stroke
         yDiff: 20, // Spacing between the start and the end of stroke
     };
@@ -50,9 +50,10 @@
     const namespace = 'http://www.w3.org/2000/svg';
     let svg = document.getElementById('svgDisplay');
 
-    function writeText(text) {
+    function writeText(text = document.getElementById('inpArea').value) {
         text = splitText(text);
-        let row = 0; col = 0;
+        const twoRows = document.getElementById('twoRows').checked;
+        let line = 0, row = 0; col = 0;
 
         // clean svg
         svg.innerHTML = '';
@@ -60,10 +61,10 @@
         for (const syll of text) {
             // create writing box
             let box = document.createElementNS(namespace, 'g');
-            box.setAttribute('transform', `translate(${col * 100}, ${row * 100})`);
             box.setAttribute('stroke-width', 10);
             box.setAttribute('stroke', 'green');
             box.setAttribute('stroke-linecap', 'round')
+            box.setAttribute('fill', 'none');
 
             if (syll.group == 0) {
                 let base = document.createElementNS(namespace, 'line');
@@ -112,7 +113,6 @@
                     // move to next col
                     col++;
                     row = 0;
-                    box.setAttribute('transform', `translate(${col * 100}, ${row * 100})`);
                 }
                 switch(syll.index) {
                     case 1:
@@ -129,12 +129,21 @@
                         let dot = document.createElementNS(namespace, 'circle');
                         dot.setAttribute('cx', 50);
                         dot.setAttribute('cy', 50);
-                        dot.setAttribute('r', 5);
+                        dot.setAttribute('r', 10);
+                        dot.setAttribute('fill', box.getAttribute('stroke'));
 
                         box.append(dot);
                         break;
+                    case 3:
+                        let per = document.createElementNS(namespace, 'circle');
+                        per.setAttribute('cx', 50);
+                        per.setAttribute('cy', 50);
+                        per.setAttribute('r', 10);
+
+                        box.append(per);
+                        break
+
                 }
-                row++; // signal to move to the next col
             }
 
             if (syll.vowel) {
@@ -163,9 +172,33 @@
                 box.append(vowel)
             }
 
+            let tranX = col * CharBox.x,
+                tranY = row * CharBox.y + line * CharBox.y * (twoRows? 2 : 1);
+
+            box.setAttribute('transform', `translate(${tranX}, ${tranY})`);
+
+            if (document.getElementById('drawBox').checked) {
+                // draw box border
+                let topBor = document.createElementNS(namespace, 'line');
+                topBor.setAttribute('x1', tranX);
+                topBor.setAttribute('y1', tranY);
+                topBor.setAttribute('x2', tranX + CharBox.x);
+                topBor.setAttribute('y2', tranY);
+                topBor.setAttribute('stroke-width', 1);
+                topBor.setAttribute('stroke', 'grey');
+                let botBor = topBor.cloneNode();
+                botBor.setAttribute('x2', tranX);
+                botBor.setAttribute('y2', tranY + CharBox.y);
+
+                svg.append(topBor, botBor)
+            }
+
+            if (syll.group == 5) row++; // move to next row
             row++
-            if (row > 1) {
-                row = 0; col++
+            if (row > 1 || !twoRows) { row = 0; col++ }
+            if (col >= svg.getAttribute('width') / CharBox.x - 1) {
+                line++;
+                col = 0;
             }
 
             svg.append(box);

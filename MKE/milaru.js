@@ -4,7 +4,7 @@ const CHAR_GROUP = [
         'khx',
         'fmn',
         'lrw',
-        ' -.' // valid punctuations
+        ' -.,' // valid punctuations
     ];
 
 class Syllable {
