@@ -169,7 +169,7 @@
                 // Strange characters write from other language
                 let text = document.createElementNS(namespace, 'text');
                 text.setAttribute('x', 0)
-                text.setAttribute('y', CharBox.y - 25)
+                text.setAttribute('y', CharBase.y + CharCon.yDiff)
                 text.setAttribute('font-size', '50px')
                 text.setAttribute('stroke-width', 1);
                 text.setAttribute('fill', box.getAttribute('stroke'));

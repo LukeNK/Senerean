@@ -54,18 +54,31 @@ function splitText(text) {
         let info = Syllable.getIndex(char);
         if (info?.group == 0 || info?.group > 4)
             result.push(new Syllable(char))
-        else if (info) {
+        else if (
+            info
+            && Syllable.getIndex(text[l1 + 1]?.toLowerCase())?.group == 0
+        ) {
             // if it is valid, it is consonant
             result.push(new Syllable((char + text[l1 + 1]).toLowerCase()));
             l1++; // skip
         } else {
             // strange character, scan ahead until see a punctuation
-            let l2 = l1;
+            let l2 = 0,
+                lastl2 = 0; // last punctuation
             for (; l2 < text.length; l2++)
-                if (Syllable.getIndex(text[l2]).group == 5)
-                    break;
-            result.push({chars: text.substring(l1, l2)})
+                if (Syllable.getIndex(text[l2]).group == 5) {
+                    if (l2 <= l1) lastl2 = l2;
+                    else break;
+                }
+            lastl2 = {chars: text.substring(lastl2, l2)};
             l1 = l2 - 1; // skip
+
+            // tranceback to remove transcribed chars
+            for (l2 = result.length - 1; l2 >= 0; l2--)
+                if (result[l2].group == 5) break;
+                else result.pop();
+
+            result.push(lastl2)
         }
     }
     return result;
