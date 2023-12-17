@@ -4,7 +4,6 @@ const CHAR_GROUP = [
         'khx',
         'fmn',
         'lrw',
-        '=', // empty consonant
         ' -.' // valid punctuations
     ];
 

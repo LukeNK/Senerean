@@ -11,7 +11,7 @@
             Text to convert to Milaru writing system
             <textarea oninput="writeText(this.value)"></textarea>
         </label>
-        <svg id="svgDisplay"  width="1000" height="500">
+        <svg id="svgDisplay" width="1000" height="500">
             <g>
                 <line x1="0" y1="0" x2="100" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
                 <line x1="0" y1="0" x2="150" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
@@ -26,6 +26,26 @@
 </body>
 <script src="../website/scripts.js"></script>
 <script src="./milaru.js"></script>
+<script>
+    // Milaru writing font config
+    const CharBase = {
+        // Character base
+        x1: 25, y: 50,
+        x2: 50,
+        yDiff: 10 // Spacing between empty vowel
+    },
+    CharCon = {
+        // consonant rotation difference
+        xDiff: 10,
+        yDiff: 20,
+    },
+    CharVowel = {
+        x1: 80, x2: 100,
+        xDiff: -15, // Spacing between first and second vowel stroke
+        y1Top: 10, y1Bottom: 90, // first point top and bottom of the stroke
+        yDiff: 20, // Spacing between the start and the end of stroke
+    };
+</script>
 <script>
     const namespace = 'http://www.w3.org/2000/svg';
     let svg = document.getElementById('svgDisplay');
@@ -43,71 +63,90 @@
             box.setAttribute('transform', `translate(${col * 100}, ${row * 100})`);
             box.setAttribute('stroke-width', 10);
             box.setAttribute('stroke', 'green');
+            box.setAttribute('stroke-linecap', 'round')
 
             if (syll.group == 0) {
                 let base = document.createElementNS(namespace, 'line');
-                base.setAttribute('x1', 25);
-                base.setAttribute('y1', 40);
-                base.setAttribute('x2', 50);
-                base.setAttribute('y2', 40);
+                base.setAttribute('x1', CharBase.x1);
+                base.setAttribute('y1', CharBase.y - CharBase.yDiff);
+                base.setAttribute('x2', CharBase.x2);
+                base.setAttribute('y2', CharBase.y - CharBase.yDiff);
 
-                let base2 = document.createElementNS(namespace, 'line');
-                base2.setAttribute('x1', 25);
-                base2.setAttribute('y1', 60);
-                base2.setAttribute('x2', 50);
-                base2.setAttribute('y2', 60);
+                let base2 = base.cloneNode();
+                base2.setAttribute('y1', CharBase.y + CharBase.yDiff);
+                base2.setAttribute('y2', CharBase.y + CharBase.yDiff);
 
                 box.append(base, base2)
             } else if (syll.group <= 4) {
                 // consonant syllable
                 let base = document.createElementNS(namespace, 'line');
-                base.setAttribute('x1', 25);
-                base.setAttribute('y1', 50);
-                base.setAttribute('x2', 50);
-                base.setAttribute('y2', 50);
+                base.setAttribute('x1', CharBase.x1);
+                base.setAttribute('y1', CharBase.y);
+                base.setAttribute('x2', CharBase.x2);
+                base.setAttribute('y2', CharBase.y);
 
                 let group = document.createElementNS(namespace, 'line');
                 // rod location
                 let baseLoc = ((syll.group <= 2))? 1 : 2;
-                group.setAttribute('x1', base.getAttribute('x' + baseLoc));
-                group.setAttribute('y1', base.getAttribute('y' + baseLoc));
+                group.setAttribute('x1', CharBase['x' + baseLoc]);
+                group.setAttribute('y1', CharBase.y);
                 // rod rotation
                 let groupRot = ((syll.group + 1) % 2)? -1 : 1;
-                group.setAttribute('x2', group.getAttribute('x1') - 10 * groupRot);
-                group.setAttribute('y2', group.getAttribute('y1') - 20);
+                group.setAttribute('x2', group.getAttribute('x1') - CharCon.xDiff * groupRot);
+                group.setAttribute('y2', group.getAttribute('y1') - CharCon.yDiff);
 
                 if (syll.index != 1) {
                     // Skip empty
-                    let member = document.createElementNS(namespace, 'line');
-                    member.setAttribute('x1', group.getAttribute('x1'));
-                    member.setAttribute('y1', group.getAttribute('y1'));
+                    let member = group.cloneNode()
                     // convert to number with "~~"
-                    member.setAttribute('x2', ~~member.getAttribute('x1') + 10 * (syll.index - 1));
-                    member.setAttribute('y2', ~~member.getAttribute('y1') + 20);
+                    member.setAttribute('x2', ~~member.getAttribute('x1') + CharCon.xDiff * (syll.index - 1));
+                    member.setAttribute('y2', ~~member.getAttribute('y1') + CharCon.yDiff);
 
                     box.append(member);
                 }
 
                 box.append(base, group);
-            } else {
+            } else if (syll.group == 5) {
+                // punctuation
+                if (row != 0) {
+                    // move to next col
+                    col++;
+                    row = 0;
+                }
+                switch(syll.index) {
+                    case 1:
+                        // hyphen
+                        let base = document.createElementNS(namespace, 'line');
+                        base.setAttribute('x1', 20);
+                        base.setAttribute('y1', CharBase.y);
+                        base.setAttribute('x2', 80);
+                        base.setAttribute('y2', CharBase.y);
 
+                        box.append(base);
+                        break;
+                }
+                row++; // signal to move to the next col
             }
 
             if (syll.vowel) {
                 let vowel = document.createElementNS(namespace, 'line'),
                     vowLoc = syll.vowel == 1 || syll.vowel == 4; // true for top
-                vowel.setAttribute('x1', 80)
-                vowel.setAttribute('y1', vowLoc? 0 : 100);
-                vowel.setAttribute('x2', 100)
-                vowel.setAttribute('y2', vowLoc? 20 : 80);
+                vowel.setAttribute('x1', CharVowel.x1)
+                vowel.setAttribute('y1', vowLoc? CharVowel.y1Top : CharVowel.y1Bottom);
+                vowel.setAttribute('x2', CharVowel.x2)
+                vowel.setAttribute('y2',
+                    ~~vowel.getAttribute('y1') + CharVowel.yDiff * (vowLoc? 1 : -1)
+                );
 
                 if (syll.vowel >= 3) {
                     // two lines
                     let vowel2 = document.createElementNS(namespace, 'line');
-                    vowel2.setAttribute('x1', ~~vowel.getAttribute('x1') - 15)
-                    vowel2.setAttribute('y1', vowLoc? 0 : 100);
-                    vowel2.setAttribute('x2', ~~vowel.getAttribute('x2') - 15)
-                    vowel2.setAttribute('y2', vowLoc? 20 : 80);
+                    vowel2.setAttribute('x1', CharVowel.x1 + CharVowel.xDiff)
+                    vowel2.setAttribute('y1', vowLoc? CharVowel.y1Top : CharVowel.y1Bottom);
+                    vowel2.setAttribute('x2', CharVowel.x2 + CharVowel.xDiff)
+                    vowel2.setAttribute('y2',
+                        ~~vowel2.getAttribute('y1') + CharVowel.yDiff * (vowLoc? 1 : -1)
+                    );
 
                     box.append(vowel2)
                 }
