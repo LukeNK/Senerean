@@ -5,13 +5,14 @@ const CHAR_GROUP = [
         'fmn',
         'lrw',
         ' -.,', // valid punctuations
-        '\n', // control characters
+        '\n/', // control characters
     ];
 
 class Syllable {
     /**
      * Create a syllable
      * @param {String} chars Character(s) to convert to syllable
+     * @returns {Syllable}
      */
     constructor(chars) {
         this.chars = chars;
@@ -28,6 +29,7 @@ class Syllable {
     /**
      * Get index information of the character
      * @param {String} char Character to get information
+     * @returns {Object|false}
      */
     static getIndex(char) {
         for (let l1 in CHAR_GROUP)
@@ -36,6 +38,7 @@ class Syllable {
                 group: Number(l1),
                 index: CHAR_GROUP[l1].indexOf(char)
             }
+        return false;
     }
 }
 
@@ -51,11 +54,20 @@ function splitText(text) {
     for (let l1 = 0; l1 < text.length; l1++) {
         let char = text[l1];
         let info = Syllable.getIndex(char);
-        if (info.group == 0 || info.group > 4)
+        if (info?.group == 0 || info?.group > 4)
             result.push(new Syllable(char))
-        else {
+        else if (info) {
+            // if it is valid, it is consonant
             result.push(new Syllable(char + text[l1 + 1]));
             l1++; // skip
+        } else {
+            // strange character, scan ahead until see a punctuation
+            let l2 = l1;
+            for (; l2 < text.length; l2++)
+                if (Syllable.getIndex(text[l2]).group == 5)
+                    break;
+            result.push({chars: text.substring(l1, l2)})
+            l1 = l2 - 1; // skip
         }
     }
     return result;

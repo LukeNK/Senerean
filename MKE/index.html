@@ -15,7 +15,7 @@
             Text to convert to Milaru writing system
             <textarea id="inpArea" oninput="writeText(this.value)"></textarea>
         </label>
-        <svg id="svgDisplay" width="1050" height="600"></svg>
+        <svg id="svgDisplay" width="1050" height="00"></svg>
     </main>
     <footer html-src="../website/footer.html"></footer>
 </body>
@@ -59,6 +59,8 @@
         svg.innerHTML = '';
 
         for (const syll of text) {
+            if (syll?.group == undefined) continue; // invalid
+
             // create writing box
             let box = document.createElementNS(namespace, 'g');
             box.setAttribute('stroke-width', 10);
@@ -153,6 +155,17 @@
                         row = -1;
                         line++;
                         break;
+                    case 1:
+                        // move col
+                        if (twoRows)
+                            // only apply for two-rows
+                            if (row != 0) {
+                                row = -1;
+                                col++;
+                            } else row-- // don't increase row
+                        else if (!twoRows)
+                            col--; // don't space
+                        break;
                 }
             }
 
@@ -213,5 +226,10 @@
 
             svg.append(box);
         }
+
+        // resize box
+        let svgHeight = ~~svg.getAttribute('height');
+        if ((line + 1) * 2 * CharBox.y > svgHeight)
+            svg.setAttribute('height', svgHeight + 2 * CharBox.y);
     }
 </script>
