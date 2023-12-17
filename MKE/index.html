@@ -31,7 +31,7 @@
     const CharBase = {
         // Character base
         x1: 25, y: 50,
-        x2: 50,
+        x2: 55,
         yDiff: 10 // Spacing between empty vowel
     },
     CharCon = {
@@ -112,6 +112,7 @@
                     // move to next col
                     col++;
                     row = 0;
+                    box.setAttribute('transform', `translate(${col * 100}, ${row * 100})`);
                 }
                 switch(syll.index) {
                     case 1:
@@ -123,6 +124,14 @@
                         base.setAttribute('y2', CharBase.y);
 
                         box.append(base);
+                        break;
+                    case 2:
+                        let dot = document.createElementNS(namespace, 'circle');
+                        dot.setAttribute('cx', 50);
+                        dot.setAttribute('cy', 50);
+                        dot.setAttribute('r', 5);
+
+                        box.append(dot);
                         break;
                 }
                 row++; // signal to move to the next col
