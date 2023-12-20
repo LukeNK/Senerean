@@ -137,3 +137,12 @@ This afternoon, the Ministry of Transportation (MTP) reopened the airspace for a
 - Dark History documentary series delayed due to being understaffed
 - The Po admitted to the Almersen Union with Senerean's approval
 - Air Senerean opened flights from Ninoarura to Polio in the middle of Senerean’s flu
+
+# The Conservative Party won a landslide victory!
+As the election result was announced, the Conservative Party established a majority government with the party leader, Ciel, as the Prime Minister of Senerean. As promised, multiple drastic changes will be introduced to "establish a free and open Senerean", with the foremost being extreme tax-cutting measures.
+
+The lack of support for the Liberal Party is foreseeable. The last government's failure to properly respond to the Senerean's flu crisis as well as the Protectors' attacks ensures a certain end to the Liberal government after only one full term. Moreover, experts attributed the opposition's party leader, Ceil, as one of the main reasons for the defeat of the Liberal Party and the victorious win of the Conservative Party.
+
+Ciel was born in Miaruko and later migrated to Senerean to complete his Bachelor's degree in human psychology. He soon got his Senerian citizenship after working as a therapist and later participated in a nationwide mental health research board. Ciel's political career took off after his contribution was acknowledged personally by the Minister of Health, but he changed to serve for the Conservative Party as the shadow Minister of Health, which helped him gain his position as the Minister of Health for one term before the Liberals took over again. Ciel then ran for the Conservative Party leadership and won with little margin to spare. However, thanks to his background and open-minded policies, he quickly gained support from left-wing voters even before the election and the disappointment in the Liberal government.
+
+As a new government was formed, priorities were put on tax-slashing, allowing citizens to arms, adding the right to bear arms in the Constitution, as well as minuscule issues such as flag redesigning and holiday decorations of the Parliament. As a new bow colour is taking over the government, the Ciel administration will be tested by history and the stress of time will tell Senerians about whether they had made the right decision.
