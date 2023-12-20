@@ -127,8 +127,8 @@
                         break;
                     case 2:
                         let dot = document.createElementNS(namespace, 'circle');
-                        dot.setAttribute('cx', 50);
-                        dot.setAttribute('cy', 50);
+                        dot.setAttribute('cx', CharBox.x / 2);
+                        dot.setAttribute('cy', CharBox.y / 2);
                         dot.setAttribute('r', 10);
                         dot.setAttribute('fill', box.getAttribute('stroke'));
 
@@ -136,8 +136,8 @@
                         break;
                     case 3:
                         let per = document.createElementNS(namespace, 'circle');
-                        per.setAttribute('cx', 50);
-                        per.setAttribute('cy', 50);
+                        per.setAttribute('cx', CharBox.x / 2);
+                        per.setAttribute('cy', CharBox.y / 2);
                         per.setAttribute('r', 10);
 
                         box.append(per);
@@ -154,6 +154,7 @@
                         line++;
                         break;
                     case 1:
+                    case 2:
                         // move col
                         if (twoRows)
                             // only apply for two-rows
@@ -202,6 +203,16 @@
                 }
 
                 box.append(vowel)
+            }
+
+            if (syll.time) {
+                // is time
+                let circle = document.createElementNS(namespace, 'circle');
+                circle.setAttribute('cx', CharBox.x / 2);
+                circle.setAttribute('cy', CharBox.y / 2);
+                circle.setAttribute('r', 10);
+
+                box.append(circle)
             }
 
             let tranX = col * CharBox.x,

@@ -5,16 +5,17 @@ const CHAR_GROUP = [
         'fmn',
         'lrw',
         ' -.,', // valid punctuations
-        '\n/', // control characters
+        '\n/^', // control characters
     ];
 
 class Syllable {
     /**
      * Create a syllable
      * @param {String} chars Character(s) to convert to syllable
+     * @param {Boolean} time Is this a time character?
      * @returns {Syllable}
      */
-    constructor(chars) {
+    constructor(chars, time) {
         this.chars = chars;
         // deal with consonant
         let info = Syllable.getIndex(chars[0])
@@ -24,6 +25,7 @@ class Syllable {
         // last character will always be syllable
         info = Syllable.getIndex(chars.at(-1));
         this.vowel = info.index;
+        this.time = time || false;
         return this;
     }
     /**
@@ -79,6 +81,17 @@ function splitText(text) {
                 else result.pop();
 
             result.push(lastl2)
+        }
+
+        if (char == '^') {
+            // time control character
+            result.push(
+                new Syllable(
+                    text.substring(l1 + 1, l1 + 3).toLowerCase(),
+                    true
+                )
+            );
+            l1 += 2; // skip
         }
     }
     return result;
