@@ -5,8 +5,8 @@
 :root {
     --color-bg: #ffffff;
     --color-fg: #000000;
-    --color-dark-theme: #000080;
-    --color-bright-theme: #00ff00;
+    --color-dark-theme: #000055;
+    --color-bright-theme: #008000;
     --color-red: #FF4242ff;
     --font-family: inter;
     --font-size: 19px;
@@ -62,7 +62,7 @@ summary {
 }
 summary:hover, details[open] summary {
     background-color: var(--color-dark-theme);
-    color: var(--color-bright-theme);
+    color: var(--color-bg);
 }
 
 table {
@@ -125,14 +125,6 @@ main {
 #curPage {
     margin-left: 1rem;
     text-align: right;
-}
-#navTop button {
-    margin-left: 1rem;
-    height: 3rem;
-    width: 3rem;
-    background-color: transparent;
-    background-size: contain;
-    background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1076402435158970418/whiteTheme.png);
 }
 
 nav {

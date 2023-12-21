@@ -9,7 +9,7 @@
         width: 80%;
     }
 </style>
-<body class="darkTheme">
+<body>
     <header html-src="../website/header.html"></header>
     <form onsubmit="return false">
         <label>
@@ -76,7 +76,7 @@
                     // if user ask for random-generated
                     cur.id = '';
                     // at second and fifth position, use number instead of letter
-                    for (let l1 = 0; l1 < 6; l1++) 
+                    for (let l1 = 0; l1 < 6; l1++)
                         if ([1, 4].includes(l1))
                             cur.id += ALLOW_NUM[Math.floor(Math.random() * ALLOW_NUM.length)]
                         else
@@ -119,7 +119,7 @@
         r[0] = Math.floor(r[0] / 16);
         r[1] = Math.floor(r[1] / 16);
         // list all of the chunks inside it
-        for (let x = l[0]; x <= r[0]; x++) 
+        for (let x = l[0]; x <= r[0]; x++)
             for (let z = l[1]; z <= r[1]; z++)
                 cur.chunks.push({ x: x, z: z }); // push chunk info
     }
