@@ -1,8 +1,5 @@
 let COMP_LOAD = document.querySelectorAll("[html-src]").length; // total number of component need to load
 
-// env variables
-let DARK_THEME = false;
-
 (() => {
     // Load all HTML using fetch
     document.querySelectorAll("[html-src]").forEach(elm => {
@@ -26,12 +23,9 @@ function compLoaded() {
 
     // page title if there is no title
     if (!document.getElementsByTagName('title').length) {
-        document.getElementsByTagName('head')[0].innerHTML += 
+        document.getElementsByTagName('head')[0].innerHTML +=
             `<title>${curPage}</title>`
     }
-    
-    // get theme cookie
-    if (getCookie('darkTheme') == 1) theme(); // switch to dark theme
 }
 
 function setCookie(cname, cvalue, exdays) {
@@ -40,7 +34,7 @@ function setCookie(cname, cvalue, exdays) {
     let expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-  
+
 function getCookie(cname) {
     let name = cname + "=";
     let ca = document.cookie.split(';');
@@ -53,18 +47,4 @@ function getCookie(cname) {
         }
     }
     return "";
-}
-
-function theme() {
-    // toogle theme
-    if (DARK_THEME) {
-        // from dark theme turn back to white theme
-        document.body.classList.remove('darkTheme');
-        document.getElementById('headerLogo').setAttribute('src', '../website/logo.png')
-    } else {
-        document.body.classList.add('darkTheme');
-        document.getElementById('headerLogo').setAttribute('src', '../website/logo_white.png')
-    }
-    DARK_THEME = !DARK_THEME;
-    setCookie('darkTheme', DARK_THEME? 1 : 0)
 }
