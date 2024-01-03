@@ -1453,5 +1453,20 @@ let REGISTRY = [
             "x": 23,
             "z": 103
         }
+    },
+    {
+        "id": "EICASO",
+        "owner": "LukeNK",
+        "desc": "Senerean Cartography Society buildings with maps.",
+        "road": "NATSAK ave",
+        "province": "EC",
+        "nw": {
+            "x": 31,
+            "z": 94
+        },
+        "se": {
+            "x": 49,
+            "z": 112
+        }
     }
 ]
