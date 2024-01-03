@@ -1457,7 +1457,7 @@ let REGISTRY = [
     {
         "id": "EICASO",
         "owner": "LukeNK",
-        "desc": "Senerean Cartography Society buildings with maps.",
+        "desc": "Senerean Cartography Society building with maps.",
         "road": "NATSAK ave",
         "province": "EC",
         "nw": {
