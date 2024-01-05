@@ -1483,5 +1483,20 @@ let REGISTRY = [
             "x": 96,
             "z": 99
         }
+    },
+    {
+        "id": "L9CD4X",
+        "owner": "LukeNK",
+        "desc": "Enchanting House",
+        "road": "EMBASSY ave",
+        "province": "EC",
+        "nw": {
+            "x": 117,
+            "z": 83
+        },
+        "se": {
+            "x": 125,
+            "z": 91
+        }
     }
 ]
