@@ -1498,5 +1498,20 @@ let REGISTRY = [
             "x": 125,
             "z": 91
         }
+    },
+    {
+        "id": "J6NZ9N",
+        "owner": "LukeNK",
+        "desc": "Botanical House",
+        "road": "S 2023 ave",
+        "province": "EC",
+        "nw": {
+            "x": 84,
+            "z": 102
+        },
+        "se": {
+            "x": 8,
+            "z": 119
+        }
     }
 ]
