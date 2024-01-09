@@ -591,12 +591,12 @@ let REGISTRY = [
         "road": "VALLEY ave",
         "province": "EC",
         "nw": {
-            "x": 136,
+            "x": 138,
             "z": 17
         },
         "se": {
-            "x": 148,
-            "z": 24
+            "x": 151,
+            "z": 42
         }
     },
     {
