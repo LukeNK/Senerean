@@ -1513,5 +1513,20 @@ let REGISTRY = [
             "x": 8,
             "z": 119
         }
+    },
+    {
+        "id": "IRONUM",
+        "owner": "Senerean",
+        "desc": "Ironu M model hangar",
+        "road": "S UPHILL st",
+        "province": "EC",
+        "nw": {
+            "x": -273,
+            "z": 217
+        },
+        "se": {
+            "x": -258,
+            "z": 227
+        }
     }
 ]
