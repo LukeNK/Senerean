@@ -59,7 +59,7 @@
             <tr>
                 <td>1st</td>
                 <td rowspan="2" colspan="2">Nokia-chan</td>
-                <td>Ipad-chan</td>
+                <td colspan="2">Ipad-chan</td>
             </tr>
             <tr>
                 <td>2nd</td>
@@ -72,7 +72,7 @@
             </tr>
             <tr>
                 <td>4th</td>
-                <td rowspan="6">Iphone-chan</td>
+                <td rowspan="7">Iphone-chan</td>
             </tr>
             <tr>
                 <td>5th</td>
@@ -91,7 +91,10 @@
             </tr>
             <tr>
                 <td>9th</td>
-                <td colspan="2">Idea-chan</td>
+                <td rowspan="2" colspan="2">Idea-chan</td>
+            </tr>
+            <tr>
+                <td>10th</td>
             </tr>
         </table>
 
@@ -127,7 +130,7 @@
             </details>
             <details>
                 <summary>Pi-chan</summary>
-                <p>As a new addition to the Parliament, Pi-chan mostly deals with deep internal matters that require collaboration from all parties. Despite never been on an official international trip, she was trusted with dealing emergency matters that require attention at the moment notice.</p>
+                <p>As a new addition to the Parliament, Pi-chan mostly deals with deep internal matters that require collaboration from all parties. Despite never been on an official international trip, she was trusted with dealing emergency matters that require attention at the moment notice. However, she announced indefinite hiatus at the start of the 10th parliament.</p>
             </details>
             <details>
                 <summary>Idea-chan</summary>
@@ -137,11 +140,31 @@
 
         <h1>Hansards</h1>
         <p>Sorted from newest to oldest</p>
-        <div id="hansards" class="linkList"></div>
+        <div id="hansards" class="linkList" style="color: #ff00aa;"></div>
     </main>
     <footer html-src="../website/footer.html"></footer>
 </body>
 <script>
+    // Speakers' colors
+    let SpeakerColors = {
+        'Idea-chan': '#FF55CC',
+        'Ipad-chan': '#50FF50',
+        'Iphone-chan': '#FFFFAA',
+        'Laptop-chan': '#0080FF',
+        'Macbook-chan': '#CCCCCC',
+        'Nokia-chan': '#00FFFF',
+        'Phone-chan': '#FFB040',
+        'Pi-chan': '#FF5555',
+        'Tablet-chan': '#FF50AA'
+    }
+    document.querySelectorAll('td').forEach(elm => {
+        elm.style.backgroundColor = SpeakerColors[elm.innerHTML];
+        // if (SpeakerColors[elm.innerHTML]) {
+        //     elm.innerHTML = '';
+        //     elm.style.borderColor = 'transparent'
+        // }
+    })
+
     // use standard html-src to fetch data
     const hansardsList = [
         '2023-10-21',
