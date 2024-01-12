@@ -1528,5 +1528,20 @@ let REGISTRY = [
             "x": -258,
             "z": 227
         }
+    },
+    {
+        "id": "Q1HQ4Y",
+        "owner": "Senerean",
+        "desc": "Test site command center",
+        "road": "S UPHILL st",
+        "province": "EC",
+        "nw": {
+            "x": -281,
+            "z": 218
+        },
+        "se": {
+            "x": -281,
+            "z": 226
+        }
     }
 ]
