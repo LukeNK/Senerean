@@ -1191,8 +1191,8 @@ let REGISTRY = [
         "road": "S SEA CLIFF ave",
         "province": "EC",
         "nw": {
-            "x": 3,
-            "z": -47
+            "x": -2,
+            "z": -51
         },
         "se": {
             "x": 16,
