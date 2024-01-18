@@ -1558,5 +1558,20 @@ let REGISTRY = [
             "x": -196,
             "z": 173
         }
+    },
+    {
+        "id": "H4OO4E",
+        "owner": "Senerean",
+        "desc": "Safe-launch silo",
+        "road": "S UPHILL st",
+        "province": "EC",
+        "nw": {
+            "x": -287,
+            "z": 200
+        },
+        "se": {
+            "x": -271,
+            "z": 213
+        }
     }
 ]
