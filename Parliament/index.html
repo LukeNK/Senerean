@@ -72,7 +72,7 @@
             </tr>
             <tr>
                 <td>4th</td>
-                <td rowspan="7">Iphone-chan</td>
+                <td rowspan="8">Iphone-chan</td>
             </tr>
             <tr>
                 <td>5th</td>
@@ -87,14 +87,18 @@
             </tr>
             <tr>
                 <td>8th</td>
-                <td>Idea-chan</td>
+                <td rowspan="4">Idea-chan</td>
             </tr>
             <tr>
                 <td>9th</td>
-                <td rowspan="2" colspan="2">Idea-chan</td>
+                <td rowspan="3">Idea-chan</td>
             </tr>
             <tr>
                 <td>10th</td>
+            </tr>
+            <tr>
+                <td>11th</td>
+                <td>Pi-chan</td>
             </tr>
         </table>
 
@@ -152,17 +156,19 @@
         'Iphone-chan': '#FFFFAA',
         'Laptop-chan': '#0080FF',
         'Macbook-chan': '#CCCCCC',
-        'Nokia-chan': '#00FFFF',
+        'Nokia-chan': '#00DDDD',
         'Phone-chan': '#FFB040',
         'Pi-chan': '#FF5555',
-        'Tablet-chan': '#FF50AA'
+        'Tablet-chan': '#0044AA'
     }
     document.querySelectorAll('td').forEach(elm => {
-        elm.style.backgroundColor = SpeakerColors[elm.innerHTML];
-        // if (SpeakerColors[elm.innerHTML]) {
-        //     elm.innerHTML = '';
-        //     elm.style.borderColor = 'transparent'
-        // }
+        // elm.style.backgroundColor = SpeakerColors[elm.innerHTML];
+        if (SpeakerColors[elm.innerHTML]) {
+            // elm.innerHTML = '';
+            elm.style.borderLeftWidth = '1rem'
+            elm.style.borderLeftStyle = 'solid'
+            elm.style.borderLeftColor = SpeakerColors[elm.innerHTML]
+        }
     })
 
     // use standard html-src to fetch data
