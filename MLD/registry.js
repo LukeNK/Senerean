@@ -1573,5 +1573,20 @@ let REGISTRY = [
             "x": -271,
             "z": 213
         }
+    },
+    {
+        "id": "K4DM1F",
+        "owner": "Senerean",
+        "desc": "MTP - Street Crossing Design Center",
+        "road": "2023 ave",
+        "province": "EC",
+        "nw": {
+            "x": 71,
+            "z": 144
+        },
+        "se": {
+            "x": 93,
+            "z": 162
+        }
     }
 ]
