@@ -1588,5 +1588,20 @@ let REGISTRY = [
             "x": 93,
             "z": 162
         }
+    },
+    {
+        "id": "P9YT2O",
+        "owner": "LukeNK",
+        "desc": "Playground",
+        "road": "S UPHILL st",
+        "province": "EC",
+        "nw": {
+            "x": 62,
+            "z": 164
+        },
+        "se": {
+            "x": 88,
+            "z": 178
+        }
     }
 ]
