@@ -588,15 +588,15 @@ let REGISTRY = [
         "id": "136017",
         "owner": "Senerean",
         "desc": "Metro station",
-        "road": "VALLEY ave",
+        "road": "UPHILL st",
         "province": "EC",
         "nw": {
             "x": 138,
-            "z": 17
+            "z": 31
         },
         "se": {
-            "x": 151,
-            "z": 42
+            "x": 150,
+            "z": 37
         }
     },
     {
