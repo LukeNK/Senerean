@@ -591,8 +591,8 @@ let REGISTRY = [
         "road": "UPHILL st",
         "province": "EC",
         "nw": {
-            "x": 138,
-            "z": 31
+            "x": 133,
+            "z": 30
         },
         "se": {
             "x": 150,
