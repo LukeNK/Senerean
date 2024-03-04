@@ -173,7 +173,7 @@ The briefing lasted for about 45 minutes but Iphone-chan was described as "zonin
 
 At 19:00, Iphone-chan and the Head of State arrived at the restaurant. She once again was found not focusing on the conversation and kept rubbing her head.
 
-After the dinner, the Head of State decided to take her to non-emergency care. Iphone-chan entered the hospital at 20:49 where she informed Idea-chan about her condition and prepared for power transition if necessary. The protocol that was established since the induced comma of Macbook-chan and prepared for Idea-chan last year now was called up for Iphone-chan.
+After the dinner, the Head of State decided to take her to non-emergency care. Iphone-chan entered the hospital at 20:49 where she informed Idea-chan about her condition and prepared for power transition if necessary. The protocol that was established since the induced coma of Macbook-chan and prepared for Idea-chan last year now was called up for Iphone-chan.
 
 Iphone-chan met the doctor at 21:06. After a quick checkup, she was immediately transferred to emergency care two minutes later. At that time, all of the members of Parliament were informed about her condition. The doctor informed in the worst-case scenario, Iphone-chan's condition might reach life-threatening condition. Such a scenario was mitigated by the fact that Iphone-chan is considered a healthy and good lifestyle, but the possibility is non-zero.
 
