@@ -162,3 +162,21 @@ After much debate over the arrangement of the Northern Cross on the new flag, th
 Interviewing with the Head of the Commission, the Commissioner revealed the reason behind the specific arrangement of the stars and how to duplicate it: "The stars is basically aligned as the standard cross and rotate to match the diagonal line of the 1:2 flag. This arrangement ensures accuracy as well as easy to replicate." In the old flag, the Northern Cross was arranged without accurate numbers to ensure accuracy when replicate, something that the Commission was tasked to fix.
 
 As well as an accurate arrangement, the Commission also changed the design of the stars itself. In the new flag, the stars were replaced with an eight-wing design (with four small wings) and resized to be 20 unit wide. Ctitics pointed out that the stars are too pointy (puns intended) and the enlarged stars take up too much space in the darker background. "I personally believe that the simplicity in the old flag truly stand for Senerian's spirit of minimalismn. I admit the fact that the new flag provides consistency, but dropping the five-wing star is a mistake in term of designing", said our designer, who we choose to interview because it is snowy outside and we don't want to stand in the cold.
+
+# 2024 March Health Crisis
+On March 3, an incident occurred with Senerean's Speaker of the Senate Iphone-chan. After missing a step at her doorway, she fell but no visible injury was found. However, she was found unattentive during the meeting and the dinner after that, to which the Head of State took her to the hospital for a checkup. She was treated and her condition was found to be stable the next morning.
+
+[b]Events[/b]
+At 17:45, Iphone-chan left the house for a briefing meeting when she slipped and fell at her house's doorway. Only the Head of State was there and after checking, they found no injury. Just to be sure, the Head of State offered to give Iphone-chan a bike ride to the briefing instead. The Head of State noticed she was sleepy during the ride.
+
+The briefing lasted for about 45 minutes but Iphone-chan was described as "zoning out" and unattentive. Everybody had to call her many times just to get her attention as well as Iphone-chan saying that she had a headache. Despite that, she insists on accompanying the Head of State to have dinner with the Ironu competition-winning team.
+
+At 19:00, Iphone-chan and the Head of State arrived at the restaurant. She once again was found not focusing on the conversation and kept rubbing her head.
+
+After the dinner, the Head of State decided to take her to non-emergency care. Iphone-chan entered the hospital at 20:49 where she informed Idea-chan about her condition and prepared for power transition if necessary. The protocol that was established since the induced comma of Macbook-chan and prepared for Idea-chan last year now was called up for Iphone-chan.
+
+Iphone-chan met the doctor at 21:06. After a quick checkup, she was immediately transferred to emergency care two minutes later. At that time, all of the members of Parliament were informed about her condition. The doctor informed in the worst-case scenario, Iphone-chan's condition might reach life-threatening condition. Such a scenario was mitigated by the fact that Iphone-chan is considered a healthy and good lifestyle, but the possibility is non-zero.
+
+At 21:20 after 15 minutes of emergency care, Iphone-chan's condition was found stable and fully conscious. Idea-chan took on the responsibility of informing the rest of the country about the status of Iphone-chan while the Head of State summarized the events.
+
+At midnight, Iphone-chan left intensive care. The next morning, she was allowed to leave the hospital with advice to take a short leave.
