@@ -1603,5 +1603,20 @@ let REGISTRY = [
             "x": 88,
             "z": 178
         }
+    },
+    {
+        "id": "V2JR5P",
+        "owner": "LukeNK",
+        "desc": "Convenience store",
+        "road": "VALLEY ave",
+        "province": "EC",
+        "nw": {
+            "x": 137,
+            "z": 17
+        },
+        "se": {
+            "x": 148,
+            "z": 35
+        }
     }
 ]
