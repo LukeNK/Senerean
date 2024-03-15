@@ -1618,5 +1618,20 @@ let REGISTRY = [
             "x": 148,
             "z": 35
         }
+    },
+    {
+        "id": "L8RB9R",
+        "owner": "LukeNK",
+        "desc": "Modern mountain-side apartment complex with 6 rooms",
+        "road": "ITALIAN GAME TRAIL",
+        "province": "EC",
+        "nw": {
+            "x": 116,
+            "z": 49
+        },
+        "se": {
+            "x": 130,
+            "z": 63
+        }
     }
 ]
