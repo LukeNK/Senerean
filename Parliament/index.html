@@ -9,8 +9,15 @@
         margin-bottom: 1rem;
     }
 
+    table {
+        border-spacing: 0;
+        /* border-collapse: separate !important; */
+    }
     td {
         text-align: center;
+    }
+    td:hover {
+        border-width: 0.5rem 0 0.5rem 1rem !important;
     }
 
     section.linkList details[open] { width: 100%; }
@@ -40,61 +47,61 @@
                 <th>Secondary Speaker</th>
             </tr>
             <tr>
-                <td>1st Assembly</td>
+                <th>1st Assembly</th>
                 <td colspan="4">Tablet-chan</td>
             </tr>
             <tr>
-                <td>2nd Assembly</td>
+                <th>2nd Assembly</th>
                 <td colspan="4">Nokia-chan</td>
             </tr>
             <tr>
-                <td>3rd Assembly</td>
+                <th>3rd Assembly</th>
                 <td colspan="4">Ipad-chan</td>
             </tr>
             <tr>
-                <td>4th Assembly</td>
+                <th>4th Assembly</th>
                 <td colspan="2">Ipad-chan</td>
                 <td colspan="2">Macbook-chan</td>
             </tr>
             <tr>
-                <td>1st</td>
+                <th>1st</th>
                 <td rowspan="2" colspan="2">Nokia-chan</td>
                 <td colspan="2">Ipad-chan</td>
             </tr>
             <tr>
-                <td>2nd</td>
+                <th>2nd</td>
                 <td rowspan="7">Laptop-chan</td>
                 <td>Ipad-chan</td>
             </tr>
             <tr>
-                <td>3rd</td>
+                <th>3rd</td>
                 <td>Phone-chan</td>
             </tr>
             <tr>
-                <td>4th</td>
+                <th>4th</td>
                 <td rowspan="7">Iphone-chan</td>
             </tr>
             <tr>
-                <td>5th</td>
+                <th>5th</td>
                 <td rowspan="2">Macbook-chan</td>
             </tr>
             <tr>
-                <td>6th</td>
+                <th>6th</td>
                 <td rowspan="4">Pi-chan</td>
             </tr>
             <tr>
-                <td>7th</td>
+                <th>7th</td>
             </tr>
             <tr>
-                <td>8th</td>
-                <td rowspan="3">Idea-chan</td>
+                <th>8th</td>
+                <td>Idea-chan</td>
             </tr>
             <tr>
-                <td>9th</td>
-                <td rowspan="2">Idea-chan</td>
+                <th>9th</td>
+                <td rowspan="2" colspan="2">Idea-chan</td>
             </tr>
             <tr>
-                <td>10th</td>
+                <th>10th</td>
             </tr>
         </table>
 
@@ -160,10 +167,12 @@
     document.querySelectorAll('td').forEach(elm => {
         // elm.style.backgroundColor = SpeakerColors[elm.innerHTML];
         if (SpeakerColors[elm.innerHTML]) {
+            let color = SpeakerColors[elm.innerHTML];
             // elm.innerHTML = '';
-            elm.style.borderLeftWidth = '1rem'
+            elm.style.borderWidth = '1px 1px 1px 1rem'
             elm.style.borderLeftStyle = 'solid'
-            elm.style.borderLeftColor = SpeakerColors[elm.innerHTML]
+            elm.style.borderLeftColor = color
+            // elm.style.backgroundColor = color + '90'
         }
     })
 
