@@ -1412,7 +1412,7 @@ let REGISTRY = [
     {
         "id": "2024SQ",
         "owner": "LukeNK",
-        "desc": "Shopping market square with a 2024 sign and sea lanterns as visual stars.",
+        "desc": "Shopping market square with a 2024 sign.",
         "road": "BEEHIVE ave",
         "province": "EC",
         "nw": {
@@ -1632,6 +1632,21 @@ let REGISTRY = [
         "se": {
             "x": 130,
             "z": 63
+        }
+    },
+    {
+        "id": "BASILH",
+        "owner": "LukeNK",
+        "desc": "Based on OMORI's BASIL's HEADSPACE house. The entrance is technically on the connection between Natsak ave and Highland st.",
+        "road": "NATSAK ave",
+        "province": "EC",
+        "nw": {
+            "x": 31,
+            "z": 116
+        },
+        "se": {
+            "x": 49,
+            "z": 124
         }
     }
 ]
