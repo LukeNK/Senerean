@@ -1648,5 +1648,20 @@ let REGISTRY = [
             "x": 49,
             "z": 124
         }
+    },
+    {
+        "id": "PANDAA",
+        "owner": "LukeNK",
+        "desc": "Panda enclosure",
+        "road": "NATSAK ave",
+        "province": "EC",
+        "nw": {
+            "x": 31,
+            "z": 124
+        },
+        "se": {
+            "x": 49,
+            "z": 149
+        }
     }
 ]
