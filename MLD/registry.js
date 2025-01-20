@@ -1663,5 +1663,20 @@ let REGISTRY = [
             "x": 49,
             "z": 149
         }
+    },
+    {
+        "id": "WINDMI",
+        "owner": "LukeNK",
+        "desc": "Windmill",
+        "road": "N SEACLIFF ave",
+        "province": "EC",
+        "nw": {
+            "x": 62,
+            "z": -45
+        },
+        "se": {
+            "x": 72,
+            "z": -36
+        }
     }
 ]
