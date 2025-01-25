@@ -78,7 +78,7 @@ let REGISTRY = [
         "id": "BEN004",
         "owner": "BenPo",
         "desc": "2023 sign lookout",
-        "road": "UPHILL st",
+        "road": "BEEHIVE ave",
         "province": "EC",
         "nw": {
             "x": 72,
