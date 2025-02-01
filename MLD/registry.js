@@ -1678,5 +1678,20 @@ let REGISTRY = [
             "x": 72,
             "z": -36
         }
+    },
+    {
+        "id": "B65PLT",
+        "owner": "LukeNK",
+        "desc": "Apartment with 3 floors. House for representatives of Senerean, Nenerean, and Cute Femboi.",
+        "road": "HIGHLAND st",
+        "province": "EC",
+        "nw": {
+            "x": -3,
+            "z": 125
+        },
+        "se": {
+            "x": 22,
+            "z": 139
+        }
     }
 ]
