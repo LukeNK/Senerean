@@ -1693,5 +1693,20 @@ let REGISTRY = [
             "x": 22,
             "z": 139
         }
+    },
+    {
+        "id": "CAT2ST",
+        "owner": "Senerean",
+        "desc": "Cat II street model",
+        "road": "N UPHILL st",
+        "province": "EC",
+        "nw": {
+            "x": 246,
+            "z": 109
+        },
+        "se": {
+            "x": 286,
+            "z": 138
+        }
     }
 ]
