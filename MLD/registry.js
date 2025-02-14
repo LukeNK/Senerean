@@ -1708,5 +1708,20 @@ let REGISTRY = [
             "x": 286,
             "z": 138
         }
+    },
+    {
+        "id": "C1TEST",
+        "owner": "Senerean",
+        "desc": "CAT I test facility",
+        "road": "N UPHILL st",
+        "province": "EC",
+        "nw": {
+            "x": 258,
+            "z": 38
+        },
+        "se": {
+            "x": 289,
+            "z": 103
+        }
     }
 ]
