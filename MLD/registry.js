@@ -1712,7 +1712,7 @@ let REGISTRY = [
     {
         "id": "C1TEST",
         "owner": "Senerean",
-        "desc": "CAT I test facility",
+        "desc": "CAT I road test facility",
         "road": "N UPHILL st",
         "province": "EC",
         "nw": {
@@ -1722,6 +1722,21 @@ let REGISTRY = [
         "se": {
             "x": 289,
             "z": 103
+        }
+    },
+    {
+        "id": "VERTRA",
+        "owner": "Senerean",
+        "desc": "Server version tracker building with The Book Of Version Tracker",
+        "road": "2023 ave",
+        "province": "EC",
+        "nw": {
+            "x": 78,
+            "z": 126
+        },
+        "se": {
+            "x": 95,
+            "z": 143
         }
     }
 ]
