@@ -1738,5 +1738,20 @@ let REGISTRY = [
             "x": 95,
             "z": 143
         }
+    },
+    {
+        "id": "L8XT9C",
+        "owner": "LukeNK",
+        "desc": "Small house blueprint complex, shared entrance with CAT2ST",
+        "road": "N UPHILL st",
+        "province": "EC",
+        "nw": {
+            "x": 249,
+            "z": 139
+        },
+        "se": {
+            "x": 285,
+            "z": 161
+        }
     }
 ]
