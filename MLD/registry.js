@@ -1755,9 +1755,9 @@ let REGISTRY = [
         }
     },
     {
-        "id": "SAKHOT",
+        "id": "SAKURA",
         "owner": "LukeNK",
-        "desc": "Sakura hotel",
+        "desc": "Sakura-theme motel with rooftop camping site",
         "road": "SUGAR SHORE ave",
         "province": "EC",
         "nw": {
