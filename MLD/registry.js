@@ -1753,5 +1753,20 @@ let REGISTRY = [
             "x": 285,
             "z": 161
         }
+    },
+    {
+        "id": "SAKHOT",
+        "owner": "LukeNK",
+        "desc": "Sakura hotel",
+        "road": "SUGAR SHORE ave",
+        "province": "EC",
+        "nw": {
+            "x": 158,
+            "z": -17
+        },
+        "se": {
+            "x": 286,
+            "z": 11
+        }
     }
 ]
