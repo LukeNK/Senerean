@@ -16,9 +16,6 @@
     td {
         text-align: center;
     }
-    td:hover {
-        border-width: 0.5rem 0 0.5rem 1rem !important;
-    }
 
     section.linkList details[open] { width: 100%; }
 </style>
@@ -65,8 +62,10 @@
             </tr>
             <tr>
                 <th>1st</th>
-                <td rowspan="2" colspan="2">Nokia-chan</td>
-                <td colspan="2">Ipad-chan</td>
+                <td rowspan="2">Nokia-chan</td>
+                <td rowspan="4"></td>
+                <td>Ipad-chan</td>
+                <td></td>
             </tr>
             <tr>
                 <th>2nd</td>
@@ -94,21 +93,33 @@
             </tr>
             <tr>
                 <th>8th</td>
-                <td>Idea-chan</td>
+                <td rowspan="2">Idea-chan</td>
             </tr>
             <tr>
                 <th>9th</td>
-                <td colspan="2">Idea-chan</td>
+                <td rowspan="6">Idea-chan</td>
             </tr>
             <tr>
                 <th>10th</td>
-                <td colspan="2" rowspan="2">Iphone-chan</td>
-                <td colspan="2">Idea-chan</td>
+                <td rowspan="2">Iphone-chan</td>
+                <td rowspan="3"></td>
             </tr>
             <tr>
-                <th>11th</th>
+                <th>5th Assembly</th>
                 <td>Phone-kun</td>
-                <td>Idea-chan</td>
+            </tr>
+            <tr>
+                <th>6th Assembly</th>
+                <td rowspan="3">Phone-kun</td>
+                <td>Pi-chan</td>
+            </tr>
+            <tr>
+                <th>7th Assembly</th>
+                <td rowspan="2">Iphone-chan</td>
+            </tr>
+            <tr>
+                <th>8th Assembly</th>
+                <td>Galaxy-kun</td>
             </tr>
         </table>
 
@@ -148,11 +159,15 @@
             </details>
             <details>
                 <summary>Idea-chan</summary>
-                <p>As a newest member of Parliament Speaker, her contribution is still under the test of time. However, her modern contribution is priceless and she was trusted with following Iphone-chan trips to deal with external matters, but can also handle internal matters with ease. She also helped Laptop-chan during this time to reduce Laptop-chan's workload. Idea-chan got a heat shock and was found unconcious after 3 hours of searching; the nation was in devastation during the March crisis until the doctors were able to wake her up from the comma. She quickly take over the position of Laptop-chan during the summer 2023.</p>
+                <p>Her modern contribution is priceless and she was trusted with following Iphone-chan trips to deal with external matters, but can also handle internal matters with ease. She also helped Laptop-chan during this time to reduce Laptop-chan's workload. Idea-chan got a heat shock and was found unconcious after 3 hours of searching; the nation was in devastation during the March crisis until the doctors were able to wake her up from the comma. She quickly take over the position of Laptop-chan during the summer 2023.</p>
             </details>
             <details>
                 <summary>Phone-kun</summary>
-                <p>Phone-chan's twin brother.</p>
+                <p>Phone-chan's twin brother. Taking the office during the Government Reform, he had to handle many unprecedented tasks and challenges</p>
+            </details>
+            <details>
+                <summary>Galaxy-kun</summary>
+                <p>Galaxy-kun takes the office on 2025-06-15, also marking the second phase of the Government Reform.</p>
             </details>
         </section>
 
@@ -165,6 +180,7 @@
 <script>
     // Speakers' colors
     let SpeakerColors = {
+        'Galaxy-kun': '#7785bf',
         'Idea-chan': '#FF55CC',
         'Ipad-chan': '#50FF50',
         'Iphone-chan': '#FFFFAA',
@@ -174,7 +190,7 @@
         'Phone-chan': '#FFB040',
         'Phone-kun': '#736f92',
         'Pi-chan': '#FF5555',
-        'Tablet-chan': '#0044AA'
+        'Tablet-chan': '#788eeb'
     }
     document.querySelectorAll('td').forEach(elm => {
         // elm.style.backgroundColor = SpeakerColors[elm.innerHTML];
