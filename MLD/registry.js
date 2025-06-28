@@ -1798,5 +1798,20 @@ let REGISTRY = [
             "x": 132,
             "z": 174
         }
+    },
+    {
+        "id": "POLICE",
+        "owner": "Senerean",
+        "desc": "Police station with",
+        "road": "S UPHILL st",
+        "province": "EC",
+        "nw": {
+            "x": 81,
+            "z": 184
+        },
+        "se": {
+            "x": 100,
+            "z": 203
+        }
     }
 ]
