@@ -1813,5 +1813,20 @@ let REGISTRY = [
             "x": 100,
             "z": 203
         }
+    },
+    {
+        "id": "216318",
+        "owner": "JennieNK",
+        "desc": "Farm with a ranch",
+        "road": "S UPHILL SET",
+        "province": "EC",
+        "nw": {
+            "x": 141,
+            "z": 116
+        },
+        "se": {
+            "x": 161,
+            "z": 134
+        }
     }
 ]
