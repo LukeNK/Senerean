@@ -1802,7 +1802,7 @@ let REGISTRY = [
     {
         "id": "POLICE",
         "owner": "Senerean",
-        "desc": "Police station with",
+        "desc": "Police station with parking lot",
         "road": "S UPHILL st",
         "province": "EC",
         "nw": {
