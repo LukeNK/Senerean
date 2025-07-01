@@ -1828,5 +1828,20 @@ let REGISTRY = [
             "x": 161,
             "z": 134
         }
+    },
+    {
+        "id": "K7PE8G",
+        "owner": "JennieNK",
+        "desc": "Modern gymnasium",
+        "road": "VALLEY ave",
+        "province": "EC",
+        "nw": {
+            "x": -42,
+            "z": -83
+        },
+        "se": {
+            "x": -15,
+            "z": -54
+        }
     }
 ]
