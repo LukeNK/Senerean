@@ -1720,5 +1720,47 @@ let REGISTRY = [
             "x": -15,
             "z": -54
         }
+    },
+    {
+        "id": "VENERY",
+        "owner": "Senerean",
+        "desc": "Parking lot for Venery park",
+        "road": "SEKAI st",
+        "nw": {
+            "x": -76,
+            "z": 234
+        },
+        "se": {
+            "x": -58,
+            "z": 251
+        }
+    },
+    {
+        "id": "Y2XB9Y",
+        "owner": "LukeNK",
+        "desc": "Campsite in Venery park",
+        "road": "SEKAI st",
+        "nw": {
+            "x": -76,
+            "z": 306
+        },
+        "se": {
+            "x": -70,
+            "z": 317
+        }
+    },
+    {
+        "id": "M2LD1C",
+        "owner": "JennieNK",
+        "desc": "Tent and camping site",
+        "road": "SEKAI st",
+        "nw": {
+            "x": -89,
+            "z": 307
+        },
+        "se": {
+            "x": -78,
+            "z": 324
+        }
     }
 ]
