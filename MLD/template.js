@@ -3,8 +3,8 @@ const TEMPLATE = {
     owner: 'The name of the current owner',
     desc: 'Breif summary of the build',
     road: "Road base on main entrance, not include house number (you don't have it anyways)",
-    province: "Administrative province",
-    chunks: 'Empty space to signify for the script to save dimension and cord'
+    nw: 'North west-most block',
+    se: 'South east-most block'
 }
 
 // list of road type
@@ -14,5 +14,5 @@ const ROAD_TYPE = [
 ]
 
 // characters permitted for ID
-const ALLOW_CHAR = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+const ALLOW_CHAR = 'BCDFGHJKLMNPQRSTVWXYZ',
     ALLOW_NUM = '0123456789';

@@ -11,38 +11,9 @@
 </style>
 <body>
     <header html-src="../website/header.html"></header>
-    <form onsubmit="return false">
-        <label>
-            <p>ID of the build, type a dot "." to auto-generate (think it as number plate for builds)</p>
-            <input id="id" type="text" maxlength="6">
-        </label>
-        <label>
-            <p>The name of the current owner</p>
-            <input id="owner" type="text">
-        </label>
-        <label>
-            <p>Breif summary of the build</p>
-            <input id="desc" type="text">
-        </label>
-        <label>
-            <p>Road base on main entrance, not include house number (you don't have it anyways)</p>
-            <input id="road" type="text">
-        </label>
-        <label>
-            <p>The administrative province/cluster</p>
-            <input id="province" type="text">
-        </label>
-        <label>
-            <p>North west-most block</p>
-            <input id="nw" type="text">
-        </label>
-        <label>
-            <p>South east-most block</p>
-            <input id="se" type="text">
-        </label>
-        <button onclick="add()">Print registry</button>
-        <button onclick="add(1)">Download registry</button>
-    </form>
+    <form onsubmit="return false"></form>
+    <button onclick="add()">Print registry</button>
+    <button onclick="add(1)">Download registry</button>
     <textarea id="out">Sorry for such manual tedious way</textarea>
     <footer html-src="../website/footer.html"></footer>
 </body>
@@ -51,23 +22,26 @@
 <script src="./template.js"></script>
 <script src="./registry.js"></script>
 <script>
+    let formElement = document.querySelector('form');
+    for (let field in TEMPLATE) {
+        let label = document.createElement('label');
+        label.innerHTML =
+            `<p>${TEMPLATE[field]}</p><input id="${field}" type="text">`;
+        formElement.appendChild(label);
+    }
+
     function add(download) {
         let cur = {...TEMPLATE};
-        delete cur.chunks; // still leave chunks for the script to run to get the coord
         for (const l1 in TEMPLATE) {
-            if (l1 == 'chunks') {
-                // get cord and split
-                let l = document.getElementById('nw').value;
-                let r = document.getElementById('se').value;
-                l = l.replace(' ', '').split(',');
-                r = r.replace(' ', '').split(',');
-                // convert to number
-                l[0] = parseInt(l[0]);
-                l[1] = parseInt(l[1]);
-                r[0] = parseInt(r[0]);
-                r[1] = parseInt(r[1]);
-                cur.nw = { x: l[0], z: l[1]};
-                cur.se = { x: r[0], z: r[1]};
+            if (l1 == 'nw' || l1 == 'se') {
+                // get coord and parse
+                let coord = document.getElementById(l1).value
+                    .replaceAll(' ', '')
+                    .split(',');
+                cur[l1] = {
+                    x: parseInt(coord[0]),
+                    z: parseInt(coord[1])
+                };
             } else
                 cur[l1] = document.getElementById(l1).value;
 
@@ -75,8 +49,8 @@
                 if (cur.id == '.') {
                     // if user ask for random-generated
                     cur.id = '';
-                    // at second and fifth position, use number instead of letter
                     for (let l1 = 0; l1 < 6; l1++)
+                        // at 2nd, 5th, and 7th position, use number instead of letter
                         if ([1, 4].includes(l1))
                             cur.id += ALLOW_NUM[Math.floor(Math.random() * ALLOW_NUM.length)]
                         else
@@ -106,8 +80,13 @@
             link.download = "registry.js";
             link.click();
             URL.revokeObjectURL(link.href);
-        } else
-            document.getElementById('out').innerHTML = reg; // just in case of misclick
+        } else {
+            let out = document.getElementById('out');
+            out.innerHTML = reg; // just in case of misclick
+            out.style.height = '100vh';
+            out.scrollTop = out.scrollHeight;
+            out.scrollIntoView()
+        }
     }
 
     function _convertToChunk() {
