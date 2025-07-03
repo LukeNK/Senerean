@@ -11,6 +11,7 @@ const TEMPLATE = {
 const ROAD_TYPE = [
     'st',
     'ave',
+    'trail'
 ]
 
 // characters permitted for ID

@@ -1515,7 +1515,7 @@ let REGISTRY = [
         "id": "L8RB9R",
         "owner": "LukeNK",
         "desc": "Modern mountain-side apartment complex with 6 rooms",
-        "road": "ITALIAN GAME TRAIL",
+        "road": "ITALIAN GAME trail",
         "nw": {
             "x": 116,
             "z": 49
