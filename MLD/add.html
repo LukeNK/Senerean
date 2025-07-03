@@ -42,6 +42,10 @@
                     x: parseInt(coord[0]),
                     z: parseInt(coord[1])
                 };
+
+                if (l1 == 'nw') return; // wait for se to be filled
+                if (cur.se.x < cur.nw.x || cur.se.z < cur.nw.z)
+                    return alert('Invalid coordinates');
             } else
                 cur[l1] = document.getElementById(l1).value;
 
