@@ -1762,5 +1762,19 @@ let REGISTRY = [
             "x": -78,
             "z": 324
         }
+    },
+    {
+        "id": "X3MH5B",
+        "owner": "Senerean",
+        "desc": "Hockey rink",
+        "road": "",
+        "nw": {
+            "x": 297,
+            "z": -48
+        },
+        "se": {
+            "x": 338,
+            "z": 11
+        }
     }
 ]
