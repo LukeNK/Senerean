@@ -1776,5 +1776,33 @@ let REGISTRY = [
             "x": 338,
             "z": 11
         }
+    },
+    {
+        "id": "B4KD9Q",
+        "owner": "JennieNK",
+        "desc": "Wooden house (for sale)",
+        "road": "MYRTLE st",
+        "nw": {
+            "x": 236,
+            "z": 24
+        },
+        "se": {
+            "x": 240,
+            "z": 28
+        }
+    },
+    {
+        "id": "MLDPLN",
+        "owner": "Senerean",
+        "desc": "MLD urban planning office with 2 floors",
+        "road": "SUGAR SHORE ave",
+        "nw": {
+            "x": 232,
+            "z": 23
+        },
+        "se": {
+            "x": 253,
+            "z": 41
+        }
     }
 ]
