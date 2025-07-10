@@ -1804,5 +1804,19 @@ let REGISTRY = [
             "x": 253,
             "z": 41
         }
+    },
+    {
+        "id": "C9DF1H",
+        "owner": "Senerean",
+        "desc": "Nether portal with watch towers and a square in front of it",
+        "road": "S UPHILL st",
+        "nw": {
+            "x": 117,
+            "z": 109
+        },
+        "se": {
+            "x": 133,
+            "z": 132
+        }
     }
 ]
