@@ -1818,5 +1818,19 @@ let REGISTRY = [
             "x": 133,
             "z": 132
         }
+    },
+    {
+        "id": "Y4QD3R",
+        "owner": "JennieNK",
+        "desc": "Ice cream shop with seats on the top",
+        "road": "2023 ave",
+        "nw": {
+            "x": 100,
+            "z": 128
+        },
+        "se": {
+            "x": 112,
+            "z": 148
+        }
     }
 ]
