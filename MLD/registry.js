@@ -1832,5 +1832,33 @@ let REGISTRY = [
             "x": 112,
             "z": 148
         }
+    },
+    {
+        "id": "Y6GL0X",
+        "owner": "Senerean",
+        "desc": "Running track with football goals",
+        "road": "MYRTLE st",
+        "nw": {
+            "x": 298,
+            "z": 23
+        },
+        "se": {
+            "x": 356,
+            "z": 106
+        }
+    },
+    {
+        "id": "K2ZC2M",
+        "owner": "Senerean",
+        "desc": "Shooting range",
+        "road": "MYRTLE st",
+        "nw": {
+            "x": 357,
+            "z": 23
+        },
+        "se": {
+            "x": 383,
+            "z": 114
+        }
     }
 ]
