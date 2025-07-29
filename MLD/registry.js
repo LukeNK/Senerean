@@ -1874,5 +1874,19 @@ let REGISTRY = [
             "x": 341,
             "z": -99
         }
+    },
+    {
+        "id": "X0BS5P",
+        "owner": "JennieNK",
+        "desc": "Emerald house",
+        "road": "SUGAR SHORE ave",
+        "nw": {
+            "x": 241,
+            "z": -3
+        },
+        "se": {
+            "x": 256,
+            "z": 10
+        }
     }
 ]
