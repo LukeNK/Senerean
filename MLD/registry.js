@@ -1902,5 +1902,19 @@ let REGISTRY = [
             "x": 421,
             "z": 18
         }
+    },
+    {
+        "id": "P7HS9Z",
+        "owner": "JennieNK",
+        "desc": "Underground secret base",
+        "road": "SUGAR SHORE ave",
+        "nw": {
+            "x": 247,
+            "z": -14
+        },
+        "se": {
+            "x": 255,
+            "z": -8
+        }
     }
 ]
