@@ -1888,5 +1888,19 @@ let REGISTRY = [
             "x": 256,
             "z": 10
         }
+    },
+    {
+        "id": "UMAMSM",
+        "owner": "LukeNK",
+        "desc": "Horse racing track",
+        "road": "SANY ave",
+        "nw": {
+            "x": 346,
+            "z": -200
+        },
+        "se": {
+            "x": 421,
+            "z": 18
+        }
     }
 ]
