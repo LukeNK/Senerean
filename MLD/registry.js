@@ -1865,7 +1865,7 @@ let REGISTRY = [
         "id": "124318",
         "owner": "JennieNK",
         "desc": "2025 square with a water park and a treehouse in the middle",
-        "road": "",
+        "road": "SANY ave",
         "nw": {
             "x": 304,
             "z": -88
