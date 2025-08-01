@@ -1916,5 +1916,19 @@ let REGISTRY = [
             "x": 255,
             "z": -8
         }
+    },
+    {
+        "id": "F4JP8D",
+        "owner": "JennieNK",
+        "desc": "Statue of Jennie",
+        "road": "2023 ave",
+        "nw": {
+            "x": 104,
+            "z": 113
+        },
+        "se": {
+            "x": 115,
+            "z": 129
+        }
     }
 ]

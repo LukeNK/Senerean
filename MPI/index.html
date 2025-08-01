@@ -5,6 +5,14 @@
         white-space: pre-line;
     }
 
+    #funfacts {
+        border: 1px solid var(--color-dark-theme);
+        padding: 1rem;
+    }
+    #funfacts b {
+        font-size: larger;
+    }
+
     details {
         margin-bottom: 1rem;
     }
@@ -23,6 +31,8 @@
 <body>
     <header html-src="../website/header.html"></header>
     <main>
+        <p id="funfacts"><b>Senerean fun facts!</b><br></p>
+
         <h1>Senerean entities</h1>
         <p>Unless stated otherwise, the lists were sorted by alphabetical order. Please use <code>ctrl+f</code> to search</p>
 
@@ -287,4 +297,12 @@
         }
         setId = false;
     }
+
+    fetch('fun-facts.txt')
+    .then(data => data.text())
+    .then(data => {
+        data = data.split('\n')
+        document.getElementById('funfacts').innerHTML +=
+            data[ Math.floor(Math.random() * data.length) ];
+    })
 </script>
