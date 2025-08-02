@@ -1930,5 +1930,19 @@ let REGISTRY = [
             "x": 115,
             "z": 129
         }
+    },
+    {
+        "id": "R9VR0Z",
+        "owner": "Senerean",
+        "desc": "Small one-runwau testing airport",
+        "road": "S UPHILL st",
+        "nw": {
+            "x": -335,
+            "z": 233
+        },
+        "se": {
+            "x": -217,
+            "z": 261
+        }
     }
 ]
