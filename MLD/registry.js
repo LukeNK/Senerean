@@ -1937,12 +1937,12 @@ let REGISTRY = [
         "desc": "Small one-runwau testing airport",
         "road": "S UPHILL st",
         "nw": {
-            "x": -335,
-            "z": 233
+            "x": -336,
+            "z": 234
         },
         "se": {
-            "x": -217,
-            "z": 261
+            "x": -202,
+            "z": 268
         }
     }
 ]
