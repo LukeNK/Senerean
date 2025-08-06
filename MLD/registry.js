@@ -1934,7 +1934,7 @@ let REGISTRY = [
     {
         "id": "R9VR0Z",
         "owner": "Senerean",
-        "desc": "Small one-runwau testing airport",
+        "desc": "Small one-runway elytra testing airport",
         "road": "S UPHILL st",
         "nw": {
             "x": -336,
@@ -1943,6 +1943,20 @@ let REGISTRY = [
         "se": {
             "x": -202,
             "z": 268
+        }
+    },
+    {
+        "id": "X1ZP4W",
+        "owner": "JennieNK",
+        "desc": "Indoor pet park",
+        "road": "SANY ave",
+        "nw": {
+            "x": 301,
+            "z": -132
+        },
+        "se": {
+            "x": 341,
+            "z": -92
         }
     }
 ]
