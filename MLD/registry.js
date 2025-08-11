@@ -1958,5 +1958,47 @@ let REGISTRY = [
             "x": 341,
             "z": -92
         }
+    },
+    {
+        "id": "SCSSLR",
+        "owner": "LukeNK",
+        "desc": "Senerean Cartography Society - Snowy Land Region",
+        "road": "STRAWBERRY ave",
+        "nw": {
+            "x": -1642,
+            "z": -1829
+        },
+        "se": {
+            "x": -1630,
+            "z": -1813
+        }
+    },
+    {
+        "id": "Q8CV0X",
+        "owner": "JennieNK",
+        "desc": "Modern house",
+        "road": "STRAWBERRY ave",
+        "nw": {
+            "x": -1636,
+            "z": -1724
+        },
+        "se": {
+            "x": -1629,
+            "z": -1712
+        }
+    },
+    {
+        "id": "S6LZ0M",
+        "owner": "JennieNK",
+        "desc": "Police station",
+        "road": "STRAWBERRY ave",
+        "nw": {
+            "x": -1634,
+            "z": -1701
+        },
+        "se": {
+            "x": -1625,
+            "z": -1685
+        }
     }
 ]
