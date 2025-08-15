@@ -2000,5 +2000,33 @@ let REGISTRY = [
             "x": -1625,
             "z": -1685
         }
+    },
+    {
+        "id": "N4KB7H",
+        "owner": "Senerean",
+        "desc": "Automatic water farm",
+        "road": "",
+        "nw": {
+            "x": -1529,
+            "z": -1849
+        },
+        "se": {
+            "x": -1500,
+            "z": -1819
+        }
+    },
+    {
+        "id": "J3KT9R",
+        "owner": "Senerean",
+        "desc": "Automatic sugar cane farm",
+        "road": "",
+        "nw": {
+            "x": -1528,
+            "z": -1836
+        },
+        "se": {
+            "x": -1520,
+            "z": -1830
+        }
     }
 ]
