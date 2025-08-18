@@ -2042,5 +2042,19 @@ let REGISTRY = [
             "x": -1205,
             "z": -1506
         }
+    },
+    {
+        "id": "C4DC9G",
+        "owner": "Senerean",
+        "desc": "Snowy Land - Ninoarura tunnel building facility",
+        "road": "",
+        "nw": {
+            "x": -1235,
+            "z": -1596
+        },
+        "se": {
+            "x": -1184,
+            "z": -1528
+        }
     }
 ]
