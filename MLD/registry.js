@@ -2056,5 +2056,19 @@ let REGISTRY = [
             "x": -1184,
             "z": -1528
         }
+    },
+    {
+        "id": "C2LD3S",
+        "owner": "Senerean",
+        "desc": "School with 7 classes",
+        "road": "",
+        "nw": {
+            "x": -1691,
+            "z": -1842
+        },
+        "se": {
+            "x": -1668,
+            "z": 1809
+        }
     }
 ]
