@@ -2070,5 +2070,19 @@ let REGISTRY = [
             "x": -1668,
             "z": 1809
         }
+    },
+    {
+        "id": "X9SV0G",
+        "owner": "LukeNK",
+        "desc": "Amphitheater",
+        "road": "S UPHILL st",
+        "nw": {
+            "x": 165,
+            "z": 92
+        },
+        "se": {
+            "x": 181,
+            "z": 108
+        }
     }
 ]
