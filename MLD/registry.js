@@ -2084,5 +2084,33 @@ let REGISTRY = [
             "x": 181,
             "z": 108
         }
+    },
+    {
+        "id": "SNR150",
+        "owner": "JennieNK",
+        "desc": "Hotel with 6 floors",
+        "road": "UPHILL st",
+        "nw": {
+            "x": -1673,
+            "z": -1686
+        },
+        "se": {
+            "x": -1657,
+            "z": -1670
+        }
+    },
+    {
+        "id": "C5PH5N",
+        "owner": "Senerean",
+        "desc": "Redstone research office",
+        "road": "UPHILL st",
+        "nw": {
+            "x": 141,
+            "z": 83
+        },
+        "se": {
+            "x": 157,
+            "z": 99
+        }
     }
 ]
