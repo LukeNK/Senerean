@@ -2112,5 +2112,19 @@ let REGISTRY = [
             "x": 157,
             "z": 99
         }
+    },
+    {
+        "id": "V9ZB3D",
+        "owner": "Senerean",
+        "desc": "Park with a stage and underground effect control",
+        "road": "VALLEY ave",
+        "nw": {
+            "x": -138,
+            "z": -115
+        },
+        "se": {
+            "x": -59,
+            "z": -57
+        }
     }
 ]
