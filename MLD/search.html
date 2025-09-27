@@ -58,8 +58,8 @@
                 else if (typeof(build[prop]) == "object") 'pass'; // to prevent objects being log
                 else if (prop != 'id') res += `${prop}: ${build[prop]}<br>`;
             }
-            result.innerHTML += 
-                `<div class="build">
+            result.innerHTML +=
+                `<div class="build" onclick="copyToClipboard(${build.nw.x}, ${build.nw.z})">
                     <b>${build.id}</b>
                     <p>${res}</p>
                 </div>`;
@@ -67,4 +67,11 @@
         document.getElementById('searchInfo').innerHTML = builds.length;
     }
     runSearch(true); // run first time to get all results
+
+    // copy coordinates to clipboard as minecraft command
+    function copyToClipboard(x, z) {
+        navigator.clipboard.writeText(`/tp ${x} ${z} 150`);
+        alert(`Copied to clipboard: ${x} ${z} 150`);
+    }
+
 </script>
