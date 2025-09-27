@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<head html-src="../website/head.html"></head>
+---
+layout: default
+---
 <style>
     form {
         padding: auto 1rem;
@@ -9,15 +10,12 @@
         width: 80%;
     }
 </style>
-<body>
-    <header html-src="../website/header.html"></header>
-    <form onsubmit="return false"></form>
-    <button onclick="add()">Print registry</button>
-    <button onclick="add(1)">Download registry</button>
-    <textarea id="out">Sorry for such manual tedious way</textarea>
-    <footer html-src="../website/footer.html"></footer>
-</body>
-<script src="../website/scripts.js"></script>
+
+<form onsubmit="return false"></form>
+<button onclick="add()">Print registry</button>
+<button onclick="add(1)">Download registry</button>
+<textarea id="out">Sorry for such manual tedious way</textarea>
+
 <script src="./scripts.js"></script>
 <script src="./template.js"></script>
 <script src="./registry.js"></script>

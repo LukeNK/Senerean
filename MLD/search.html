@@ -1,38 +1,31 @@
-<!DOCTYPE html>
-<head html-src="../website/head.html">
-    <style>
-        code {
-            background-color: #333;
-            color: crimson;
-        }
+---
+layout: default
+---
+<style>
+    code {
+        background-color: #333;
+        color: crimson;
+    }
 
-        #searchBar {
-            margin: 0 1rem;
-        }
+    #searchBar {
+        margin: 0 1rem;
+    }
 
-        .build p {
-            margin-top: 0;
-            margin-left: 40px;
-        }
-        .build b {
-            color: var(--color-dark-theme);
-        }
-    </style>
-</head>
-<body>
-    <header html-src="../website/header.html"></header>
-    <main>
-        <p>Search using name, description, exact match of the owner's name, or <code>[x],[z]</code> format for coordinate</p>
-        <label>
-            Search
-            <input id="searchBar" oninput="runSearch()">
-        </label>
-        <p>Found <span id="searchInfo"></span> result(s)</p>
-        <div id="result"></div>
-    </main>
-    <footer html-src="../website/footer.html"></footer>
-</body>
-<script src="../website/scripts.js"></script>
+    .build p {
+        margin-top: 0;
+        margin-left: 40px;
+    }
+    .build b {
+        color: var(--color-dark-theme);
+    }
+</style>
+<p>Search using name, description, exact match of the owner's name, or <code>[x],[z]</code> format for coordinate</p>
+<label>
+    Search
+    <input id="searchBar" oninput="runSearch()">
+</label>
+<p>Found <span id="searchInfo"></span> result(s)</p>
+<div id="result"></div>
 <script src="./registry.js"></script>
 <script src="./scripts.js"></script>
 <script>

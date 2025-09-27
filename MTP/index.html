@@ -1,237 +1,228 @@
-<!DOCTYPE html>
-<head html-src="../website/head.html">
-    <style>
-        code, p {
-            white-space: pre-line;
-        }
+---
+layout: default
+---
+<style>
+    code, p {
+        white-space: pre-line;
+    }
 
-        /* Minecraft visualizer */
-        [mcVisual] {
-            /* Visual config */
-            --std-length: 5rem; /* Standard side length of a block */
-            font-size: 14px;
-        }
+    /* Minecraft visualizer */
+    [mcVisual] {
+        /* Visual config */
+        --std-length: 5rem; /* Standard side length of a block */
+        font-size: 14px;
+    }
 
-        div[mcVisual] {
-            overflow-x: auto;
-        }
-        div[mcVisual] table {
-            table-layout: fixed;
-            width: var(--std-length);
-        }
-        div[mcVisual] td {
-            border: 0 none transparent;
-            width: var(--std-length);
-            height: calc(var(--std-length) / 2);
-            background-size: cover;
-            text-align: center;
-        }
-        div[mcVisual="top"] td {
-            height: var(--std-length);
-        }
+    div[mcVisual] {
+        overflow-x: auto;
+    }
+    div[mcVisual] table {
+        table-layout: fixed;
+        width: var(--std-length);
+    }
+    div[mcVisual] td {
+        border: 0 none transparent;
+        width: var(--std-length);
+        height: calc(var(--std-length) / 2);
+        background-size: cover;
+        text-align: center;
+    }
+    div[mcVisual="top"] td {
+        height: var(--std-length);
+    }
 
-        /* Texture from https://minecraft.fandom.com/wiki/List_of_block_textures */
-        .blackstone {
-            background-color: black;
-            background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075496364022181978/blackstone.png);
-            color: white;
-        }
-        .stone_brick {
-            background-color: gray;
-            background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075495651854520320/stone_brick.png);
-        }
-        .smooth_stone {
-            background-color: lightgray;
-            background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075497637941362699/smooth_stone.png);
-        }
-        .quartz {
-            background-color: antiquewhite;
-            background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075496942504779926/quartz.png);
-        }
-        .rail {
-            background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075651328786837544/rail.png);
-        }
-        .yellow_carpet, .yellow_wool {
-            background-color: yellow;
-            background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075651328581324860/yellow_carpet.png);
-        }
-    </style>
-</head>
-<body>
-    <header html-src="../website/header.html"></header>
-    <div class="welcome">
-        <img src="https://cdn.discordapp.com/attachments/735675482246479904/1079672619005124669/2023-02-26_23.38.37.png">
-        <h1>Ministry of Transportation</h1>
+    /* Texture from https://minecraft.fandom.com/wiki/List_of_block_textures */
+    .blackstone {
+        background-color: black;
+        background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075496364022181978/blackstone.png);
+        color: white;
+    }
+    .stone_brick {
+        background-color: gray;
+        background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075495651854520320/stone_brick.png);
+    }
+    .smooth_stone {
+        background-color: lightgray;
+        background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075497637941362699/smooth_stone.png);
+    }
+    .quartz {
+        background-color: antiquewhite;
+        background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075496942504779926/quartz.png);
+    }
+    .rail {
+        background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075651328786837544/rail.png);
+    }
+    .yellow_carpet, .yellow_wool {
+        background-color: yellow;
+        background-image: url(https://cdn.discordapp.com/attachments/1075495496560410655/1075651328581324860/yellow_carpet.png);
+    }
+</style>
+
+<p>Ministry of Transportation have the responsibility to ensure citizens transverse through the nation in a safe and rapid manner.</p>
+<section>
+    <h1>The Almersen Union aviation</h1>
+    <p>As one of the prominent members of the AUAC (the Almersen Union's Aviation Council), Senerean takes the responsibility to keeping track of the Union-level protocols, includes major waypoints, airports, and Flight Information Region. Senerean also directly responsible for flight plans and statistics, which can be found here: <a href="./flightMap.html">Flight map</a></p>
+    <h2>AAAC (Almersen Aviation Aerodromes Code)</h2>
+    <p>
+        Created as a single code to identify aerodromes from across the Union, this code is in place to ensure consistency in communication. The standard format is: <code><2-letter country code><2-letter optional code></code>. Additional country code can be reserved when necessary.<br>
+        As an extension to AAAC, the AUAC also manages major waypoints/fixes that member nations expected flights to follow at large scale. These points are named with a 5-letter code.<br>
+        Union Air Entry Points are expected waypoints that flights from outside the Union expected to fly through before entering the Union's airspace. These points are coded with 3 letters, the first always start with "A" follow by its relative position compare to the Union's centre. These points usually includes general guide waypoints with additional number behind to support flight planning process. For example, the waypoint <code>AWN</code>, which is to the northern side of the west of the Almersen Union, has a guide waypoint <code>AWN1</code> between Ballinngs and Ninoarura.
+    </p>
+    <h2>Flight plans</h2>
+    <p>
+        Even before opening an international flight route, airlines must submit their general flight plans to the AUAC. The Council will then give additional recommendations for the airlines before approving it. After being approved, the plan will then be registered into the opensource Senerean's database that everybody can access.<br>
+        The flight plan are usually written down as plain text with the waypoints. When flying, esentially the pilot just follow those waypoints until they reached the destination. For example, the plan: <code>EINA-SEKAI-EINV-ESAT</code> can be decoded as follow:
+        <ol>
+            <li>Take off at Ninoarura International Airport</li>
+            <li>Cross the fix SEKAI</li>
+            <li>Cross Nuvak Internationa Airport</li>
+            <li>Land in Estica</li>
+        </ol>
+        This is considered to be a completed route and airplanes can go in both direction, but the plans registered in the system usually concern with the out-going direction only. In some case (notably Wilhelma), to ensure safety, the Council also track domestic flights between two major international airports of a nation.
+    </p>
+</section>
+
+<section>
+    <h1>Road convention</h1>
+    <p>Note: all "quartz" mentioned in this article is smooth quartz, "sandstone" is smooth red sandstone</p>
+    <h2>Street convention</h2>
+    <p>
+        - Street surface shall be more than 3-block wide
+        - Direction are restricted to multiple of 45 degree
+        - Basic street design:
+    </p>
+    <div mcVisual>
+        stone_brick -          -          -          stone_brick
+        -           blackstone blackstone blackstone -
     </div>
-    <main>
-        <p>Ministry of Transportation have the responsibility to ensure citizens transverse through the nation in a safe and rapid manner.</p>
-        <section>
-            <h1>The Almersen Union aviation</h1>
-            <p>As one of the prominent members of the AUAC (the Almersen Union's Aviation Council), Senerean takes the responsibility to keeping track of the Union-level protocols, includes major waypoints, airports, and Flight Information Region. Senerean also directly responsible for flight plans and statistics, which can be found here: <a href="./flightMap.html">Flight map</a></p>
-            <h2>AAAC (Almersen Aviation Aerodromes Code)</h2>
-            <p>
-                Created as a single code to identify aerodromes from across the Union, this code is in place to ensure consistency in communication. The standard format is: <code><2-letter country code><2-letter optional code></code>. Additional country code can be reserved when necessary.<br>
-                As an extension to AAAC, the AUAC also manages major waypoints/fixes that member nations expected flights to follow at large scale. These points are named with a 5-letter code.<br>
-                Union Air Entry Points are expected waypoints that flights from outside the Union expected to fly through before entering the Union's airspace. These points are coded with 3 letters, the first always start with "A" follow by its relative position compare to the Union's centre. These points usually includes general guide waypoints with additional number behind to support flight planning process. For example, the waypoint <code>AWN</code>, which is to the northern side of the west of the Almersen Union, has a guide waypoint <code>AWN1</code> between Ballinngs and Ninoarura.
-            </p>
-            <h2>Flight plans</h2>
-            <p>
-                Even before opening an international flight route, airlines must submit their general flight plans to the AUAC. The Council will then give additional recommendations for the airlines before approving it. After being approved, the plan will then be registered into the opensource Senerean's database that everybody can access.<br>
-                The flight plan are usually written down as plain text with the waypoints. When flying, esentially the pilot just follow those waypoints until they reached the destination. For example, the plan: <code>EINA-SEKAI-EINV-ESAT</code> can be decoded as follow:
-                <ol>
-                    <li>Take off at Ninoarura International Airport</li>
-                    <li>Cross the fix SEKAI</li>
-                    <li>Cross Nuvak Internationa Airport</li>
-                    <li>Land in Estica</li>
-                </ol>
-                This is considered to be a completed route and airplanes can go in both direction, but the plans registered in the system usually concern with the out-going direction only. In some case (notably Wilhelma), to ensure safety, the Council also track domestic flights between two major international airports of a nation.
-            </p>
-        </section>
+    <p>In case there is an avenue beside the street:</p>
+    <div mcVisual>
+        stone_brick -          -          -          smooth_stone stone_brick stone_brick stone_brick
+        -           blackstone blackstone blackstone -            -           -           -
+    </div>
+    <h3>Street markings</h3>
+    <p>
+        - Suface marking must use smooth quartz
+        - One dot for a lane means caution. In an intersection, only one high-demand direction shall be caution, while others shall be yield/stop.
+        - If it is possible for left turning in the middle of the intersection, there shall be a dot there.
+    </p>
+    <div mcVisual="top">
+        stone_brick blackstone blackstone blackstone stone_brick
+        stone_brick blackstone quartz     blackstone stone_brick
+        stone_brick blackstone blackstone blackstone stone_brick
+    </div>
+    <p>Intersection example (from intersection between Highland st and Uphill st). Note that Uphill st is the vertical street in this case and got priority.</p>
+    <div mcVisual="top">
+        stone_brick blackstone blackstone blackstone stone_brick -
+        stone_brick blackstone quartz     blackstone stone_brick stone_brick
+        stone_brick blackstone blackstone blackstone quartz      blackstone
+        stone_brick blackstone quartz     blackstone quartz      blackstone
+        stone_brick blackstone blackstone blackstone quartz      blackstone
+        stone_brick blackstone quartz     blackstone stone_brick stone_brick
+        stone_brick blackstone blackstone blackstone stone_brick -
+    </div>
+    <p>If the priority is yield for avenue crossing, the avenue shall be raised by half a block, and the marking is 1 block away from the avenue.</p>
+    <div mcVisual="top">
+        stone_brick blackstone  quartz      blackstone  stone_brick
+        stone_brick blackstone  blackstone  blackstone  stone_brick
+        stone_brick stone_brick stone_brick stone_brick stone_brick
+        stone_brick stone_brick stone_brick stone_brick stone_brick
+        stone_brick stone_brick stone_brick stone_brick stone_brick
+        stone_brick blackstone  blackstone  blackstone  stone_brick
+        stone_brick blackstone  quartz      blackstone  stone_brick
+    </div>
+    <br>
+    <div mcVisual>
+        stone_brick stone_brick stone_brick stone_brick stone_brick
+    -           blackstone  blackstone  blackstone  -
+    </div>
+    <p>There shall be a two-two marking config for the middle line in a two-way two-lane street.</p>
+    <div mcVisual="top">
+        stone_brick blackstone blackstone blackstone blackstone blackstone stone_brick
+        stone_brick blackstone blackstone blackstone blackstone blackstone stone_brick
+        stone_brick blackstone blackstone quartz     blackstone blackstone stone_brick
+        stone_brick blackstone blackstone quartz     blackstone blackstone stone_brick
+    </div>
+    <p>For streets that are outside an urban area and in an area with no intersection, a three-three marking config should be used. Stone bricks are not mandotary for the street shoulder in this case.</p>
+    <div mcVisual="top">
+        blackstone blackstone blackstone blackstone blackstone
+        blackstone blackstone blackstone blackstone blackstone
+        blackstone blackstone blackstone blackstone blackstone
+        blackstone blackstone quartz     blackstone blackstone
+        blackstone blackstone quartz     blackstone blackstone
+        blackstone blackstone quartz     blackstone blackstone
+    </div>
+    <p>The transition between a urban street and a rural street should be marked with a special marking at the place of transition: a dot at the transition, spaced by one between the markings.</p>
+    <div mcVisual="top">
+        stone_brick blackstone blackstone blackstone blackstone blackstone stone_brick
+        stone_brick blackstone blackstone quartz     blackstone blackstone stone_brick
+        stone_brick blackstone blackstone quartz     blackstone blackstone stone_brick
+        stone_brick blackstone blackstone blackstone blackstone blackstone stone_brick
+        stone_brick blackstone blackstone quartz     blackstone blackstone stone_brick
+        -           blackstone blackstone blackstone blackstone blackstone -
+        -           blackstone blackstone quartz     blackstone blackstone -
+        -           blackstone blackstone quartz     blackstone blackstone -
+        -           blackstone blackstone quartz     blackstone blackstone -
+        -           blackstone blackstone blackstone blackstone blackstone -
+    </div>
 
-        <section>
-            <h1>Road convention</h1>
-            <p>Note: all "quartz" mentioned in this article is smooth quartz, "sandstone" is smooth red sandstone</p>
-            <h2>Street convention</h2>
-            <p>
-                - Street surface shall be more than 3-block wide
-                - Direction are restricted to multiple of 45 degree
-                - Basic street design:
-            </p>
-            <div mcVisual>
-                stone_brick -          -          -          stone_brick
-                -           blackstone blackstone blackstone -
-            </div>
-            <p>In case there is an avenue beside the street:</p>
-            <div mcVisual>
-                stone_brick -          -          -          smooth_stone stone_brick stone_brick stone_brick
-                -           blackstone blackstone blackstone -            -           -           -
-            </div>
-            <h3>Street markings</h3>
-            <p>
-                - Suface marking must use smooth quartz
-                - One dot for a lane means caution. In an intersection, only one high-demand direction shall be caution, while others shall be yield/stop.
-                - If it is possible for left turning in the middle of the intersection, there shall be a dot there.
-            </p>
-            <div mcVisual="top">
-                stone_brick blackstone blackstone blackstone stone_brick
-                stone_brick blackstone quartz     blackstone stone_brick
-                stone_brick blackstone blackstone blackstone stone_brick
-            </div>
-            <p>Intersection example (from intersection between Highland st and Uphill st). Note that Uphill st is the vertical street in this case and got priority.</p>
-            <div mcVisual="top">
-                stone_brick blackstone blackstone blackstone stone_brick -
-                stone_brick blackstone quartz     blackstone stone_brick stone_brick
-                stone_brick blackstone blackstone blackstone quartz      blackstone
-                stone_brick blackstone quartz     blackstone quartz      blackstone
-                stone_brick blackstone blackstone blackstone quartz      blackstone
-                stone_brick blackstone quartz     blackstone stone_brick stone_brick
-                stone_brick blackstone blackstone blackstone stone_brick -
-            </div>
-            <p>If the priority is yield for avenue crossing, the avenue shall be raised by half a block, and the marking is 1 block away from the avenue.</p>
-            <div mcVisual="top">
-                stone_brick blackstone  quartz      blackstone  stone_brick
-                stone_brick blackstone  blackstone  blackstone  stone_brick
-                stone_brick stone_brick stone_brick stone_brick stone_brick
-                stone_brick stone_brick stone_brick stone_brick stone_brick
-                stone_brick stone_brick stone_brick stone_brick stone_brick
-                stone_brick blackstone  blackstone  blackstone  stone_brick
-                stone_brick blackstone  quartz      blackstone  stone_brick
-            </div>
-            <br>
-            <div mcVisual>
-                stone_brick stone_brick stone_brick stone_brick stone_brick
-            -           blackstone  blackstone  blackstone  -
-            </div>
-            <p>There shall be a two-two marking config for the middle line in a two-way two-lane street.</p>
-            <div mcVisual="top">
-                stone_brick blackstone blackstone blackstone blackstone blackstone stone_brick
-                stone_brick blackstone blackstone blackstone blackstone blackstone stone_brick
-                stone_brick blackstone blackstone quartz     blackstone blackstone stone_brick
-                stone_brick blackstone blackstone quartz     blackstone blackstone stone_brick
-            </div>
-            <p>For streets that are outside an urban area and in an area with no intersection, a three-three marking config should be used. Stone bricks are not mandotary for the street shoulder in this case.</p>
-            <div mcVisual="top">
-                blackstone blackstone blackstone blackstone blackstone
-                blackstone blackstone blackstone blackstone blackstone
-                blackstone blackstone blackstone blackstone blackstone
-                blackstone blackstone quartz     blackstone blackstone
-                blackstone blackstone quartz     blackstone blackstone
-                blackstone blackstone quartz     blackstone blackstone
-            </div>
-            <p>The transition between a urban street and a rural street should be marked with a special marking at the place of transition: a dot at the transition, spaced by one between the markings.</p>
-            <div mcVisual="top">
-                stone_brick blackstone blackstone blackstone blackstone blackstone stone_brick
-                stone_brick blackstone blackstone quartz     blackstone blackstone stone_brick
-                stone_brick blackstone blackstone quartz     blackstone blackstone stone_brick
-                stone_brick blackstone blackstone blackstone blackstone blackstone stone_brick
-                stone_brick blackstone blackstone quartz     blackstone blackstone stone_brick
-                -           blackstone blackstone blackstone blackstone blackstone -
-                -           blackstone blackstone quartz     blackstone blackstone -
-                -           blackstone blackstone quartz     blackstone blackstone -
-                -           blackstone blackstone quartz     blackstone blackstone -
-                -           blackstone blackstone blackstone blackstone blackstone -
-            </div>
+    <h1>Sign convention</h1>
+    <h2>Standard:</h2>
+    <p>
+        - First line is the name, second line will be the type (ave, st)
+        - Name is capitalize, but not the type of the road
+        - Third line is blank space in case the name is too long
+        - Forth line will contain a simple compass navigation
+        example:
+    </p>
+    <code>
+        SEA CLIFF
+        ave
+        [blank space]
+        <-N S->
+        In case it is a split
+        N SEA CLIFF ave
+        <-N
+        S SEA CLIFF ave
+        S->
+    </code>
+    <p>
+        - The order of the direction should follow the NEWS
+        - The sign text decoration shall using white dye and glow inksack
+    </p>
+    <h2>Placement:</h2>
+    <p>
+        - Use glow ink sack and spruce sign
+        - The sign should have the background light as mild blue
+        - The rotation of the sign shouldn't be matter, but prefer facing at confusing intersections
+        - In an avenue intersection, the sign is at the middle of the road, and raised by smooth stone to be horizontal at eye level if necessary
+        - In a street intersection, the sign is located at the corner of the intersection, raised by 3 blocks from the street level using spruce fence
+    </p>
+    <h1>Railway</h1>
+    <h2>Train station</h2>
+    <p>
+        - Train platform shall be at least 3 blocks wide for one-direction platform, 5 for combined platform.
+        - However, it is recommended to be 4 and 7 respectively.
+        - The the block adjacent to the railway on the platform shall be cover with carpet, or yellow wool for aesthetic purpose.
+        Single-direction platform:
+    </p>
+    <div mcVisual="top">
+        rail yellow_carpet smooth_stone smooth_stone
+        rail yellow_carpet smooth_stone smooth_stone
+        rail yellow_carpet smooth_stone smooth_stone
+    </div>
+    <p>Combinded platform:</p>
+    <div mcVisual="top">
+        rail yellow_carpet smooth_stone smooth_stone smooth_stone yellow_carpet rail
+        rail yellow_carpet smooth_stone smooth_stone smooth_stone yellow_carpet rail
+        rail yellow_carpet smooth_stone smooth_stone smooth_stone yellow_carpet rail
+    </div>
+    <p>If it is split platform, the rail must be placed one block away from each other for buttons to activate only on one side</p>
+    <div mcVisual="top">
+        smooth_stone smooth_stone yellow_carpet rail _ rail yellow_carpet smooth_stone smooth_stone
+        smooth_stone smooth_stone yellow_carpet rail _ rail yellow_carpet smooth_stone smooth_stone
+        smooth_stone smooth_stone yellow_carpet rail _ rail yellow_carpet smooth_stone smooth_stone
+    </div>
+</section>
 
-            <h1>Sign convention</h1>
-            <h2>Standard:</h2>
-            <p>
-                - First line is the name, second line will be the type (ave, st)
-                - Name is capitalize, but not the type of the road
-                - Third line is blank space in case the name is too long
-                - Forth line will contain a simple compass navigation
-                example:
-            </p>
-            <code>
-                SEA CLIFF
-                ave
-                [blank space]
-                <-N S->
-                In case it is a split
-                N SEA CLIFF ave
-                <-N
-                S SEA CLIFF ave
-                S->
-            </code>
-            <p>
-                - The order of the direction should follow the NEWS
-                - The sign text decoration shall using white dye and glow inksack
-            </p>
-            <h2>Placement:</h2>
-            <p>
-                - Use glow ink sack and spruce sign
-                - The sign should have the background light as mild blue
-                - The rotation of the sign shouldn't be matter, but prefer facing at confusing intersections
-                - In an avenue intersection, the sign is at the middle of the road, and raised by smooth stone to be horizontal at eye level if necessary
-                - In a street intersection, the sign is located at the corner of the intersection, raised by 3 blocks from the street level using spruce fence
-            </p>
-            <h1>Railway</h1>
-            <h2>Train station</h2>
-            <p>
-                - Train platform shall be at least 3 blocks wide for one-direction platform, 5 for combined platform.
-                - However, it is recommended to be 4 and 7 respectively.
-                - The the block adjacent to the railway on the platform shall be cover with carpet, or yellow wool for aesthetic purpose.
-                Single-direction platform:
-            </p>
-            <div mcVisual="top">
-                rail yellow_carpet smooth_stone smooth_stone
-                rail yellow_carpet smooth_stone smooth_stone
-                rail yellow_carpet smooth_stone smooth_stone
-            </div>
-            <p>Combinded platform:</p>
-            <div mcVisual="top">
-                rail yellow_carpet smooth_stone smooth_stone smooth_stone yellow_carpet rail
-                rail yellow_carpet smooth_stone smooth_stone smooth_stone yellow_carpet rail
-                rail yellow_carpet smooth_stone smooth_stone smooth_stone yellow_carpet rail
-            </div>
-            <p>If it is split platform, the rail must be placed one block away from each other for buttons to activate only on one side</p>
-            <div mcVisual="top">
-                smooth_stone smooth_stone yellow_carpet rail _ rail yellow_carpet smooth_stone smooth_stone
-                smooth_stone smooth_stone yellow_carpet rail _ rail yellow_carpet smooth_stone smooth_stone
-                smooth_stone smooth_stone yellow_carpet rail _ rail yellow_carpet smooth_stone smooth_stone
-            </div>
-        </section>
-    </main>
-    <footer html-src="../website/footer.html"></footer>
-</body>
-<script src="../website/scripts.js"></script>
 <script src="mcVisual.js"></script>

@@ -1,25 +1,19 @@
-<!DOCTYPE html>
-<head html-src="../website/head.html"></head>
-<body>
-    <header html-src="../website/header.html"></header>
-    <main>
-        <label>
-            Draw character border?
-            <input id="drawBox" type="checkbox" oninput="writeText()" checked>
-        </label>
-        <label>
-            Two-row-per line writing system?
-            <input id="twoRows" type="checkbox" oninput="writeText()" checked>
-        </label>
-        <label>
-            Text to convert to Milaru writing system
-            <textarea id="inpArea" oninput="writeText(this.value)"></textarea>
-        </label>
-        <svg id="svgDisplay" width="1050" height="00"></svg>
-    </main>
-    <footer html-src="../website/footer.html"></footer>
-</body>
-<script src="../website/scripts.js"></script>
+---
+layout: default
+---
+<label>
+    Draw character border?
+    <input id="drawBox" type="checkbox" oninput="writeText()" checked>
+</label>
+<label>
+    Two-row-per line writing system?
+    <input id="twoRows" type="checkbox" oninput="writeText()" checked>
+</label>
+<label>
+    Text to convert to Milaru writing system
+    <textarea id="inpArea" oninput="writeText(this.value)"></textarea>
+</label>
+<svg id="svgDisplay" width="1050" height="00"></svg>
 <script src="./milaru.js"></script>
 <script>
     // Milaru writing font config

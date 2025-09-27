@@ -1,106 +1,101 @@
+---
+layout: default
+---
 <!--
     PROCEDURE TO EXPORT THE BASE MAP
     Use MPI/Union-map, adjust everything inside the Aviation layer
     All points (fix/airport) must be put down at circle in the approriate sub-layer
 -->
-<head html-src="../website/head.html">
-    <style>
-        /* This will be move into the object */
-        .airport {
-            fill: purple;
-            fill-opacity: 0.8;
-            stroke: white;
-            stroke-width: 10px;
-        }
-        .divToPort{
-            /* Divert to airport */
-            stroke: lime;
-            stroke-opacity: 0.5;
-            stroke-width: 200px;
-        }
-        .divFromPort{
-            /* Divert from airport */
-            fill: red;
-            stroke-width: 0;
-        }
+<style>
+    /* This will be move into the object */
+    .airport {
+        fill: purple;
+        fill-opacity: 0.8;
+        stroke: white;
+        stroke-width: 10px;
+    }
+    .divToPort{
+        /* Divert to airport */
+        stroke: lime;
+        stroke-opacity: 0.5;
+        stroke-width: 200px;
+    }
+    .divFromPort{
+        /* Divert from airport */
+        fill: red;
+        stroke-width: 0;
+    }
 
-        .fix {
-            fill: lime;
-            fill-opacity: 0.5;
-            stroke: black;
-            stroke-width: 10px;
-        }
+    .fix {
+        fill: lime;
+        fill-opacity: 0.5;
+        stroke: black;
+        stroke-width: 10px;
+    }
 
-        .flight {
-            fill: limegreen;
-            stroke: black;
-            stroke-width: 10px;
-        }
-        .flBL {
-            fill: #8a46f0;
-            stroke: black;
-        }
-        .flEI {
-            fill: #000080;
-            stroke: white;
-        }
-        .flOV {
-            fill: #60cec5;
-            stroke: #f06718;
-        }
-        .flPO {
-            fill: #ed1c24;
-            stroke: white;
-        }
-        .flWH {
-            fill: #ff9040;
-            stroke: black;
-        }
-        .highlight {
-            stroke: limegreen;
-            stroke-opacity: 0.5;
-            stroke-width: 200px;
-        }
-        .divert {
-            fill: red;
-            stroke: yellow;
-            stroke-opacity: 0.5;
-            stroke-width: 200px;
-        }
-    </style>
-    <style>
-        /* This will not be moved to inside the object */
-        #obj { width: 100%; }
-        @media (max-width: 700px) {
-            #obj { width: 500%; }
-        }
-    </style>
-</head>
+    .flight {
+        fill: limegreen;
+        stroke: black;
+        stroke-width: 10px;
+    }
+    .flBL {
+        fill: #8a46f0;
+        stroke: black;
+    }
+    .flEI {
+        fill: #000080;
+        stroke: white;
+    }
+    .flOV {
+        fill: #60cec5;
+        stroke: #f06718;
+    }
+    .flPO {
+        fill: #ed1c24;
+        stroke: white;
+    }
+    .flWH {
+        fill: #ff9040;
+        stroke: black;
+    }
+    .highlight {
+        stroke: limegreen;
+        stroke-opacity: 0.5;
+        stroke-width: 200px;
+    }
+    .divert {
+        fill: red;
+        stroke: yellow;
+        stroke-opacity: 0.5;
+        stroke-width: 200px;
+    }
+</style>
+<style>
+    /* This will not be moved to inside the object */
+    #obj { width: 100%; }
+    @media (max-width: 700px) {
+        #obj { width: 500%; }
+    }
+</style>
 
-<body>
-    <header html-src="../website/header.html"></header>
-    <main>
-        <h3>Data for the last 24 hours</h3>
-        <table id="countTable">
-            <tr>
-                <th>Airport</th>
-                <th>Take-off count</th>
-                <th>En-route</th>
-                <th>Landing count</th>
-                <th>Average flight rate (flight/hour, take-off and landing)</th>
-            </tr>
-        </table>
+<h3>Data for the last 24 hours</h3>
+<table id="countTable">
+    <tr>
+        <th>Airport</th>
+        <th>Take-off count</th>
+        <th>En-route</th>
+        <th>Landing count</th>
+        <th>Average flight rate (flight/hour, take-off and landing)</th>
+    </tr>
+</table>
 
-        <h3>Union flight map</h3>
-        <p>Day: <span id="countDay">0</span>, hour: <span id="countHour">0</span></p>
-        <p>Flights: <span id="count">0</span> <span id="xInfo"></span></p>
-        <object id="obj" type="image/svg+xml" data="Union-aviation-map.svg"></object>
-        <!-- <button onclick="divert()">Divert</button>
-        <input type="text" id="divertAirport"> -->
-    </main>
-    <footer html-src="../website/footer.html"></footer>
-</body>
-<script src="../website/scripts.js"></script>
+<h3>Union flight map</h3>
+<p>Day: <span id="countDay">0</span>, hour: <span id="countHour">0</span></p>
+<p>Flights: <span id="count">0</span> <span id="xInfo"></span></p>
+<object id="obj" type="image/svg+xml" data="Union-aviation-map.svg"></object>
+<!-- <button onclick="divert()">Divert</button>
+<input type="text" id="divertAirport"> -->
+
 <script>
     const Delta = 0.05; // how much a tick represent compare to the unit (per hour)
     const PI = Math.PI,
