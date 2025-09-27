@@ -1,4 +1,5 @@
-<!-- Website to redirect to main government page -->
+---
+---
 <!DOCTYPE html>
 <script>
     // list of shortened links, run script first before loading UI
@@ -13,10 +14,10 @@
         // redirect and set link
         document.getElementById('redirect').setAttribute('href', LINKS[hash[0]])
         window.location.replace(LINKS[hash[0]]);
-    } else if (typeof LINKS[hash[0]] == 'function') 
+    } else if (typeof LINKS[hash[0]] == 'function')
         // execute function
         window.location.replace(LINKS[hash[0]]());
-    else 
+    else
         // go to home
         window.location.replace('./Government-of-Senerean/index.html');
 </script>
