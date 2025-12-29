@@ -2126,5 +2126,19 @@ let REGISTRY = [
             "x": -59,
             "z": -57
         }
+    },
+    {
+        "id": "SNOW26",
+        "owner": "Jennie",
+        "desc": "2026 sign held by a snowman",
+        "road": "",
+        "nw": {
+            "x": -1610,
+            "z": -1820
+        },
+        "se": {
+            "x": -1603,
+            "z": -1802
+        }
     }
 ]
