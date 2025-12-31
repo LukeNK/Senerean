@@ -2140,5 +2140,19 @@ let REGISTRY = [
             "x": -1603,
             "z": -1802
         }
+    },
+    {
+        "id": "TRAINS",
+        "owner": "Senerean",
+        "desc": "Train station hub",
+        "road": "UPHILL st",
+        "nw": {
+            "x": -104,
+            "z": -52
+        },
+        "se": {
+            "x": -63,
+            "z": -52
+        }
     }
 ]
