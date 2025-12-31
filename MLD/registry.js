@@ -1190,20 +1190,6 @@ let REGISTRY = [
         }
     },
     {
-        "id": "T8UB5R",
-        "owner": "Senerean",
-        "desc": "Metro station",
-        "road": "S SEA CLIFF ave",
-        "nw": {
-            "x": -52,
-            "z": -44
-        },
-        "se": {
-            "x": -41,
-            "z": -29
-        }
-    },
-    {
         "id": "O7VT1Q",
         "owner": "LukeNK",
         "desc": "Miku Capsule Hotel",
@@ -2151,8 +2137,8 @@ let REGISTRY = [
             "z": -52
         },
         "se": {
-            "x": -63,
-            "z": -52
+            "x": -41,
+            "z": -29
         }
     }
 ]
