@@ -2154,5 +2154,19 @@ let REGISTRY = [
             "x": -1670,
             "z": -1634
         }
+    },
+    {
+        "id": "CHAPEL",
+        "owner": "LukeNK",
+        "desc": "Catholic chapel",
+        "road": "TURTLE ave",
+        "nw": {
+            "x": 127,
+            "z": 70
+        },
+        "se": {
+            "x": 138,
+            "z": 92
+        }
     }
 ]
