@@ -2133,7 +2133,7 @@ let REGISTRY = [
         "desc": "Train hub",
         "road": "UPHILL st",
         "nw": {
-            "x": -114,
+            "x": -130,
             "z": -52
         },
         "se": {
