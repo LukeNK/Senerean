@@ -2168,5 +2168,19 @@ let REGISTRY = [
             "x": 138,
             "z": 92
         }
+    },
+    {
+        "id": "G5SZ1H",
+        "owner": "LukeNK",
+        "desc": "Snowy Land build permission office",
+        "road": "",
+        "nw": {
+            "x": -1625,
+            "z": -1813
+        },
+        "se": {
+            "x": -1615,
+            "z": -1805
+        }
     }
 ]
