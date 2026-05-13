@@ -9,7 +9,9 @@ layout: default
     }
 </style>
 
-<svg id="map" viewBox="-200 -200 600 600"></svg>
+<svg id="map" viewBox="-200 -200 600 600">
+    <image href="./ninoarura.webp" x="-400" y="-400" width="900" height="900"/>
+</svg>
 
 <!-- svg-pan-zoom via jsDelivr -->
 <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
@@ -28,7 +30,7 @@ layout: default
         block.setAttribute('y', c.z);
         block.setAttribute('width', width);
         block.setAttribute('height', height);
-        block.setAttribute('fill', '#00000050');
+        block.setAttribute('fill', '#ff000050');
         block.setAttribute('stroke', 'black');
         block.setAttribute('stroke-width', '0.5');
         block.onclick = () => console.log(build);
