@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<style>
+    #map {
+        width: 100%;
+        height: 70vh;
+    }
+</style>
+
+<svg id="map" viewBox="-200 -200 600 600"></svg>
+
+<!-- svg-pan-zoom via jsDelivr -->
+<script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+<script src="./registry.js"></script>
+<script src="./scripts.js"></script>
+<script>
+    let map = document.getElementById('map');
+    for (const build of REGISTRY) {
+        let c = build.nw;
+        let width = build.se.x - c.x,
+            height = build.se.z - c.z;
+        if (width <= 0 || height <= 0) console.log(build.id); // invalid build
+
+        let block = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        block.setAttribute('x', c.x);
+        block.setAttribute('y', c.z);
+        block.setAttribute('width', width);
+        block.setAttribute('height', height);
+        block.setAttribute('fill', '#00000050');
+        block.setAttribute('stroke', 'black');
+        block.setAttribute('stroke-width', '0.5');
+        block.onclick = () => console.log(build);
+        map.appendChild(block);
+    }
+    // initialize svg-pan-zoom after elements are added
+    svgPanZoom(map, {
+        zoomEnabled: true,
+        controlIconsEnabled: true,
+    });
+</script>
