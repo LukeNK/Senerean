@@ -1629,7 +1629,7 @@ let REGISTRY = [
         "desc": "Sakura-theme motel with rooftop camping site",
         "road": "SUGAR SHORE ave",
         "nw": {
-            "x": 158,
+            "x": 258,
             "z": -17
         },
         "se": {
@@ -1643,7 +1643,7 @@ let REGISTRY = [
         "desc": "Parking lot",
         "road": "MYRTLE st",
         "nw": {
-            "x": 161,
+            "x": 261,
             "z": 18
         },
         "se": {
@@ -2054,7 +2054,7 @@ let REGISTRY = [
         },
         "se": {
             "x": -1668,
-            "z": 1809
+            "z": -1809
         }
     },
     {
