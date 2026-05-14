@@ -7,6 +7,11 @@ layout: default
         color: crimson;
     }
 
+    #map {
+        width: 100%;
+        height: 70vh;
+    }
+
     #searchBar {
         margin: 0 1rem;
     }
@@ -19,6 +24,11 @@ layout: default
         color: var(--color-dark-theme);
     }
 </style>
+
+<svg id="map" viewBox="-200 -200 600 600">
+    <image href="./ninoarura.webp" x="-400" y="-400" width="900" height="900"/>
+</svg>
+
 <p>Search using name, description, exact match of the owner's name, or <code>[x],[z]</code> format for coordinate</p>
 <label>
     Search
@@ -26,6 +36,8 @@ layout: default
 </label>
 <p>Found <span id="searchInfo"></span> result(s)</p>
 <div id="result"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
 <script src="./registry.js"></script>
 <script src="./scripts.js"></script>
 <script>
@@ -67,4 +79,41 @@ layout: default
         alert(`Copied to clipboard: ${x} 150 ${z}`);
     }
 
+    // Map integration
+    let map = document.getElementById('map');
+    for (const build of REGISTRY) {
+        let c = build.nw;
+        let width = build.se.x - c.x,
+            height = build.se.z - c.z;
+        if (width <= 0 || height <= 0) console.log(build.id); // invalid build
+
+        let block = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        block.setAttribute('x', c.x);
+        block.setAttribute('y', c.z);
+        block.setAttribute('width', width);
+        block.setAttribute('height', height);
+        block.setAttribute('fill', '#ff000050');
+        block.setAttribute('stroke', 'black');
+        block.setAttribute('stroke-width', '0.5');
+        block.onclick = () => console.log(build);
+        map.appendChild(block);
+    }
+
+    // initialize svg-pan-zoom after elements are added
+    svgPanZoom(map, {
+        zoomEnabled: true,
+        controlIconsEnabled: true,
+    });
+    // svg-pan-zoom wraps the original SVG content in a <g> element
+    let mapGroup = map.querySelector('g');
+
+    mapGroup.addEventListener('click', (event) => {
+        const pt = map.createSVGPoint();
+        pt.x = event.clientX;
+        pt.y = event.clientY;
+        const svgP = pt.matrixTransform(mapGroup.getScreenCTM().inverse());
+        document.getElementById('searchBar').value =
+            `${Math.round(svgP.x)}, ${Math.round(svgP.y)}`;
+        runSearch();
+    });
 </script>
