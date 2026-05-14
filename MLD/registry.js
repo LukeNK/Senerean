@@ -2182,5 +2182,47 @@ let REGISTRY = [
             "x": -1615,
             "z": -1805
         }
+    },
+    {
+        "id": "BEN008",
+        "owner": "BenPo",
+        "desc": "Ben's embassy",
+        "road": "2023 ave",
+        "nw": {
+            "x": -118,
+            "z": 6
+        },
+        "se": {
+            "x": -63,
+            "z": 39
+        }
+    },
+    {
+        "id": "BEN009",
+        "owner": "BenPo",
+        "desc": "Sea lantern",
+        "road": "",
+        "nw": {
+            "x": 104,
+            "z": -102
+        },
+        "se": {
+            "x": 117,
+            "z": -89
+        }
+    },
+    {
+        "id": "C8LQ7M",
+        "owner": "Omnomnom",
+        "desc": "Decorative tree",
+        "road": "2023 ave",
+        "nw": {
+            "x": 31,
+            "z": 10
+        },
+        "se": {
+            "x": 40,
+            "z": 31
+        }
     }
 ]
