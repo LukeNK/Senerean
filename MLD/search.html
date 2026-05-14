@@ -27,6 +27,7 @@ layout: default
 
 <svg id="map" viewBox="-200 -200 600 600">
     <image href="./ninoarura.webp" x="-400" y="-400" width="900" height="900"/>
+    <image href="./snowy_land.jpg" x="-1800" y="-1900" width="1000" height="600"/>
 </svg>
 
 <p>
@@ -101,6 +102,7 @@ layout: default
     svgPanZoom(map, {
         zoomEnabled: true,
         controlIconsEnabled: true,
+        minZoom: 0.1,
     });
     // svg-pan-zoom wraps the original SVG content in a <g> element
     let mapGroup = map.querySelector('g');
