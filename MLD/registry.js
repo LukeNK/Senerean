@@ -1395,7 +1395,7 @@ let REGISTRY = [
             "z": 102
         },
         "se": {
-            "x": 8,
+            "x": 98,
             "z": 119
         }
     },
@@ -1419,7 +1419,7 @@ let REGISTRY = [
         "desc": "Test site command center",
         "road": "S UPHILL st",
         "nw": {
-            "x": -281,
+            "x": -287,
             "z": 218
         },
         "se": {
@@ -1475,7 +1475,7 @@ let REGISTRY = [
         "desc": "Playground",
         "road": "S UPHILL st",
         "nw": {
-            "x": 62,
+            "x": 72,
             "z": 164
         },
         "se": {
@@ -1858,7 +1858,7 @@ let REGISTRY = [
         },
         "se": {
             "x": 341,
-            "z": -99
+            "z": -49
         }
     },
     {
@@ -2137,8 +2137,8 @@ let REGISTRY = [
             "z": -52
         },
         "se": {
-            "x": -41,
-            "z": -29
+            "x": -64,
+            "z": -15
         }
     },
     {
