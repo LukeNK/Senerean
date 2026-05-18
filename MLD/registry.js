@@ -2224,5 +2224,243 @@ let REGISTRY = [
             "x": 40,
             "z": 31
         }
+    },
+    {
+        "id": "MON670",
+        "owner": "JennieNK",
+        "desc": "A wooden cherry house",
+        "road": "",
+        "nw": {
+            "x": -1614,
+            "z": -1804
+        },
+        "se": {
+            "x": -1607,
+            "z": -1794
+        }
+    },
+    {
+        "id": "V0TN0C",
+        "owner": "JennieNK",
+        "desc": "Tsunami safe bunker",
+        "road": "",
+        "nw": {
+            "x": -1591,
+            "z": -1808
+        },
+        "se": {
+            "x": -1582,
+            "z": -1799
+        }
+    },
+    {
+        "id": "Y3ZX7D",
+        "owner": "JennieNK",
+        "desc": "A wooden shop",
+        "road": "",
+        "nw": {
+            "x": -1606,
+            "z": -1803
+        },
+        "se": {
+            "x": -1601,
+            "z": -1797
+        }
+    },
+    {
+        "id": "J0HV8G",
+        "owner": "JennieNK",
+        "desc": "Nether portal",
+        "road": "",
+        "nw": {
+            "x": -1625,
+            "z": -1784
+        },
+        "se": {
+            "x": -1619,
+            "z": -1776
+        }
+    },
+    {
+        "id": "J7LY4X",
+        "owner": "JennieNK",
+        "desc": "A house inside a statue of a head",
+        "road": "",
+        "nw": {
+            "x": -1637,
+            "z": -1812
+        },
+        "se": {
+            "x": -1631,
+            "z": -1806
+        }
+    },
+    {
+        "id": "F4GT1T",
+        "owner": "JennieNK",
+        "desc": "Snowy land flagpole",
+        "road": "",
+        "nw": {
+            "x": -1629,
+            "z": -1774
+        },
+        "se": {
+            "x": -1621,
+            "z": -1770
+        }
+    },
+    {
+        "id": "K7ZM8Z",
+        "owner": "JennieNK",
+        "desc": "Highway commemorative flagpole",
+        "road": "",
+        "nw": {
+            "x": -1523,
+            "z": -1800
+        },
+        "se": {
+            "x": -1522,
+            "z": -1777
+        }
+    },
+    {
+        "id": "G8HW5L",
+        "owner": "JennieNK",
+        "desc": "A farm",
+        "road": "",
+        "nw": {
+            "x": -1634,
+            "z": -1740
+        },
+        "se": {
+            "x": -1629,
+            "z": -1734
+        }
+    },
+    {
+        "id": "D2PP9F",
+        "owner": "JennieNK",
+        "desc": "A wooden tent with a dog pent",
+        "road": "",
+        "nw": {
+            "x": -1634,
+            "z": -1709
+        },
+        "se": {
+            "x": -1627,
+            "z": -1703
+        }
+    },
+    {
+        "id": "Q5XD3M",
+        "owner": "JennieNK",
+        "desc": "Fast food restaurant",
+        "road": "",
+        "nw": {
+            "x": -1652,
+            "z": -1694
+        },
+        "se": {
+            "x": -1625,
+            "z": -1685
+        }
+    },
+    {
+        "id": "Q0XN1R",
+        "owner": "JennieNK",
+        "desc": "Lava-protected wooden house",
+        "road": "",
+        "nw": {
+            "x": -1613,
+            "z": -1677
+        },
+        "se": {
+            "x": -1602,
+            "z": -1668
+        }
+    },
+    {
+        "id": "X3BH4Q",
+        "owner": "JennieNK",
+        "desc": "Swimming pool",
+        "road": "",
+        "nw": {
+            "x": -1624,
+            "z": -1715
+        },
+        "se": {
+            "x": -1609,
+            "z": -1704
+        }
+    },
+    {
+        "id": "J7JJ3M",
+        "owner": "JennieNK",
+        "desc": "Brick house",
+        "road": "",
+        "nw": {
+            "x": -1618,
+            "z": -1699
+        },
+        "se": {
+            "x": -1610,
+            "z": -1692
+        }
+    },
+    {
+        "id": "X5ZF1H",
+        "owner": "JennieNK",
+        "desc": "Sky fighting area",
+        "road": "",
+        "nw": {
+            "x": -1611,
+            "z": -1728
+        },
+        "se": {
+            "x": -1601,
+            "z": -1710
+        }
+    },
+    {
+        "id": "N4MH5W",
+        "owner": "JennieNK",
+        "desc": "Dance floor",
+        "road": "",
+        "nw": {
+            "x": -1646,
+            "z": -1706
+        },
+        "se": {
+            "x": -1637,
+            "z": -1698
+        }
+    },
+    {
+        "id": "R3XL8P",
+        "owner": "JennieNK",
+        "desc": "Queen's meeting hall",
+        "road": "",
+        "nw": {
+            "x": -1694,
+            "z": -1695
+        },
+        "se": {
+            "x": -1683,
+            "z": -1675
+        }
+    },
+    {
+        "id": "G2CC5P",
+        "owner": "JennieNK",
+        "desc": "Rainbow stage",
+        "road": "",
+        "nw": {
+            "x": -1637,
+            "z": -1653
+        },
+        "se": {
+            "x": -1631,
+            "z": -1639
+        }
     }
 ]
