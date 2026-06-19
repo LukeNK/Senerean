@@ -2462,5 +2462,19 @@ let REGISTRY = [
             "x": -1631,
             "z": -1639
         }
+    },
+    {
+        "id": "X1YF2Q",
+        "owner": "Senerean",
+        "desc": "Monument of the First Painters",
+        "road": "N SEA CLIFF ave",
+        "nw": {
+            "x": 76,
+            "z": -51
+        },
+        "se": {
+            "x": 85,
+            "z": -47
+        }
     }
 ]
