@@ -2476,5 +2476,19 @@ let REGISTRY = [
             "x": 85,
             "z": -47
         }
+    },
+    {
+        "id": "Q5KN7N",
+        "owner": "BenPo",
+        "desc": "Winter base",
+        "road": "",
+        "nw": {
+            "x": -1690,
+            "z": -1768
+        },
+        "se": {
+            "x": -1676,
+            "z": -1752
+        }
     }
 ]
