@@ -31,21 +31,18 @@ layout: default
     function add(download) {
         let cur = {...TEMPLATE};
         for (const l1 in TEMPLATE) {
-            if (l1 == 'nw' || l1 == 'se') {
-                // get coord and parse
-                let coord = document.getElementById(l1).value
-                    .replaceAll(' ', '')
-                    .split(',');
-                cur[l1] = {
-                    x: parseInt(coord[0]),
-                    z: parseInt(coord[1])
-                };
+            if (l1 == 'fill') {
+                let command = document.getElementById(l1).value.split(' ');
+                let coords = {
+                    x1: parseInt(command[1]), z1: parseInt(command[3]),
+                    x2: parseInt(command[4]), z2: parseInt(command[6])
+                }
 
-                if (
-                    l1 == 'sw'
-                    && ( cur.se.x < cur.nw.x || cur.se.z < cur.nw.z )
-                )
-                    return alert('Invalid coordinates');
+                // get the left corner and right corner
+                cur.nw = { x: Math.min(coords.x1, coords.x2), z: Math.min(coords.z1, coords.z2) };
+                cur.se = { x: Math.max(coords.x1, coords.x2), z: Math.max(coords.z1, coords.z2) };
+
+                delete cur.fill;
             } else
                 cur[l1] = document.getElementById(l1).value;
 
@@ -86,7 +83,7 @@ layout: default
             URL.revokeObjectURL(link.href);
         } else {
             let out = document.getElementById('out');
-            out.innerHTML = reg; // just in case of misclick
+            out.innerHTML = JSON.stringify(cur, null, '    ');
             out.style.height = '100vh';
             out.scrollTop = out.scrollHeight;
             out.scrollIntoView()
@@ -95,15 +92,15 @@ layout: default
 
     function _convertToChunk() {
         // add dimension to the build
-        cur.dimensions = { x: r[0] - l[0] + 1, z: r[1] - l[1] + 1 }
+        cur.dimensions = { x: r.x - l.x + 1, z: r.z - l.z + 1 }
         // convert to chunks placeholder function
-        l[0] = Math.floor(l[0] / 16);
-        l[1] = Math.floor(l[1] / 16);
-        r[0] = Math.floor(r[0] / 16);
-        r[1] = Math.floor(r[1] / 16);
+        l.x = Math.floor(l.x / 16);
+        l.z = Math.floor(l.z / 16);
+        r.x = Math.floor(r.x / 16);
+        r.z = Math.floor(r.z / 16);
         // list all of the chunks inside it
-        for (let x = l[0]; x <= r[0]; x++)
-            for (let z = l[1]; z <= r[1]; z++)
+        for (let x = l.x; x <= r.x; x++)
+            for (let z = l.z; z <= r.z; z++)
                 cur.chunks.push({ x: x, z: z }); // push chunk info
     }
 </script>

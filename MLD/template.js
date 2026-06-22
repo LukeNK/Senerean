@@ -3,8 +3,8 @@ const TEMPLATE = {
     owner: 'The name of the current owner',
     desc: 'Breif summary of the build',
     road: "Road base on main entrance, not include house number (you don't have it anyways)",
-    nw: 'North west-most block',
-    se: 'South east-most block'
+    fill: '/fill command that will enclose the build, used to concert to the cords of the corners'
+    // The fill space will generate nw and se coordinates
 }
 
 // list of road type
