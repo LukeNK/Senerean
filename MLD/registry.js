@@ -2490,5 +2490,47 @@ let REGISTRY = [
             "x": -1676,
             "z": -1752
         }
+    },
+    {
+        "id": "N6TQ9Z",
+        "owner": "JennieNK",
+        "desc": "Library with two floors",
+        "road": "",
+        "nw": {
+            "x": -1668,
+            "z": -1843
+        },
+        "se": {
+            "x": -1644,
+            "z": -1797
+        }
+    },
+    {
+        "id": "F6FH4Y",
+        "owner": "JennieNK",
+        "desc": "Snowy Land - Jellyfish International Airport, terminal section",
+        "road": "",
+        "nw": {
+            "x": -1615,
+            "z": -1767
+        },
+        "se": {
+            "x": -1490,
+            "z": -1652
+        }
+    },
+    {
+        "id": "Z0TQ6V",
+        "owner": "JennieNK",
+        "desc": "Snowy Land - Jellyfish International Airport, runway section",
+        "road": "",
+        "nw": {
+            "x": -1490,
+            "z": -1901
+        },
+        "se": {
+            "x": -1423,
+            "z": -1699
+        }
     }
 ]
