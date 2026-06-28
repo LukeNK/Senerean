@@ -2550,7 +2550,7 @@ let REGISTRY = [
     {
         "id": "C6XL7G",
         "owner": "JennieNK",
-        "desc": "67 statues",
+        "desc": "67 statue",
         "road": "",
         "nw": {
             "x": -1644,
