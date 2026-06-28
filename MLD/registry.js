@@ -2560,5 +2560,19 @@ let REGISTRY = [
             "x": -1627,
             "z": -1774
         }
+    },
+    {
+        "id": "J6WZ1R",
+        "owner": "LukeNK",
+        "desc": "Studio-style house",
+        "road": "TURTLE ave",
+        "nw": {
+            "x": 69,
+            "z": 205
+        },
+        "se": {
+            "x": 81,
+            "z": 215
+        }
     }
 ]
