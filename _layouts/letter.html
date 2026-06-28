@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="{{ site.url }}/website/logo_white.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            * {
+                box-sizing: border-box;
+                --side-padding: 4rem;
+            }
+
+            body {
+                font-family: inter, sans-serif;
+                margin: 0;
+                counter-reset: page;
+            }
+
+            header {
+                display: flex;
+                font-family: comfortaa, cursive;
+                align-items: center;
+            }
+            header * {
+                flex: 1 1 0;
+            }
+            header .edge {
+                max-width: var(--side-padding);
+            }
+            header img {
+                max-width: 70%;
+                height: auto;
+            }
+
+            nav {
+                display: flex;
+                align-items: end;
+                height: 20vh;
+                margin: var(--side-padding);
+            }
+            nav * {
+                flex: 1 1 0;
+            }
+
+            address {
+                font-family: 'Courier New', monospace;
+                font-style: normal;
+                font-weight: bold;
+            }
+
+            details {
+                font-size: 10pt;
+            }
+            details summary {
+                list-style: none;
+                border-bottom: 1px solid black;
+                font-size: 12pt;
+                font-weight: bold;
+            }
+            details time {
+                display: block;
+                margin-top: var(--side-padding);
+                text-align: right;
+                font-family: 'Courier New', monospace;
+                font-size: 12pt;
+            }
+
+            main {
+                /* Use background color to hide the footer until the last page */
+                background-color: #ffffff;
+                margin: var(--side-padding);
+                font-size: 12pt;
+            }
+
+            footer {
+                z-index: -1;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                height: 3rem;
+                display: flex;
+                justify-content: flex-end;
+                padding-right: var(--side-padding);
+            }
+            footer img {
+                height: 100%;
+                width: auto;
+            }
+
+            @page {
+                @bottom-left {
+                    possition: fixed;
+                    content: "Page " counter(page) " of " counter(pages);
+                    font-size: 12px;
+                    font-family: inter, sans-serif;
+                    /* Margin 3rem */
+                    margin-left: 48px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="edge">
+                <img src="{{ site.url }}/website/logo.png" alt="MPI logo">
+            </div>
+            <div>
+                {% for line in page.headerEN %}
+                    {{ line }}<br>
+                {% endfor %}
+            </div>
+            <div>
+                {% for line in page.headerFR %}
+                    {{ line }}<br>
+                {% endfor %}
+            </div>
+            <div class="edge"></div>
+        </header>
+
+        <nav>
+            <address>
+                {% for line in page.address %}
+                    {{ line }}<br>
+                {% endfor %}
+            </address>
+            <details open>
+                <summary>{{ page.preview.header }}</summary>
+                {{ page.preview.content }}
+                <time>{{ page.name | split: '.' | first }}</time>
+            </details>
+        </nav>
+
+        <main>
+            {% if page.ext == "md" %} {{ content | markdownify }} {% else %} {{ content }} {% endif %}
+        </main>
+        <footer>
+            <img src="{{ site.url }}/website/stars.svg" alt="Northern cross constellation">
+        </footer>
+    </body>
+</html>
