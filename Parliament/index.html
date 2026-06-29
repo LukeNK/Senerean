@@ -174,7 +174,6 @@ layout: default
 
 <h1>Hansards</h1>
 <p>Sorted from newest to oldest</p>
-<div id="hansards" class="linkList" style="color: #ff00aa;"></div>
 
 <script>
     // Speakers' colors
@@ -202,27 +201,4 @@ layout: default
             // elm.style.backgroundColor = color + '90'
         }
     })
-
-    // use standard html-src to fetch data
-    const hansardsList = [
-        '2023-10-21',
-        '2023-02-26',
-        '2023-02-23',
-        '2023-02-19',
-        '2023-02-18'
-    ]
-    let hansards = document.getElementById('hansards');
-    for (const date of hansardsList)
-        hansards.innerHTML += `
-            <details id="${date}">
-                <summary>${date}</summary>
-                <code html-src="./hansards/${date}.md"></code>
-            </details>`
-
-    // open hansard
-    if (window.location.hash) {
-        let elm = document.getElementById(window.location.hash.substr(1));
-        elm.scrollIntoView();
-        elm.setAttribute('open', 'true')
-    }
 </script>
