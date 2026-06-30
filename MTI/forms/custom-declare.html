@@ -1,0 +1,80 @@
+---
+layout: form
+title: Custom Declaration
+headerEN: Ministry of Travel and Immigration
+headerFR: Ministère du voyage et de l'immigration
+---
+<form>
+    <h1>Custom Declaration</h1>
+
+    <h2>Part 1: Personal Information</h2>
+    <label for="name">
+        <h3>Name</h3>
+        <p>Last Name, first name</p>
+    </label>
+    <input type="text" id="name" name="name">
+
+    <label for="dob">
+        <h3>Date of birth</h3>
+        <p>YYYY-MM-DD</p>
+    </label>
+    <input type="date" id="dob" name="dob">
+
+    <label for="citizenship">
+        <h3>Citizenship</h3>
+    </label>
+    <input type="text" id="citizenship" name="citizenship">
+
+    <label for="purpose">
+        <h3>Purpose of travel</h3>
+    </label>
+    <div>
+        <label>
+            <input type="checkbox" name="purpose" value="personal">
+            <p>Personal</p>
+            <input type="checkbox" name="purpose" value="study">
+            <p>Study</p>
+            <input type="checkbox" name="purpose" value="work">
+            <p>Work</p>
+        </label>
+    </div>
+
+    <h2>Part 2: Declaration</h2>
+    <label for="items">
+        <h3>Items to declare</h3>
+        <p>Please list all items you are bringing with you that need to be declared.</p>
+    </label>
+    <div>
+        <label>
+            <input type="checkbox" name="items" value="food">
+            <p>Food</p>
+            <input type="checkbox" name="items" value="plants">
+            <p>Plants</p>
+            <input type="checkbox" name="items" value="animals">
+            <p>Animals</p>
+            <input type="checkbox" name="items" value="weapons">
+            <p>Weapons</p>
+        </label>
+    </div>
+    <label for="duty-free">
+        <h3>Duty-Free Allowance</h3>
+        <p>Please specify the duty-free allowance you are utilizing.</p>
+    </label>
+    <input type="text" id="duty-free" name="duty-free">
+    <label for="duration">
+        <h3>Duration of stay</h3>
+        <p>Please specify the duration of your stay.</p>
+    </label>
+    <input type="text" id="duration" name="duration">
+
+    <h2>Part 3: Signature</h2>
+    <label for="date">
+        <h3>Date of arrival</h3>
+    </label>
+    <input type="date" id="date" name="date">
+    <label for="signature">
+        <h3>Signature</h3>
+        <p>Please sign to confirm that the information provided is accurate and complete.</p>
+    </label>
+    <input type="text" id="signature" name="signature">
+</form>
