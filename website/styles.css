@@ -57,6 +57,13 @@ form {
         text-align: center;
     }
 
+    h2:before {
+        display: inline-block;
+        content: " ";
+        width: 30%;
+        height: 1rem;
+    }
+
     & > label {
         border-right: 1px solid #ccc;
         text-align: right;
