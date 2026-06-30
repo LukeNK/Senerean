@@ -6,18 +6,24 @@ headerFR: Ministère du développement foncier
 ---
 <form onsubmit="return false">
     <h1>Add a build to the registry</h1>
+    <!-- Template will be inserted here -->
+    <label for="out">
+        <h3>Output</h3>
+        <p>JSON format of the build to add to the registry</p>
+    </label>
+    <!-- Small cols so that it won't strech the printed layout -->
+    <textarea id="out" rows="15" cols="1"></textarea>
+
+    <button onclick="add()">Generate JSON</button>
+    <button onclick="add(1)">Download full registry</button>
+    <button onclick="window.print(); return 0">Print form</button>
 </form>
-<div class="no-print">
-    <button onclick="add()">Print registry</button>
-    <button onclick="add(1)">Download registry</button>
-    <textarea id="out">Sorry for such manual tedious way</textarea>
-</div>
 
 <script src="./scripts.js"></script>
 <script src="./template.js"></script>
 <script src="./registry.js"></script>
 <script>
-    let formElement = document.querySelector('form');
+    let formElement = document.querySelector('form > label');
     for (let field in TEMPLATE) {
         let label = document.createElement('label'),
             input = document.createElement('input');
@@ -30,8 +36,9 @@ headerFR: Ministère du développement foncier
         input.setAttribute('id', field);
         input.setAttribute('type', 'text');
 
-        formElement.appendChild(label);
-        formElement.appendChild(input);
+        // insert before element
+        formElement.insertAdjacentElement('beforebegin', label);
+        formElement.insertAdjacentElement('beforebegin', input);
     }
 
     function add(download) {
@@ -88,9 +95,12 @@ headerFR: Ministère du développement foncier
             link.click();
             URL.revokeObjectURL(link.href);
         } else {
-            let out = document.getElementById('out');
-            out.innerHTML = JSON.stringify(cur, null, '    ');
-            out.style.height = '100vh';
+            let out = document.getElementById('out'),
+                text = JSON.stringify(cur, null, '    ');
+            for (let line of text.split('\n')) out.value += `\n    ${line}`
+
+            // comma to continue to the JSON array
+            out.value = ',' + out.value;
             out.scrollTop = out.scrollHeight;
             out.scrollIntoView()
         }
