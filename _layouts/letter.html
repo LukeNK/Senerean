@@ -24,16 +24,17 @@
                 display: flex;
                 font-family: comfortaa, cursive;
                 align-items: center;
-            }
-            header * {
-                flex: 1 1 0;
-            }
-            header .edge {
-                max-width: var(--side-padding);
-            }
-            header img {
-                max-width: 70%;
-                height: auto;
+
+                * {
+                    flex: 1 1 0;
+                }
+                .edge {
+                    max-width: var(--side-padding);
+                }
+                img {
+                    max-width: 70%;
+                    height: auto;
+                }
             }
 
             nav {
@@ -85,15 +86,16 @@
                 display: flex;
                 justify-content: flex-end;
                 padding-right: var(--side-padding);
-            }
-            footer img {
-                height: 100%;
-                width: auto;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                }
             }
 
             @page {
                 @bottom-left {
-                    possition: fixed;
+                    position: fixed;
                     content: "Page " counter(page) " of " counter(pages);
                     font-size: 12px;
                     font-family: inter, sans-serif;
