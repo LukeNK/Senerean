@@ -1,20 +1,17 @@
 ---
-layout: default
+layout: form
+title: Add a build to the registry
+headerEN: Ministry of Land Development
+headerFR: Ministère du développement foncier
 ---
-<style>
-    form {
-        padding: auto 1rem;
-    }
-    form input {
-        margin: auto 1rem;
-        width: 80%;
-    }
-</style>
-
-<form onsubmit="return false"></form>
-<button onclick="add()">Print registry</button>
-<button onclick="add(1)">Download registry</button>
-<textarea id="out">Sorry for such manual tedious way</textarea>
+<form onsubmit="return false">
+    <h1>Add a build to the registry</h1>
+</form>
+<div class="no-print">
+    <button onclick="add()">Print registry</button>
+    <button onclick="add(1)">Download registry</button>
+    <textarea id="out">Sorry for such manual tedious way</textarea>
+</div>
 
 <script src="./scripts.js"></script>
 <script src="./template.js"></script>
@@ -22,10 +19,19 @@ layout: default
 <script>
     let formElement = document.querySelector('form');
     for (let field in TEMPLATE) {
-        let label = document.createElement('label');
+        let label = document.createElement('label'),
+            input = document.createElement('input');
+
         label.innerHTML =
-            `<p>${TEMPLATE[field]}</p><input id="${field}" type="text">`;
+            `<h3>${field.charAt(0).toUpperCase() + field.slice(1)}</h3>
+            <p>${TEMPLATE[field]}</p>`;
+        label.setAttribute('for', field);
+
+        input.setAttribute('id', field);
+        input.setAttribute('type', 'text');
+
         formElement.appendChild(label);
+        formElement.appendChild(input);
     }
 
     function add(download) {
