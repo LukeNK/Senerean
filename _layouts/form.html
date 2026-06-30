@@ -1,0 +1,89 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="{{ site.url }}/website/styles.css">
+<style>
+    .print-header {
+        display: none;
+        font-family: comfortaa, cursive;
+        align-items: center;
+
+        * {
+            flex: 1 1 0;
+        }
+        .edge {
+            max-width: 4rem;
+        }
+        img {
+            max-width: 70%;
+            height: auto;
+        }
+        .code {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            text-align: right;
+        }
+    }
+
+    .print-footer {
+        display: none;
+        z-index: -1;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 3rem;
+        justify-content: flex-end;
+        padding-right: var(--side-padding);
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    @media print {
+        html {
+            font-size: 12pt;
+        }
+
+        header, footer, button, .no-print {
+            display: none;
+        }
+
+        .print-header, .print-footer {
+            display: flex;
+        }
+
+        main {
+            padding: 0;
+        }
+
+        @page {
+            @bottom-left {
+                position: fixed;
+                content: "Page " counter(page) " of " counter(pages);
+                font-size: 12px;
+                font-family: inter, sans-serif;
+                /* Margin 3rem */
+                margin-left: 48px;
+            }
+        }
+    }
+</style>
+<div class="print-header">
+    <div class="edge">
+        <img src="{{ site.url }}/website/logo.png" alt="MPI logo">
+    </div>
+    <div>
+        {{ page.headerEN }}<br>
+        {{ page.headerFR }}
+    </div>
+    <div class="code">
+        {{ page.path | remove: '.html' }}
+    </div>
+    <div class="edge"></div>
+</div>
+{{ content }}
+<div class="print-footer">
+    <img src="{{ site.url }}/website/stars.svg" alt="Northern cross constellation">
+</div>
