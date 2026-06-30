@@ -1,0 +1,106 @@
+---
+layout: default
+---
+<style>
+    form {
+        display: flex;
+        flex-wrap: wrap;
+
+        h1, h2, h3 {
+            width: 100%;
+        }
+
+        & > label {
+            border-right: 1px solid #ccc;
+            text-align: right;
+            width: 30%;
+            padding: 1rem;
+
+            h3 {
+                margin: 0;
+                font-size: 1rem;
+            }
+            p {
+                margin: 0;
+                font-size: 0.8rem;
+            }
+        }
+
+        input, select {
+            margin: 1rem;
+            flex: 1 1 60%;
+        }
+        input[type="checkbox"] {
+            height: 2rem;
+            align-self: center;
+        }
+
+        div {
+            flex: 1 1 60%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+
+            label {
+                display: flex;
+                align-items: center;
+            }
+
+            label > input[type="checkbox"] {
+                max-width: 10%;
+            }
+        }
+
+    }
+
+    @media print {
+        html {
+            font-size: 12pt;
+        }
+
+        main {
+            padding: 0;
+        }
+
+        button {
+            display: none;
+        }
+    }
+</style>
+<form>
+
+    <label for="name"><h3>Full Name</h3><p>Please enter your full name, separate first and last names</p></label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email"><h3>Email</h3><p>Please enter your email address</p></label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="country"><h3>Country of Origin</h3></label>
+    <input type="text" id="country" name="country" required>
+
+    <label for="purpose"><h3>Purpose of Visit</h3></label>
+    <select id="purpose" name="purpose" required>
+        <option value="">Select a purpose</option>
+        <option value="tourism">Tourism</option>
+        <option value="business">Business</option>
+        <option value="education">Education</option>
+        <option value="medical">Medical Treatment</option>
+    </select>
+
+    <label for="dates"><h3>Dates of Stay</h3></label>
+    <input type="date" id="dates" name="dates" required>
+
+    <!-- Check boxes for military service, government employment -->
+    <label>Your connection with the government</label>
+    <div>
+        <label for="military">
+            <input type="checkbox" id="military" name="connection" value="military">
+            <p>I am a member of the military</p>
+        </label>
+        <label for="government">
+            <input type="checkbox" id="government" name="connection" value="government">
+            <p>I am a government employee</p>
+        </label>
+    </div>
+    <button type="submit">Submit Application</button>
+</form>
