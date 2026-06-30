@@ -80,7 +80,7 @@ form {
         }
     }
 
-    input, select {
+    input, select, textarea {
         margin: 1rem;
         flex: 1 1 60%;
     }
