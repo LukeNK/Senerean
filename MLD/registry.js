@@ -2574,5 +2574,19 @@ let REGISTRY = [
             "x": 81,
             "z": 215
         }
+    },
+    {
+        "id": "D4TL9X",
+        "owner": "Senerean",
+        "desc": "Traffic sign convention centre",
+        "road": "BEEHIVE ave",
+        "nw": {
+            "x": 71,
+            "z": 126
+        },
+        "se": {
+            "x": 84,
+            "z": 138
+        }
     }
 ]
