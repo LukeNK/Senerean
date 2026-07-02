@@ -2588,5 +2588,19 @@ let REGISTRY = [
             "x": 84,
             "z": 138
         }
+    },
+    {
+        "id": "G5ZW8Z",
+        "owner": "Senerean",
+        "desc": "Underground metro station that crosses Haru st",
+        "road": "HARU st",
+        "nw": {
+            "x": 151,
+            "z": -259
+        },
+        "se": {
+            "x": 177,
+            "z": -245
+        }
     }
 ]
