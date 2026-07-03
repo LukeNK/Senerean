@@ -2602,5 +2602,19 @@ let REGISTRY = [
             "x": 177,
             "z": -245
         }
+    },
+    {
+        "id": "X2NQ8L",
+        "owner": "Senerean",
+        "desc": "Sub-surface metro station",
+        "road": "SANY ave",
+        "nw": {
+            "x": 377,
+            "z": -257
+        },
+        "se": {
+            "x": 404,
+            "z": -247
+        }
     }
 ]
