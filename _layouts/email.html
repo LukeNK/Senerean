@@ -1,0 +1,137 @@
+<!--
+    All of the links here are absoulute
+    At the bottom, scripts are used to convert the page to inline CSS for better compatibility with email clients
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="https://lukenk.github.io/Senerean/website/logo_white.png">
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: inter, sans-serif;
+                margin: 0;
+                counter-reset: page;
+            }
+
+            .header {
+                display: flex;
+                font-family: comfortaa, cursive;
+                align-items: center;
+                align-content: center;
+
+                * {
+                    flex: 1 1 0;
+                }
+                .edge {
+                    max-width: 4rem;
+                }
+                img {
+                    max-width: 70%;
+                    height: auto;
+                }
+                span {
+                    display: block;
+                    height: 0.25rem;
+                }
+            }
+
+            .info {
+                margin: 0 4rem;
+            }
+
+            address {
+                margin-top: 2rem;
+                font-family: 'Courier New', monospace;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: bold;
+            }
+
+            .preview {
+                margin-top: 1rem;
+                p {
+                    margin: 0;
+                }
+
+                .header {
+                    list-style: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+
+                .content {
+                    font-size: 14px;
+                }
+            }
+
+            .main {
+                /* Use background color to hide the footer until the last page */
+                background-color: #ffffff;
+                margin: 4rem;
+                font-size: 16px;
+            }
+
+            .footer {
+                height: 3rem;
+
+                img {
+                    display: block;
+                    margin-right: 4rem;
+                    margin-left: auto;
+                    height: 100%;
+                    width: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="edge">
+                <img src="https://lukenk.github.io/Senerean/website/logo.png" alt="MPI logo">
+            </div>
+            <div>
+                {% for line in page.headerEN %}
+                    {{ line }}<br>
+                {% endfor %}
+                <span></span>
+                {% for line in page.headerFR %}
+                    {{ line }}<br>
+                {% endfor %}
+            </div>
+            <div class="edge"></div>
+        </div>
+
+        <div class="info">
+            <address>
+                {% for line in page.address %}
+                    {{ line }}<br>
+                {% endfor %}
+            </address>
+            <div class="preview">
+                <p class="header">{{ page.preview.header }}</p>
+                <p class="content">{{ page.preview.content }}</p>
+            </div>
+        </div>
+
+        <div class="main">
+            {% if page.ext == "md" %} {{ content | markdownify }} {% else %} {{ content }} {% endif %}
+        </div>
+        <div class="footer">
+            <img src="https://lukenk.github.io/Senerean/website/stars.svg" alt="Northern cross constellation">
+        </div>
+    </body>
+
+    <script src="{{ site.url }}/website/toInlineCSS.js"></script>
+    <script>
+        // Convert the page to inline CSS for better compatibility with email clients
+        applyInline(document.body)
+    </script>
+</html>
