@@ -2616,5 +2616,19 @@ let REGISTRY = [
             "x": 404,
             "z": -247
         }
+    },
+    {
+        "id": "B4MF2D",
+        "owner": "JennieNK",
+        "desc": "Sub-surface daycare",
+        "road": "",
+        "nw": {
+            "x": -1700,
+            "z": -1862
+        },
+        "se": {
+            "x": -1681,
+            "z": -1838
+        }
     }
 ]
